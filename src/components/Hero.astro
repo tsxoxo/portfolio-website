@@ -2,6 +2,8 @@
 import heroImage from '@assets/images/hero.png';
 import { Image } from '@astrojs/image/components';
 import Button from '@components/ui/Button.astro';
+import i18next, { t } from 'i18next';
+import { Trans, HeadHrefLangs } from 'astro-i18next/components';
 ---
 
 <section
@@ -11,8 +13,10 @@ import Button from '@components/ui/Button.astro';
 	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
 		<div>
 			<h1 class="mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl">
-				Hi! My name is <span class="text-orange">Tom Szwaja</span> and I am a web developer based in
-				Germany.
+				<Trans i18nKey="home.hero">
+					Hi! My name is <span class="text-orange">Tom Szwaja</span> and I am a web developer based in
+					Germany.
+				</Trans>
 			</h1>
 		</div>
 		<div class="mb-10">

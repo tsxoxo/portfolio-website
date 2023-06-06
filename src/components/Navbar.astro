@@ -21,6 +21,11 @@ const menuitems = [
 	{
 		title: 'CV',
 		path: `locales/${i18next.language}/cv.pdf`,
+		attributes: {
+			type: 'application/pdf',
+			rel: 'author',
+			hreflang: `${i18next.language}`,
+		},
 	},
 ];
 ---
@@ -41,6 +46,7 @@ const menuitems = [
 							<li>
 								<a
 									aria-label="navigation link"
+									{...(item.attributes || {})}
 									href={item.path}
 									class="hover:text-orange dark:hover:text-orange flex py-2 text-black dark:text-white lg:px-3"
 								>

@@ -2,9 +2,10 @@
 import Card from '@components/ui/Card.astro';
 import { getCollection } from 'astro:content';
 
-const projects = await getCollection('projects', ({ data }) => {
-	return !data.inProgress;
-});
+const projects = await getCollection('projects');
+//  ({ data }) => {
+// 	return !data.inProgress;
+// });
 ---
 
 <section
@@ -26,7 +27,7 @@ const projects = await getCollection('projects', ({ data }) => {
 			))
 		}
 	</div>
-	<a
+	<!-- <a
 		href="https://github.com/"
 		target="_blank"
 		rel="noopener"
@@ -47,5 +48,5 @@ const projects = await getCollection('projects', ({ data }) => {
 				stroke-linejoin="round"
 				d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
 		</svg>
-	</a>
+	</a> -->
 </section>

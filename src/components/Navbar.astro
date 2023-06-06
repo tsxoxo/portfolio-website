@@ -3,6 +3,7 @@ import Button from '@components/ui/Button.astro';
 import ToggleTheme from '@components/ui/ToggleTheme.astro';
 import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
 import { LanguageSelector } from 'astro-i18next/components';
+import i18next from 'i18next';
 
 const menuitems = [
 	{
@@ -17,21 +18,23 @@ const menuitems = [
 		title: 'Contact',
 		path: '#contact',
 	},
+	{
+		title: 'CV',
+		path: `locales/${i18next.language}/cv.pdf`,
+	},
 ];
 ---
 
 <header data-testId="header" class="my-5 flex flex-col items-center justify-between lg:flex-row">
 	<Astronav>
 		<div class="flex w-full items-center justify-between lg:w-auto">
-			<Button size={'sm'} name="Download CV">Download CV</Button>
+			<!-- <Button size={'sm'} name="Download CV">Download CV</Button> -->
 			<div class="block lg:hidden">
 				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
 			</div>
 		</div>
 		<MenuItems class="mt-2 hidden w-full lg:mt-0 lg:flex lg:w-auto">
 			<ul class="flex flex-col lg:flex-row lg:gap-3">
-				<LanguageSelector showFlag={true} class="my-select-class" />
-
 				{
 					menuitems.map((item) => (
 						<>
@@ -47,7 +50,11 @@ const menuitems = [
 						</>
 					))
 				}
-				<li><ToggleTheme /></li>
+				<li class="py-2">
+					<LanguageSelector showFlag={true} class="my-select-class" />
+				</li>
+
+				<li class="py-2"><ToggleTheme /></li>
 			</ul>
 		</MenuItems>
 	</Astronav>

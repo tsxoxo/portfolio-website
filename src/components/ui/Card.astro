@@ -66,8 +66,20 @@ const {
 			// Read the message from the data attribute.
 			const image = this.querySelector('img')
 			const overlay = this.querySelector('.description-overlay')
-			image.addEventListener('click', () => {
-				overlay.classList.toggle('hidden')
+			overlay?.addEventListener('click', (event) => {
+				event.stopPropagation()
+			})
+			image?.addEventListener('click', (event) => {
+				event.stopPropagation()
+
+				overlay?.classList.toggle('invisible')
+				overlay?.classList.toggle('opacity-0')
+			})
+			document.addEventListener('click', (event) => {
+				if (!overlay?.classList.contains('invisible')) {
+					overlay?.classList.toggle('invisible')
+					overlay?.classList.toggle('opacity-0')
+				}
 			})
 		}
 	}

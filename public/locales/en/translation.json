@@ -6,6 +6,10 @@
 	},
 	"home": {
 		"title": "Welcome to my awesome website!",
-		"hero": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
+		"hero": "<0>Hi, I'm Tom!</0> <1>I have been developing apps and websites / created things on the internet since 2020. In that time, I have asked many questions and done many things, on behalf of clients and for myself. I have developed apps. Built up websites and taught regular people how to maintain them. Written technical guides in a way that is understandable to beginners. Dived in to learn about the nitty gritty of some of the oldest and newest tech behind the internet. Made some art. Written a blog. Designed clear and accessible UIs. Learned that new tech is often not worth the price of admission. Gave up. Picked myself up again and again. Learned that project take twice the amount of time I estimate at first, at least. Learned how to finish projects (or make them good enough, at least). Now. What can I do for you? <2>Let me know</2> </1>",
+		"projects": {
+			"heading": "Projects",
+			"subheading": "The things that left a mark"
+		}
 	}
 }

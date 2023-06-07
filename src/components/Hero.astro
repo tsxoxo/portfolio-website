@@ -2,7 +2,6 @@
 import heroImage from '@assets/images/hero.png';
 import { Image } from '@astrojs/image/components';
 import Button from '@components/ui/Button.astro';
-import i18next, { t } from 'i18next';
 import { Trans, HeadHrefLangs } from 'astro-i18next/components';
 ---
 
@@ -12,26 +11,32 @@ import { Trans, HeadHrefLangs } from 'astro-i18next/components';
 >
 	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
 		<div>
-			<h1 class="mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl">
-				<Trans i18nKey="home.hero">
-					Hi! My name is <span class="text-orange">Tom Szwaja</span> and I am a web developer based in
-					Germany.
-				</Trans>
-			</h1>
+			<Trans i18nKey="home.hero">
+				<h1 class="mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl">
+					Hi! My name is Tom. <span class="text-orange">more</span>
+					<a
+						href="mailto:tomszwadesign@gmail.com?subject=An offer You can't refuse&body=Hey Tom,%0A%0AI was just on your site and..."
+						target="_blank"
+						rel="noopener"
+						aria-label="email"
+					>
+					</a>
+				</h1>
+			</Trans>
+			<div class="mb-10">
+				<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
+			</div>
 		</div>
-		<div class="mb-10">
-			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
+		<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
+			<Image
+				src={heroImage}
+				alt="Coding girl"
+				aspectRatio="4:4"
+				format="png"
+				width={600}
+				height={600}
+				loading="eager"
+			/>
 		</div>
-	</div>
-	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
-		<Image
-			src={heroImage}
-			alt="Coding girl"
-			aspectRatio="4:4"
-			format="png"
-			width={600}
-			height={600}
-			loading="eager"
-		/>
 	</div>
 </section>

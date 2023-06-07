@@ -1,7 +1,7 @@
 ---
 inProgress: true
 title: sloww.org
-description: foo,
+description: This is a website, a deployment setup and an editing workflow, developed for a local artist.
 tags:
     {
         skills: [consulting, deploying, coaching],

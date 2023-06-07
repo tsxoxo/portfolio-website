@@ -1,0 +1,31 @@
+---
+import { t } from 'i18next'
+
+interface Props {
+	description: string
+	skill_tags: string[]
+	tech_tags: string[]
+	repoURL: string
+}
+
+const { description, skill_tags, tech_tags, repoURL } = Astro.props
+---
+
+<div
+	class="description-overlay absolute z-10 flex hidden h-full w-full flex-col justify-between bg-white"
+>
+	<div class="flex flex-col gap-2">
+		<div class="flex gap-2">
+			{skill_tags.map((skill) => <span>{skill}</span>)}
+		</div>
+		<div class="flex gap-2">
+			{tech_tags.map((tech) => <span>{tech}</span>)}
+		</div>
+	</div>
+	<p>
+		{description}
+	</p>
+	<a href={repoURL} target="_blank" class="font-light underline">
+		{t('home.projects.link-in-overlay')}
+	</a>
+</div>

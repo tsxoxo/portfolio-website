@@ -1,6 +1,7 @@
 ---
 import Card from '@components/ui/Card.astro';
 import { getCollection } from 'astro:content';
+import i18next, { t } from 'i18next';
 
 const projects = await getCollection('projects');
 //  ({ data }) => {
@@ -8,13 +9,9 @@ const projects = await getCollection('projects');
 // });
 ---
 
-<section
-	data-testid="projects"
-	id="projects"
-	class="mb-10 flex flex-col items-center justify-center md:mb-0 md:h-screen"
->
-	<h2 class="font-monospace text-2xl text-orange lg:text-4xl">Projects</h2>
-	<span class="mb-10 h-1 w-10 bg-orange"></span>
+<section data-testid="projects" id="projects" class="mb-10 flex flex-col md:mb-0 md:h-screen">
+	<h2 class="text-3xl font-black lg:text-4xl">{t('home.projects.heading')}</h2>
+	<p class="mb-4 mt-4">The things that left a mark</p>
 	<div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
 		{
 			projects.map((project) => (

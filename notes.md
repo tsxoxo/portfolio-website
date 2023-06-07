@@ -1,0 +1,1 @@
+- dark theme issues: light theme doesnt get set in localstorage; `dark:` prefix missing on `text-white` on `<body>`

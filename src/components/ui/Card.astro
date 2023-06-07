@@ -1,39 +1,45 @@
 ---
-import projectImage from '@assets/images/project.png';
-import { Image } from '@astrojs/image/components';
-import Tags from '@components/ui/Tags.astro';
+import projectImage from '@assets/images/project.png'
+import { Image } from '@astrojs/image/components'
+import { CollectionEntry } from 'astro:content'
+import { t } from 'i18next'
+
 interface Props {
-	url?: string;
-	alt?: string;
-	title?: string;
-	tags: string[];
-	children?: HTMLElement | HTMLElement[];
+	project: CollectionEntry<'projects'>
 }
 
-const { url = '#', alt = 'Project image', title = 'Project title', tags = ['Tags'] } = Astro.props;
+const {
+	data: { title = 'Project title', description, tags, links, image }
+} = Astro.props.project
 ---
 
 <section class="w-full p-4 md:w-1/2 lg:w-1/3">
 	<article
 		data-testId="card"
-		class="rounded-xl bg-white p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl"
+		class="rounded-xl border-2 border-black bg-white p-4"
 	>
-		<a href={url} aria-label="link to project">
-			<div class="relative flex items-end overflow-hidden rounded-xl">
-				<Image
-					src={projectImage}
-					alt={alt}
-					aspectRatio="4:4"
-					format="png"
-					width={400}
-					height={400}
-					loading="eager"
-				/>
-			</div>
-			<div class="mt-1 p-2">
-				<h3 class="text-xl text-orange lg:text-2xl">{title}</h3>
-				<Tags tags={tags} />
-			</div>
-		</a>
+		<div class="relative flex items-end rounded-xl">
+			<Image
+				src={image.url}
+				alt={image.alt}
+				aspectRatio="4:4"
+				format="png"
+				width={400}
+				height={400}
+				loading="eager"
+			/>
+		</div>
+		<div class="flex justify-between">
+			<a href={links.repo} aria-label="link to repo">
+				<span class="text-xl underline decoration-black lg:text-2xl"
+					>{t('home.projects.link-more')}</span
+				>
+			</a>
+			<a href={links.demo} aria-label="link to project">
+				<span class="bg-black p-4 text-xl text-white lg:text-2xl"
+					>{t('home.projects.link-demo')}</span
+				>
+			</a>
+		</div>
 	</article>
 </section>

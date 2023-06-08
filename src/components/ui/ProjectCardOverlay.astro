@@ -12,9 +12,9 @@ const { description, skill_tags, tech_tags, repoURL } = Astro.props
 ---
 
 <div
-	class="description-overlay invisible absolute z-10 flex h-full w-full flex-col justify-between bg-light opacity-0 transition-all duration-300"
+	class="description-overlay invisible font-light absolute z-10 flex h-full w-full flex-col justify-between bg-light opacity-0 transition-all duration-300 pb-4 border-b border-zinc-950"
 >
-	<div class="flex flex-col gap-2">
+	<div class="text-zinc-500 flex flex-col gap-2">
 		<div class="flex gap-2">
 			{skill_tags.map((skill) => <span>{skill}</span>)}
 		</div>
@@ -22,10 +22,10 @@ const { description, skill_tags, tech_tags, repoURL } = Astro.props
 			{tech_tags.map((tech) => <span>{tech}</span>)}
 		</div>
 	</div>
-	<p>
+	<p class="text-2xl">
 		{description}
 	</p>
-	<a href={repoURL} target="_blank" class="font-light underline">
+	<a href={repoURL} target="_blank" class="text-xl font-normal underline">
 		{t('home.projects.card.link-in-overlay')}
 	</a>
 </div>

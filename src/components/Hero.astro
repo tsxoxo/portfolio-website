@@ -5,48 +5,36 @@ import Button from '@components/ui/Button.astro'
 import { Trans, HeadHrefLangs } from 'astro-i18next/components'
 ---
 
-<section
-	data-testid="hero"
-	class="flex-colitems-center flex h-screen justify-center text-center lg:flex-row"
->
-	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
-		<div>
-			<Trans i18nKey="home.hero">
-				<h1 class="mb-10 text-3xl font-bold lg:text-5xl">
-					Hi! My name is Tom. <span class="">more</span>
-					<a
-						href="mailto:tomszwadesign@gmail.com?subject=An offer You can't refuse&body=Hey Tom,%0A%0AI was just on your site and..."
-						target="_blank"
-						rel="noopener"
-						aria-label="email"
-					>
-					</a>
-				</h1>
-			</Trans>
-			<div class="mb-10">
-				<Button
-					style={'primary'}
-					size={'lg'}
-					class={'flex'}
-					name="learn more"
-				>
-					Learn more
-				</Button>
-			</div>
-		</div>
-		<div
-			data-testid="hero-img"
-			class="mb-10 flex w-1/2 items-center justify-center"
-		>
-			<Image
-				src={heroImage}
-				alt="Coding girl"
-				aspectRatio="4:4"
-				format="png"
-				width={600}
-				height={600}
-				loading="eager"
-			/>
-		</div>
+<section data-testid="hero" class="flex min-h-screen flex-col">
+	<div
+		data-testid="hero-img"
+		class="mb-10 flex w-full items-center justify-center"
+	>
+		<Image
+			src={heroImage}
+			alt="Coding girl"
+			aspectRatio="4:4"
+			format="png"
+			width={600}
+			height={600}
+			loading="eager"
+		/>
+	</div>
+	<Trans i18nKey="home.hero">
+		<h1 class="mb-10 text-5xl font-bold">
+			Hi! I'm Tom Szwaja. <span class="">more</span>
+			<a
+				href="mailto:tomszwadesign@gmail.com?subject=An offer You can't refuse&body=Hey Tom,%0A%0AI was just on your site and..."
+				target="_blank"
+				rel="noopener"
+				aria-label="email"
+			>
+			</a>
+		</h1>
+	</Trans>
+	<div class="mb-10">
+		<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">
+			Learn more
+		</Button>
 	</div>
 </section>

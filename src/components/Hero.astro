@@ -1,19 +1,19 @@
 ---
-import heroImage from '@assets/images/hero.png';
-import { Image } from '@astrojs/image/components';
-import Button from '@components/ui/Button.astro';
-import { Trans, HeadHrefLangs } from 'astro-i18next/components';
+import heroImage from '@assets/images/hero.png'
+import { Image } from '@astrojs/image/components'
+import Button from '@components/ui/Button.astro'
+import { Trans, HeadHrefLangs } from 'astro-i18next/components'
 ---
 
 <section
 	data-testid="hero"
-	class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row"
+	class="flex-colitems-center flex h-screen justify-center text-center lg:flex-row"
 >
 	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
 		<div>
 			<Trans i18nKey="home.hero">
-				<h1 class="mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl">
-					Hi! My name is Tom. <span class="text-orange">more</span>
+				<h1 class="mb-10 text-3xl font-bold lg:text-5xl">
+					Hi! My name is Tom. <span class="">more</span>
 					<a
 						href="mailto:tomszwadesign@gmail.com?subject=An offer You can't refuse&body=Hey Tom,%0A%0AI was just on your site and..."
 						target="_blank"
@@ -24,10 +24,20 @@ import { Trans, HeadHrefLangs } from 'astro-i18next/components';
 				</h1>
 			</Trans>
 			<div class="mb-10">
-				<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
+				<Button
+					style={'primary'}
+					size={'lg'}
+					class={'flex'}
+					name="learn more"
+				>
+					Learn more
+				</Button>
 			</div>
 		</div>
-		<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
+		<div
+			data-testid="hero-img"
+			class="mb-10 flex w-1/2 items-center justify-center"
+		>
 			<Image
 				src={heroImage}
 				alt="Coding girl"

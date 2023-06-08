@@ -9,7 +9,7 @@ const config: AstroI18nextConfig = {
         },
     },
     i18nextServer: {
-        debug: true,
+        debug: false,
     },
 };
 

@@ -4,6 +4,8 @@ import { getCollection } from 'astro:content'
 import { t } from 'i18next'
 
 const projects = await getCollection('projects')
+console.log(projects[0]);
+
 //  ({ data }) => {
 // 	return !data.inProgress;
 // });
@@ -19,9 +21,9 @@ const projects = await getCollection('projects')
 	<h2 class="text-5xl font-black lg:text-4xl">
 		{t('home.projects.heading')}
 	</h2>
-	<p class="mb-16 mt-2 text-lg font-light">The things that left a mark</p>
+	<p class="mb-16 mt-2 text-lg font-light">The things that left a mark.</p>
 	<div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
-		{projects.map((project) => <ProjectCard {project} />)}
+		{Array(6).fill(projects[0],0).map((project) => <ProjectCard {project} />)}
 	</div>
 	<!-- <a
 		href="https://github.com/"

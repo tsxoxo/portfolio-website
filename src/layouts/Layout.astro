@@ -1,22 +1,24 @@
 ---
-import Footer from '@components/Footer.astro';
-import Navbar from '@components/Navbar.astro';
-import { SEO } from 'astro-seo';
-import i18next, { t } from 'i18next';
-import { Trans, HeadHrefLangs } from 'astro-i18next/components';
+import Footer from '@components/Footer.astro'
+import Navbar from '@components/Navbar.astro'
+import { SEO } from 'astro-seo'
+import '../styles/base.css'
+
+import i18next, { t } from 'i18next'
+import { Trans, HeadHrefLangs } from 'astro-i18next/components'
 
 export interface LayoutProps {
-	title: string;
+	title: string
 }
 
-const { title = t('site.defaultTitle') } = Astro.props as LayoutProps;
+const { title = t('site.defaultTitle') } = Astro.props as LayoutProps
 ---
 
 <!DOCTYPE html>
 <html lang={i18next.language} class="scroll-smooth" data-testid="html">
 	<head>
 		<SEO
-			title={title}
+			{title}
 			description="A heavily optimized description full of well-researched keywords."
 		/>
 		<HeadHrefLangs />

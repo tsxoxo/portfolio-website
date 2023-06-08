@@ -1,27 +1,33 @@
-const plugin = require('tailwindcss/plugin');
+const plugin = require('tailwindcss/plugin')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	darkMode: 'class',
 	theme: {
+		extend: {
+			fontFamily: {
+				sans: ['Karla', ...defaultTheme.fontFamily.sans]
+			}
+		},
 		screens: {
 			xs: '480px',
 			sm: '640px',
 			md: '768px',
 			lg: '1024px',
-			xl: '1280px',
+			xl: '1280px'
 		},
 		colors: {
 			black: '#000',
 			white: '#fff',
-			orange: '#E06330',
+			orange: '#E06330'
 		},
 		fontFamily: {
 			// Headings
 			sans: ['Inter', 'sans-serif'],
 			// Base text
-			monospace: ['Inconsolata', 'monospace'],
+			monospace: ['Inconsolata', 'monospace']
 		},
 		fontSize: {
 			xs: '.75rem',
@@ -33,23 +39,23 @@ module.exports = {
 			'2xl': '1.5rem',
 			'3xl': '1.875rem',
 			'4xl': '2.25rem',
-			'5xl': '3rem',
+			'5xl': '3rem'
 		},
 		letterSpacing: {
-			wide: '.025em',
-		},
+			wide: '.025em'
+		}
 	},
 	plugins: [
 		plugin(function ({ addBase, theme }) {
 			addBase({
 				h2: {
 					letterSpacing: theme('letterSpacing.wide'),
-					fontWeight: 'bold',
+					fontWeight: 'bold'
 				},
 				li: {
-					letterSpacing: theme('letterSpacing.wide'),
-				},
-			});
-		}),
-	],
-};
+					letterSpacing: theme('letterSpacing.wide')
+				}
+			})
+		})
+	]
+}

@@ -1,1 +1,2 @@
-- dark theme issues: light theme doesnt get set in localstorage; `dark:` prefix missing on `text-white` on `<body>`
+-   dark theme issues: light theme doesnt get set in localstorage; `dark:` prefix missing on `text-white` on `<body>`
+-   idea: in the `<Hero>` component set `min-h` instead `h`. I have quite a long description in my hero and it messed things up :). with `min-h` a hero can grow

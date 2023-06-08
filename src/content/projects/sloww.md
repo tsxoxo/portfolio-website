@@ -8,6 +8,6 @@ tags:
         tech: [builder.io, Astro.js, devops]
     }
 links:
-    { repo: https://github.com/Return180bpm/sloww.org, demo: https://sloww.org }
+    { repo: https://github.com/Return180bpm/sloww.org, live: https://sloww.org }
 image: { filename: sloww.png, alt: A preview of sloww.org }
 ---

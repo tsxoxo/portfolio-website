@@ -10,9 +10,11 @@
 		"projects": {
 			"heading": "Projects",
 			"subheading": "The things that left a mark",
-			"link-more": "Details",
-			"link-demo": "Live demo",
-			"link-in-overlay": "Repo with more information"
+			"card": {
+				"link-more": "Details",
+				"link-primary": "Learn more",
+				"link-in-overlay": "Learn even more"
+			}
 		}
 	}
 }

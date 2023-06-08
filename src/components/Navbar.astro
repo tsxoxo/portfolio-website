@@ -35,7 +35,7 @@ const menuitems = [
 		<div class="flex w-full items-center justify-between lg:w-auto">
 			<!-- <Button size={'sm'} name="Download CV">Download CV</Button> -->
 			<div class="block lg:hidden">
-				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
+				<MenuIcon class="h-4 w-4 text-black dark:text-light" />
 			</div>
 		</div>
 		<MenuItems class="mt-2 hidden w-full lg:mt-0 lg:flex lg:w-auto">
@@ -48,7 +48,7 @@ const menuitems = [
 									aria-label="navigation link"
 									{...(item.attributes || {})}
 									href={item.path}
-									class="hover:text-orange dark:hover:text-orange flex py-2 text-black dark:text-white lg:px-3"
+									class="hover:text-accent dark:hover:text-accent flex py-2 text-black dark:text-light lg:px-3"
 								>
 									{item.title}
 								</a>

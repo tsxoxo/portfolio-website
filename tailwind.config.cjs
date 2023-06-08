@@ -1,5 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -20,8 +21,13 @@ module.exports = {
 		},
 		colors: {
 			black: '#000',
-			white: '#fff',
-			orange: '#E06330'
+			light: '#FDFDFD',
+			accent: '#E06330',
+			zinc: colors.zinc
+		},
+		boxShadow: {
+			sm: '0px 1px 1px 0px hsla(0, 0%, 15%, 1)',
+			md: '0px 2px 0px 0px hsla(0, 0%, 15%, 0.84)'
 		},
 		fontFamily: {
 			monospace: ['Inconsolata', 'monospace']

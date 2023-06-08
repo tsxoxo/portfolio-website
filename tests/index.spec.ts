@@ -91,7 +91,7 @@ test.describe('hover effect on cards', () => {
 	test('hover effect on cards is working', async ({ page }) => {
 		await page.getByTestId('card').first().hover();
 		await expect(page.locator('article').first()).toHaveClass(
-			'rounded-xl bg-white p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl'
+			'rounded-xl bg-light p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl'
 		);
 	});
 });

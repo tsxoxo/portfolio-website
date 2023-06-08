@@ -73,7 +73,7 @@ const imageUrl = `/project-previews/${image.filename}`
 </project-card>
 
 <script>
-	class Card extends HTMLElement {
+	class ProjectCard extends HTMLElement {
 		constructor() {
 			super()
 			// Read the message from the data attribute.
@@ -114,5 +114,5 @@ const imageUrl = `/project-previews/${image.filename}`
 		}
 	}
 
-	customElements.define('project-card', Card)
+	customElements.define('project-card', ProjectCard)
 </script>

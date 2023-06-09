@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		gap: 4rem;
+	}
+
 	@font-face {
 		font-family: 'Karla';
 		font-weight: 400;

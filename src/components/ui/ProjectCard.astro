@@ -15,12 +15,12 @@ const {
 const imageUrl = `/project-previews/${image.filename}`
 ---
 
-<project-card class="w-full max-w-[400px] md:w-1/2 lg:w-1/3 rounded-md shadow-md border border-black bg-light">
+<project-card class="rounded-md shadow-md border border-black bg-light">
 	<article
 		data-testId="card"
-		class="flex w-full flex-col gap-4 rounded-md  p-4"
+		class="flex flex-col gap-4 rounded-md  p-4"
 	>
-		<div class="relative w-full max-w-full h-[400px]">
+		<div class="relative">
 			<ProjectCardOverlay
 				{description}
 				skill_tags={tags.skills}
@@ -35,6 +35,7 @@ const imageUrl = `/project-previews/${image.filename}`
 				aspectRatio="4:4"
 				fit="cover"
 				position="top"
+				class="foo"
 				/>
 		</div>
 

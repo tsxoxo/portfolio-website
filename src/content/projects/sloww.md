@@ -9,5 +9,5 @@ tags:
     }
 links:
     { repo: https://github.com/Return180bpm/sloww.org, live: https://sloww.org }
-image: { filename: sloww.png, alt: A preview of sloww.org }
+image: { filename: sloww, alt: A preview of sloww.org }
 ---

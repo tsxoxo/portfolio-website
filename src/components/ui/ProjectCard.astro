@@ -12,7 +12,7 @@ const {
 	data: { title = 'Project title', description, tags, links, image }
 } = Astro.props.project
 
-const imageUrl = `/project-previews/${image.filename}`
+const imageUrl = `/project-previews/${image.filename}.png`
 ---
 
 <project-card class="rounded-md shadow-md border border-black bg-light">

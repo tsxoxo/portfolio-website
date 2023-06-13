@@ -11,7 +11,7 @@ const projects = defineCollection({
 		}),
 		links: z.object({
 			repo: z.coerce.string().url(),
-			live: z.coerce.string().url(),
+			live: z.optional(z.coerce.string().url()),
 		}),
 		image: z.object({
 			filename: z.coerce.string(),

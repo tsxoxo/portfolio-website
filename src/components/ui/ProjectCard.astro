@@ -15,11 +15,8 @@ const {
 const imageUrl = `/project-previews/${image.filename}.png`
 ---
 
-<project-card class="rounded-md shadow-md border border-black bg-light">
-	<article
-		data-testId="card"
-		class="flex flex-col gap-4 rounded-md  p-4"
-	>
+<project-card class="rounded-md border border-black bg-light shadow-md">
+	<article data-testId="card" class="flex flex-col gap-4 rounded-md p-4">
 		<div class="relative">
 			<ProjectCardOverlay
 				{description}
@@ -28,15 +25,16 @@ const imageUrl = `/project-previews/${image.filename}.png`
 				repoURL={links.repo}
 			/>
 			<Picture
-				src={imageUrl}
+				src={import(
+					`../../assets/images/project-previews/${image.filename}.png`
+				)}
 				alt={image.alt}
-				widths={[200, 400, 800]}
-				sizes="100%"
-				aspectRatio="4:4"
+				widths={[400, 640]}
+				sizes="(min-width: 640px) 46vw, (min-width: 1024x) 30vw,  96vw"
 				fit="cover"
 				position="top"
-				class="w-full aspect-square"
-				/>
+				class="aspect-square w-full object-cover object-top"
+			/>
 		</div>
 
 		<!-- <Image
@@ -52,9 +50,9 @@ const imageUrl = `/project-previews/${image.filename}.png`
 		/> -->
 		<div class="flex h-auto items-baseline justify-between">
 			<a href={links.live} aria-label="link to repo">
-				<h3 class="text-xl underline decoration-black lg:text-2xl"
-					>{title}</h3
-				>
+				<h3 class="text-xl underline decoration-black lg:text-2xl">
+					{title}
+				</h3>
 			</a>
 			<a
 				href={links.live}
@@ -62,12 +60,9 @@ const imageUrl = `/project-previews/${image.filename}.png`
 				target="_blank"
 				rel="noopener"
 			>
-		</a>
+			</a>
 			<button class="button-base button-outlined">
-				<span
-				class=""
-				>{t('home.projects.card.link-primary')}</span
-				>
+				<span class="">{t('home.projects.card.link-primary')}</span>
 			</button>
 		</div>
 	</article>

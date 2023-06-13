@@ -27,7 +27,7 @@ module.exports = {
 		},
 		boxShadow: {
 			sm: '0px 1px 1px 0px hsla(0, 0%, 15%, 1)',
-			md: '0px 2px 0px 0px hsla(0, 0%, 15%, 0.84)'
+			md: '4px 4px 0px 0px hsla(0, 0%, 15%, 0.84)'
 		},
 		fontFamily: {
 			monospace: ['Inconsolata', 'monospace']

@@ -19,8 +19,12 @@ const projects = await getCollection('projects')
 		{t('home.projects.heading')}
 	</h2>
 	<p class="mb-16 mt-2 text-lg font-light">The things that left a mark.</p>
-	<div class="projects-grid mb-10">
-		{Array(6).fill(projects[0],0).map((project) => <ProjectCard {project} />)}
+	<div class="mb-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+		{
+			// Array(6)
+			// 	.fill(projects[0], 0)
+			projects.map((project) => <ProjectCard {project} />)
+		}
 	</div>
 	<!-- <a
 		href="https://github.com/"

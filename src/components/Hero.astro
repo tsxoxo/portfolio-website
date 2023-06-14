@@ -5,7 +5,7 @@ import Button from '@components/ui/Button.astro'
 import { Trans, HeadHrefLangs } from 'astro-i18next/components'
 ---
 
-<section data-testid="hero" class="mb-16 flex flex-col gap-8">
+<section data-testid="hero" class="mb-16">
 	<!-- <div data-testid="hero-img" class="flex w-full items-center justify-center">
 		<Image
 			src={heroImage}
@@ -18,20 +18,21 @@ import { Trans, HeadHrefLangs } from 'astro-i18next/components'
 		/>
 	</div> -->
 	<Trans i18nKey="home.hero">
-		<h1 class="text-5xl font-black">
-			Hi! I'm Tom Szwaja. <span class="">more</span>
-			<a
-				href="mailto:tomszwadesign@gmail.com?subject=An offer You can't refuse&body=Hey Tom,%0A%0AI was just on your site and..."
-				target="_blank"
-				rel="noopener"
-				aria-label="email"
-			>
-			</a>
+		<h1 class="spacing-heading-subheading text-5xl font-black">
+			SLOT 0 for i18n
 		</h1>
+		<p class="spacing-heading-body">SLOT 1 for i18n</p>
 	</Trans>
 	<div class="">
-		<Button style={'primary'} size={'lg'} class={'flex'} name="contact">
-			Contact me
-		</Button>
+		<a
+			href="mailto:tomszwadesign@gmail.com?subject=An offer You can't refuse&body=Hey Tom,%0A%0AI was just on your site and..."
+			target="_blank"
+			rel="noopener"
+			aria-label="email"
+		>
+			<Button style={'primary'} size={'lg'} class={'flex'} name="contact">
+				Contact me
+			</Button>
+		</a>
 	</div>
 </section>

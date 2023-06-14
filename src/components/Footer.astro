@@ -1,5 +1,19 @@
-<footer data-testid="footer" class="p-6 text-center text-sm text-black dark:text-light">
-	<p>
-		Made with 🤘 in Leipzig, Germany, {new Date().getFullYear()}. Give credit if you steal.
-	</p>
+---
+import Button from '@components/ui/Button.astro'
+import Social from '@components/ui/Social.astro'
+import Copyright from './Copyright.astro'
+---
+
+<footer
+	data-testid="footer"
+	id="footer"
+	class="grid place-items-center gap-8 lg:mb-0 lg:mt-16"
+>
+	<!-- <Button size={'lg'} style={'primary'} name="Contact">Say hello!</Button> -->
+	<hr class="mx-auto w-1/2" />
+	<address class="mb-16 grid place-items-center gap-8">
+		<Button block={true} class="self-center" size="lg">Contact me</Button>
+		<Social />
+	</address>
+	<Copyright />
 </footer>

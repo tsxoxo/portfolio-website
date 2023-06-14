@@ -13,6 +13,10 @@ const {
 } = Astro.props.project
 
 const imageUrl = `/project-previews/${image.filename}.png`
+const primaryLink = {
+	href: links.live || links.repo,
+	ariaLabel: links.live ? 'Link to live demo' : 'Link to repo'
+}
 ---
 
 <project-card class="rounded-md border border-black bg-light shadow-md">
@@ -49,17 +53,15 @@ const imageUrl = `/project-previews/${image.filename}.png`
 			loading="eager"
 		/> -->
 		<div class="flex h-auto items-baseline justify-between">
-			<a href={links.live} aria-label="link to repo">
-				<h3 class="text-xl underline decoration-black lg:text-2xl">
-					{title}
-				</h3>
-			</a>
 			<a
-				href={links.live}
-				aria-label="link to project"
+				href={primaryLink.href}
+				aria-label={primaryLink.ariaLabel}
 				target="_blank"
 				rel="noopener"
 			>
+				<h3 class="text-xl underline decoration-black lg:text-2xl">
+					{title}
+				</h3>
 			</a>
 			<button class="button-base button-outlined">
 				<span class="">{t('home.projects.card.link-primary')}</span>

@@ -8,15 +8,11 @@ import ContactButton from './ui/ContactButton.astro'
 const menuitems = [
 	{
 		title: 'About',
-		path: '#about'
+		path: '#hero'
 	},
 	{
 		title: 'Projects',
 		path: '#projects'
-	},
-	{
-		title: 'Contact',
-		path: '#contact'
 	},
 	{
 		title: 'CV',
@@ -32,17 +28,17 @@ const menuitems = [
 
 <header
 	data-testId="header"
-	class="my-5 flex flex-col items-center justify-between lg:flex-row"
+	class="my-5 flex flex-col items-baseline justify-between lg:flex-row"
 >
 	<Astronav>
-		<div class="flex w-full items-center justify-between lg:w-auto">
+		<div class="flex w-full items-baseline justify-between lg:w-auto">
 			<!-- <Button size={'sm'} name="Download CV">Download CV</Button> -->
 			<div class="block lg:hidden">
 				<MenuIcon class="h-4 w-4 text-black dark:text-light" />
 			</div>
 		</div>
 		<MenuItems class="mt-2 hidden w-full lg:mt-0 lg:flex lg:w-auto">
-			<ul class="flex flex-col lg:flex-row lg:gap-3">
+			<ul class="flex flex-col items-baseline lg:flex-row lg:gap-3">
 				{
 					menuitems.map((item) => (
 						<>
@@ -63,7 +59,6 @@ const menuitems = [
 					<LanguageSelector showFlag={true} class="my-select-class" />
 				</li> -->
 
-				<li class="py-2"><ToggleTheme /></li>
 				<li>
 					<ContactButton />
 				</li>

@@ -1,8 +1,7 @@
 ---
-import heroImage from '@assets/images/hero.png'
 import { Image } from '@astrojs/image/components'
-import Button from '@components/ui/Button.astro'
 import { Trans, HeadHrefLangs } from 'astro-i18next/components'
+import ContactButton from './ui/ContactButton.astro'
 ---
 
 <section data-testid="hero" class="mb-16">
@@ -24,15 +23,6 @@ import { Trans, HeadHrefLangs } from 'astro-i18next/components'
 		<p class="spacing-heading-body">SLOT 1 for i18n</p>
 	</Trans>
 	<div class="">
-		<a
-			href="mailto:tomszwadesign@gmail.com?subject=An offer You can't refuse&body=Hey Tom,%0A%0AI was just on your site and..."
-			target="_blank"
-			rel="noopener"
-			aria-label="email"
-		>
-			<Button style={'primary'} size={'lg'} class={'flex'} name="contact">
-				Contact me
-			</Button>
-		</a>
+		<ContactButton />
 	</div>
 </section>

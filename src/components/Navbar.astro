@@ -1,22 +1,22 @@
 ---
-import Button from '@components/ui/Button.astro';
-import ToggleTheme from '@components/ui/ToggleTheme.astro';
-import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
-import { LanguageSelector } from 'astro-i18next/components';
-import i18next from 'i18next';
+import ToggleTheme from '@components/ui/ToggleTheme.astro'
+import { Astronav, MenuIcon, MenuItems } from 'astro-navbar'
+import { LanguageSelector } from 'astro-i18next/components'
+import i18next from 'i18next'
+import ContactButton from './ui/ContactButton.astro'
 
 const menuitems = [
 	{
 		title: 'About',
-		path: '#about',
+		path: '#about'
 	},
 	{
 		title: 'Projects',
-		path: '#projects',
+		path: '#projects'
 	},
 	{
 		title: 'Contact',
-		path: '#contact',
+		path: '#contact'
 	},
 	{
 		title: 'CV',
@@ -24,13 +24,16 @@ const menuitems = [
 		attributes: {
 			type: 'application/pdf',
 			rel: 'author',
-			hreflang: `${i18next.language}`,
-		},
-	},
-];
+			hreflang: `${i18next.language}`
+		}
+	}
+]
 ---
 
-<header data-testId="header" class="my-5 flex flex-col items-center justify-between lg:flex-row">
+<header
+	data-testId="header"
+	class="my-5 flex flex-col items-center justify-between lg:flex-row"
+>
 	<Astronav>
 		<div class="flex w-full items-center justify-between lg:w-auto">
 			<!-- <Button size={'sm'} name="Download CV">Download CV</Button> -->
@@ -48,7 +51,7 @@ const menuitems = [
 									aria-label="navigation link"
 									{...(item.attributes || {})}
 									href={item.path}
-									class="hover:text-accent dark:hover:text-accent flex py-2 text-black dark:text-light lg:px-3"
+									class="flex py-2 text-black hover:text-accent dark:text-light dark:hover:text-accent lg:px-3"
 								>
 									{item.title}
 								</a>
@@ -56,11 +59,14 @@ const menuitems = [
 						</>
 					))
 				}
-				<li class="py-2">
+				<!-- <li class="py-2">
 					<LanguageSelector showFlag={true} class="my-select-class" />
-				</li>
+				</li> -->
 
 				<li class="py-2"><ToggleTheme /></li>
+				<li>
+					<ContactButton />
+				</li>
 			</ul>
 		</MenuItems>
 	</Astronav>

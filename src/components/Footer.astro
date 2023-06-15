@@ -1,7 +1,7 @@
 ---
-import Button from '@components/ui/Button.astro'
 import Social from '@components/ui/Social.astro'
 import Copyright from './Copyright.astro'
+import ContactButton from './ui/ContactButton.astro'
 ---
 
 <footer
@@ -11,8 +11,8 @@ import Copyright from './Copyright.astro'
 >
 	<!-- <Button size={'lg'} style={'primary'} name="Contact">Say hello!</Button> -->
 	<hr class="mx-auto w-1/2" />
-	<address class="mb-16 grid place-items-center gap-8">
-		<Button block={true} class="self-center" size="lg">Contact me</Button>
+	<address class="mb-16 grid place-items-center gap-8 not-italic">
+		<ContactButton />
 		<Social />
 	</address>
 	<Copyright />

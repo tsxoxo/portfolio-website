@@ -9,6 +9,14 @@
 		gap: 4rem;
 	}
 
+	br {
+		margin-bottom: 12rem;
+	}
+
+	#hero p {
+		margin-bottom: 1rem;
+	}
+
 	@font-face {
 		font-family: 'Karla';
 		font-weight: 400;

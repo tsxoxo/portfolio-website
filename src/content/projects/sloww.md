@@ -5,7 +5,7 @@ description: This is a website, a deployment setup and an editing workflow, deve
 tags:
     {
         skills: [consulting, deploying, coaching],
-        tech: [builder.io, Astro.js, devops]
+        tech: [builder.io, astro.js, devops]
     }
 links:
     { repo: https://github.com/Return180bpm/sloww.org, live: https://sloww.org }

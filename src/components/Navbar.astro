@@ -28,16 +28,18 @@ const menuitems = [
 
 <header
 	data-testId="header"
-	class="mb-4 mt-8 flex flex-col items-baseline justify-between lg:flex-row"
+	class="mb-16 mt-8 flex flex-col items-baseline justify-between lg:mb-32 lg:flex-row"
 >
 	<Astronav>
 		<div class="flex w-full items-baseline justify-between lg:w-auto">
-			<!-- <Button size={'sm'} name="Download CV">Download CV</Button> -->
+			<a href="/" class=""
+				><span class="text-zinc-500">Tom Szwaja</span></a
+			>
 			<div class="block lg:hidden">
 				<MenuIcon class="h-4 w-4 text-black dark:text-light" />
 			</div>
 		</div>
-		<MenuItems class="mt-2 hidden w-full lg:mt-0 lg:flex lg:w-auto">
+		<MenuItems class="hidden w-full lg:flex lg:w-auto">
 			<ul class="flex flex-col items-baseline lg:flex-row lg:gap-3">
 				{
 					menuitems.map((item) => (

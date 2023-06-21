@@ -8,6 +8,13 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		extend: {
+			fontSize: {
+				'fluid--1': 'clamp(0.80rem, calc(0.75rem + 0.22vw), 0.93rem)',
+				'fluid-0': 'clamp(1.00rem, calc(0.79rem + 0.88vw), 1.50rem)',
+				'fluid-1': 'clamp(1.25rem, calc(0.76rem + 2.08vw), 2.43rem)',
+				'fluid-2': 'clamp(1.56rem, calc(0.58rem + 4.18vw), 3.93rem)',
+				'fluid-3': 'clamp(1.95rem, calc(0.66rem + 5.50vw), 5.06rem)'
+			},
 			fontFamily: {
 				sans: ['Karla', ...defaultTheme.fontFamily.sans]
 			}

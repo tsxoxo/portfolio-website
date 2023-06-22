@@ -4448,6 +4448,10 @@ synckit@^0.8.4:
     "@pkgr/utils" "^2.3.1"
     tslib "^2.5.0"
 
+tailwind-utopia@cwsdigital/tailwind-utopia:
+  version "1.0.4"
+  resolved "https://codeload.github.com/cwsdigital/tailwind-utopia/tar.gz/23d8bf7db5434dd61af37ff01da70ab887a19c57"
+
 tailwindcss@^3.0.24:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.3.2.tgz#2f9e35d715fdf0bbf674d90147a0684d7054a2d3"

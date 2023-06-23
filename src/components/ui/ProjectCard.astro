@@ -11,8 +11,11 @@ interface Props {
 }
 
 const {
-	data: { title, description, tags, links, image, id }
-} = Astro.props.project
+	project: {
+		data: { title, description, tags, links, image }
+	},
+	id
+} = Astro.props
 
 const imageUrl = `/project-previews/${image.filename}.png`
 const primaryLink = {

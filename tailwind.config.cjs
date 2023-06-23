@@ -17,6 +17,14 @@ module.exports = {
 			},
 			fontFamily: {
 				sans: ['Karla', ...defaultTheme.fontFamily.sans]
+			},
+			spacing: {
+				'space-fl-s': 'var(--space-s)',
+				'space-fl-m': 'var(--space-m)',
+				'space-fl-l': 'var(--space-l)',
+				'space-fl-xl': 'var(--space-xl)',
+				'space-fl-2xl': 'var(--space-2xl)',
+				'space-fl-3xl': 'var(--space-3xl)'
 			}
 		},
 		screens: {
@@ -47,11 +55,11 @@ module.exports = {
 	plugins: [
 		plugin(function ({ addBase, theme }) {
 			addBase({
-				h1: { lineHeight: '1.2' },
+				h1: { lineHeight: '1.2', fontWeight: '800' },
 				h2: {
 					lineHeight: '1.2',
 					letterSpacing: theme('letterSpacing.wide'),
-					fontWeight: 'bold'
+					fontWeight: '700'
 				},
 				li: {
 					letterSpacing: theme('letterSpacing.wide')

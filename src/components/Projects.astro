@@ -6,18 +6,14 @@ import { t } from 'i18next'
 const projects = await getCollection('projects')
 ---
 
-<section
-	data-testid="projects"
-	id="projects"
-	class="mb-16 flex flex-col md:mb-16"
->
-	<h2 class="spacing-heading-subheading text-fl-xl">
-		{t('home.projects.heading')}
-	</h2>
-	<p class="spacing-heading-body text-fl-base">
-		The things that left a mark.
-	</p>
-	<div class="mb-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<section data-testid="projects" id="projects" class="grid gap-space-fl-xl">
+	<div class="grid gap-space-fl-s">
+		<h2 class="text-fl-xl">
+			{t('home.projects.heading')}
+		</h2>
+		<p class="text-fl-base">The things that left a mark.</p>
+	</div>
+	<div class="grid grid-cols-1 gap-space-fl-2xl sm:grid-cols-2 lg:grid-cols-3">
 		{
 			// Array(6)
 			// 	.fill(projects[0], 0)

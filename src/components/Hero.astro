@@ -8,34 +8,28 @@ import heroImage from '@assets/images/me-bw.jpeg'
 
 <section
 	data-testid="hero"
-	class="mb-16 lg:grid lg:grid-flow-col lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:gap-16"
+	class="grid gap-space-fl-m lg:grid-flow-col lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]"
 	id="hero"
 >
-	<div class="">
-		<Trans i18nKey="home.hero">
-			<h1
-				class="spacing-heading-subheading tracking-tighter text-fl-2xl font-black"
-			>
-				SLOT 0 for i18n
-			</h1>
-			<div class="mb-6 text-fl-base">SLOT 1 for i18n</div>
-		</Trans>
-		<div class="">
-			<ContactButton />
-		</div>
-		<div
-			data-testid="hero-img"
-			class="hidden h-0 min-h-full overflow-auto lg:block"
-		>
-			<Picture
-				src={heroImage}
-				alt="Tom Szwaja"
-				widths={[400, 640]}
-				sizes="33vw"
-				aspectRatio="1395 :1887"
-				loading="eager"
-				class="h-full w-full object-cover object-top"
-			/>
-		</div>
+	<Trans i18nKey="home.hero">
+		<h1 class="text-fl-2xl">SLOT 0 for i18n</h1>
+		<div class="text-fl-base">SLOT 1 for i18n</div>
+	</Trans>
+	<div>
+		<ContactButton />
+	</div>
+	<div
+		data-testid="hero-img"
+		class="hidden h-0 min-h-full overflow-auto lg:block"
+	>
+		<Picture
+			src={heroImage}
+			alt="Tom Szwaja"
+			widths={[400, 640]}
+			sizes="33vw"
+			aspectRatio="1395 :1887"
+			loading="eager"
+			class="h-full w-full object-cover object-top"
+		/>
 	</div>
 </section>

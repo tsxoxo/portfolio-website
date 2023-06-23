@@ -25,12 +25,12 @@ const primaryLink = {
 ---
 
 <project-card
-	class="rounded-md border border-black bg-light shadow-md"
+	class="rounded-sm border border-black bg-light shadow-md"
 	data-title={id}
 >
 	<article
 		data-testId="card"
-		class="relative flex flex-col gap-4 rounded-md p-4"
+		class="relative flex flex-col gap-4 rounded-sm p-4"
 	>
 		<ProjectCardOverlay
 			{description}
@@ -39,17 +39,15 @@ const primaryLink = {
 			repoURL={links.repo}
 			projectTitle={id}
 		/>
-		<div class="relative">
-			<Picture
-				src={import(
-					`../../assets/images/project-previews/${image.filename}.png`
-				)}
-				alt={image.alt}
-				widths={[400, 640]}
-				sizes="(min-width: 640px) 46vw, (min-width: 1024px) 30vw,  96vw"
-				class="aspect-square w-full object-cover object-top"
-			/>
-		</div>
+		<Picture
+			src={import(
+				`../../assets/images/project-previews/${image.filename}.png`
+			)}
+			alt={image.alt}
+			widths={[400, 640]}
+			sizes="(min-width: 640px) 46vw, (min-width: 1024px) 30vw,  96vw"
+			class="aspect-square w-full object-cover object-top"
+		/>
 
 		<!-- <Image
 			class="rounded-md"
@@ -88,10 +86,6 @@ const primaryLink = {
 
 			const button = this.querySelector('button')
 			const overlay = this.querySelector(`#overlay-${this.dataset.title}`)
-
-			console.log(button)
-			console.log(`#overlay-${this.dataset.title}`)
-			console.log(overlay)
 
 			// imageWrapper?.addEventListener('click', (event) => {
 			// 	event.stopPropagation()

@@ -21,7 +21,7 @@ const projects = await getCollection('projects')
 		{
 			// Array(6)
 			// 	.fill(projects[0], 0)
-			projects.map((project) => <ProjectCard {project} />)
+			projects.map((project, i) => <ProjectCard {project} id={i} />)
 		}
 	</div>
 	<!-- <a

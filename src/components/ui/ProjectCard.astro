@@ -7,10 +7,11 @@ import ProjectCardOverlay from './ProjectCardOverlay.astro'
 
 interface Props {
 	project: CollectionEntry<'projects'>
+	id: number
 }
 
 const {
-	data: { title = 'Project title', description, tags, links, image }
+	data: { title, description, tags, links, image, id }
 } = Astro.props.project
 
 const imageUrl = `/project-previews/${image.filename}.png`
@@ -20,15 +21,22 @@ const primaryLink = {
 }
 ---
 
-<project-card class="rounded-md border border-black bg-light shadow-md">
-	<article data-testId="card" class="flex flex-col gap-4 rounded-md p-4">
+<project-card
+	class="rounded-md border border-black bg-light shadow-md"
+	data-title={id}
+>
+	<article
+		data-testId="card"
+		class="relative flex flex-col gap-4 rounded-md p-4"
+	>
+		<ProjectCardOverlay
+			{description}
+			skill_tags={tags.skills}
+			tech_tags={tags.tech}
+			repoURL={links.repo}
+			projectTitle={id}
+		/>
 		<div class="relative">
-			<ProjectCardOverlay
-				{description}
-				skill_tags={tags.skills}
-				tech_tags={tags.tech}
-				repoURL={links.repo}
-			/>
 			<Picture
 				src={import(
 					`../../assets/images/project-previews/${image.filename}.png`
@@ -75,8 +83,12 @@ const primaryLink = {
 			const image = this.querySelector('img')
 			// const imageWrapper = this.querySelector('.image-wrapper')
 
-			const button = this.querySelector('.button-base')
-			const overlay = this.querySelector('.description-overlay')
+			const button = this.querySelector('button')
+			const overlay = this.querySelector(`#overlay-${this.dataset.title}`)
+
+			console.log(button)
+			console.log(`#overlay-${this.dataset.title}`)
+			console.log(overlay)
 
 			// imageWrapper?.addEventListener('click', (event) => {
 			// 	event.stopPropagation()

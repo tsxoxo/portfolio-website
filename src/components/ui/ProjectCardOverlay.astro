@@ -6,13 +6,16 @@ interface Props {
 	skill_tags: string[]
 	tech_tags: string[]
 	repoURL: string
+	projectTitle: number
 }
 
-const { description, skill_tags, tech_tags, repoURL } = Astro.props
+const { description, skill_tags, tech_tags, repoURL, projectTitle } =
+	Astro.props
 ---
 
 <div
-	class="description-overlay invisible absolute z-10 flex h-full w-full flex-col justify-between border-b border-zinc-950 bg-light pb-4 font-light opacity-0 transition-all duration-300"
+	id={`overlay-${projectTitle}`}
+	class="invisible absolute z-10 flex h-full w-full flex-col justify-between border-b border-zinc-950 bg-light pb-4 font-light opacity-0 transition-all duration-300"
 >
 	<div class="grid gap-2 text-fl-sm text-zinc-500">
 		<div class="flex gap-8">

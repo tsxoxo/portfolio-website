@@ -9,17 +9,18 @@ module.exports = {
 	theme: {
 		extend: {
 			fontSize: {
-				'fluid--1': 'clamp(0.80rem, calc(0.75rem + 0.22vw), 0.93rem)',
-				'fluid-0': 'clamp(1.00rem, calc(0.79rem + 0.88vw), 1.50rem)',
-				'fluid-1': 'clamp(1.25rem, calc(0.76rem + 2.08vw), 2.43rem)',
-				'fluid-2': 'clamp(1.56rem, calc(0.58rem + 4.18vw), 3.93rem)',
-				'fluid-3': 'clamp(1.95rem, calc(0.66rem + 5.50vw), 5.06rem)'
+				'fl-sm': 'var(--step--1)',
+				'fl-base': 'var(--step-0)',
+				'fl-lg': 'var(--step-1)',
+				'fl-xl': 'var(--step-2)',
+				'fl-2xl': 'var(--step-3)'
 			},
 			fontFamily: {
 				sans: ['Karla', ...defaultTheme.fontFamily.sans]
 			}
 		},
 		screens: {
+			'utopia-min': '320px',
 			xs: '480px',
 			sm: '640px',
 			md: '768px',
@@ -38,18 +39,6 @@ module.exports = {
 		},
 		fontFamily: {
 			monospace: ['Inconsolata', 'monospace']
-		},
-		fontSize: {
-			xs: '.75rem',
-			sm: '.875rem',
-			tiny: '.875rem',
-			base: '1rem',
-			lg: '1.125rem',
-			xl: '1.25rem',
-			'2xl': '1.5rem',
-			'3xl': '1.875rem',
-			'4xl': '2.25rem',
-			'5xl': '3rem'
 		},
 		letterSpacing: {
 			wide: '.025em'

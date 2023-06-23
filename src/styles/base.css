@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--step--1: clamp(0.75rem, calc(0.65rem + 0.52vw), 1.06rem);
+	--step-0: clamp(1rem, calc(0.83rem + 0.83vw), 1.5rem);
+	--step-1: clamp(1.33rem, calc(1.07rem + 1.31vw), 2.12rem);
+	--step-2: clamp(1.78rem, calc(1.37rem + 2.04vw), 3rem);
+	--step-3: clamp(2.37rem, calc(1.74rem + 3.12vw), 4.24rem);
+}
+
 @layer base {
 	.projects-grid {
 		display: grid;

@@ -1,43 +1,14 @@
 ---
-interface Props {
-	size?: 'sm' | 'md' | 'lg'
-	block?: boolean
-	style?: 'primary'
-	class?: string
-	[x: string]: any
-}
-
-const {
-	size = 'md',
-	style = 'primary',
-	block,
-	class: className,
-	...rest
-} = Astro.props
-
-const sizes = {
-	sm: 'px-4 py-1.5',
-	md: 'px-5 py-2.5',
-	lg: 'px-6 py-3'
-}
-
-const styles = {
-	primary: 'bg-black text-light hover:bg-accent  border-2 border-transparent'
-}
+import Button from '@components/ui/Button.astro'
+import { t } from 'i18next'
 ---
 
-<a
+<Button
+	as="a"
 	href={encodeURI("mailto:tomszwadesign@gmail.com?subject=Let's be friends!")}
 	target="_blank"
 	rel="noopener"
 	aria-label="email"
-	{...rest}
-	class:list={[
-		'button-base text-center transition focus-visible:ring-2 ring-offset-2 ring-accent max-w-fit inline-block',
-		block && 'w-full',
-		sizes[size],
-		styles[style],
-		className
-	]}
-	>Contact me
-</a>
+>
+	{t('site.contactButton')}
+</Button>

@@ -52,15 +52,6 @@
 }
 
 @layer components {
-	.button-base {
-		@apply inline-block rounded-sm px-5 py-3 text-fl-base font-light;
-	}
-	.button-filled {
-		@apply bg-black  text-light hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75;
-	}
-	.button-outlined {
-		@apply border border-black text-black hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75;
-	}
 	.spacing-heading-body {
 		@apply mb-8 lg:mb-12;
 	}

@@ -2,7 +2,8 @@
 	"site": {
 		"title": "My awesome website!",
 		"defaultTitle": "Tom Szwaja | Web Person",
-		"description": "Here is the description of my awesome website!"
+		"description": "Here is the description of my awesome website!",
+		"contactButton": "Contact me"
 	},
 	"home": {
 		"title": "Tom Szwaja Web Person",

@@ -49,6 +49,7 @@ module.exports = {
 			addBase({
 				h1: { lineHeight: '1.2' },
 				h2: {
+					lineHeight: '1.2',
 					letterSpacing: theme('letterSpacing.wide'),
 					fontWeight: 'bold'
 				},

@@ -47,6 +47,7 @@ module.exports = {
 	plugins: [
 		plugin(function ({ addBase, theme }) {
 			addBase({
+				h1: { lineHeight: '1.2' },
 				h2: {
 					letterSpacing: theme('letterSpacing.wide'),
 					fontWeight: 'bold'

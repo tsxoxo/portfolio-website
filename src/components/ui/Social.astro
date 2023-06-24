@@ -1,29 +1,44 @@
 ---
 import { Icon } from 'astro-icon'
+
+const socials = [
+	{
+		label: 'LinkedIn',
+		link: 'https://www.linkedin.com/in/tomszwa',
+		icon: 'simple-line-icons:social-linkedin'
+	},
+	{
+		label: 'Github',
+		link: 'https://github.com/return180bpm',
+		icon: 'simple-line-icons:social-github'
+	}
+]
 ---
 
-<div class="flex justify-center gap-8">
-	<a
-		href="https://github.com/return180bpm"
-		target="_blank"
-		rel="noopener"
-		aria-label="github"
-		><Icon
-			class="h-8 hover:text-accent dark:hover:text-accent md:h-12"
-			name="simple-line-icons:social-github"
-		/></a
-	>
-	<a
-		href="https://www.linkedin.com/in/tomszwa"
-		target="_blank"
-		rel="noopener"
-		aria-label="linkedin"
-		><Icon
-			class="h-8 hover:text-accent dark:hover:text-accent md:h-12"
-			name="simple-line-icons:social-linkedin"
-		/></a
-	>
-	<a
+<address class="grid w-full place-items-center gap-space-fl-xl not-italic">
+	<h2 class="text-fl-lg font-bold">Social</h2>
+	<div class="grid place-items-center gap-space-fl-s">
+		{
+			socials.map(({ label, link, icon }) => (
+				<div class="flex w-max items-center justify-center">
+					<a
+						class="flex w-max items-end justify-center gap-space-fl-s p-space-fl-m"
+						href={link}
+						target="_blank"
+						rel="noopener"
+						aria-label={label}
+					>
+						<Icon
+							class="h-space-fl-m hover:text-accent dark:hover:text-accent"
+							name={icon}
+						/>
+						<span>{label}</span>
+					</a>
+				</div>
+			))
+		}
+
+		<!-- <a
 		href="https://twitter.com/tomszwa"
 		target="_blank"
 		rel="noopener"
@@ -32,8 +47,8 @@ import { Icon } from 'astro-icon'
 			class="h-8 hover:text-accent dark:hover:text-accent md:h-12"
 			name="simple-line-icons:social-twitter"
 		/></a
-	>
-	<!-- <a
+	> -->
+		<!-- <a
 		href="mailto:tomszwadesign@gmail.com?subject=An offer You can't refuse&body=Hey Tom,%0A%0AI was just on your site and..."
 		target="_blank"
 		rel="noopener"
@@ -43,4 +58,5 @@ import { Icon } from 'astro-icon'
 			name="simple-line-icons:envelope"
 		/></a
 	> -->
-</div>
+	</div>
+</address>

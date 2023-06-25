@@ -1,6 +1,7 @@
 ---
 import { Picture } from '@astrojs/image/components'
 import { Trans, HeadHrefLangs } from 'astro-i18next/components'
+import { t } from 'i18next'
 import ContactButton from './ui/ContactButton.astro'
 
 import heroImage from '@assets/images/me-bw.jpeg'
@@ -11,10 +12,11 @@ import heroImage from '@assets/images/me-bw.jpeg'
 	class="grid gap-space-fl-m lg:grid-flow-col lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]"
 	id="hero"
 >
-	<Trans i18nKey="home.hero">
-		<h1 class="text-fl-2xl">SLOT 0 for i18n</h1>
+	<h1 class="text-fl-2xl">{t('home.hero.heading')}</h1>
+	<Trans i18nKey="home.hero.text">
 		<div class="text-fl-base">SLOT 1 for i18n</div>
 	</Trans>
+	{t('home.hero.cta')}
 	<div>
 		<ContactButton />
 	</div>

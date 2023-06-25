@@ -7,14 +7,18 @@
 	},
 	"home": {
 		"title": "Tom Szwaja Web Person",
-		"hero": "<0>Hi, I'm Tom.</0> <1><p>I have been building things on the internet since 2020.</p><p> I have developed apps. Set up websites. Taught regular people how to maintain them. Written technical guides in a way that is understandable to beginners. Made things a little more accessible. Dived into the nitty gritty of what makes the internet.</p><p>I've asked many questions and keep coming back to some of them: Who are the people I am designing for? How do I find out? And how can I make their lives a little easier?</p><p> Now. What can I do for you?</p></1>",
+		"hero": {
+			"heading": "Hi, I'm Tom",
+			"text": "<p>I design user experiences,</p><p>build websites,</p><p>and help people maintain them.</p>",
+			"cta": "What can I do for you?"
+		},
 		"projects": {
 			"heading": "Projects",
 			"subheading": "Things that left a mark",
 			"card": {
 				"link-more": "Details",
-				"link-primary": "Learn more",
-				"link-in-overlay": "Learn even more"
+				"link-primary": "Details",
+				"link-in-overlay": "Project repo"
 			}
 		}
 	},

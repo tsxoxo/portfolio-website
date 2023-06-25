@@ -1,9 +1,14 @@
-<div
-	data-testid="footer"
-	class="text-center text-fl-sm text-black dark:text-light"
->
-	<p>
-		Made with 🤘 in Leipzig, Germany, {new Date().getFullYear()}.
-	</p>
-	<p>Give credit if you steal.</p>
+---
+import { t } from 'i18next'
+---
+
+<div class="grid place-items-center gap-space-fl-l text-black dark:text-light">
+	<p set:html={t('footer.made')} />
+	<a
+		class="underline"
+		href={import.meta.env.SITE_REPO_URL}
+		target="_blank"
+		rel="noopener"
+		aria-label={t('footer.repo')}>{t('footer.repo')}</a
+	>
 </div>

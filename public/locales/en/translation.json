@@ -17,5 +17,9 @@
 				"link-in-overlay": "Learn even more"
 			}
 		}
+	},
+	"footer": {
+		"made": "Made with 🤘 by Tom Szwaja<br>using Astro, Utopia.",
+		"repo": "Site repo"
 	}
 }

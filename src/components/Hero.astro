@@ -9,14 +9,16 @@ import heroImage from '@assets/images/me-bw.jpeg'
 
 <section
 	data-testid="hero"
-	class="grid gap-space-fl-m lg:grid-flow-col lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]"
+	class="-mt-space-fl-xl grid gap-space-fl-xl lg:grid-flow-col lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]"
 	id="hero"
 >
 	<h1 class="text-fl-2xl">{t('home.hero.heading')}</h1>
-	<Trans i18nKey="home.hero.text">
-		<div class="text-fl-base">SLOT 1 for i18n</div>
-	</Trans>
-	{t('home.hero.cta')}
+	<div class="grid gap-space-fl-2xl">
+		<Trans i18nKey="home.hero.text">
+			<div class="grid gap-space-fl-l"></div>
+		</Trans>
+		<p>{t('home.hero.cta')}</p>
+	</div>
 	<div>
 		<ContactButton />
 	</div>

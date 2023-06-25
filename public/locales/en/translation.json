@@ -9,7 +9,7 @@
 		"title": "Tom Szwaja Web Person",
 		"hero": {
 			"heading": "Hi, I'm Tom",
-			"text": "<p>I design user experiences,</p><p>build websites,</p><p>and help people maintain them.</p>",
+			"text": "<0><p>I design user experiences,</p><p>build websites,</p><p>and help people maintain them.</p></0>",
 			"cta": "What can I do for you?"
 		},
 		"projects": {

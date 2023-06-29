@@ -37,7 +37,8 @@ module.exports = {
 		},
 		colors: {
 			black: '#000',
-			light: '#FDFDFD',
+			grey: 'hsla(180, 2%, 26%, 1)',
+			light: 'hsla(176, 36%, 97%, 1)',
 			accent: '#E06330',
 			zinc: colors.zinc
 		},

@@ -25,15 +25,10 @@ const { description, skill_tags, tech_tags, repoURL, projectTitle } =
 			{tech_tags.map((tech) => <span>{tech}</span>)}
 		</div>
 	</div>
-	<p class="text-fl-base">
+	<p>
 		{description}
 	</p>
-	<a
-		href={repoURL}
-		aria-label="Link to repo"
-		target="_blank"
-		class="text-fl-base underline"
-	>
+	<a href={repoURL} aria-label="Link to repo" target="_blank">
 		{t('home.projects.card.link-in-overlay')}
 	</a>
 </div>

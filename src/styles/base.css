@@ -48,6 +48,10 @@
 		margin-bottom: var(--step-0);
 	}
 
+	hgroup > p {
+		@apply text-fl-lg;
+	}
+
 	@font-face {
 		font-family: 'Karla';
 		font-weight: 400;

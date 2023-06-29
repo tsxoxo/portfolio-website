@@ -9,7 +9,9 @@
 		"title": "Tom Szwaja Web Person",
 		"hero": {
 			"heading": "Hi, I'm Tom",
-			"text": "<0><p>I design user experiences,</p><p>build websites,</p><p>and help people maintain them.</p></0>",
+			"subheading": "Making the web friendlier, one website at a time.",
+			"what-paragraphs": "<0><p>I design user experiences,</p><p>build websites,</p><p>and help people maintain them.</p></0>",
+			"what-raw": "I design user experiences,  build websites and help people maintain them.",
 			"cta": "What can I do for you?"
 		},
 		"projects": {
@@ -23,7 +25,7 @@
 		}
 	},
 	"footer": {
-		"made": "Made with 🤘 by Tom Szwaja<br>using Astro, Utopia.",
+		"made": "<p>Made with 🤘 by Tom Szwaja</p><p>using Astro, Utopia.</p>",
 		"repo": "Site repo"
 	}
 }

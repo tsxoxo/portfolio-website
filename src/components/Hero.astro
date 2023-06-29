@@ -9,19 +9,19 @@ import heroImage from '@assets/images/me-bw.jpeg'
 
 <section
 	data-testid="hero"
-	class="grid gap-space-fl-xl leading-relaxed lg:grid-flow-col lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]"
+	class="grid leading-relaxed lg:grid-flow-col lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]"
 	id="hero"
 >
-	<hgroup class="grid gap-space-fl-s">
-		<h1 class="text-fl-2xl">{t('home.hero.heading')}</h1>
-		<p class="text-grey">{t('home.hero.subheading')}</p>
-	</hgroup>
-
-	<p class="leading-loose">{t('home.hero.what-raw')}</p>
-	<p>{t('home.hero.cta')}</p>
-
-	<div>
-		<ContactButton />
+	<div class="grid gap-space-fl-xl lg:col-span-2">
+		<hgroup class="grid gap-space-fl-s">
+			<h1 class="text-fl-2xl">{t('home.hero.heading')}</h1>
+			<p class="text-grey">{t('home.hero.subheading')}</p>
+		</hgroup>
+		<p class="leading-loose">{t('home.hero.what-raw')}</p>
+		<p>{t('home.hero.cta')}</p>
+		<div>
+			<ContactButton />
+		</div>
 	</div>
 	<div
 		data-testid="hero-img"

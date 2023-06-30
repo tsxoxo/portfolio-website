@@ -24,7 +24,8 @@ module.exports = {
 				'space-fl-l': 'var(--space-l)',
 				'space-fl-xl': 'var(--space-xl)',
 				'space-fl-2xl': 'var(--space-2xl)',
-				'space-fl-3xl': 'var(--space-3xl)'
+				'space-fl-3xl': 'var(--space-3xl)',
+				'space-fl-2xl-3xl': 'var(--space-2xl-3xl)'
 			}
 		},
 		screens: {

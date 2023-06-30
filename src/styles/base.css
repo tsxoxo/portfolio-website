@@ -47,7 +47,9 @@
 	#hero p :not(:last-child) {
 		margin-bottom: var(--step-0);
 	}
-
+	#techstack {
+		@apply font-monospace;
+	}
 	hgroup > p {
 		@apply text-fl-lg;
 	}

@@ -25,6 +25,7 @@ module.exports = {
 				'space-fl-xl': 'var(--space-xl)',
 				'space-fl-2xl': 'var(--space-2xl)',
 				'space-fl-3xl': 'var(--space-3xl)',
+				'space-fl-xl-2xl': 'var(--space-xl-2xl)',
 				'space-fl-2xl-3xl': 'var(--space-2xl-3xl)'
 			}
 		},

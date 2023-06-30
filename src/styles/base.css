@@ -37,7 +37,7 @@
 	a,
 	p,
 	button,
-	span {
+	span :not(.tags > *) {
 		@apply text-fl-base;
 	}
 	a:not(.logo, .button) {

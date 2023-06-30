@@ -19,6 +19,7 @@ module.exports = {
 				sans: ['Karla', ...defaultTheme.fontFamily.sans]
 			},
 			spacing: {
+				'space-fl-xs': 'var(--space-xs)',
 				'space-fl-s': 'var(--space-s)',
 				'space-fl-m': 'var(--space-m)',
 				'space-fl-l': 'var(--space-l)',

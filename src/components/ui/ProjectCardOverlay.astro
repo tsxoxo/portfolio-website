@@ -17,11 +17,13 @@ const { description, skill_tags, tech_tags, repoURL, projectTitle } =
 	id={`overlay-${projectTitle}`}
 	class="invisible absolute inset-0 z-10 flex flex-col items-start justify-between rounded-sm bg-light p-4 opacity-0 transition-all duration-300"
 >
-	<div class="grid gap-2 text-fl-sm text-zinc-500">
-		<div class="flex gap-8">
+	<div
+		class="tags grid max-w-full gap-space-fl-m overflow-clip text-fl-sm text-zinc-500"
+	>
+		<div class="flex flex-wrap gap-space-fl-m">
 			{skill_tags.map((skill) => <span>{skill}</span>)}
 		</div>
-		<div class="flex gap-8 font-monospace">
+		<div class="flex flex-wrap gap-space-fl-m font-monospace">
 			{tech_tags.map((tech) => <span>{tech}</span>)}
 		</div>
 	</div>

@@ -7,12 +7,12 @@ const projects = await getCollection('projects')
 ---
 
 <section data-testid="projects" id="projects" class="grid gap-space-fl-xl">
-	<div class="grid gap-space-fl-s">
+	<hgroup>
 		<h2 class="text-fl-xl">
 			{t('home.projects.heading')}
 		</h2>
-		<p>The things that left a mark.</p>
-	</div>
+		<p class="text-fl-base">The things that left a mark.</p>
+	</hgroup>
 	<div class="grid grid-cols-1 gap-space-fl-2xl sm:grid-cols-2">
 		{
 			// Array(6)

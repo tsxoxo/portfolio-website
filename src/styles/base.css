@@ -50,8 +50,11 @@
 	#techstack {
 		@apply font-monospace;
 	}
+	hgroup {
+		@apply grid gap-space-fl-2xs;
+	}
 	hgroup > p {
-		@apply text-fl-lg;
+		@apply font-extralight;
 	}
 
 	@font-face {

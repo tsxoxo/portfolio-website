@@ -25,13 +25,10 @@ const primaryLink = {
 }
 ---
 
-<project-card
-	class="rounded-sm border border-zinc-900 bg-light shadow-md"
-	data-title={id}
->
+<project-card class="border border-zinc-900 bg-light shadow-md" data-title={id}>
 	<article
 		data-testId="card"
-		class="relative flex flex-col gap-4 rounded-sm p-4"
+		class="p-space-fl-s-m relative flex flex-col gap-space-fl-s"
 	>
 		<ProjectCardOverlay
 			{description}
@@ -49,16 +46,6 @@ const primaryLink = {
 			sizes="(min-width: 640px) 46vw, (min-width: 1024px) 30vw,  96vw"
 			class="aspect-square w-full object-cover object-top"
 		/>
-
-		<!-- <Image
-			class="rounded-md"
-			src={imageUrl}
-			alt={image.alt}
-			format="png"
-			width={400}
-			height={400}
-			loading="eager"
-		/> -->
 		<div class="flex h-auto items-baseline justify-between">
 			<a
 				href={primaryLink.href}

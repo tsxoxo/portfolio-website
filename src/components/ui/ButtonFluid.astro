@@ -17,16 +17,17 @@ const {
 } = Astro.props
 
 const styles = {
-	primary: 'bg-black text-light hover:bg-accent  border-2 border-transparent',
+	primary:
+		'bg-zinc-900 text-light hover:bg-accent border-2 border-transparent',
 	outlined:
-		'border border-black text-black hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75'
+		'border border-zinc-900 text-zinc-900 hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75'
 }
 ---
 
 <Tag
 	{...rest}
 	class:list={[
-		'inline-block rounded-sm px-space-fl-s py-space-fl-xs text-center transition focus-visible:ring-2 ring-offset-2 ring-accent max-w-fit',
+		'button inline-block rounded-sm px-space-fl-s py-space-fl-xs text-center transition focus-visible:ring-2 ring-offset-2 ring-accent max-w-fit',
 		styles[style],
 		className
 	]}

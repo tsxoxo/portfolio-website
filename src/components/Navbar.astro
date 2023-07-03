@@ -36,7 +36,7 @@ const menuitems = [
 				><span class="text-zinc-500">Tom Szwaja</span></a
 			>
 			<div class="block lg:hidden">
-				<MenuIcon class="h-4 w-4 text-black dark:text-light" />
+				<MenuIcon class="h-4 w-4" />
 			</div>
 		</div>
 		<MenuItems class="hidden w-full lg:flex lg:w-auto">
@@ -49,7 +49,7 @@ const menuitems = [
 									aria-label="navigation link"
 									{...(item.attributes || {})}
 									href={item.path}
-									class="flex py-2 text-black hover:text-accent dark:text-light dark:hover:text-accent lg:px-3"
+									class="flex py-2 hover:text-accent dark:hover:text-accent lg:px-3"
 								>
 									{item.title}
 								</a>

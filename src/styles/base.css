@@ -44,6 +44,9 @@
 		text-decoration: underline;
 		text-underline-offset: 0.25em;
 	}
+	.hero-grid {
+		@apply grid gap-space-fl-s-l  md:auto-cols-fr md:grid-flow-col md:grid-cols-[minmax(0,2fr)];
+	}
 	#hero p :not(:last-child) {
 		margin-bottom: var(--step-0);
 	}

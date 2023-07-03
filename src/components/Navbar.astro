@@ -5,7 +5,7 @@ import { LanguageSelector } from 'astro-i18next/components'
 import i18next from 'i18next'
 import ContactButton from './ui/ContactButton.astro'
 
-const menuitems = [
+const menuItems = [
 	{
 		title: 'About',
 		path: '#hero'
@@ -28,28 +28,34 @@ const menuitems = [
 
 <header
 	data-testId="header"
-	class="flex flex-col items-baseline justify-between lg:flex-row"
+	class="md:hero-grid flex flex-col items-baseline justify-between"
 >
 	<Astronav>
-		<div class="flex w-full items-baseline justify-between lg:w-auto">
+		<div class="flex w-full items-baseline justify-between md:w-auto">
 			<a href="/" class="logo"
 				><span class="text-zinc-500">Tom Szwaja</span></a
 			>
-			<div class="block lg:hidden">
+			<div class="block md:hidden">
 				<MenuIcon class="h-4 w-4" />
 			</div>
 		</div>
-		<MenuItems class="hidden w-full lg:flex lg:w-auto">
-			<ul class="flex flex-col items-baseline lg:flex-row lg:gap-3">
+		<MenuItems class="hidden w-full md:flex md:w-auto">
+			<ul
+				class="flex w-full flex-col items-baseline first:pl-0 last:pr-0 md:flex-row md:justify-between"
+			>
 				{
-					menuitems.map((item) => (
+					menuItems.map((item, ind) => (
 						<>
 							<li>
 								<a
 									aria-label="navigation link"
 									{...(item.attributes || {})}
 									href={item.path}
-									class="flex py-2 hover:text-accent dark:hover:text-accent lg:px-3"
+									class={`p-space-fl-2xs  hover:text-accent dark:hover:text-accent ${
+										ind === 0 && 'pl-0'
+									} ${
+										ind === menuItems.length - 1 && 'pr-0'
+									}`}
 								>
 									{item.title}
 								</a>

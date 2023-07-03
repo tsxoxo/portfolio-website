@@ -19,6 +19,7 @@ module.exports = {
 				sans: ['Karla', ...defaultTheme.fontFamily.sans]
 			},
 			spacing: {
+				'space-fl-2xs': 'var(--space-2xs)',
 				'space-fl-xs': 'var(--space-xs)',
 				'space-fl-s': 'var(--space-s)',
 				'space-fl-m': 'var(--space-m)',
@@ -51,7 +52,7 @@ module.exports = {
 			md: '4px 4px 0px 0px hsla(0, 0%, 15%, 0.84)'
 		},
 		fontFamily: {
-			monospace: ['Inconsolata', 'monospace']
+			monospace: ['Courier', 'monospace']
 		},
 		letterSpacing: {
 			wide: '.025em'
@@ -60,11 +61,11 @@ module.exports = {
 	plugins: [
 		plugin(function ({ addBase, theme }) {
 			addBase({
-				h1: { lineHeight: '1.2', fontWeight: '800' },
+				h1: { lineHeight: '1.2', fontWeight: '700' },
 				h2: {
 					lineHeight: '1.2',
 					letterSpacing: theme('letterSpacing.wide'),
-					fontWeight: '700'
+					fontWeight: '800'
 				},
 				li: {
 					letterSpacing: theme('letterSpacing.wide')

@@ -19,18 +19,20 @@ const socials = [
 	class="grid w-full place-items-center gap-space-fl-xl-2xl not-italic lg:place-items-start"
 >
 	<h2 class="text-fl-xl font-bold">Social</h2>
-	<div class="grid place-items-center gap-space-fl-s lg:place-items-start">
+	<div
+		class="grid w-full place-items-center gap-space-fl-s lg:place-items-start"
+	>
 		{
 			socials.map(({ label, link, icon }) => (
-				<div class="flex w-max items-center justify-center">
+				<div class="w-full text-center">
 					<a
-						class="flex w-max items-end justify-center gap-space-fl-s p-space-fl-m lg:pl-0"
+						class="flex items-end justify-center gap-space-fl-s p-space-fl-m"
 						href={link}
 						target="_blank"
 						rel="noopener"
 						aria-label={label}
 					>
-						<span>{label}</span>
+						{label}
 					</a>
 				</div>
 			))

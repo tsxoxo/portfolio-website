@@ -28,7 +28,7 @@ const primaryLink = {
 <project-card class="border border-zinc-900 bg-light shadow-md" data-title={id}>
 	<article
 		data-testId="card"
-		class="p-space-fl-s-m relative flex flex-col gap-space-fl-s"
+		class="relative flex flex-col gap-space-fl-s p-space-fl-s-m"
 	>
 		<ProjectCardOverlay
 			{description}
@@ -46,14 +46,15 @@ const primaryLink = {
 			sizes="(min-width: 640px) 46vw, (min-width: 1024px) 30vw,  96vw"
 			class="aspect-square w-full object-cover object-top"
 		/>
-		<div class="flex h-auto items-baseline justify-between">
+		<div class="flex justify-between">
 			<a
+				class="grid grow items-center justify-start"
 				href={primaryLink.href}
 				aria-label={primaryLink.ariaLabel}
 				target="_blank"
 				rel="noopener"
 			>
-				<h3 class="decoration-zincborder-zinc-900 text-fl-base">
+				<h3 class="text-fl-base">
 					{title}
 				</h3>
 			</a>

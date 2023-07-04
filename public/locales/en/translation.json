@@ -22,6 +22,9 @@
 				"link-primary": "Details",
 				"link-in-overlay": "Project repo"
 			}
+		},
+		"socials": {
+			"heading": "Socials"
 		}
 	},
 	"footer": {

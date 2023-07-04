@@ -4,6 +4,7 @@ import { Astronav, MenuIcon, MenuItems } from 'astro-navbar'
 import { LanguageSelector } from 'astro-i18next/components'
 import i18next from 'i18next'
 import ContactButton from './ui/ContactButton.astro'
+import { Icon } from 'astro-icon'
 
 const menuItems = [
 	{
@@ -15,62 +16,48 @@ const menuItems = [
 		path: '#projects'
 	},
 	{
-		title: 'CV',
-		path: `locales/${i18next.language}/cv.pdf`,
-		attributes: {
-			type: 'application/pdf',
-			rel: 'author',
-			hreflang: `${i18next.language}`
-		}
+		title: 'Socials',
+		path: '#socials'
 	}
+	// {
+	// 	title: 'CV',
+	// 	path: `locales/${i18next.language}/cv.pdf`,
+	// 	attributes: {
+	// 		type: 'application/pdf',
+	// 		rel: 'author',
+	// 		hreflang: `${i18next.language}`
+	// 	}
+	// }
 ]
 ---
 
 <header
 	data-testId="header"
-	class="md:hero-grid flex flex-col items-baseline justify-between"
+	class="md:hero-grid fixed bottom-0 z-50 w-full items-baseline justify-between bg-zinc-300 p-space-fl-s-l py-space-fl-s md:top-0 md:flex"
 >
-	<Astronav>
-		<div class="flex w-full items-baseline justify-between md:w-auto">
-			<a href="/" class="logo"
-				><span class="text-zinc-500">Tom Szwaja</span></a
-			>
-			<div class="block md:hidden">
-				<MenuIcon class="h-4 w-4" />
-			</div>
-		</div>
-		<MenuItems class="hidden w-full md:flex md:w-auto">
-			<ul
-				class="flex w-full flex-col items-baseline first:pl-0 last:pr-0 md:flex-row md:justify-between"
-			>
-				{
-					menuItems.map((item, ind) => (
-						<>
-							<li>
-								<a
-									aria-label="navigation link"
-									{...(item.attributes || {})}
-									href={item.path}
-									class={`p-space-fl-s  hover:text-accent dark:hover:text-accent ${
-										ind === 0 && 'pl-0'
-									} ${
-										ind === menuItems.length - 1 && 'pr-0'
-									}`}
-								>
-									{item.title}
-								</a>
-							</li>
-						</>
-					))
-				}
-				<!-- <li class="py-2">
-					<LanguageSelector showFlag={true} class="my-select-class" />
-				</li> -->
-
-				<!-- <li>
-					<ContactButton />
-				</li> -->
-			</ul>
-		</MenuItems>
-	</Astronav>
+	<div class="hidden w-full items-baseline justify-between md:flex md:w-auto">
+		<a href="/" class="logo text-zinc-500"> Tom Szwaja</a>
+	</div>
+	<nav class="w-full md:flex md:w-auto">
+		<ul class="flex w-full items-baseline justify-between">
+			{
+				menuItems.map((item, ind) => (
+					<>
+						<li>
+							<a
+								aria-label="navigation link"
+								{...(item.attributes || {})}
+								href={item.path}
+								class={`p-space-fl-s  hover:text-accent dark:hover:text-accent ${
+									ind === 0 && 'pl-0'
+								} ${ind === menuItems.length - 1 && 'pr-0'}`}
+							>
+								{item.title}
+							</a>
+						</li>
+					</>
+				))
+			}
+		</ul>
+	</nav>
 </header>

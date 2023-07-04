@@ -15,7 +15,7 @@ const { description, skill_tags, tech_tags, repoURL, projectTitle } =
 
 <div
 	id={`overlay-${projectTitle}`}
-	class="invisible absolute inset-0 z-10 flex flex-col items-start justify-between rounded-sm bg-light p-space-fl-s-m opacity-0 transition-all duration-300"
+	class="invisible absolute inset-0 z-10 flex flex-col justify-between rounded-sm bg-light p-space-fl-s-m opacity-0 transition-all duration-300"
 >
 	<div
 		class="tags grid max-w-full gap-space-fl-m overflow-clip text-fl-sm text-zinc-500"
@@ -30,7 +30,15 @@ const { description, skill_tags, tech_tags, repoURL, projectTitle } =
 	<p>
 		{description}
 	</p>
-	<a href={repoURL} aria-label="Link to repo" target="_blank">
+	{
+		/* padding in the link below is the same as that of 'Details" button in ProjectCard*/
+	}
+	<a
+		class="py-space-fl-xs"
+		href={repoURL}
+		aria-label="Link to repo"
+		target="_blank"
+	>
 		{t('home.projects.card.link-in-overlay')}
 	</a>
 </div>

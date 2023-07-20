@@ -38,8 +38,8 @@
 	.site-padding-x {
 		@apply px-space-fl-s-l;
 	}
-	.main-padding {
-		@apply pb-space-fl-3xl pt-space-fl-s;
+	main {
+		@apply bg-zinc-50 pb-space-fl-3xl pt-space-fl-s;
 	}
 	h1 {
 		@apply text-fl-2xl;

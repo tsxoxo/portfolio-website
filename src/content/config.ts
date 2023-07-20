@@ -28,6 +28,7 @@ const blog = defineCollection({
 	schema: z.object({
 		isDraft: z.boolean().default(false),
 		title: z.string().trim().min(1).or(z.number()).transform(val => String(val)),
+		subheading: z.string().trim().min(1).or(z.number()).transform(val => String(val)),
 		image: z.object({
 			url: z.string(),
 			alt: z.string()

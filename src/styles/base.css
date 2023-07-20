@@ -35,6 +35,12 @@
 }
 
 @layer base {
+	h1 {
+		@apply text-fl-2xl;
+	}
+	h2 {
+		@apply text-fl-xl;
+	}
 	a {
 		@apply inline-block;
 	}

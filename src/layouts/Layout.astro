@@ -30,12 +30,14 @@ const { title = t('site.defaultTitle') } = Astro.props as LayoutProps
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	</head>
 	<body class="bg-zinc-100">
-		<Navbar />
-		<div
-			class="mx-auto grid max-w-screen-xl gap-space-fl-2xl bg-zinc-50 px-space-fl-s-l py-space-fl-s font-sans text-zinc-900 dark:bg-zinc-900 dark:text-light"
-		>
-			<slot />
-			<Footer />
+		<div class="mx-auto max-w-screen-xl">
+			<Navbar />
+			<div
+				class="grid gap-space-fl-2xl bg-zinc-50 px-space-fl-s-l py-space-fl-s font-sans text-zinc-900 dark:bg-zinc-900 dark:text-light"
+			>
+				<slot />
+				<Footer />
+			</div>
 		</div>
 		<style is:global>
 			/* Improve Page speed */

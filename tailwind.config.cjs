@@ -47,7 +47,8 @@ module.exports = {
 			black: '#000',
 			grey: 'hsla(180, 2%, 26%, 1)',
 			light: 'hsla(176, 36%, 99%, 1)',
-			accent: '#E06330',
+			accent: '#009b5f',
+			'accent-dark': '#ba0b48',
 			zinc: colors.zinc
 		},
 		boxShadow: {

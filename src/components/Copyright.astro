@@ -2,10 +2,37 @@
 import { t } from 'i18next'
 
 const siteRepoUrl = import.meta.env.SITE_REPO_URL
+
+const techStack = [
+	{
+		name: 'Astro',
+		url: 'https://astro.build/'
+	},
+	{
+		name: 'Utopia',
+		url: 'https://utopia.fyi/'
+	}
+]
 ---
 
-<div class="grid w-full place-items-center gap-space-fl-s">
-	<div class="grid gap-space-fl-s" set:html={t('footer.made')} />
+<div class="grid w-full place-items-center gap-space-fl-l">
+	<div class="grid w-full">
+		{t('footer.made')}
+		<br />using
+		{
+			techStack.map((techItem) => (
+				<a
+					href={techItem.url}
+					target="_blank"
+					rel="noopener"
+					class="techstack text-fl-m w-full p-space-fl-m"
+				>
+					{techItem.name}
+				</a>
+			))
+		}
+	</div>
+
 	<a
 		class="w-full p-space-fl-m"
 		href={siteRepoUrl}

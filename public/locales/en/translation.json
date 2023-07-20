@@ -32,7 +32,7 @@
 		}
 	},
 	"footer": {
-		"made": "<p>Made with 🤘 by Tom Szwaja</p><p>using<span id='techstack'> Astro, Utopia.</span></p>",
+		"made": "Made with 🤘 by Tom Szwaja",
 		"repo": "Site repo"
 	}
 }

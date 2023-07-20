@@ -14,6 +14,10 @@
 			"what-raw": "I design user experiences,  build websites and help people maintain them.",
 			"cta": "What can I do for you?"
 		},
+		"blog": {
+			"heading": "Blog",
+			"subheading": "Sharing some knowledge."
+		},
 		"projects": {
 			"heading": "Projects",
 			"subheading": "Things that left a mark.",

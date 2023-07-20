@@ -3,6 +3,7 @@ import { changeLanguage } from 'i18next'
 import Hero from '@components/Hero.astro'
 import Projects from '@components/Projects.astro'
 import Layout from '@layouts/Layout.astro'
+import Blog from '@components/Blog.astro'
 
 changeLanguage('en')
 ---
@@ -12,6 +13,7 @@ changeLanguage('en')
 		class="grid gap-space-fl-3xl bg-zinc-50 px-space-fl-s-l pb-space-fl-3xl pt-space-fl-s font-sans text-zinc-900 dark:bg-zinc-900 dark:text-light"
 	>
 		<Hero />
+		<Blog />
 		<Projects />
 	</main>
 </Layout>

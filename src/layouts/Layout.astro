@@ -32,12 +32,9 @@ const { title = t('site.defaultTitle') } = Astro.props as LayoutProps
 	<body class="bg-zinc-100">
 		<div class="mx-auto max-w-screen-xl">
 			<Navbar />
-			<div
-				class="grid gap-space-fl-2xl bg-zinc-50 px-space-fl-s-l py-space-fl-s font-sans text-zinc-900 dark:bg-zinc-900 dark:text-light"
-			>
-				<slot />
-				<Footer />
-			</div>
+
+			<slot />
+			<Footer />
 		</div>
 		<style is:global>
 			/* Improve Page speed */

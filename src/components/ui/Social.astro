@@ -18,17 +18,15 @@ const socials = [
 
 <address
 	id="socials"
-	class="grid w-full place-items-center gap-space-fl-xl-2xl not-italic lg:place-items-start"
+	class="grid w-full gap-space-fl-m not-italic lg:place-items-start"
 >
 	<h2 class="text-fl-xl font-bold">{t('home.socials.heading')}</h2>
-	<div
-		class="grid w-full place-items-center gap-space-fl-s lg:place-items-start"
-	>
+	<div class="grid w-full gap-space-fl-s lg:place-items-start">
 		{
 			socials.map(({ label, link, icon }) => (
 				<div class="w-full text-center">
 					<a
-						class="flex items-end justify-center gap-space-fl-s p-space-fl-m"
+						class="flex  p-space-fl-m pl-0"
 						href={link}
 						target="_blank"
 						rel="noopener"

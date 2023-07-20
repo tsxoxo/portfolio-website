@@ -75,7 +75,12 @@
 	hgroup > p {
 		@apply font-extralight;
 	}
-
+	.blog-post h2 {
+		@apply mb-space-fl-s mt-space-fl-2xl;
+	}
+	.blog-post hgroup {
+		@apply mb-space-fl-2xl;
+	}
 	@font-face {
 		font-family: 'Karla';
 		font-weight: 400;

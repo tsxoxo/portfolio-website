@@ -15,11 +15,13 @@ const { Content } = await entry.render()
 ---
 
 <Layout>
-	<hgroup>
-		<h1>
-			{entry.data.title}
-		</h1>
-		<p class="text-fl-base">{entry.data.subheading}</p>
-	</hgroup>
-	<Content />
+	<main class="bg-zinc-50">
+		<hgroup>
+			<h1>
+				{entry.data.title}
+			</h1>
+			<p class="text-fl-base">{entry.data.subheading}</p>
+		</hgroup>
+		<Content />
+	</main>
 </Layout>

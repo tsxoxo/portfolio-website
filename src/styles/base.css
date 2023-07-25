@@ -81,6 +81,12 @@
 	.blog-post hgroup {
 		@apply mb-space-fl-2xl;
 	}
+	pre {
+		@apply p-space-fl-s;
+	}
+	code {
+		@apply whitespace-pre-wrap;
+	}
 	@font-face {
 		font-family: 'Karla';
 		font-weight: 400;

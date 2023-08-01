@@ -8,34 +8,94 @@ draft: true
 
 You'll learn how to build a website with the wonderful [utopia design system](https://utopia.fyi/) using its fluid scale generator, Figma and Tailwind CSS.
 
-## Who is this for?
+## Table of Contents
+
+-   WTF
+
+1. Guide
+2. Story
+3. Resources
+
+## WTF
+
+If you know what you want and wanna jump right in, skip to the guide().
+
+### What is utopia?
+
+Utopia is basically a tool to help with responsive design - meaning text and spacings adjusting to the user's screen size.
+
+They have a nice gif demo on their website(xxx). This youtube video explains the basics(xxx). And here's an article that covers the idea(xxx). To follow this guide, you should have a basic understanding of the fundamentals: `min`, `max`, `base font size`.
+
+If You're not in the mood, here's the way it works:
+
+You go to their website, plug in a handful of values and it spits out CSS that you can copy into your project. For example:
+
+`--var()`
+
+What that does is make sure your text never gets smaller than xxx, never gets bigger than yyy, and is fluid in between (meaning it changes according to screen size).
+
+It's a solution to the old _stay responsive, stay consistent_ set of problems we web designers face (every day I live in a society).
+
+As you can see from the example above, this solution involves math that can get quite intense.
+
+The way I understand, people have been using formulas like this in their CSS for years. It was all about crunching a lot of numbers and doing everything by hand. Utopia simplifies the process. It's still the same math, but you don't have to own a wizard hat to use it.
+
+Once I dug a little deeper, I found that it's also a kind design philosophy. And like all philosophies, it's opinionated and limited (link to that contrarian blog article), but hey, it's also free.
+
+### What will I learn?
+
+-   a workflow which lets you actually apply the utopia design system to your project
+-   how to use CSS variables in Tailwind and extend Tailwind's classes (so that the values from the design system show up in your IDE's autocomplete)
+-   Figma bits
+
+### Who is this for?
 
 People who want to use the [utopia design system](https://utopia.fyi/) and want a step-by-step guide. People like me who both design and code. People obsessed with visual consistency.
 
-## Who is writing this?
+### Who is writing this?
 
 I build websites and write tutorials. [Hire me!](xxx)
 
-## Table of Contents
-
-1. Guide
-2. wtf
-3. Story
-4. Resources
+While working on this very site I ran down the rabbit hole of how to make type responsive. I found utopia, I think through [Kevin Powell], and it looked fun enough to try. And by fun I mean it scratched that consistency itch that makes me want to look at my CSS and see only 8 values in total.
 
 ## Guide
 
 ### Prerequisites
 
--   For developing the project: Basic knowledge of the command line and a code editor. You can find a beginner-friendly guide on [xxxx blog]()
--   A basic knowledge of Figma and a free account
--   A basic knowledge of utopia: what it does, what the base font size represents. see here for an explanation(xxx)
+-   For developing the project: Basic knowledge of the command line and a code editor. You can find [a beginner-friendly guide on Tatiana Mac's blog](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii)
+-   A basic knowledge of Figma and a free account. They have a pretty great [get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
+-   A basic knowledge of utopia: what it does, what the base font size represents. see here for an explanation(xxx). I'll be giving brief refreshers but I won't be going in depth.
 -   A project with tailwind CSS set up. Can be empty, can be an existing one.
 -   ❤️‍🔥
 
 ### Steps
 
--   Sketch a design to figure out the base font size for min and max
+#### Figure out min and max?
+
+Whatever is appropiate for your project. I left the defaults - `min`: 320px, `max`: 1024px
+
+#### Figure out the size of the biggest chunk of text of your project.
+
+This is what utopia calls _base font size_. I will also call it 'body text'
+
+You'll figure this out twice - once for smaller screen sizes and once for bigger ones. Utopia calls these thresholds `min` and `max`. Your body text will never get smaller than the `min`-font-size and never greater than the `max`-font-size. You're basically choosing a range of acceptable font sizes your body text.
+
+You'll want to go into Figma and create a frame with a width of your `min`. I chose a device from the list that had a width close to my `min` then scaled it proportionally to the right width. That way I had a frame with proportions close to an actual screen.
+
+You can jump in and just make a lo/mid/hi-fi wireframe of whatever it is your making. The goal is just to figure out the base font size. Then later after generating your type and spacing scales you'll make a new frame and basically do a utopia redesign - consistently applying your scales and maybe even using a utopia grid.
+
+Don't worry about headings, subheadings and any other text - you'll deal with those later and they will be allowed to get bigger or smaller than the base text size. This is just about figuring out the size for the biggest chunks of text in your project.
+
+NOTES
+redundant, over-explainy. accept the prerequisite: reader should know about utopia.
+OR explain utopia at the start
+
+**Footnote**
+
+1. I'm sure there are many places to start from, but it makes sense to figure this one out first, since the rest of te design system relies so much on these values. The creators of utopia talk about their workflow [in their grid article](xxx).
+
+2. Utopia [encourages you]() to not think of these `min` and `max` threshholds as representing devices like "min is for phones and max is for computer screens". Even though they are tied to screen widths. There's good reasons for that (source)
+
 -   Go to utopia and play with the type scale (you will likely iterate on this - aka realize it doesnt work, slap your forehead (optional) and do it again. in short: there's no need to get it perfect the first time)
 -   go to figma and run the utopia plugin with the values from the previous step (you can also just copy the url into the plugin) wait for lke 20 seconds until it finishes working. find the generated output somewhere on the canvas. frame it. place it close to where you're working. i was looking at it pretty often.
 -   now here might be a good case to use the new variables feature in Figma. put all of these values there and you dont have to look them up. you could even map min and max to their own modes. could be interesting. i was ready to do that but unfortunately figma restricts free accounts to 1 mode only. if you sponsor me, id be happy to do this and add to the guide!

@@ -109,6 +109,7 @@ OR explain utopia at the start
 **Footnote**
 
 1. I'm sure there are many places to start from, but it makes sense to figure this one out first, since the rest of te design system relies so much on these values. The creators of utopia talk about their workflow [in their grid article](xxx).
+
 2. Utopia [encourages you](https://foo.bar) to not think of these `min` and `max` threshholds as representing devices like "min is for phones and max is for computer screens". Even though they are tied to screen widths. There's good reasons for that (source)
 
 #### Choose a type scale
@@ -245,10 +246,15 @@ I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feed
 ## Resources
 
 -   [Fluid Type](https://elisehe.in/2021/03/13/fluid-type) by Elise Hein talks about why do we care about fluid type in the first place? And is clamp really so great?
+
 -   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod shows a way to implement a utopian design system with Tailwind CSS. Christian, You were here first, I'm just adding details.
+
 -   an article on the historical context of the problem (xxx)
+
 -   an article on the math behind the clamp solution (xxx)
+
 -   maybe more about different approaches to fluid type (xxx)
+
 -   for ideas, see stuff under 'review and deepen' in notion (xxx)
 
 ## META
@@ -262,11 +268,12 @@ NEXT STEPS:
 
 ### todo
 
--   make links open in new tab
 -   [x] work on intro: more personable, move what will i learn before wtf?
--   fix: extra space before links wtf
--   revise: shorten utopia-basics section
--   IDEA: make each step of the guide formatted like _succinct instructions (1 paragraph) --- detailed explanation and musings_. this could be visually reinforced by making the instructions stick out more than the musings (e.g. higher contrast), or even by hiding the explanation in a foldable element (use <dt>?)
+-   [x] fix: extra space before links wtf
+-   fix: make it so I can have spaces between list items in markdown without them going haywire in html
+-   make links open in new tab
+-   revise: shorten utopia-basics section; rewrite/break up 'big idea'
+-   IDEA: make each step of the guide formatted like _succinct instructions (1 paragraph) --- detailed explanation and musings_. this could be visually reinforced by making the instructions stick out more than the musings (e.g. higher contrast), or even by hiding the explanation in a foldable element (use `<dt>`?)
 
 ### extra copy
 

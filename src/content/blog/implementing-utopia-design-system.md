@@ -261,15 +261,21 @@ I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feed
 
 NEXT STEPS:
 
--   write some steps
--   look at review and depen in notion
--   make demo gif
--   read utopia blog
+-   skim utopia blog - steal phrasing to explain, collect links to specific topics, take general notes
+-   keep revising starting from 'what will i learn'
+-   put on google docs
+-   share with thays
+-   share with yemi
 
 ### todo
 
 -   [x] work on intro: more personable, move what will i learn before wtf?
 -   [x] fix: extra space before links wtf
+-   [x] write some steps
+-   [x] look at review and depen in notion
+-   [x] mention official demo gif
+
+-   add: make own demo gif?
 -   fix: make it so I can have spaces between list items in markdown without them going haywire in html
 -   make links open in new tab
 -   revise: shorten utopia-basics section; rewrite/break up 'big idea'

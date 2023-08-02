@@ -38,7 +38,12 @@
 	.blog-post p + p {
 		@apply mt-space-fl-l;
 	}
-
+	.blog-post a {
+		@apply inline;
+	}
+	li > p {
+		@apply inline;
+	}
 	li {
 		@apply text-fl-base;
 		text-indent: 1em;

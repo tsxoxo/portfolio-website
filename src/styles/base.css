@@ -35,6 +35,26 @@
 }
 
 @layer base {
+	.blog-post p + p {
+		@apply mt-space-fl-l;
+	}
+
+	li {
+		@apply text-fl-base;
+	}
+
+	.blog-post ul,
+	ol {
+		@apply grid gap-space-fl-s;
+	}
+
+	.blog-post ul {
+		list-style: '\1F44D'inside;
+	}
+	.blog-post ol {
+		list-style: decimal inside;
+	}
+
 	.site-padding-x {
 		@apply px-space-fl-s-l;
 	}
@@ -45,7 +65,14 @@
 		@apply text-fl-2xl;
 	}
 	h2 {
-		@apply text-fl-xl;
+		@apply mb-space-fl-m mt-space-fl-l text-fl-xl;
+	}
+	h3 {
+		@apply mb-space-fl-s mt-space-fl-m text-fl-lg;
+	}
+	h4,
+	h5 {
+		@apply mb-space-fl-2xs mt-space-fl-l text-fl-base font-bold;
 	}
 	a {
 		@apply inline-block;

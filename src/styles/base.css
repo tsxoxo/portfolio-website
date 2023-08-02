@@ -41,6 +41,7 @@
 
 	li {
 		@apply text-fl-base;
+		text-indent: 1em;
 	}
 
 	.blog-post ul,
@@ -49,7 +50,7 @@
 	}
 
 	.blog-post ul {
-		list-style: '\1F44D'inside;
+		list-style: disc inside;
 	}
 	.blog-post ol {
 		list-style: decimal inside;
@@ -109,7 +110,7 @@
 		@apply mb-space-fl-2xl;
 	}
 	pre {
-		@apply p-space-fl-s;
+		@apply my-space-fl-l p-space-fl-s;
 	}
 	code {
 		@apply whitespace-pre-wrap;

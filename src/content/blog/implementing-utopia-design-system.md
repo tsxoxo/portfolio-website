@@ -1,15 +1,10 @@
 ---
 title: Implementing a utopian design system
-subheading: A hands-on guide.
+subheading: A step-by-step guide using utopia.fyi, Figma and Tailwind CSS.
 pubDate: 20.7.2023
 tags: [design, design system, tailwind, utopia]
 draft: true
 ---
-
-You'll learn how to build a website with the wonderful [utopia design system](https://utopia.fyi/) using its fluid scale generator, Figma and Tailwind CSS.
-
-NOTE
-write better, more personable intro
 
 ## Table of Contents
 
@@ -20,29 +15,43 @@ write better, more personable intro
 
 ## WTF
 
-If you know what you want and wanna jump right in, skip to the guide().
+If you know what you want and you want to jump right in, skip to the guide(xxx).
 
 ### What is utopia?
 
-Utopia is basically a tool to help with responsive design - meaning text and spacings adjusting to the user's screen size.
+[Utopia](https://utopia.fyi/) is basically a tool to help with responsive design - meaning text and spacings adjusting to the user's screen size.
 
-They have a nice gif demo on their website(xxx). This youtube video explains the basics(xxx). And here's an article that covers the idea(xxx). To follow this guide, you should have a basic understanding of the fundamentals: `min`, `max`, `base font size`.
+They have a nice interactive demo on their landing page showing off the idea (follow the link in the previous paragraph). They explain themselves in [this youtube video](https://www.youtube.com/watch?v=DDuGtN-GakA), which is 18 minutes. And in their [blog](https://utopia.fyi/blog) they do a good job of covering various aspects of their system.
 
-If You're not in the mood, here's the way it works:
+It took me a while to wrap my head around it. Meaning that I had to sit confused in front of their UI for a while, then read like 6 of their blog articles, then watched their intro video. After that I did my civic duty and complained in their youtube comments that their system could be more accessible to newcomers.
 
-You go to their website, plug in a handful of values and it spits out CSS that you can copy into your project. For example:
+But in the end I got it. And who knows - maybe You wouldn't be reading this guide if this author hadn't gone through an initial period of confusion and frustration. That can be quite motivating. ([x] refer to myself as 'this author' at least once in my life)
 
-`--var()`
+#### So, how much do I need to understand to use this thing?
 
-What that does is make sure your text never gets smaller than xxx, never gets bigger than yyy, and is fluid in between (meaning it changes according to screen size).
+Well, to follow this guide, you should have a basic understanding of the fundamentals: the basic idea behind it and the 'seeds' utopia uses to generate a system for you, namely: `min`, `max`, `base font size` (called 'font size' in the utopia UI) and `type scale`.
 
-It's a solution to the old _stay responsive, stay consistent_ set of problems we web designers face (every day I live in a society).
+If You're not in the mood to go through the official resources, here's the way it works, as I see it, unoficially:
 
-As you can see from the example above, this solution involves math that can get quite intense.
+You go to their website, plug in a handful of values and it spits out some CSS variables that you can copy and use in your project. For example:
 
-The way I understand, people have been using formulas like this in their CSS for years. It was all about crunching a lot of numbers and doing everything by hand. Utopia simplifies the process. It's still the same math, but you don't have to own a wizard hat to use it.
+`--step-0: clamp(1.00rem, calc(0.83rem + 0.83vw), 1.50rem)`
 
-Once I dug a little deeper, I found that it's also a kind design philosophy. And like all philosophies, it's opinionated and limited (link to that contrarian blog article), but hey, it's also free.
+What that does is make sure your text never gets smaller than 1.00rem, never gets bigger than 1.5rem, and is fluid in between (meaning it changes according to screen size).
+
+It's a solution to the old _stay responsive, stay consistent_ set of problems we web designers face every single day. (Every day I live in a society.)
+
+As you can see from the example above, this solution involves math that can get quite intense. None of these values, like `0.83rem`, are random. In fact, baked into that formula are all of the 6 values you plug into the Utopia UI: width, base font size and type scae for both `min` and `max`.
+
+**The big idea is this**: Thinking about the problem of how to make my website responsive I say, _'I want my body text to never go smaller than, say, 16px (`base font size`) and I want it to hit that limit on a screen 320px wide (`min width`). And on that screen I want to work with a palette of font sizes that each grow by a factor of, say 1.2 (`type scale`). I give myself the same sort of limitations at the upper threshold (`max`). And since I have more space to distribute on bigger screens, I usually choose a sharper type scale, meaning I'll have proportionally bigger text to work with. And now that I have the two extremes figured out (smallest and biggest screens), I want any screen that's in between to interpolate my actual font size. (Interpolate is a fancy word which is really hard to explain but really simple to show. Look at [the first diagram in this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/). [Backup link to just the image](https://utopia.fyi/images/fluid-type-scale-visualisation.png))'_
+
+And then we do a similar thing for our spacing. And it can even be done for baseline grids.
+
+If you want to understand more about the thinking behind this, here's a few articles going in depth(xxx).
+
+The way I understand, people have been using `clamp` with formulas like this in their CSS for years. It was all about crunching a lot of numbers and doing everything by hand. Utopia simplifies the process. It's still the same math, but you don't have to own a wizard hat to use it.
+
+Once I dug a little deeper, I found that it's also a kind design philosophy. And like all philosophies, it's opinionated and limited (link to that contrarian blog article), but hey, it's also free. And fun. And /r/oddlysatisfying.
 
 ### What will I learn?
 
@@ -61,7 +70,7 @@ mb scratch or merge this with what will i learn
 
 I build websites and write tutorials. [Hire me!](xxx)
 
-While working on this very site I ran down the rabbit hole of how to make type responsive. I found utopia, I think through [Kevin Powell], and it looked fun enough to try. And by fun I mean it scratched that consistency itch that makes me want to look at my CSS and see only 8 values in total.
+While working on this very site I ran down the rabbit hole of how to make text responsive. I found utopia, I think through [Kevin Powell], and it looked fun enough to try. And by fun I mean it scratched that consistency itch that makes me want to look at my CSS and see only 8 values in total.
 
 ## Guide
 

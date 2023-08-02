@@ -23,13 +23,15 @@ If you know what you want and you want to jump right in, skip to the guide(xxx).
 
 They have a nice interactive demo on their landing page showing off the idea (follow the link in the previous paragraph). They explain themselves in [this youtube video](https://www.youtube.com/watch?v=DDuGtN-GakA), which is 18 minutes. And in their [blog](https://utopia.fyi/blog) they do a good job of covering various aspects of their system.
 
-It took me a while to wrap my head around it. Meaning that I had to sit confused in front of their UI for a while, then read like 6 of their blog articles, then watched their intro video. After that I did my civic duty and complained in their youtube comments that their system could be more accessible to newcomers.
+It took me a while to wrap my head around it. Meaning that I sat confused in front of their UI for a while, then read like 6 of their blog articles, then watched their intro video. Then I did my civic duty and complained in their youtube comments that their system could be more accessible to newcomers.
 
-But in the end I got it. And who knows - maybe You wouldn't be reading this guide if this author hadn't gone through an initial period of confusion and frustration. That can be quite motivating. ([x] refer to myself as 'this author' at least once in my life)
+But in the end I got it (fingers crossed 🤞🏼). And who knows - maybe You wouldn't be reading this guide if this author hadn't gone through an initial period of confusion and frustration. That must be at least half of the tutorial industry.
+
+[x] refer to myself as 'this author'
 
 #### So, how much do I need to understand to use this thing?
 
-Well, to follow this guide, you should have a basic understanding of the fundamentals: the basic idea behind it and the 'seeds' utopia uses to generate a system for you, namely: `min`, `max`, `base font size` (called 'font size' in the utopia UI) and `type scale`.
+Well, to follow this guide, you should have a basic understanding of the fundamentals: the basic idea behind utopia and the 'seeds' it uses to generate a system for you, namely: `min`, `max`, `base font size` (called 'font size' in the utopia UI) and `type scale`.
 
 If You're not in the mood to go through the official resources, here's the way it works, as I see it, unoficially:
 
@@ -41,11 +43,11 @@ What that does is make sure your text never gets smaller than 1.00rem, never get
 
 It's a solution to the old _stay responsive, stay consistent_ set of problems we web designers face every single day. (Every day I live in a society.)
 
-As you can see from the example above, this solution involves math that can get quite intense. None of these values, like `0.83rem`, are random. In fact, baked into that formula are all of the 6 values you plug into the Utopia UI: width, base font size and type scae for both `min` and `max`.
+As you can see from the example above, this solution involves math that can get quite intense. None of these values, like `0.83rem`, are random. In fact, baked into that formula are all of the 6 values you plug into the Utopia UI: widths, base font sizes and type scales for both `min` and `max`.
 
-**The big idea is this**: Thinking about the problem of how to make my website responsive I say, _'I want my body text to never go smaller than, say, 16px (`base font size`) and I want it to hit that limit on a screen 320px wide (`min width`). And on that screen I want to work with a palette of font sizes that each grow by a factor of, say 1.2 (`type scale`). I give myself the same sort of limitations at the upper threshold (`max`). And since I have more space to distribute on bigger screens, I usually choose a sharper type scale, meaning I'll have proportionally bigger text to work with. And now that I have the two extremes figured out (smallest and biggest screens), I want any screen that's in between to interpolate my actual font size. (Interpolate is a fancy word which is really hard to explain but really simple to show. Look at [the first diagram in this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/). [Backup link to just the image](https://utopia.fyi/images/fluid-type-scale-visualisation.png))'_
+**The big idea is this**: Thinking about the problem of how to make my website responsive let's say, _'I want my body text to never go smaller than, say, 16px (`base font size`) and I want it to hit that limit on a screen 320px wide (`min width`). And on that screen I want to work with a palette of font sizes that each grow by a factor of, say 1.2 (`type scale`). I give myself the same sort of limitations at the upper threshold (`max`). And since I have more space to distribute on bigger screens, I usually choose a different, sharper type scale, meaning I'll have proportionally bigger text to work with, e.g. for headings. And now that I have the two extremes figured out (smallest and biggest screens), I want any screen that's in between to interpolate my actual font size. (Interpolate is a fancy word which is really hard to explain but really simple to show. Look at [the first diagram in this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/). [Backup link to just the image](https://utopia.fyi/images/fluid-type-scale-visualisation.png). The font sizes for the 1024px screen are *interpolated* from the values at the `min` and `max` extremes. Basically, they're "somewhere in the middle", but in a consistent, proportional way.)'_
 
-And then we do a similar thing for our spacing. And it can even be done for baseline grids.
+And then we do a similar thing for our spacings like paddings. And it can even be done for baseline grids.
 
 If you want to understand more about the thinking behind this, here's a few articles going in depth(xxx).
 

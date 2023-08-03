@@ -19,15 +19,21 @@ If you know what you want and you want to jump right in, skip to the guide(xxx).
 
 ### What is utopia?
 
-[Utopia](https://utopia.fyi/) is basically a tool to help with responsive design - meaning text and spacings adjusting to the user's screen size.
+[Utopia](https://utopia.fyi/) is basically a tool to help with responsive design - meaning text and spacings adjusting to the user's screen size. The basic idea is this: design with a modular scale for the smallest screen, design with another [modular scale](https://utopia.fyi/blog/css-modular-scales/) for the biggest screen, and let math do the rest for you in between. I'm pretty much citing [this blog post](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
 
-They have a nice interactive demo on their landing page showing off the idea (follow the link in the previous paragraph). They explain themselves in [this youtube video](https://www.youtube.com/watch?v=DDuGtN-GakA), which is 18 minutes. And in their [blog](https://utopia.fyi/blog) they do a good job of covering various aspects of their system.
+Don't know what a modular type scale is? Can't really imagine how math is going to help You here? Or how You would use any of this in your actual project? Fear not, read on, You might learn something. I'm going to give You prep You enough You can follow the step-by-step guide. And I'm going to point out the stuff I found extra helpful in letting me understand this thing.
+
+#### Official resources
+
+They have a nice interactive demo on their landing page showing off the idea (follow the link in the previous paragraph). They explain themselves in [this youtube video](https://www.youtube.com/watch?v=DDuGtN-GakA), which is 18 minutes. And in their [blog](https://utopia.fyi/blog) they do a good job of covering various aspects of their system - I think the general idea is laid out concisely in the blog post mentioned in the previous paragraph ([here](https://utopia.fyi/blog/designing-with-fluid-type-scales/) it is again).
 
 It took me a while to wrap my head around it. Meaning that I sat confused in front of their UI for a while, then read like 6 of their blog articles, then watched their intro video. Then I did my civic duty and complained in their youtube comments that their system could be more accessible to newcomers.
 
-But in the end I got it (fingers crossed 🤞🏼). And who knows - maybe You wouldn't be reading this guide if this author hadn't gone through an initial period of confusion and frustration. That must be at least half of the tutorial industry.
+I don't necessarily find the concept super hard (especially once I got it, hehe), but it was a mystery for me how to actually use this system - where do I start? What's `font size` stand for in the Utopia UI? Ok, it spit out some CSS, but can I design with this in Figma (without it being super cumbersome)?
 
-[x] refer to myself as 'this author'
+In the end I found a way (I think, fingers crossed 🤞🏼). But it was by grasping on to straws - part of [a workflow laid in a blog post](https://utopia.fyi/blog/designing-a-utopian-layout-grid/), a plugin found on Figma, another blog showing how to implement it with Tailwind(xxx). I would have loved a little something a little more comprehensive, more hands-on, bringing it all together. That's my story.
+
+But who knows - maybe You wouldn't be reading this guide if this author hadn't gone through an initial period of confusion and frustration. I bet that's the driving force behind at least half of the tutorial industry. I'm gonna show them how to be welcoming to beginners. Gonna show them all.
 
 #### So, how much do I need to understand to use this thing?
 
@@ -45,7 +51,7 @@ It's a solution to the old _stay responsive, stay consistent_ set of problems we
 
 As you can see from the example above, this solution involves math that can get quite intense. None of these values, like `0.83rem`, are random. In fact, baked into that formula are all of the 6 values you plug into the Utopia UI: widths, base font sizes and type scales for both `min` and `max`.
 
-**The big idea is this**: Thinking about the problem of how to make my website responsive let's say, _'I want my body text to never go smaller than, say, 16px (`base font size`) and I want it to hit that limit on a screen 320px wide (`min width`). And on that screen I want to work with a palette of font sizes that each grow by a factor of, say 1.2 (`type scale`). I give myself the same sort of limitations at the upper threshold (`max`). And since I have more space to distribute on bigger screens, I usually choose a different, sharper type scale, meaning I'll have proportionally bigger text to work with, e.g. for headings. And now that I have the two extremes figured out (smallest and biggest screens), I want any screen that's in between to interpolate my actual font size. (Interpolate is a fancy word which is really hard to explain but really simple to show. Look at [the first diagram in this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/). [Backup link to just the image](https://utopia.fyi/images/fluid-type-scale-visualisation.png). The font sizes for the 1024px screen are *interpolated* from the values at the `min` and `max` extremes. Basically, they're "somewhere in the middle", but in a consistent, proportional way.)'_
+**The big idea is this**: Thinking about the problem of how to make my website responsive let's say, _'I want my body text to never go smaller than, say, 16px (`base font size`) and I want it to hit that limit on a screen 320px wide (`min width`). And on that screen I want to work with a palette of font sizes that each grow by a factor of, say 1.2 (`[type scale](https://utopia.fyi/blog/css-modular-scales/)`). I give myself the same sort of limitations at the upper threshold (`max`). And since I have more space to distribute on bigger screens, I usually choose a different, sharper type scale, meaning I'll have proportionally bigger text to work with, e.g. for headings. And now that I have the two extremes figured out (smallest and biggest screens), I want any screen that's in between to interpolate my actual font size. (Interpolate is a fancy word which is really hard to explain but really simple to show. Look at [the first diagram in this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/). [Backup link to just the image](https://utopia.fyi/images/fluid-type-scale-visualisation.png). The font sizes for the 1024px screen are *interpolated* from the values at the `min` and `max` extremes. Basically, they're "somewhere in the middle", but in a consistent, proportional way.)'_
 
 And then we do a similar thing for our spacings like paddings. And it can even be done for baseline grids.
 
@@ -54,6 +60,21 @@ If you want to understand more about the thinking behind this, here's a few arti
 The way I understand, people have been using `clamp` with formulas like this in their CSS for years. It was all about crunching a lot of numbers and doing everything by hand. Utopia simplifies the process. It's still the same math, but you don't have to own a wizard hat to use it.
 
 Once I dug a little deeper, I found that it's also a kind design philosophy. And like all philosophies, it's opinionated and limited (link to that contrarian blog article), but hey, it's also free. And fun. And /r/oddlysatisfying.
+
+NOTES
+
+-   "fluidly interpolating between two modular scales, one for smaller screens, and one for larger screens"
+    https://utopia.fyi/blog/css-modular-scales/
+
+1. Define a type scale for a small screen
+2. Define a type scale for a large screen
+3. Tell the browser to interpolate between the two scales, based on the current viewport width
+
+I designed these (min and max), maths designed this (everything in between)
+https://utopia.fyi/blog/designing-with-fluid-type-scales/
+
+because Utopia is declarative, we only need to visualise the smallest and largest states, which we call @min and @max. Everything in between will be displayed according to the rules we set.
+https://utopia.fyi/blog/designing-a-utopian-layout-grid/
 
 ### What will I learn?
 
@@ -85,6 +106,12 @@ While working on this very site I ran down the rabbit hole of how to make text r
 -   ❤️‍🔥
 
 ### Steps
+
+Some if not all of the steps are just me following this [kind-of-guide from the Utopia blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). It was an especially exciting read for me because it acknowledges that designing is a messy process. Second guessing your desicions is part of it, even for experienced designers. I love it when I hear competent people, in whatever field, talk from that place where it becomes clear that competency is a fragile concept. We're all winging it, making mistakes and then try to do better mistakes.
+
+If You ever get stuck here with me or would like to have a companion piece, open that article.
+
+Also, for a guide that also teaches You how to use Utopia with Tailwind but is less verbose and more to the point, go [here]. It doesn't deal with Figma tho. For that, You're gonna have to stay and suffer.
 
 #### Figure out min and max?
 
@@ -147,6 +174,8 @@ Use auto-layout for everything.
 For me, working without variables, there was not a silver bullet here. I simply had to keep all font sizes and spacing values within the system. Easy to do with text - pick only font styles from the generated list. With spacing, I had to plug in my utopian values again and again (hence - a lot of peeking)
 
 If you set up your variables, use those.
+
+Another option is to use the spacing components in your actual designs, as shown [here](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/). You would just drag the squares into your design. The advantage of that is that you can select the spacing variant (s, m, l, xl, etc.) from a drop-down menu, since they are actual Figma components with variants.
 
 Why autolayout for everything? I forget where i read this but the idea was to use grid and flexbox as much as possible. so that most of your frames in figma will be governed by auto layout and most of the spacing decisions will refer to gaps and padding values within these frames. later these will easily translate to flexbox and grid layouts.
 
@@ -243,7 +272,21 @@ This is one workflow of many. It might be embarrassingly simplistic to some. It 
 
 I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feedback. Say hi, for goodness' sake, don't be shy! And especially, let me know if you got stuck, peeved or if you want more!
 
+---
+
+[x] refer to myself as 'this author'
+
 ## Resources
+
+### Utopia stuff
+
+-   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team is where I got the closest thing to a step-by-step guide when I was getting into it. Blogpost, You were my rock, You were my guiding star, You were my lighthouse.
+
+-   [The official guide to the Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) does what it says.
+
+-   [The official starter project on Figma](https://www.figma.com/community/file/1122903924123950023)
+
+### Fluid design more generally
 
 -   [Fluid Type](https://elisehe.in/2021/03/13/fluid-type) by Elise Hein talks about why do we care about fluid type in the first place? And is clamp really so great?
 
@@ -256,6 +299,10 @@ I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feed
 -   maybe more about different approaches to fluid type (xxx)
 
 -   for ideas, see stuff under 'review and deepen' in notion (xxx)
+
+---
+
+Thank You, my wonderful editors!
 
 ## META
 

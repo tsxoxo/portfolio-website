@@ -101,7 +101,7 @@ While working on this very site I ran down the rabbit hole of how to make text r
 
 -   For developing the project: Basic knowledge of the command line and a code editor. You can find [a beginner-friendly guide on Tatiana Mac's blog](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii)
 -   A basic knowledge of Figma and a free account. They have a pretty great [get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
--   A basic knowledge of utopia: what it does, what the base font size represents. see here for an explanation(xxx). I'll be giving brief refreshers but I won't be going in depth.
+-   A basic knowledge of utopia: what it does, what the base font size represents. Here's an [all-around introduction written by the creators](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)(11 min read), [here's an intro in video form](https://www.youtube.com/watch?v=DDuGtN-GakA)(18 minutes). And here's [their Figma starter project](<https://www.figma.com/file/V5t7R4xCfEwmyafLC2GkDI/Utopian-project-kickstarter-(Community)?type=design&node-id=651-506&mode=design&t=grMFbdzA3bJLN3eu-0>) where they lay out the basics in a more hands-on way - and with lots of diagrams! I'll be giving brief refreshers but I won't be going in depth.
 -   A project with tailwind CSS set up. Can be empty, can be an existing one.
 -   ❤️‍🔥
 
@@ -278,7 +278,13 @@ I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feed
 
 ## Resources
 
+### The other guide
+
+-   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod shows a way to implement a utopian design system with Tailwind CSS. Christian, You were here first, I'm just adding details.
+
 ### Utopia stuff
+
+-   [Meet Utopia: Designing And Building With Fluid Type And Space Scales](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) by the Utopia creators gives you a pretty nice all-around introduction: it lays out the problem, gives some historical context, talks about how the idea came together and lays out the resulting system, even hinting at a workflow here and there.
 
 -   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team is where I got the closest thing to a step-by-step guide when I was getting into it. Blogpost, You were my rock, You were my guiding star, You were my lighthouse.
 
@@ -288,17 +294,15 @@ I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feed
 
 ### Fluid design more generally
 
--   [Fluid Type](https://elisehe.in/2021/03/13/fluid-type) by Elise Hein talks about why do we care about fluid type in the first place? And is clamp really so great?
+-   See [TailwindCSS: Fluid typography with CSS Clamp](https://davidhellmann.com/blog/development/tailwindcss-fluid-typography-with-css-clamp#home) if You want to skip Utopia and do more of the heavy lifting yourself
 
--   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod shows a way to implement a utopian design system with Tailwind CSS. Christian, You were here first, I'm just adding details.
+-   In [Linearly Scale font-size with CSS clamp() Based on the Viewport](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/) Pedro Rodriguez goes deep into `clamp` and interpolation and brings you along for the ride.
 
--   an article on the historical context of the problem (xxx)
+### Limitations
 
--   an article on the math behind the clamp solution (xxx)
+-   In [Responsive Type and Zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html) Adrian Roselli warns against using `clamp` because of issues with zooming.
 
--   maybe more about different approaches to fluid type (xxx)
-
--   for ideas, see stuff under 'review and deepen' in notion (xxx)
+-   In [Fluid Type](https://elisehe.in/2021/03/13/fluid-type) Elise Hein talks about some fundamental questions in a very approachable way. Why do we care about fluid type in the first place? And is clamp really so great?
 
 ---
 
@@ -308,7 +312,6 @@ Thank You, my wonderful editors!
 
 NEXT STEPS:
 
--   skim utopia blog - steal phrasing to explain, collect links to specific topics, take general notes
 -   keep revising starting from 'what will i learn'
 -   put on google docs
 -   share with thays
@@ -316,6 +319,7 @@ NEXT STEPS:
 
 ### todo
 
+-   [x] skim utopia blog - steal phrasing to explain, collect links to specific topics, take general notes
 -   [x] work on intro: more personable, move what will i learn before wtf?
 -   [x] fix: extra space before links wtf
 -   [x] write some steps

@@ -6,6 +6,10 @@ tags: [design, design system, tailwind, utopia]
 draft: true
 ---
 
+### alt titles
+
+how to use utopia with figma and tailwind
+
 ## Table of Contents
 
 -   WTF
@@ -24,6 +28,8 @@ If you know what you want and you want to jump right in, skip to the guide(xxx).
 Don't know what a modular type scale is? Can't really imagine how math is going to help You here? Or how You would use any of this in your actual project? Fear not, read on, You might learn something. I'm going to give You prep You enough You can follow the step-by-step guide. And I'm going to point out the stuff I found extra helpful in letting me understand this thing.
 
 #### Official resources
+
+NOTE change this heading
 
 They have a nice interactive demo on their landing page showing off the idea (follow the link in the previous paragraph). They explain themselves in [this youtube video](https://www.youtube.com/watch?v=DDuGtN-GakA), which is 18 minutes. And in their [blog](https://utopia.fyi/blog) they do a good job of covering various aspects of their system - I think the general idea is laid out concisely in the blog post mentioned in the previous paragraph ([here](https://utopia.fyi/blog/designing-with-fluid-type-scales/) it is again).
 
@@ -76,22 +82,11 @@ https://utopia.fyi/blog/designing-with-fluid-type-scales/
 because Utopia is declarative, we only need to visualise the smallest and largest states, which we call @min and @max. Everything in between will be displayed according to the rules we set.
 https://utopia.fyi/blog/designing-a-utopian-layout-grid/
 
-### What will I learn?
-
--   a workflow which lets you actually apply the utopia design system to your project
--   how to use CSS variables in Tailwind and extend Tailwind's classes (so that the values from the design system show up in your IDE's autocomplete)
--   Figma bits
-
-### Who is this for?
-
-People who want to use the [utopia design system](https://utopia.fyi/) and want a step-by-step guide. People like me who both design and code. People obsessed with visual consistency.
-
-NOTE
-mb scratch or merge this with what will i learn
-
 ### Who is writing this?
 
 I build websites and write tutorials. [Hire me!](xxx)
+
+I've used Utopia to redesign this website and ran into enough roadblocks to make me want to save other people the same frustrations.
 
 While working on this very site I ran down the rabbit hole of how to make text responsive. I found utopia, I think through [Kevin Powell], and it looked fun enough to try. And by fun I mean it scratched that consistency itch that makes me want to look at my CSS and see only 8 values in total.
 
@@ -100,48 +95,65 @@ While working on this very site I ran down the rabbit hole of how to make text r
 ### Prerequisites
 
 -   For developing the project: Basic knowledge of the command line and a code editor. You can find [a beginner-friendly guide on Tatiana Mac's blog](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii)
+
 -   A basic knowledge of Figma and a free account. They have a pretty great [get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
+
 -   A basic knowledge of utopia: what it does, what the base font size represents. Here's an [all-around introduction written by the creators](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)(11 min read), [here's an intro in video form](https://www.youtube.com/watch?v=DDuGtN-GakA)(18 minutes). And here's [their Figma starter project](<https://www.figma.com/file/V5t7R4xCfEwmyafLC2GkDI/Utopian-project-kickstarter-(Community)?type=design&node-id=651-506&mode=design&t=grMFbdzA3bJLN3eu-0>) where they lay out the basics in a more hands-on way - and with lots of diagrams! I'll be giving brief refreshers but I won't be going in depth.
--   A project with tailwind CSS set up. Can be empty, can be an existing one.
--   ❤️‍🔥
+
+alt:
+
+-   a basic knowledge of utopia. to get started, take a peek at the things i mention in this intro section(xxx)
+
+-   A project with tailwind CSS set up. Can be a fresh, can be an existing one you want to give the old redesign.
+
+-   ❤️‍🔥❤️‍🔥❤️‍🔥
 
 ### Steps
 
-Some if not all of the steps are just me following this [kind-of-guide from the Utopia blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). It was an especially exciting read for me because it acknowledges that designing is a messy process. Second guessing your desicions is part of it, even for experienced designers. I love it when I hear competent people, in whatever field, talk from that place where it becomes clear that competency is a fragile concept. We're all winging it, making mistakes and then try to do better mistakes.
+#### Inspiration aka where I stole from
+
+Some if not all of the steps are just me following this [kind-of-guide from the Utopia blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). It was an especially exciting read for me because it acknowledges that designing is a messy process. Second guessing your desicions is part of it, even for experienced designers. I love it when I hear competent people, in whatever field, talk from that place where it becomes clear that competency is a fragile concept. We're all winging it, making mistakes and then trying to do better mistakes.
 
 If You ever get stuck here with me or would like to have a companion piece, open that article.
 
-Also, for a guide that also teaches You how to use Utopia with Tailwind but is less verbose and more to the point, go [here]. It doesn't deal with Figma tho. For that, You're gonna have to stay and suffer.
+Also, for a guide that also teaches You how to use Utopia with Tailwind but is less verbose and more to the point, go [here](xxx). It doesn't deal with Figma tho. For that, You're gonna have to stay and suffer.
 
-#### Figure out min and max?
+#### Choose sizes for min and max
 
-Whatever is appropiate for your project. I left the defaults - `min`: 320px, `max`: 1024px
+No hard answers here, choose whatever is appropiate for your project. You're gonna hear this a lot.
 
-#### Figure out the size of the biggest chunk of text of your project.
+I left the defaults - `min`: 320px, `max`: 1024px.
 
-This is what utopia calls _base font size_. I will also call it 'body text'
+320px used to be the size of phones for a long time(xxx), so the Utopia creators chose it as a reasonale starting point. To me it also seems like the lower end of viewport widths where I can read longer texts comfortably without it getting annoying?
 
-You'll figure this out twice - once for smaller screen sizes and once for bigger ones. Utopia calls these thresholds `min` and `max`. Your body text will never get smaller than the `min`-font-size and never greater than the `max`-font-size. You're basically choosing a range of acceptable font sizes your body text.
+But it's all about what You want to achieve and who You're designing for.
 
-You'll want to go into Figma and create a frame with a width of your `min`. I chose a device from the list that had a width close to my `min` then scaled it proportionally to the right width. That way I had a frame with proportions close to an actual screen.
+#### Choose font sizes for the majority of text in your project
+
+This is the _font size_ in the Utopia UI. I will also call it 'body text'.
+
+You'll figure this out twice - once for `min` and once for `max`. Your body text will never get smaller than the `min`-font-size and never greater than the `max`-font-size.
+
+##### Figuring it out
+
+One way to do it is to go into Figma and create a frame with a width of your `min`. I chose a device from the list that had a width close to my `min` then scaled it proportionally to the right width. That way I had a frame with proportions close to an actual screen.
 
 You can jump in and just make a lo/mid/hi-fi wireframe of whatever it is your making. The goal is just to figure out the base font size. Then later after generating your type and spacing scales you'll make a new frame and basically do a utopia redesign - consistently applying your scales and maybe even using a utopia grid.
 
-Don't worry about headings, subheadings and any other text - you'll deal with those later and they will be allowed to get bigger or smaller than the base text size. This is just about figuring out the size for the biggest chunks of text in your project.
+Don't worry too much about headings, subheadings and any other text - you'll deal with those later and they will be allowed to get bigger or smaller than the base text size. This is just about figuring out the size for the biggest chunks of text in your project.
 
 NOTES
 redundant, over-explainy. accept the prerequisite: reader should know about utopia.
 OR explain utopia at the start
 
-**Footnote**
-
-1. I'm sure there are many places to start from, but it makes sense to figure this one out first, since the rest of te design system relies so much on these values. The creators of utopia talk about their workflow [in their grid article](xxx).
-
-2. Utopia [encourages you](https://foo.bar) to not think of these `min` and `max` threshholds as representing devices like "min is for phones and max is for computer screens". Even though they are tied to screen widths. There's good reasons for that (source)
-
 #### Choose a type scale
 
-Go to utopia and play with the type scale - plug in different values and look at the output below. You might even take some of the generated numbers and plug them into your wireframes to see how they fit in.
+Since Utopia uses a modular type scale(xxx), you'll just have to pick a number here. Plug in different ratios into the UI, look at the output below and keep doing this until You find one tht fits your needs.
+
+You'll also be doing this twice and You might go for two different ratios - a mild one for smaller screens and a sharper one for bigger ones. This way you'll have proportionally bigger text for things like headings etc.
+
+You might even take some of the generated numbers and plug them into your wireframes to see how they fit in.
+(I did that)
 
 In my case I wanted my current hero-text 'Hi, I'm Tom!' to be as large as possible without breaking line. So I played around with various scales until I got a value that just about fit in.
 
@@ -312,7 +324,7 @@ Thank You, my wonderful editors!
 
 NEXT STEPS:
 
--   keep revising starting from 'what will i learn'
+-   keep revising starting from 'choose a type scale'
 -   put on google docs
 -   share with thays
 -   share with yemi
@@ -347,6 +359,24 @@ Here's some questions I had in the beginning and some answers I found:
 
 xxx link to some helpful articles on utopia blog
 
-### alt titles
+##### ### What will I learn?
 
-how to use utopia with figma and tailwind
+one workflow among many. How I used utopia to design this website in Figma and then code it with Tailwind CSS.
+
+That involved:
+
+-   using CSS variables in Tailwind and extend Tailwind's classes (so that the values from the design system show up in your IDE's autocomplete)
+-   Figma bits
+
+##### ### Who is this for?
+
+People who want to use the [utopia design system](https://utopia.fyi/) and want a step-by-step guide. People like me who both design and code. People obsessed with visual consistency.
+
+NOTE
+mb scratch or merge this with what will i learn
+
+**Footnotes**
+
+1. I'm sure there are many places to start from, but it makes sense to figure this one out first, since the rest of te design system relies so much on these values. The creators of utopia talk about their workflow [in their grid article](xxx).
+
+2. Utopia [encourages you](https://foo.bar) to not think of these `min` and `max` threshholds as representing devices like "min is for phones and max is for computer screens". Even though they are tied to screen widths. There's good reasons for that (source)

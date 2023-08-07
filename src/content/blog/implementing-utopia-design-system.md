@@ -10,6 +10,8 @@ draft: true
 
 how to use utopia with figma and tailwind
 
+-   A workflow for using utopia with figma and tailwind
+
 ## Table of Contents
 
 -   WTF
@@ -26,6 +28,13 @@ If you know what you want and you want to jump right in, skip to the guide(xxx).
 [Utopia](https://utopia.fyi/) is basically a tool to help with responsive design - meaning text and spacings adjusting to the user's screen size. The basic idea is this: design with a modular scale for the smallest screen, design with another [modular scale](https://utopia.fyi/blog/css-modular-scales/) for the biggest screen, and let math do the rest for you in between. I'm pretty much citing [this blog post](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
 
 Don't know what a modular type scale is? Can't really imagine how math is going to help You here? Or how You would use any of this in your actual project? Fear not, read on, You might learn something. I'm going to give You prep You enough You can follow the step-by-step guide. And I'm going to point out the stuff I found extra helpful in letting me understand this thing.
+
+### My story
+
+NOTE
+A section to frame and waffle
+
+Some if not all of the steps are just me following this [kind-of-guide from the Utopia blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). It was an especially exciting read for me because it acknowledges that designing is a messy process. Second guessing your desicions is part of it, even for experienced designers. I love it when I hear competent people, in whatever field, talk from that place where it becomes clear that competency is a fragile concept. We're all winging it, making mistakes and then trying to do better mistakes.
 
 #### Official resources
 
@@ -110,13 +119,15 @@ alt:
 
 ### Steps
 
-#### Inspiration aka where I stole from
+Disclaimer: this is one workflow among many
 
-Some if not all of the steps are just me following this [kind-of-guide from the Utopia blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). It was an especially exciting read for me because it acknowledges that designing is a messy process. Second guessing your desicions is part of it, even for experienced designers. I love it when I hear competent people, in whatever field, talk from that place where it becomes clear that competency is a fragile concept. We're all winging it, making mistakes and then trying to do better mistakes.
+#### Alternatives
 
-If You ever get stuck here with me or would like to have a companion piece, open that article.
+If You don't get along with this guide, You ever get stuck or You'd like a companion piece, take a peek at these resources:
 
-Also, for a guide that also teaches You how to use Utopia with Tailwind but is less verbose and more to the point, go [here](xxx). It doesn't deal with Figma tho. For that, You're gonna have to stay and suffer.
+The [_Guide to designing a utopian layout grid_ from the Utopia blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) goes only through part of the process, but that was already immensely helpful to me (meaning I stole a lot from it). Even more important, it gets across that the process is messy and full of questions that only You can answer.
+
+Christian Penrod's [Tailwind CSS Responsive Design Without Breakpoints]() shows how to implement the Utopia system in Tailwind. But it's less verbose than what You're reading here. Much less verbose. It also helped me a lot in that it made me realize that it's possible and someone has done it without too much hassle. The way I do it in this guide is a slightly tweaked version of what Christian does.
 
 #### Choose sizes for min and max
 
@@ -290,19 +301,26 @@ I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feed
 
 ## Resources
 
-### The other guide
+### The other guides
 
 -   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod shows a way to implement a utopian design system with Tailwind CSS. Christian, You were here first, I'm just adding details.
+
+-   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team is where I got the closest thing to a step-by-step guide when I was getting into it. Blogpost, You were my rock, You were my guiding star, You were my lighthouse.
 
 ### Utopia stuff
 
 -   [Meet Utopia: Designing And Building With Fluid Type And Space Scales](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) by the Utopia creators gives you a pretty nice all-around introduction: it lays out the problem, gives some historical context, talks about how the idea came together and lays out the resulting system, even hinting at a workflow here and there.
 
--   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team is where I got the closest thing to a step-by-step guide when I was getting into it. Blogpost, You were my rock, You were my guiding star, You were my lighthouse.
-
 -   [The official guide to the Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) does what it says.
 
--   [The official starter project on Figma](https://www.figma.com/community/file/1122903924123950023)
+-   [The official starter project on Figma](https://www.figma.com/community/file/1122903924123950023).
+
+### Utopia-Tailwind integrations
+
+I found two plugins that were made to help with integrating Utopia into Tailwind. Neither worked out-of-the-box for me and I wasn't in the mood for hacking.
+
+-   [cwsdigital/tailwind-utopia](https://github.com/cwsdigital/tailwind-utopia)
+-   [domchristie/tailwind-utopia](https://github.com/domchristie/tailwind-utopia). This one's a fork of the `cwsdigital` one but has a different API.
 
 ### Fluid design more generally
 

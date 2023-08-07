@@ -30,40 +30,39 @@ If you know what you want and you want to jump right in, skip to the steps(/#ste
 
 But it's also a tool in the broader sense of the term - it's a certain approach to a problem we web designers face every day (every day I live in a society).
 
-These are some resources I found helpful explaining the general concept:
-
 ### Where to start
+
+These are some resources I found helpful explaining the general concept:
 
 -   🤏 Play with an [interactive demo](https://utopia.fyi/) to get a sense of the idea.
 -   👁👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
 -   📜, 👁👁 Read a [shorter intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
 -   📜 Read a [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.
 
-#### So, how much do I need to understand to use this thing?
+### Main concepts
 
-Well, I think it helps to have a grasp of the problem of responsiveness and the way Utopia tries to solve it. These things have been well explained in the above resources.
+I won't be going into depth. I think the above resources do a decent job of explaining Utopis's concept (please let me if You got stuck somewhere). But I can give You a little refresher. I assume You've got a sense of the main idea.
 
-The UI of the actual Utopia tool is simple, but there is a lot going on behind it. In the end the tool is there to make this specific approach to responsive design a little simpler. You have to know the approach.
+#### In a nutshell
 
-#### Main concepts
+Quotes from official ressources that sum up the Utopia approach:
 
-The thing I can do is give You a little refresher. I assume You've groked got the main idea.
+> 1. Define a type scale for a small screen
+> 2. Define a type scale for a large screen
+> 3. Tell the browser to interpolate between the two scales, based on the current viewport width
 
-#### Summing it up
+[source](https://utopia.fyi/blog/designing-with-fluid-type-scales/)
 
-These are all quotes from official Utopia ressources. I found these particularly clarifying.
+> I designed these [min and max], maths designed this [everything in between]
 
-1. Define a type scale for a small screen
-2. Define a type scale for a large screen
-3. Tell the browser to interpolate between the two scales, based on the current viewport width
+(ibid.)
 
-"I designed these [min and max], maths designed this [everything in between]"
-[source[(https://utopia.fyi/blog/designing-with-fluid-type-scales/)
+> (...) we only need to visualise the smallest and largest states, which we call @min and @max. Everything in between will be displayed according to the rules we set.
 
-"because Utopia is declarative, we only need to visualise the smallest and largest states, which we call @min and @max. Everything in between will be displayed according to the rules we set."
 [source](https://utopia.fyi/blog/designing-a-utopian-layout-grid/)
 
-"fluidly interpolating between two modular scales, one for smaller screens, and one for larger screens"
+> (...) fluidly interpolating between two modular scales, one for smaller screens, and one for larger screens
+
 [source](https://utopia.fyi/blog/css-modular-scales/)
 
 #### Dictionary of the Utopia UI
@@ -397,6 +396,12 @@ As with a lot of tools, it was born out of a specific perspective. So You can al
 
 /intro to intro
 Don't know what a modular type scale is? Can't really imagine how math is going to help You here? Or how You would use any of this in your actual project? Fear not, read on, You might learn something. I'm going to give You prep You enough You can follow the step-by-step guide. And I'm going to point out the stuff I found extra helpful in letting me understand this thing.
+
+##### So, how much do I need to understand to use this thing?
+
+Well, I think it helps to have a grasp of the problem of responsiveness and the way Utopia tries to solve it. These things have been well explained in the above resources.
+
+The UI of the actual Utopia tool is simple, but there is a lot going on behind it. In the end the tool is there to make this specific approach to responsive design a little simpler. You have to know the approach.
 
 ##### wordy
 

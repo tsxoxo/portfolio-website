@@ -26,21 +26,18 @@ If you know what you want and you want to jump right in, skip to the steps(/#ste
 
 ## What is Utopia?
 
-[Utopia](https://utopia.fyi/) is basically a tool to help with [responsive design](xxx). At the surface level it's a website where You plug in some values and get out CSS that makes your text and spacings adjust to the user's viewport size.
+[Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the surface it's a website where You plug in some values and get out CSS that makes your text and spacings adjust to the user's viewport size.
 
-/frame it in a broader sense?
-This is a fairly complex problem from a UX perspective(xxx that one contrarian article). Utopia attempts to solve it in a particular way.
+But it's also a tool in the broader sense of the term - it's a certain approach to a problem we web designers face every day (every day I live in a society).
 
-As with a lot of tools, it was born out of a specific perspective. So You can also see it as a sort of design philosphy with a tool that makes it relatively easy to realize the values inherent in it (accidental pun).
-
-**The basic idea is this**: design with a modular scale for the smallest screen, design with another [modular scale](https://utopia.fyi/blog/css-modular-scales/) for the biggest screen, and let math do the rest for you in between. I'm pretty much citing [this blog post](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
+These are some resources I found helpful explaining the general concept:
 
 ### Where to start
 
--   🤏 [interactive demo] They have a nice interactive demo on their landing page showing off the idea (follow the link in the previous paragraph).
--   👁👁 [video] They explain themselves in [this youtube video](https://www.youtube.com/watch?v=DDuGtN-GakA) (18 minutes).
--   📜 [article, shorter] The general idea is laid out concisely in this blog post mentioned in the previous paragraph ([here](https://utopia.fyi/blog/designing-with-fluid-type-scales/) it is again).
--   📜 [article, longer] A more in-depth intro which also goes into the context of the larger problem (xxx smashing magazine article)
+-   🤏 Play with an [interactive demo](https://utopia.fyi/) to get a sense of the idea.
+-   👁👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
+-   📜, 👁👁 Read a [shorter intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
+-   📜 Read a [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.
 
 #### So, how much do I need to understand to use this thing?
 
@@ -383,6 +380,7 @@ NEXT STEPS:
 -   make links open in new tab
 -   revise: shorten utopia-basics section; rewrite/break up 'big idea'
 -   IDEA: make each step of the guide formatted like _succinct instructions (1 paragraph) --- detailed explanation and musings_. this could be visually reinforced by making the instructions stick out more than the musings (e.g. higher contrast), or even by hiding the explanation in a foldable element (use `<dt>`?)
+-   IDEA: broaden scope - talk about design systems; about different approaches to responsive design (or link to resources)
 
 ### extra copy
 
@@ -390,6 +388,14 @@ You'll go through a workflow of using utopia's fluid scale generator to set up a
 
 #### utopia intro
 
+/frame problem in a broader sense?
+This is a fairly complex problem from a UX perspective(xxx that one contrarian article). Utopia attempts to solve it in a particular way.
+
+As with a lot of tools, it was born out of a specific perspective. So You can also see it as a sort of design philosphy with a tool that makes it relatively easy to realize the values inherent in it (accidental pun).
+
+**The basic idea is this**: design with a modular scale for the smallest screen, design with another [modular scale](https://utopia.fyi/blog/css-modular-scales/) for the biggest screen, and let math do the rest for you in between. I'm pretty much citing [this blog post](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
+
+/intro to intro
 Don't know what a modular type scale is? Can't really imagine how math is going to help You here? Or how You would use any of this in your actual project? Fear not, read on, You might learn something. I'm going to give You prep You enough You can follow the step-by-step guide. And I'm going to point out the stuff I found extra helpful in letting me understand this thing.
 
 ##### wordy

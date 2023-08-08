@@ -132,11 +132,7 @@ Disclaimer: this is one workflow among many
 
 #### Alternatives
 
-If You don't get along with this guide, You ever get stuck or You'd like a companion piece, take a peek at these resources:
-
-The [_Guide to designing a utopian layout grid_ from the Utopia blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) goes only through part of the process, but that was already immensely helpful to me (meaning I stole a lot from it). Even more important, it gets across that the process is messy and full of questions that only You can answer.
-
-Christian Penrod's [Tailwind CSS Responsive Design Without Breakpoints]() shows how to implement the Utopia system in Tailwind. But it's less verbose than what You're reading here. Much less verbose. It also helped me a lot in that it made me realize that it's possible and someone has done it without too much hassle. The way I do it in this guide is a slightly tweaked version of what Christian does.
+[2 other guides](/#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They're not as comprehensive as this one, but on the flip side -- they're also shorter.
 
 #### Choose sizes for min and max
 
@@ -312,9 +308,9 @@ I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feed
 
 ### The other guides
 
--   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod shows a way to implement a utopian design system with Tailwind CSS. Christian, You were here first, I'm just adding details.
+-   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod also shows a way to implement the Utopia system in Tailwind. The way I do it in this guide builds on his approach. His guide is also much less verbose than what You're reading here. Much less verbose. Thank You, Christian. You helped me realize that this is possible and possible without too much hassle.
 
--   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team is where I got the closest thing to a step-by-step guide when I was getting into it. Blogpost, You were my rock, You were my guiding star, You were my lighthouse.
+-   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team goes only through part of the process, but that was already immensely helpful to me. Even more important, it acknowledges that the design process is messy and full of questions that only You can answer.
 
 ### Utopia stuff
 
@@ -419,6 +415,12 @@ If you want to understand more about the thinking behind this, here's a few arti
 The way I understand, people have been using `clamp` with formulas like this in their CSS for years. It was all about crunching a lot of numbers and doing everything by hand. Utopia simplifies the process. It's still the same math, but you don't have to own a wizard hat to use it.
 
 Once I dug a little deeper, I found that it's also a kind design philosophy. And like all philosophies, it's opinionated and limited (link to that contrarian blog article), but hey, it's also free. And fun. And /r/oddlysatisfying.
+
+#### steps
+
+##### alternatives
+
+If You don't get along with this guide, You ever get stuck or You'd like a companion piece, take a peek at these resources:
 
 #### ## wtf
 

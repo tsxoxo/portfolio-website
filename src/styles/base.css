@@ -35,34 +35,8 @@
 }
 
 @layer base {
-	.blog-post * + p:not(:is(h1, h2, h3, h4, h5, h6) + p, blockquote + p),
-	p + *:not(p) {
-		@apply mt-space-fl-l;
-	}
-	.blog-post a {
-		@apply inline;
-	}
-	blockquote + p {
-		@apply mt-space-fl-2xs indent-16;
-	}
-	li > p {
-		@apply inline;
-	}
-	li {
-		@apply text-fl-base;
-		text-indent: 1em;
-	}
-
-	.blog-post ul,
-	ol {
-		@apply grid gap-space-fl-s;
-	}
-
-	.blog-post ul {
-		list-style: disc inside;
-	}
-	.blog-post ol {
-		list-style: decimal inside;
+	* {
+		line-height: 2;
 	}
 
 	.site-padding-x {
@@ -71,18 +45,24 @@
 	main {
 		@apply bg-zinc-50 pb-space-fl-3xl pt-space-fl-s;
 	}
+	hgroup {
+		@apply grid gap-space-fl-2xs;
+	}
+	hgroup p {
+		@apply font-extralight;
+	}
 	h1 {
 		@apply text-fl-2xl;
 	}
 	h2 {
-		@apply mb-space-fl-m mt-space-fl-l text-fl-xl;
+		@apply text-fl-xl;
 	}
 	h3 {
-		@apply mb-space-fl-s mt-space-fl-m text-fl-lg;
+		@apply text-fl-lg;
 	}
 	h4,
 	h5 {
-		@apply mb-space-fl-2xs mt-space-fl-l text-fl-base font-bold;
+		@apply text-fl-base font-bold;
 	}
 	a {
 		@apply inline-block;
@@ -106,22 +86,58 @@
 	.techstack {
 		@apply font-monospace;
 	}
-	hgroup {
-		@apply grid gap-space-fl-2xs;
+	.blog-post blockquote {
+		@apply rounded-lg bg-zinc-200 p-space-fl-l;
 	}
-	hgroup > p {
-		@apply font-extralight;
+	.blog-post blockquote + p {
+		@apply text-right;
 	}
-	.blog-post h2 {
-		@apply mb-space-fl-s mt-space-fl-2xl;
+	.blog-post li > p {
+		@apply inline;
+	}
+	.blog-post li {
+		@apply text-fl-base;
+		text-indent: 1em;
 	}
 	.blog-post hgroup {
 		@apply mb-space-fl-2xl;
 	}
-	pre {
+	.blog-post h2 {
+		@apply mb-space-fl-s mt-space-fl-2xl;
+	}
+	.blog-post h3 {
+		@apply mb-space-fl-s mt-space-fl-m;
+	}
+	.blog-post h4,
+	h5 {
+		@apply mb-space-fl-2xs mt-space-fl-l;
+	}
+
+	.blog-post * + p:not(:is(h1, h2, h3, h4, h5, h6) + p, blockquote + p),
+	p + *:not(p) {
+		@apply mt-space-fl-l;
+	}
+
+	.blog-post a {
+		@apply inline;
+	}
+
+	.blog-post ul,
+	ol {
+		@apply grid gap-space-fl-s;
+	}
+
+	.blog-post ul {
+		list-style: disc inside;
+	}
+	.blog-post ol {
+		list-style: decimal inside;
+	}
+
+	.blog-post pre {
 		@apply my-space-fl-l p-space-fl-s;
 	}
-	code {
+	.blog-post code {
 		@apply whitespace-pre-wrap;
 	}
 	@font-face {

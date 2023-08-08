@@ -136,7 +136,7 @@
 	}
 
 	.blog-post * + p:not(:is(h1, h2, h3, h4, h5, h6) + p, blockquote + p),
-	p + *:not(p) {
+	.blog-post p + *:not(p) {
 		@apply mt-space-fl-l;
 	}
 

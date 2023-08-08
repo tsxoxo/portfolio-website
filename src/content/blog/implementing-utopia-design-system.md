@@ -28,7 +28,7 @@ If you know what you want and you want to jump right in, **[skip to the steps](#
 
 [Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the surface it's a website where You plug in some values and get out CSS that makes your text and spacings adjust to the user's viewport size.
 
-But it's also a tool in the broader sense of the term - it's a certain approach to a problem we web designers face every day (every day I live in a society).
+But it's also a tool in the broader sense of the term -- it's a certain approach to a problem we web designers face every day (every day I live in a society).
 
 ### Where to start
 
@@ -91,11 +91,11 @@ onboarding rant
 
 It took me a while to wrap my head around Utopia. Meaning that I sat confused in front of their UI for a while, then read like 6 of their blog articles, then watched their intro video. Then I did my civic duty and complained in their youtube comments that their system could be more accessible to newcomers.
 
-I don't necessarily find the concept super hard (especially once I got it, hehe), but it was a mystery for me how to actually use this system - where do I start? What's `font size` stand for in the Utopia UI? Ok, it spit out some CSS, but can I design with this in Figma (without it being super cumbersome)?
+I don't necessarily find the concept super hard (especially once I got it, hehe), but it was a mystery for me how to actually use this system -- where do I start? What's `font size` stand for in the Utopia UI? Ok, it spit out some CSS, but can I design with this in Figma (without it being super cumbersome)?
 
-In the end I found a way (I think, fingers crossed 🤞🏼). But it was by grasping on to straws - part of [a workflow laid in a blog post](https://utopia.fyi/blog/designing-a-utopian-layout-grid/), a plugin found on Figma, another blog showing how to implement it with Tailwind(xxx). I would have loved a little something a little more comprehensive, more hands-on, bringing it all together. That's my story.
+In the end I found a way (I think, fingers crossed 🤞🏼). But it was by grasping on to straws -- part of [a workflow laid in a blog post](https://utopia.fyi/blog/designing-a-utopian-layout-grid/), a plugin found on Figma, another blog showing how to implement it with Tailwind(xxx). I would have loved a little something a little more comprehensive, more hands-on, bringing it all together. That's my story.
 
-But who knows - maybe You wouldn't be reading this guide if this author hadn't gone through an initial period of confusion and frustration. I bet that's the driving force behind at least half of the tutorial industry. I'm gonna show them how to be welcoming to beginners. Gonna show them all.
+But who knows -- maybe You wouldn't be reading this guide if this author hadn't gone through an initial period of confusion and frustration. I bet that's the driving force behind at least half of the tutorial industry. I'm gonna show them how to be welcoming to beginners. Gonna show them all.
 
 ### My story
 
@@ -142,7 +142,7 @@ I read on [their blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/)
 
 They go on to explain: basically, 320px is a small yet tested size, since that's how big phones used to be for a long time and y'all were doing fine. So the Utopia creators chose it as a reasonale starting point. I take it as a value meaning _somewhere around the lower end of viewport widths where I can read longer texts comfortably without it getting annoying_.
 
-For designing this site, I left the defaults - `min`: 320px, `max`: 1024px. Because I had enough things to worry about.
+For designing this site, I left the defaults -- `min`: 320px, `max`: 1024px. Because I had enough things to worry about.
 
 But it's all about what You want to achieve and who You're designing for.
 
@@ -150,7 +150,7 @@ But it's all about what You want to achieve and who You're designing for.
 
 This is the _font size_ in the Utopia UI. This represents the size of the majority of text in your project.
 
-You'll figure this out twice - once for `min` and once for `max`. Your body text will never get smaller than the `min`-font-size and never greater than the `max`-font-size.
+You'll figure this out twice -- once for `min` and once for `max`. Your body text will never get smaller than the `min`-font-size and never greater than the `max`-font-size.
 
 Here's kind of how I did it:
 
@@ -164,7 +164,7 @@ Here's kind of how I did it:
 
 Plug in ratios into the Utopia UI and look at the output below until You find one that fits your needs.
 
-You'll also be doing this twice and You might go for two different ratios - a mild one for smaller screens and a sharper one for bigger ones. This way you'll have proportionally bigger text for things like headings etc.
+You'll also be doing this twice and You might go for two different ratios -- a mild one for smaller screens and a sharper one for bigger ones. This way you'll have proportionally bigger text for things like headings etc.
 
 Here's what I did. This was me handling a specific problem, but maybe it can give an idea of an approach:
 
@@ -180,7 +180,7 @@ NOTES
 
 #### Go to Figma and run the utopia plugin
 
-Get the plugin here(xxx) and run it. Either plug in the values from the previous step or copy the whole url into the plugin. Wait for like 20 seconds until it finishes working. Find the generated output somewhere on the canvas - it's a big bunch. Frame it. Put it somewhere where you can easily take a peek while you're designing. I was peeking at it pretty often.
+Get the plugin here(xxx) and run it. Either plug in the values from the previous step or copy the whole url into the plugin. Wait for like 20 seconds until it finishes working. Find the generated output somewhere on the canvas -- it's a big bunch. Frame it. Put it somewhere where you can easily take a peek while you're designing. I was peeking at it pretty often.
 
 Now here might be a good case to use the new variables feature in Figma. put all of these values there and you dont have to look them up. you could even map min and max to their own modes. could be interesting. i was ready to do that but unfortunately figma restricts free accounts to 1 mode only. I feel this might be a good moment to link to my 'buy me a coffee (or Figma subscription)' thingy. I pledge that if I get 15 bucks, I'll buy a month of Figma and write a guide on doing this with variables.
 
@@ -202,7 +202,7 @@ To settle on a usable height, see this step[xxx]
 
 Use auto-layout for everything.
 
-For me, working without variables, there was not a silver bullet here. I simply had to keep all font sizes and spacing values within the system. Easy to do with text - pick only font styles from the generated list. With spacing, I had to plug in my utopian values again and again (hence - a lot of peeking)
+For me, working without variables, there was not a silver bullet here. I simply had to keep all font sizes and spacing values within the system. Easy to do with text -- pick only font styles from the generated list. With spacing, I had to plug in my utopian values again and again (hence -- a lot of peeking)
 
 If you set up your variables, use those.
 
@@ -363,7 +363,7 @@ NEXT STEPS:
 
 ### todo
 
--   [x] skim utopia blog - steal phrasing to explain, collect links to specific topics, take general notes
+-   [x] skim utopia blog -- steal phrasing to explain, collect links to specific topics, take general notes
 -   [x] work on intro: more personable, move what will i learn before wtf?
 -   [x] fix: extra space before links wtf
 -   [x] write some steps
@@ -378,4 +378,4 @@ NEXT STEPS:
 -   make links open in new tab
 -   revise: shorten utopia-basics section; rewrite/break up 'big idea'
 -   IDEA: make each step of the guide formatted like _succinct instructions (1 paragraph) --- detailed explanation and musings_. this could be visually reinforced by making the instructions stick out more than the musings (e.g. higher contrast), or even by hiding the explanation in a foldable element (use `<dt>`?)
--   IDEA: broaden scope - talk about design systems; about different approaches to responsive design (or link to resources)
+-   IDEA: broaden scope -- talk about design systems; about different approaches to responsive design (or link to resources)

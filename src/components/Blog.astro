@@ -2,14 +2,13 @@
 import { getCollection } from 'astro:content'
 import { t } from 'i18next'
 
-const env = process.env.NODE_ENV
+const isDev = import.meta.env.DEV
 
-const blogEntries =
-	env === 'development'
-		? await getCollection('blog')
-		: await getCollection('blog', ({ data }) => {
-				return data.isDraft !== true
-		  })
+const blogEntries = isDev
+	? await getCollection('blog')
+	: await getCollection('blog', ({ data }) => {
+			return data.isDraft !== true
+	  })
 ---
 
 {
@@ -20,10 +19,10 @@ const blogEntries =
 				<p class="text-fl-base">{t('home.blog.subheading')}</p>
 			</hgroup>
 			{blogEntries.map((entry) => (
-				<a href={`/blog/${entry.slug}`}>
+				<p>
 					{entry.data.isDraft && <strong>draft:</strong>}
-					{entry.data.title}
-				</a>
+					<a href={`/blog/${entry.slug}`}>{entry.data.title}</a>
+				</p>
 			))}
 		</section>
 	)

@@ -92,6 +92,15 @@
 	.blog-post blockquote + p {
 		@apply text-right;
 	}
+	.blog-post cite {
+		@apply inline-block w-full;
+	}
+	:is(.blog-post cite) * {
+		@apply w-full pb-space-fl-m;
+	}
+	.blog-post cite:not(:has(> *)) {
+		@apply pb-space-fl-m;
+	}
 	.blog-post ul,
 	ol {
 		@apply grid gap-space-fl-s pl-space-fl-xl;
@@ -131,7 +140,7 @@
 		@apply mt-space-fl-l;
 	}
 
-	.blog-post a {
+	.blog-post a:not(cite *) {
 		@apply inline;
 	}
 

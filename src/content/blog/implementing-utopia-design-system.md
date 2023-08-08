@@ -128,52 +128,55 @@ While working on this very site I ran down the rabbit hole of how to make text r
 
 ### Steps
 
-Disclaimer: this is one workflow among many
+Disclaimer: this is one workflow among many.
 
 #### Alternatives
 
-[2 other guides](#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They only cover parts of the whole while I'm trying to go from start to finish. But that also makes them shorter, which is what You might want.
+[2 other guides](#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They focus on parts of the whole while I'm trying to go from start to finish. But that also makes them shorter, which is what You might want.
 
-#### Choose sizes for min and max
+#### Choose widths for `min` and `max`
 
-No hard answers here, choose whatever is appropiate for your project. You're gonna hear this a lot.
+No hard answers here -- choose whatever is appropiate for your project. You're gonna hear this a lot.
 
-I left the defaults - `min`: 320px, `max`: 1024px.
+I read on [their blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/): _"(...) it makes sense to design the @min screens as small as is practically possible"_. And that made sense to me.
 
-320px used to be the size of phones for a long time(xxx), so the Utopia creators chose it as a reasonale starting point. To me it also seems like the lower end of viewport widths where I can read longer texts comfortably without it getting annoying?
+They go on to explain: basically, 320px is a small yet tested size, since that's how big phones used to be for a long time and y'all were doing fine. So the Utopia creators chose it as a reasonale starting point. I take it as a value meaning _somewhere around the lower end of viewport widths where I can read longer texts comfortably without it getting annoying_.
+
+For designing this site, I left the defaults - `min`: 320px, `max`: 1024px. Because I had enough things to worry about.
 
 But it's all about what You want to achieve and who You're designing for.
 
-#### Choose font sizes for the majority of text in your project
+#### Choose a body text size
 
-This is the _font size_ in the Utopia UI. I will also call it 'body text'.
+This is the _font size_ in the Utopia UI. This represents the size of the majority of text in your project.
 
 You'll figure this out twice - once for `min` and once for `max`. Your body text will never get smaller than the `min`-font-size and never greater than the `max`-font-size.
 
-##### Figuring it out
+Here's kind of how I did it:
 
-One way to do it is to go into Figma and create a frame with a width of your `min`. I chose a device from the list that had a width close to my `min` then scaled it proportionally to the right width. That way I had a frame with proportions close to an actual screen.
+1. Create a `min` frame in Figma. I chose a device from the list that had a width close to my `min` then scaled it proportionally to the right width. That way I had a frame with proportions close to an actual screen.
 
-You can jump in and just make a lo/mid/hi-fi wireframe of whatever it is your making. The goal is just to figure out the base font size. Then later after generating your type and spacing scales you'll make a new frame and basically do a utopia redesign - consistently applying your scales and maybe even using a utopia grid.
+2. Design a wireframe of your thing. The goal is just to figure out the body font size. Start accepting that You'll be re-making and re-deciding this again. -- Later after generating your type and spacing scales You'll make a new frame and basically do a Utopia redesign -- consistently applying your scales and maybe even using a Utopia grid.
 
-Don't worry too much about headings, subheadings and any other text - you'll deal with those later and they will be allowed to get bigger or smaller than the base text size. This is just about figuring out the size for the biggest chunks of text in your project.
+3. Do steps 1 and 2 for `max`
 
-NOTES
-redundant, over-explainy. accept the prerequisite: reader should know about utopia.
-OR explain utopia at the start
+#### Choose a `type scale`
 
-#### Choose a type scale
-
-Since Utopia uses a modular type scale(xxx), you'll just have to pick a number here. Plug in different ratios into the UI, look at the output below and keep doing this until You find one tht fits your needs.
+Plug in ratios into the Utopia UI and look at the output below until You find one that fits your needs.
 
 You'll also be doing this twice and You might go for two different ratios - a mild one for smaller screens and a sharper one for bigger ones. This way you'll have proportionally bigger text for things like headings etc.
 
-You might even take some of the generated numbers and plug them into your wireframes to see how they fit in.
-(I did that)
+Here's what I did. This was me handling a specific problem, but maybe it can give an idea of an approach:
 
-In my case I wanted my current hero-text 'Hi, I'm Tom!' to be as large as possible without breaking line. So I played around with various scales until I got a value that just about fit in.
+1. Design or continue designing a wireframe to include some bigger headings. I did this with a specific consideration: I had a big chunky hero text that I wanted to stay on a single line. So I made my hero-heading as big as possible without wrapping and paid attention to the font size. This piece of text is what I focused on and decided to choose my scale ratio around it.
 
-If you're anything like me, you will likely iterate on this - aka realize it doesnt work, slap your forehead (optional) and do it again. In short: there's no need to get it perfect the first time. For example, I changed the spacing around the hero text a few timesas well as the copy itself.
+2. Try out some scale ratios until one of them generates a scale or a scale-degree that fits your specific needs. In my case I was looking for a scale that generated a font size pretty close to what I had given my hero-heading in step 1. And that font size had to be several scales up the ladder, since I needed room for other, smaller headings.
+
+The dirty reality was me just taking the generated numbers and applying them to my headings in Figma to see how they fit in. And playing with font-weight on top of that.
+
+NOTES
+
+-   is this a possible alternative? -- instead of using the utopia website to generate type scales and manually copy-pasting them into figma, use the utopia figma plugin?
 
 #### Go to Figma and run the utopia plugin
 
@@ -347,7 +350,13 @@ Thank You, my wonderful editors!
 
 NEXT STEPS:
 
--   keep revising starting from 'choose a type scale'
+[] revise '# steps'
+
+-   revise '# wtf'
+-   revise '# outro'
+-   decide on order
+-   check intro
+-   test this: \* is this a possible alternative? -- instead of using the utopia website to generate type scales and manually copy-pasting them into figma, use the utopia figma plugin?
 -   put on google docs
 -   share with thays
 -   share with yemi
@@ -370,88 +379,3 @@ NEXT STEPS:
 -   revise: shorten utopia-basics section; rewrite/break up 'big idea'
 -   IDEA: make each step of the guide formatted like _succinct instructions (1 paragraph) --- detailed explanation and musings_. this could be visually reinforced by making the instructions stick out more than the musings (e.g. higher contrast), or even by hiding the explanation in a foldable element (use `<dt>`?)
 -   IDEA: broaden scope - talk about design systems; about different approaches to responsive design (or link to resources)
-
-### extra copy
-
-You'll go through a workflow of using utopia's fluid scale generator to set up a design system, setting it up so you can work with it in Figma and then implementing it with tailwind CSS.
-
-#### utopia intro
-
-/frame problem in a broader sense?
-This is a fairly complex problem from a UX perspective(xxx that one contrarian article). Utopia attempts to solve it in a particular way.
-
-As with a lot of tools, it was born out of a specific perspective. So You can also see it as a sort of design philosphy with a tool that makes it relatively easy to realize the values inherent in it (accidental pun).
-
-**The basic idea is this**: design with a modular scale for the smallest screen, design with another [modular scale](https://utopia.fyi/blog/css-modular-scales/) for the biggest screen, and let math do the rest for you in between. I'm pretty much citing [this blog post](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
-
-/intro to intro
-Don't know what a modular type scale is? Can't really imagine how math is going to help You here? Or how You would use any of this in your actual project? Fear not, read on, You might learn something. I'm going to give You prep You enough You can follow the step-by-step guide. And I'm going to point out the stuff I found extra helpful in letting me understand this thing.
-
-##### So, how much do I need to understand to use this thing?
-
-Well, I think it helps to have a grasp of the problem of responsiveness and the way Utopia tries to solve it. These things have been well explained in the above resources.
-
-The UI of the actual Utopia tool is simple, but there is a lot going on behind it. In the end the tool is there to make this specific approach to responsive design a little simpler. You have to know the approach.
-
-##### wordy
-
-If You're not in the mood to go through the official resources, here's the way it works, as I see it, unoficially:
-
-You go to their website, plug in a handful of values and it spits out some CSS variables that you can copy and use in your project. For example:
-
-`--step-0: clamp(1.00rem, calc(0.83rem + 0.83vw), 1.50rem)`
-
-What that does is make sure your text never gets smaller than 1.00rem, never gets bigger than 1.5rem, and is fluid in between (meaning it changes according to screen size).
-
-It's a solution to the old _stay responsive, stay consistent_ set of problems we web designers face every single day. (Every day I live in a society.)
-
-As you can see from the example above, this solution involves math that can get quite intense. None of these values, like `0.83rem`, are random. In fact, baked into that formula are all of the 6 values you plug into the Utopia UI: widths, base font sizes and type scales for both `min` and `max`.
-
-**The big idea is this**: Thinking about the problem of how to make my website responsive let's say, _'I want my body text to never go smaller than, say, 16px (`base font size`) and I want it to hit that limit on a screen 320px wide (`min width`). And on that screen I want to work with a palette of font sizes that each grow by a factor of, say 1.2 (`[type scale](https://utopia.fyi/blog/css-modular-scales/)`). I give myself the same sort of limitations at the upper threshold (`max`). And since I have more space to distribute on bigger screens, I usually choose a different, sharper type scale, meaning I'll have proportionally bigger text to work with, e.g. for headings. And now that I have the two extremes figured out (smallest and biggest screens), I want any screen that's in between to interpolate my actual font size. (Interpolate is a fancy word which is really hard to explain but really simple to show. Look at [the first diagram in this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/). [Backup link to just the image](https://utopia.fyi/images/fluid-type-scale-visualisation.png). The font sizes for the 1024px screen are *interpolated* from the values at the `min` and `max` extremes. Basically, they're "somewhere in the middle", but in a consistent, proportional way.)'_
-
-And then we do a similar thing for our spacings like paddings. And it can even be done for baseline grids.
-
-If you want to understand more about the thinking behind this, here's a few articles going in depth(xxx).
-
-The way I understand, people have been using `clamp` with formulas like this in their CSS for years. It was all about crunching a lot of numbers and doing everything by hand. Utopia simplifies the process. It's still the same math, but you don't have to own a wizard hat to use it.
-
-Once I dug a little deeper, I found that it's also a kind design philosophy. And like all philosophies, it's opinionated and limited (link to that contrarian blog article), but hey, it's also free. And fun. And /r/oddlysatisfying.
-
-#### steps
-
-##### alternatives
-
-If You don't get along with this guide, You ever get stuck or You'd like a companion piece, take a peek at these resources:
-
-#### ## wtf
-
-If You looked at utopia and find it fascinating but a little hard to grasp, then You're like me. I had to read several articles on their blog to get a good picture. For me it wasn't a thing of just diving in, even though the UI looks fairly simple.
-
-Here's some questions I had in the beginning and some answers I found:
-
--   "what's root font size? what's type sale? why are there two screens"
--   --- then reading a bunch of articles and learning that: the root font size tends to represent the body text; the type scale represents an algorithmic palette of font sizes which tends to differ on each screen; and this is about interpolation, hence two screen sizes
-
-xxx link to some helpful articles on utopia blog
-
-##### ### What will I learn?
-
-one workflow among many. How I used utopia to design this website in Figma and then code it with Tailwind CSS.
-
-That involved:
-
--   using CSS variables in Tailwind and extend Tailwind's classes (so that the values from the design system show up in your IDE's autocomplete)
--   Figma bits
-
-##### ### Who is this for?
-
-People who want to use the [utopia design system](https://utopia.fyi/) and want a step-by-step guide. People like me who both design and code. People obsessed with visual consistency.
-
-NOTE
-mb scratch or merge this with what will i learn
-
-**Footnotes**
-
-1. I'm sure there are many places to start from, but it makes sense to figure this one out first, since the rest of te design system relies so much on these values. The creators of utopia talk about their workflow [in their grid article](xxx).
-
-2. Utopia [encourages you](https://foo.bar) to not think of these `min` and `max` threshholds as representing devices like "min is for phones and max is for computer screens". Even though they are tied to screen widths. There's good reasons for that (source)

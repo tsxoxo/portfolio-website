@@ -2,19 +2,29 @@
 import { getCollection } from 'astro:content'
 import { t } from 'i18next'
 
-const blogEntries = await getCollection('blog')
+const env = process.env.NODE_ENV
+
+const blogEntries =
+	env === 'development'
+		? await getCollection('blog')
+		: await getCollection('blog', ({ data }) => {
+				return data.isDraft !== true
+		  })
 ---
 
-<section class="grid gap-space-fl-xl">
-	<hgroup id="blog">
-		<h2>{t('home.blog.heading')}</h2>
-		<p class="text-fl-base">{t('home.blog.subheading')}</p>
-	</hgroup>
-	{
-		blogEntries.map((entry) => (
-			<a href={`/blog/${entry.slug}`} class="f">
-				{entry.data.title}
-			</a>
-		))
-	}
-</section>
+{
+	blogEntries.length > 0 && (
+		<section class="grid gap-space-fl-xl">
+			<hgroup id="blog">
+				<h2>{t('home.blog.heading')}</h2>
+				<p class="text-fl-base">{t('home.blog.subheading')}</p>
+			</hgroup>
+			{blogEntries.map((entry) => (
+				<a href={`/blog/${entry.slug}`}>
+					{entry.data.isDraft && <strong>draft:</strong>}
+					{entry.data.title}
+				</a>
+			))}
+		</section>
+	)
+}

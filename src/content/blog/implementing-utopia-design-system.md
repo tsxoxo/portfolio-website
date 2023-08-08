@@ -3,7 +3,7 @@ title: Implementing a utopian design system
 subheading: A step-by-step guide using utopia.fyi, Figma and Tailwind CSS.
 pubDate: 20.7.2023
 tags: [design, design system, tailwind, utopia]
-draft: true
+isDraft: true
 ---
 
 ## alt titles

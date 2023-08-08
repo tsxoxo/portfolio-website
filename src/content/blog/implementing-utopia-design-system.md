@@ -51,19 +51,19 @@ Quotes from official ressources that sum up the Utopia approach:
 > 2. Define a type scale for a large screen
 > 3. Tell the browser to interpolate between the two scales, based on the current viewport width
 
-[source](https://utopia.fyi/blog/designing-with-fluid-type-scales/)
+<cite>[source](https://utopia.fyi/blog/designing-with-fluid-type-scales/)</cite>
 
 > I designed these [min and max], maths designed this [everything in between]
 
-(ibid.)
+<cite>source same as above</cite>
 
 > (...) we only need to visualise the smallest and largest states, which we call @min and @max. Everything in between will be displayed according to the rules we set.
 
-[source](https://utopia.fyi/blog/designing-a-utopian-layout-grid/)
+<cite>[source](https://utopia.fyi/blog/designing-a-utopian-layout-grid/)</cite>
 
 > (...) fluidly interpolating between two modular scales, one for smaller screens, and one for larger screens
 
-[source](https://utopia.fyi/blog/css-modular-scales/)
+<cite>[source](https://utopia.fyi/blog/css-modular-scales/)</cite>
 
 #### Dictionary of the Utopia UI
 

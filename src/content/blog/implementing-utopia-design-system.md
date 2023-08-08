@@ -41,7 +41,7 @@ These are some resources I found helpful explaining the general concept:
 
 ### Main concepts
 
-I won't be going into depth. I think the above resources do a decent job of explaining Utopis's concept (please let me if You got stuck somewhere). But I can give You a little refresher. I assume You've got a sense of the main idea.
+I won't be going into depth. I think the above resources do a decent job of explaining Utopia's concept (please let me if You got stuck somewhere). But I can give You a little refresher. I assume You've got a sense of the main idea.
 
 #### In a nutshell
 
@@ -67,24 +67,20 @@ Quotes from official ressources that sum up the Utopia approach:
 
 #### Dictionary of the Utopia UI
 
-Just to make sure we are on the same page, let me state the 'seeds' Utopia uses to generate its system at the time of writing:
+**`min`**\
+The smallest state or the smallest viewport You feel like visualising in your design. The `font size` will never go smaller as the one for `min`.
 
--   `width`
--   `font size`
--   `type scale`
+**`max`**\
+The largest state or the largest viewport You feel like visualising in your design. The `font size` will never go bigger as the one for `max`.
 
-One set of seeds for a `min`- and one for a `max`-viewport.
+**`width`**\
+The `min` and `max` viewports are defined in terms of their widths.
 
-/THIS is a case for dt-dd
-`min` - `The smallest state` or the smallest viewport You feel like visualising. The `font size` will never go smaller as the one for `min`.
+**`font size`**\
+The size of the majority of text that will appear in your project. Often the starting point in the design process. Also, the base line for your `type scale`.
 
-`max` - `The largest state` or the largest viewport You feel like visualising. The `font size` will never go bigger as the one for `min`.
-
-`width` - The `min` and `max` viewports are defined in terms of their widths.
-
-`font size` - The size of the majority of text (xxx source). Often the starting point to a project.
-
-`type scale` - A ratio used to create a [modular type scale](xxx). This can sound exotic, but it's really just a way to let math help You come up with a consistent palette of font sizes. (So You don't have to ask yourself: 'should my headings be 48px or 49px?')
+**`type scale`**\
+The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base line. This can sound exotic, but it's really just a way to let math help You come up with a consistent palette of font sizes. (So You don't have to ask yourself: _"should my headings be 48px or 49px?"_)
 
 ## WTF
 
@@ -120,17 +116,13 @@ While working on this very site I ran down the rabbit hole of how to make text r
 
 ### Prerequisites
 
--   For developing the project: Basic knowledge of the command line and a code editor. You can find [a beginner-friendly guide on Tatiana Mac's blog](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii)
+-   For developing the project: Basic knowledge of the command line and a code editor. You can find [a beginner-friendly guide](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) on Tatiana Mac's blog.
 
 -   A basic knowledge of Figma and a free account. They have a pretty great [get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
 
--   A basic knowledge of utopia: what it does, what the base font size represents. Here's an [all-around introduction written by the creators](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)(11 min read), [here's an intro in video form](https://www.youtube.com/watch?v=DDuGtN-GakA)(18 minutes). And here's [their Figma starter project](<https://www.figma.com/file/V5t7R4xCfEwmyafLC2GkDI/Utopian-project-kickstarter-(Community)?type=design&node-id=651-506&mode=design&t=grMFbdzA3bJLN3eu-0>) where they lay out the basics in a more hands-on way - and with lots of diagrams! I'll be giving brief refreshers but I won't be going in depth.
+-   A basic knowledge of Utopia. To get started, take a peek at the resources i list in this [intro section](xxx what is utopia).
 
-alt:
-
--   a basic knowledge of utopia. to get started, take a peek at the things i mention in this intro section(xxx)
-
--   A project with tailwind CSS set up. Can be a fresh, can be an existing one you want to give the old redesign.
+-   A project with Tailwind CSS set up. Can be a fresh, can be an existing one you want to give the old redesign.
 
 -   ❤️‍🔥❤️‍🔥❤️‍🔥
 
@@ -373,6 +365,7 @@ NEXT STEPS:
 -   [x] look at review and depen in notion
 -   [x] mention official demo gif
 
+-   make 'dictionary of utopia UI' a dd-dt list?
 -   don't repeat links, especially right next to each other
 -   add: make own demo gif?
 -   fix: make it so I can have spaces between list items in markdown without them going haywire in html

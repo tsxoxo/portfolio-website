@@ -22,7 +22,7 @@ how to use utopia with figma and tailwind
 
 ## Intro
 
-If you know what you want and you want to jump right in, skip to the steps(/#steps).
+If you know what you want and you want to jump right in, **[skip to the steps](#steps)**.
 
 ## What is Utopia?
 
@@ -132,7 +132,7 @@ Disclaimer: this is one workflow among many
 
 #### Alternatives
 
-[2 other guides](/#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They're not as comprehensive as this one, but on the flip side -- they're also shorter.
+[2 other guides](#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They only cover parts of the whole while I'm trying to go from start to finish. But that also makes them shorter, which is what You might want.
 
 #### Choose sizes for min and max
 
@@ -361,6 +361,7 @@ NEXT STEPS:
 -   [x] look at review and depen in notion
 -   [x] mention official demo gif
 
+-   give 'skip to the steps'-link extra special styling
 -   make 'dictionary of utopia UI' a dd-dt list?
 -   don't repeat links, especially right next to each other
 -   add: make own demo gif?

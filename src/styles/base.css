@@ -35,11 +35,15 @@
 }
 
 @layer base {
-	.blog-post p + p {
+	.blog-post * + p:not(:is(h1, h2, h3, h4, h5, h6) + p, blockquote + p),
+	p + *:not(p) {
 		@apply mt-space-fl-l;
 	}
 	.blog-post a {
 		@apply inline;
+	}
+	blockquote + p {
+		@apply mt-space-fl-2xs indent-16;
 	}
 	li > p {
 		@apply inline;

@@ -92,12 +92,25 @@
 	.blog-post blockquote + p {
 		@apply text-right;
 	}
+	.blog-post ul,
+	ol {
+		@apply grid gap-space-fl-s pl-space-fl-xl;
+		list-style: outside;
+	}
+	blockquote :is(ul, ol) {
+		@apply pl-space-fl-m;
+	}
+	.blog-post ul {
+		list-style-type: disc;
+	}
+	.blog-post ol {
+		list-style-type: decimal;
+	}
 	.blog-post li > p {
 		@apply inline;
 	}
 	.blog-post li {
 		@apply text-fl-base;
-		text-indent: 1em;
 	}
 	.blog-post hgroup {
 		@apply mb-space-fl-2xl;
@@ -120,18 +133,6 @@
 
 	.blog-post a {
 		@apply inline;
-	}
-
-	.blog-post ul,
-	ol {
-		@apply grid gap-space-fl-s;
-	}
-
-	.blog-post ul {
-		list-style: disc inside;
-	}
-	.blog-post ol {
-		list-style: decimal inside;
 	}
 
 	.blog-post pre {

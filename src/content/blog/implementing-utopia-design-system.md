@@ -134,12 +134,6 @@ mb put this at the top and remove the '## guide' parent section altogether
 
 Disclaimer: this is one workflow among many.
 
-NOTE
-lay out the way?
-1st phase -- use Utopia to help You come up with a design system. Find out what values to plug in (widths, font size, type scale). To find out, make wireframes, get a ballpark idea of what you want, try generating a system with a value or two, see if you like that when you apply it to your design. Rinse and repeat. Move on to the next value. Rinse and repeat some more. Things are especially messy, as is common for beginnings.  
-2nd phase -- Apply a usable system and make a design with it. But it's not like you're out of phase 1. You're gonna be going back and changing your mind. Maybe a lot.
-3rd phase -- Take the system You've arrived at and set up the tooling in Tailwind. Then, -- if fresh project -- put on your dev hat and implement your designs, or -- if you're redesigning -- replace all static values in your project with fluid ones.
-
 #### Alternatives
 
 [2 other guides](#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They focus on parts of the whole while I'm trying to go from start to finish. But that also makes them shorter, which is what You might want.
@@ -178,22 +172,19 @@ Start accepting that You'll be re-making and re-deciding this again. -- Later af
 
 #### Figure out a `type scale`
 
-This one's especially iterative (messy) because there are so many moving parts. This was my cycle:
+1. Focus on either `min` or `max`.
 
-1. (Just focusing on either `min` or `max`) **Plug in ratios into the Utopia UI and look at the output below until You find one that fits your needs.**
+2a. Plug in ratios into the Utopia UI and look at the output below. You can take a few font sizes, copy them into Figma and see how they fit into your design. Do that until You find one that fits your needs.
 
-2. Do the same for the other threshold
+OR
 
-Utopia gives You the option to choose two different ratios -- a mild one for smaller screens and a sharper one for bigger ones. This way you can ['make the most of the extra space'](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
+2b. Use the [Utopia-Figma plugin]() to update your Figma designs. You're gonna have to familiarize yourself with a plugin, which is a hurdle, but it I found it made things easier for me down the line. It'll pay off pretty quickly, once You want to batch-change your font styles, for example. It also generates a `strong` variant of all the steps in bold, where the Utopia UI does not.
 
-:::note
-Some ideas for workflows
+3. Do the same for the other threshold. For an explanation, why You'd want two different scales, see the top of [this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/)
 
--   Choose a value on the Utopia website, copy some of the generated text sizes into Figma and see how they fit into your design
--   Use the [Utopia-Figma plugin]() to update your styles
-    :::
+This one's especially iterative (messy) because there are so many moving parts. Many moving parts can overwhelm my smooth brain, so I did something to simplify some decisions. Maybe my case will also give You a better idea of this step, since I think this can seem pretty murky to someone who's never done this.
 
-I think this could all still sound pretty vague to some, so let's make this specific. This is my story.
+Here's where I found myself some weeks ago:
 
 While designing my landing page, I had a big chunky hero-heading that I wanted to stay on a single line. I made it as big as possible without wrapping and paid attention to the font size. I decided to build my type scale around this piece of text.
 
@@ -203,13 +194,9 @@ So I knew what to look for in a scale and wasn't just blindly generating one aft
 
 It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example). How bold do I want my headings to be?
 
-NB: re font weights -- The Figma-Utopia plugin generates a `strong` variant of all the steps in bold, where the Utopia UI does not.
+I settled these questions for myself. Then I decided to add a blog to my site. Which means more headings, which means my scale no longer accomodates my content. Every day, I redesign, or as they say:
 
-NOTE
-messy section
-tidy this up later - esp the :::note and this extra copy:
-
-2b. If You are using Figma, there's an alternative to doing the copy-pasting by hand. You can pretty much leave the Utopia website for this phase and just work with the Utopia plugin. You'll be using it anyway in this guide, so this might be a good point to get into it.
+> ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 
 #### Go to Figma and run the Utopia plugin
 
@@ -408,6 +395,13 @@ NEXT STEPS:
 -   [x] look at review and depen in notion
 -   [x] mention official demo gif
 
+-   formatting
+    -   set apart steps and musings/my stories
+        -   different font styles
+        -   dividing lines
+        -   backgrounds / boxes
+        -   :::asides
+        -   foldable content
 -   markdown
     -   wrap each chapter in a `\<section\>`
     -   make 'dictionary of utopia UI' a dd-dt list?

@@ -127,6 +127,9 @@ While working on this very site I ran down the rabbit hole of how to make text r
 
 -   ❤️‍🔥❤️‍🔥❤️‍🔥
 
+NOTE
+mb put this at the top and remove the '## guide' parent section altogether
+
 ### Steps
 
 Disclaimer: this is one workflow among many.
@@ -135,43 +138,70 @@ Disclaimer: this is one workflow among many.
 
 [2 other guides](#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They focus on parts of the whole while I'm trying to go from start to finish. But that also makes them shorter, which is what You might want.
 
-#### Choose widths for `min` and `max`
+#### Create `min` and `max` frames in Figma
 
-No hard answers here -- choose whatever is appropiate for your project. You're gonna hear this a lot.
+1. Choose your widths.
+
+What widths should You choose?
+-- Whatever is appropiate for your project.
+No hard answers here. You're gonna hear this a lot.
 
 I read on [their blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/): _"(...) it makes sense to design the @min screens as small as is practically possible"_. And that made sense to me.
 
-They go on to explain: basically, 320px is a small yet tested size, since that's how big phones used to be for a long time and y'all were doing fine. So the Utopia creators chose it as a reasonale starting point. I take it as a value meaning _somewhere around the lower end of viewport widths where I can read longer texts comfortably without it getting annoying_.
+They go on to explain: basically, 320px is a small yet tested size, since that's how big phones used to be for a long time and y'all were doing _fine_. So the Utopia creators chose it as a reasonale starting point. I take it as a value meaning _somewhere at the lower end of viewport widths where I can still read longer texts comfortably without it getting annoying_.
 
 For designing this site, I left the defaults -- `min`: 320px, `max`: 1024px. Because I had enough things to worry about.
 
 But it's all about what You want to achieve and who You're designing for.
 
-#### Choose a body text size
+2. In Figma, create a frame for `min` and a frame for `max`.
 
-This is the _font size_ in the Utopia UI. This represents the size of the majority of text in your project.
+/make this a :::tip 3. (optional) To make a frame with proportions close to an actual screen, You can choose a device from the list that has a width close to your `min` (press `f` in Figma), then scale it proportionally to the right width.
 
-You'll figure this out twice -- once for `min` and once for `max`. Your body text will never get smaller than the `min`-font-size and never greater than the `max`-font-size.
+#### Make a wireframe
 
-Here's kind of how I did it:
+**The goal: Figure out the size of the the majority of text in your project.**
 
-1. Create a `min` frame in Figma. I chose a device from the list that had a width close to my `min` then scaled it proportionally to the right width. That way I had a frame with proportions close to an actual screen.
+/redundant?
+This is the _font size_ in the Utopia UI. Your body text will never get smaller than the `min`-font-size and never greater than the `max`-font-size.
 
-2. Design a wireframe of your thing. The goal is just to figure out the body font size. Start accepting that You'll be re-making and re-deciding this again. -- Later after generating your type and spacing scales You'll make a new frame and basically do a Utopia redesign -- consistently applying your scales and maybe even using a Utopia grid.
+1. Do stuff until You figure that out for `min`...
+2. And for `max`.
 
-3. Do steps 1 and 2 for `max`
+Start accepting that You'll be re-making and re-deciding this again. -- Later after generating your type- and spacing-scales You'll do a Utopia redesign -- consistently applying your scales and maybe even using a Utopia grid.
 
-#### Choose a `type scale`
+#### Figure out a `type scale`
 
-Plug in ratios into the Utopia UI and look at the output below until You find one that fits your needs.
+This one's especially iterative (messy) because there are so many moving parts. This was my cycle:
 
-You'll also be doing this twice and You might go for two different ratios -- a mild one for smaller screens and a sharper one for bigger ones. This way you'll have proportionally bigger text for things like headings etc.
+1. (Just focusing on either `min` or `max`) **Plug in ratios into the Utopia UI and look at the output below until You find one that fits your needs.**
 
-Here's what I did. This was me handling a specific problem, but maybe it can give an idea of an approach:
+2. Do the same for the other threshold
 
-1. Design or continue designing a wireframe to include some bigger headings. I did this with a specific consideration: I had a big chunky hero text that I wanted to stay on a single line. So I made my hero-heading as big as possible without wrapping and paid attention to the font size. This piece of text is what I focused on and decided to choose my scale ratio around it.
+Utopia gives You the option to choose two different ratios -- a mild one for smaller screens and a sharper one for bigger ones. This way you can ['make the most of the extra space'](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
 
-2a. Try out some scale ratios until one of them generates a scale or a scale-degree that fits your specific needs. In my case I was looking for a scale that generated a font size pretty close to what I had given my hero-heading in step 1. It had to be several steps up the ladder, since I needed room for my smaller headings. So I kept applying various sizes to my headings in Figma to see how they fit in, playing with font-weight on top of that.
+:::note
+Some ideas for workflows
+
+-   Choose a value on the Utopia website, copy some of the generated text sizes into Figma and see how they fit into your design
+-   Use the [Utopia-Figma plugin]() to update your styles
+    :::
+
+I think this could all still sound pretty vague to some, so let's make this specific. This is my story.
+
+While designing my landing page, I had a big chunky hero-heading that I wanted to stay on a single line. I made it as big as possible without wrapping and paid attention to the font size. I decided to build my type scale around this piece of text.
+
+This gave me something to start with. I knew I wanted a scale with a font size pretty close to what I had given my hero-heading. And since this was to be the biggest heading on the page, I knew it had to be several steps up the ladder, since I needed room for my smaller headings.
+
+So I knew what to look for in a scale and wasn't just blindly generating one after the other. (It seems so much of design is about giving yourself limitations to make the wild chaos of life barely managable.)
+
+It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example). How bold do I want my headings to be?
+
+NB: re font weights -- The Figma-Utopia plugin generates a `strong` variant of all the steps in bold, where the Utopia UI does not.
+
+NOTE
+messy section
+tidy this up later - esp the :::note and this extra copy:
 
 2b. If You are using Figma, there's an alternative to doing the copy-pasting by hand. You can pretty much leave the Utopia website for this phase and just work with the Utopia plugin. You'll be using it anyway in this guide, so this might be a good point to get into it.
 
@@ -376,6 +406,7 @@ NEXT STEPS:
     -   wrap each chapter in a `\<section\>`
     -   make 'dictionary of utopia UI' a dd-dt list?
     -   improve blockquote - cite, e.g. give blockquote the attribute
+    -   make directives like `tip` to break up the flow of the text
 -   give 'skip to the steps'-link extra special styling
 -   don't repeat links, especially right next to each other
 -   add: make own demo gif?

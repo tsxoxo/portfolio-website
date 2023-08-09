@@ -36,8 +36,9 @@ These are some resources I found helpful explaining the general concept:
 
 -   🤏 Play with an [interactive demo](https://utopia.fyi/) to get a sense of the idea.
 -   👁👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
--   📜, 👁👁 Read a [shorter intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
+-   📜, 👁👁 Read an [intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
 -   📜 Read a [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.
+-   🤏, 📜, 👁👁 Play with the official [Figma starter project](https://www.figma.com/community/file/1122903924123950023) and read the succinct intro on the 'readme' page that includes multiple illustrations.
 
 ### Main concepts
 
@@ -170,21 +171,22 @@ Here's what I did. This was me handling a specific problem, but maybe it can giv
 
 1. Design or continue designing a wireframe to include some bigger headings. I did this with a specific consideration: I had a big chunky hero text that I wanted to stay on a single line. So I made my hero-heading as big as possible without wrapping and paid attention to the font size. This piece of text is what I focused on and decided to choose my scale ratio around it.
 
-2. Try out some scale ratios until one of them generates a scale or a scale-degree that fits your specific needs. In my case I was looking for a scale that generated a font size pretty close to what I had given my hero-heading in step 1. And that font size had to be several scales up the ladder, since I needed room for other, smaller headings.
+2a. Try out some scale ratios until one of them generates a scale or a scale-degree that fits your specific needs. In my case I was looking for a scale that generated a font size pretty close to what I had given my hero-heading in step 1. It had to be several steps up the ladder, since I needed room for my smaller headings. So I kept applying various sizes to my headings in Figma to see how they fit in, playing with font-weight on top of that.
 
-The dirty reality was me just taking the generated numbers and applying them to my headings in Figma to see how they fit in. And playing with font-weight on top of that.
+2b. If You are using Figma, there's an alternative to doing the copy-pasting by hand. You can pretty much leave the Utopia website for this phase and just work with the Utopia plugin. You'll be using it anyway in this guide, so this might be a good point to get into it.
 
-NOTES
+#### Go to Figma and run the Utopia plugin
 
--   is this a possible alternative? -- instead of using the utopia website to generate type scales and manually copy-pasting them into figma, use the utopia figma plugin?
+Run [the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) and plug in the values from the previous step, or copy the `utopia.fyi...` URL into it plugin, or start playing fresh. Click on the big button and wait for a bit until it finishes working (took like 20 seconds for me sometimes). It's doing a lot of work. Find the generated output somewhere on the canvas -- it's a big bunch. Frame it. Put it somewhere where you can easily take a peek while you're designing. I was peeking at it pretty often.
 
-#### Go to Figma and run the utopia plugin
+the folks at utopia have made [another useful plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles) to use when you want to change the type face. It batch-changes font styles of multiple layers, perfect if you want to update your existing master-frame.
 
-Get the plugin here(xxx) and run it. Either plug in the values from the previous step or copy the whole url into the plugin. Wait for like 20 seconds until it finishes working. Find the generated output somewhere on the canvas -- it's a big bunch. Frame it. Put it somewhere where you can easily take a peek while you're designing. I was peeking at it pretty often.
-
+/Aside:
 Now here might be a good case to use the new variables feature in Figma. put all of these values there and you dont have to look them up. you could even map min and max to their own modes. could be interesting. i was ready to do that but unfortunately figma restricts free accounts to 1 mode only. I feel this might be a good moment to link to my 'buy me a coffee (or Figma subscription)' thingy. I pledge that if I get 15 bucks, I'll buy a month of Figma and write a guide on doing this with variables.
 
-the folks at utopia have made another useful plugin to use when you want to change the type face. It changes the font styles in multiple layers, perfect if you want to update your existing master-frame.
+NOTES
+do this as a 1, 2, 3 step?
+as it is it seems weird... like inconsistent?
 
 #### Design your project using your generated values
 
@@ -370,8 +372,11 @@ NEXT STEPS:
 -   [x] look at review and depen in notion
 -   [x] mention official demo gif
 
+-   markdown
+    -   wrap each chapter in a `\<section\>`
+    -   make 'dictionary of utopia UI' a dd-dt list?
+    -   improve blockquote - cite, e.g. give blockquote the attribute
 -   give 'skip to the steps'-link extra special styling
--   make 'dictionary of utopia UI' a dd-dt list?
 -   don't repeat links, especially right next to each other
 -   add: make own demo gif?
 -   fix: make it so I can have spaces between list items in markdown without them going haywire in html
@@ -379,3 +384,4 @@ NEXT STEPS:
 -   revise: shorten utopia-basics section; rewrite/break up 'big idea'
 -   IDEA: make each step of the guide formatted like _succinct instructions (1 paragraph) --- detailed explanation and musings_. this could be visually reinforced by making the instructions stick out more than the musings (e.g. higher contrast), or even by hiding the explanation in a foldable element (use `<dt>`?)
 -   IDEA: broaden scope -- talk about design systems; about different approaches to responsive design (or link to resources)
+-   IDEA: separate steps from my specific case

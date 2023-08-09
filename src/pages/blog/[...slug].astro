@@ -16,12 +16,14 @@ const { Content } = await entry.render()
 
 <Layout>
 	<main class="blog-post site-padding-x pt-space-fl-xl-m">
-		<hgroup>
-			<h1>
-				{entry.data.title}
-			</h1>
-			<p class="text-fl-lg">{entry.data.subheading}</p>
-		</hgroup>
-		<Content />
+		<article>
+			<hgroup>
+				<h1>
+					{entry.data.title}
+				</h1>
+				<p class="text-fl-lg">{entry.data.subheading}</p>
+			</hgroup>
+			<Content />
+		</article>
 	</main>
 </Layout>

@@ -134,6 +134,12 @@ mb put this at the top and remove the '## guide' parent section altogether
 
 Disclaimer: this is one workflow among many.
 
+NOTE
+lay out the way?
+1st phase -- use Utopia to help You come up with a design system. Find out what values to plug in (widths, font size, type scale). To find out, make wireframes, get a ballpark idea of what you want, try generating a system with a value or two, see if you like that when you apply it to your design. Rinse and repeat. Move on to the next value. Rinse and repeat some more. Things are especially messy, as is common for beginnings.  
+2nd phase -- Apply a usable system and make a design with it. But it's not like you're out of phase 1. You're gonna be going back and changing your mind. Maybe a lot.
+3rd phase -- Take the system You've arrived at and set up the tooling in Tailwind. Then, -- if fresh project -- put on your dev hat and implement your designs, or -- if you're redesigning -- replace all static values in your project with fluid ones.
+
 #### Alternatives
 
 [2 other guides](#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They focus on parts of the whole while I'm trying to go from start to finish. But that also makes them shorter, which is what You might want.

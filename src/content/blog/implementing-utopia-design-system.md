@@ -183,7 +183,7 @@ It gives You Figma styles and components representing all the building blocks of
 
 4. Apply the appropiate generated style to your body text. At the time of writing this is called `U/Type/Min/Prose/Step 0`.
 
-5. Do the same thing with a heading or two. Add some to your design if You hadn't already and apply some styles to them.
+5. Do the same thing with a heading or two. Add some to your design if You hadn't already and apply some styles to them. There is some guesswork here, as You may or may not know how many steps You need for your scale. I went minimal and chose 3 steps but now that I write a blog and need like 5 heading hierarchies, I'm reconsidering.
 
 6. Now you should have at least 2 Utopian text styles living in your design. Change the font family of all of these in one swoop by using [this other plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles) by the Utopia creators. (The text should change on the main-frame as well as in your designs.) You can undo with `cmd-z` if You want, but it's good that You know that this is easy to do.
 
@@ -198,24 +198,23 @@ Now here might be a good case to use the new variables feature in Figma. put all
 
 1. Focus on either `min` or `max`.
 
-2a. Plug in ratios into the Utopia UI and look at the output below. You can take a few font sizes, copy them into Figma and see how they fit into your design. Do that until You find one that fits your needs.
+2. Make sure You have a few different types of text in your wireframe. By now You should have at least some body text and a heading. This is a good time to flesh out your design and put in more -- other headings or smaller text -- so that You can see how a particular type scale will harmonize across your design.
 
-OR
+3. Apply appropiate text styles to whatever text in your wireframe, like You did in the previous section. Maybe with a clearer sense of how many steps You need in your scale.
 
-/don't anticipate resistance
-2b. Use the [Utopia-Figma plugin](). You would to update your Figma designs.
+4. Go to either the Utopia website or the Figma plugin. Generate a scale with some ratio. See how it fits into your design. -- if you're using the plugin just look at your magically updated wireframesand; or, if you're using the website copy-paste some values into Figma to get a sense. Rinse and repeat until You find one that fits your needs.
 
-3. Do the same for the other threshold. For an explanation, why You'd want two different scales, see the top of [this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/)
+5. Do the same thing for the other threshold, trying out different scales. For an explanation why You'd want two different scales, see the top of [this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
 
-This one's especially iterative (messy) because there are so many moving parts. Many moving parts can overwhelm my smooth brain, so I did something to simplify some decisions. Maybe my case will also give You a better idea of this step, since I think this can seem pretty murky to someone who's never done this.
+This one's especially iterative (messy) because there are so many moving parts. Many moving parts can overwhelm a brain like mine, so on my first try I did something to simplify some decisions. I'll tell the story also to give You a better idea of this step, since I think this can seem pretty murky to someone who's never done this.
 
 Here's where I found myself some weeks ago:
 
-While designing my landing page, I had a big chunky hero-heading that I wanted to stay on a single line. I made it as big as possible without wrapping and paid attention to the font size. I decided to build my type scale around this piece of text.
+While designing my landing page, I got obsessed with my big chunky hero-heading because who doesn't. I wanted it to stay on a single line. So I made it as big as possible and paid attention to the font size. And I decided to build my type scale around this piece of text.
 
-This gave me something to start with. I knew I wanted a scale with a font size pretty close to what I had given my hero-heading. And since this was to be the biggest heading on the page, I knew it had to be several steps up the ladder, since I needed room for my smaller headings.
+That's the simplification. It gave me something to go on: I knew I wanted a scale with a font size pretty close to what I had given my hero-heading. And since this was to be the biggest heading on the page, I knew this size had to be several steps up the ladder, since I needed room for my smaller headings.
 
-So I knew what to look for in a scale and wasn't just blindly generating one after the other. (It seems so much of design is about giving yourself limitations to make the wild chaos of life barely managable.)
+So I knew what to look for in a scale and wasn't just blindly dating one after the other. (It seems so much of design is about giving yourself limitations to make the wild chaos of life barely managable.)
 
 It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example). How bold do I want my headings to be?
 

@@ -170,6 +170,30 @@ This is the _font size_ in the Utopia UI. Your body text will never get smaller 
 
 Start accepting that You'll be re-making and re-deciding this again. -- Later after generating your type- and spacing-scales You'll do a Utopia redesign -- consistently applying your scales and maybe even using a Utopia grid.
 
+#### Run the Utopia plugin and apply some text styles to your design
+
+This can help with figuring out your type scales, as it saves some copy-pasting.  
+It gives You Figma styles and components representing all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids. You'll see.
+
+1. Read the intro to [the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) then run it.
+
+2. Click on the big button. Possibly, wait for a bit until it finishes working -- it sometimes would take like 20 seconds for me. It's doing a lot of good work. Don't worry about your `type scales` yet, just run it once to see what it does. You'll focus on them in the next section.
+
+3. Find the generated output somewhere on the canvas -- it's a big bunch of frames. Look at everything. Notice how there's a `strong` set of type in bolds. Options for headings? (Haven't seen this phenomenon of a bold variant talked about anywhere else in the Utopia ecosystem) Feel free to frame the bunch or wrap it in a section. Put it somewhere where you can easily take a peek at it while you're designing. I was peeking pretty often.
+
+4. Apply the appropiate generated style to your body text. At the time of writing this is called `U/Type/Min/Prose/Step 0`.
+
+5. Do the same thing with a heading or two. Add some to your design if You hadn't already and apply some styles to them.
+
+6. Now you should have at least 2 Utopian text styles living in your design. Change the font family of all of these in one swoop by using [this other plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles) by the Utopia creators. (The text should change on the main-frame as well as in your designs.) You can undo with `cmd-z` if You want, but it's good that You know that this is easy to do.
+
+7. Run the Utopia plugin again, just with a different type scale. Observe how your headings change, but your body text stays the same. You'll be running it again, a few times.
+
+These plugins can be your tools and trusty helpers. You can also get there by copy-pasting between the Utopia website and Figma. I liked the plugins. For such a messy, sprawling thing as a design system generator and a batch-updator I found them to be very friendly.
+
+/Aside:
+Now here might be a good case to use the new variables feature in Figma. put all of these values there and you dont have to look them up. you could even map min and max to their own modes. could be interesting. i was ready to do that but unfortunately figma restricts free accounts to 1 mode only. I feel this might be a good moment to link to my 'buy me a coffee (or Figma subscription)' thingy. I pledge that if I get 15 bucks, I'll buy a month of Figma and write a guide on doing this with variables.
+
 #### Figure out a `type scale`
 
 1. Focus on either `min` or `max`.
@@ -178,7 +202,8 @@ Start accepting that You'll be re-making and re-deciding this again. -- Later af
 
 OR
 
-2b. Use the [Utopia-Figma plugin]() to update your Figma designs. You're gonna have to familiarize yourself with a plugin, which is a hurdle, but it I found it made things easier for me down the line. It'll pay off pretty quickly, once You want to batch-change your font styles, for example. It also generates a `strong` variant of all the steps in bold, where the Utopia UI does not.
+/don't anticipate resistance
+2b. Use the [Utopia-Figma plugin](). You would to update your Figma designs.
 
 3. Do the same for the other threshold. For an explanation, why You'd want two different scales, see the top of [this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/)
 
@@ -194,22 +219,9 @@ So I knew what to look for in a scale and wasn't just blindly generating one aft
 
 It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example). How bold do I want my headings to be?
 
-I settled these questions for myself. Then I decided to add a blog to my site. Which means more headings, which means my scale no longer accomodates my content. Every day, I redesign, or as they say:
+I settled these questions for myself. Then I decided to add a blog to my site. Which means more headings, which means my scale no longer accomodates my content. Every day, I redesign. Or, as they say:
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
-
-#### Go to Figma and run the Utopia plugin
-
-Run [the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) and plug in the values from the previous step, or copy the `utopia.fyi...` URL into it plugin, or start playing fresh. Click on the big button and wait for a bit until it finishes working (took like 20 seconds for me sometimes). It's doing a lot of work. Find the generated output somewhere on the canvas -- it's a big bunch. Frame it. Put it somewhere where you can easily take a peek while you're designing. I was peeking at it pretty often.
-
-the folks at utopia have made [another useful plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles) to use when you want to change the type face. It batch-changes font styles of multiple layers, perfect if you want to update your existing master-frame.
-
-/Aside:
-Now here might be a good case to use the new variables feature in Figma. put all of these values there and you dont have to look them up. you could even map min and max to their own modes. could be interesting. i was ready to do that but unfortunately figma restricts free accounts to 1 mode only. I feel this might be a good moment to link to my 'buy me a coffee (or Figma subscription)' thingy. I pledge that if I get 15 bucks, I'll buy a month of Figma and write a guide on doing this with variables.
-
-NOTES
-do this as a 1, 2, 3 step?
-as it is it seems weird... like inconsistent?
 
 #### Design your project using your generated values
 

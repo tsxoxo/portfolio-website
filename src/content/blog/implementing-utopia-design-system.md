@@ -175,11 +175,13 @@ Start accepting that You'll be re-making and re-deciding this again. -- Later af
 This can help with figuring out your type scales, as it saves some copy-pasting.  
 It gives You Figma styles and components representing all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids. You'll see.
 
-1. Read the intro to [the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) then run it.
+1. Learn the basics by reading either the description page of [the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated [intro article](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/).
 
-2. Click on the big button. Possibly, wait for a bit until it finishes working -- it sometimes would take like 20 seconds for me. It's doing a lot of good work. Don't worry about your `type scales` yet, just run it once to see what it does. You'll focus on them in the next section.
+2. Go to Figma and run it.
 
-3. Find the generated output somewhere on the canvas -- it's a big bunch of frames. Look at everything. Notice how there's a `strong` set of type in bolds. Options for headings? (Haven't seen this phenomenon of a bold variant talked about anywhere else in the Utopia ecosystem) Feel free to frame the bunch or wrap it in a section. Put it somewhere where you can easily take a peek at it while you're designing. I was peeking pretty often.
+/fix step order 2. Click on the big button. Possibly, wait for a bit until it finishes working -- it sometimes would take like 20 seconds for me. It's doing a lot of good work. Don't worry about your `type scales` yet, just run it once to see what it does. You'll focus on them in the next section.
+
+3. Find the generated output somewhere on the canvas -- it's a big bunch of frames. Look at everything. If a bunch of stuff looks blank, try making the the grid visible in Figma by pressing `shit + g`. Feel free to frame the bunch or wrap it in a section. Put it somewhere where you can easily take a peek at it while you're designing. I was peeking pretty often. (Aside: Haven't seen the phenomenon of a 'strong' text variant that's got a bold font weight talked about anywhere else in the Utopia ecosystem. But it's there. I've certainly used it. I actually modified some of the font-weights for my purposes. A system is just the beginning.)
 
 4. Apply the appropiate generated style to your body text. At the time of writing this is called `U/Type/Min/Prose/Step 0`.
 
@@ -206,7 +208,7 @@ Now here might be a good case to use the new variables feature in Figma. put all
 
 5. Do the same thing for the other threshold, trying out different scales. For an explanation why You'd want two different scales, see the top of [this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
 
-This one's especially iterative (messy) because there are so many moving parts. Many moving parts can overwhelm a brain like mine, so on my first try I did something to simplify some decisions. I'll tell the story also to give You a better idea of this step, since I think this can seem pretty murky to someone who's never done this.
+This one's especially iterative (messy) because there are so many moving parts. Many moving parts can overwhelm a brain like mine, so I gave it a hand and simplified the process.
 
 Here's where I found myself some weeks ago:
 
@@ -222,29 +224,29 @@ I settled these questions for myself. Then I decided to add a blog to my site. W
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 
-#### Design your project using your generated values
+#### Re-make your design the Utopia way
 
-##### Decide if you wanna use a baseline? grid
+1. Decide if you wanna use a baseline grid, like the one that the Utopia plugin generates. It can make You feel extra special. If You are, read [this article](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) where one of the creators talks through setting it up in Figma. The Utopia plugin should have generated some grid styles for You.
 
-If you don't: make a frame as wide as your `min` width and start designing, then do the same for `max`.
+2. Create another set of frames for `min` and `max` to house your upcoming redesign. If You're not using a grid, do exactly what You did in the beginning and move on to the next step. If You are using a grid, the issue is now how to fit the grid into the frame -- do you stretch it, or the frame, or leave it kind of overlapping or what? I went with a solution I read in the above article -- make your `min` frame the size of your `min` grid. It won't be exactly your official `min` width, but should be close to it. Nobody will ever know. Simple but devious, I loved it.
 
-If you do, make a frame that's as wide as the generated `min` grid. This won't be the same as your `min`-width, but it'll be close enough. Do your `min` design on this frame. Then do the same for `max`.
+3. Design your project using the generated system. You already know how to handle text. For spacing, consider using auto-layout whenever You can. It helps me staying consistent: everything is in the gaps and paddings. And it's mostly straightforward to implement with grid and flexbox. I'm using margins twice on my landing page: one for centering the page and one for spacing the very last thing in the footer.
 
-This approach solves the problem of the grid not fitting in neatly into the `min` width in a simple way. I read about it here. The creators of utopia go into depth in this article(xxx). Incidentally, this is also the closest thing to a step-by-step guide I have found in their ecosystem (I stole some parts of this workflow from there).
+Ah, spacing. Well, I went with the default palette as a starting point and felt a decent balance between constraint and freedom. As I was designing everything the Utopia way I added several skip-a-step-, uhm, steps. That's where you go from, say an M on `min` to an XL on `max` instead of another M or even an L. It can make sense when there's more space to work with.
 
-To settle on a usable height, see this step[xxx]
+If You want to try out different spacing palettes, You might go through a similiar loop as when You were figuring out the type scale: first, apply the spacing styles from your system to your design (by copy-pasting, or using variables, or if You see another way, please let me know!(xxx)), then run the plugin again. You might wanna work with variables even more. I wanna use variables after trying it out while writing this. I was really peeking a lot at that master-board.
 
-##### Either start from scratch or remake your wireframes with the new values.
+At this point I was thinking: "do I really need to remember the spacing values manually." My answer was "yes, yes I do". Needless to say, I was peeking at that generated master-board regularly. Now there's a pretty straightforward way to set this up with variables. Nominal example:
 
-Use auto-layout for everything.
+[xxx](maybe screenshot of variables set up)
 
-For me, working without variables, there was not a silver bullet here. I simply had to keep all font sizes and spacing values within the system. Easy to do with text -- pick only font styles from the generated list. With spacing, I had to plug in my utopian values again and again (hence -- a lot of peeking)
+I don't see how to make these sync when You re-generate your palette.
 
-If you set up your variables, use those.
+But, there might be a way... Follow me into this dark alley, friend.
 
-Another option is to use the spacing components in your actual designs, as shown [here](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/). You would just drag the squares into your design. The advantage of that is that you can select the spacing variant (s, m, l, xl, etc.) from a drop-down menu, since they are actual Figma components with variants.
+See, You could just use the _spacing components_ in your actual designs, as shown in [this image](https://utopia.fyi/images/utopia-plugin-10.jpg) from the official [guide to the plugin](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/). You would literally just drag the generated squares into your design. (Again, if You don't see square, turn on the grid in Figma: `shift-g`. That certainly threw me off, for a while.) And You can hide these spacers easily because, well - they're actually just pieces of a grid! Clever, clever, Utopia designers. With this approach You could select the spacing variant (s, m, xl, etc.) from a drop-down menu, since these are actual Figma components with variants.
 
-Why autolayout for everything? I forget where i read this but the idea was to use grid and flexbox as much as possible. so that most of your frames in figma will be governed by auto layout and most of the spacing decisions will refer to gaps and padding values within these frames. later these will easily translate to flexbox and grid layouts.
+On the flip side, by doing it this way, You give your soul to the Darkness, or whatever. Don't worry about it. Can I interest You in a frozen yoghurt? I call it froyo.
 
 #### Iterate
 

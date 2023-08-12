@@ -226,7 +226,37 @@ I settled these questions for myself. Then I decided to add a blog to my site. W
 
 #### Figure out a spacing palette
 
+Ahh, spacing. The breathing room, the space where our nuts and bolts go to party. The little nooks and cranies that gather dust in our hearts and minds and our kitchens. The cracks where the light shines in. etc. etc.
+
+There are no steps here, since I didn't mess around too much with this. I took the default spacing palette and added some custom space pairs, that's it. All in all, I felt a decent balance between constraint and freedom. For this website, it worked for me.
+
+Instead of specific instructions, I'll point You to the official resources and then talk about some ways to work with spacing in Figma.
+
+The Utopia folks have written two articles dealing with spacing. [designing with a fluid space palette](https://utopia.fyi/blog/designing-with-a-fluid-space-palette/) introduces the concept, makes a case for having a design system in the first place and also has a demo to play with. [Painting with a fluid space palette](https://utopia.fyi/blog/painting-with-a-fluid-space-palette/) is more hands-on giving you CSS snippets while explaining the concepts. Choose according to your inclination.
+
+**So how do You try this out in Figma?**
+First of all, consider **using auto-layout** whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. It's also straightforward to implement later using grid and flexbox. I have 2 margins on my landing page: one for centering the page and one for spacing the very last thing in the footer.
+
+So now that You know where to put the little numbers, You might be asking yourself (like I did): _"do I really need to remember the spacing values and **type them by hand** at every single decision?"_ My answer was "yes, yes I do". Needless to say, I was peeking at that generated master-board regularly.
+
+It wasn't too bad. Some of You with more than two braincells might use those extra ones to start remembering your spacing palettes after a while. But for my fellow 2-cellers, now, there's a pretty straightforward way to **set this up with variables**. Nominal example:
+
+[xxx](maybe screenshot of variables set up)
+
+I don't see how to make these sync when You re-generate your palette, tho.
+
+But, there might be a way... Follow me into this dark alley, friend.
+
+See, You could just use the _spacing components_ in your actual designs, as shown in [this image](https://utopia.fyi/images/utopia-plugin-10.jpg) from the official [guide to the Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/). You would literally just drag the generated squares into your design. (Again, if You don't see squares, turn on the grid in Figma: `shift-g`. That certainly threw me off, for a while.) And You can hide these spacers easily because, well - _they're actually just, like, pieces of the grid, man!_ Clever, clever, Utopia designers. Do it like this and You could manage your spacings just by selecting a spacing variant -- s, m, xl, all your favourite t-shirt sizes -- from a drop-down menu!
+
+On the flip side, by doing it this way, You give your soul to the Darkness, or whatever. Don't worry about it. Can I interest You in a frozen yoghurt? I call it _"froyo"_!
+
+EXTRA
+If You want to try out different spacing palettes, You might go through a similiar loop as when You were figuring out the type scale: first, apply the spacing styles from your system to your design (by copy-pasting, or using variables, or if You see another way, please let me know!(xxx)), then run the plugin again. You might wanna work with variables even more. I wanna use variables after trying it out while writing this. I was really peeking a lot at that master-board.
+
 #### Re-make your design the Utopia way
+
+/ alt title: bringing it all together
 
 /uhhmm, check the tone of this section once I get a good night's sleep in
 
@@ -236,26 +266,7 @@ I settled these questions for myself. Then I decided to add a blog to my site. W
 
 3. Generate a system to use for your re-design. By now You should have pretty much all you need for that: widths for `min` and `max`, some base font sizes, some type scales... uhm... No, no. No, You didn't get me. Shut up. No, I didn't forget the spacing. I just, uhhh, left it for the very end, for some reason. So if You're the kind of person that needs a _s**pecial** spacing palette_, read on, I deal with You after this. If You're cool, just hit the big button.
 
-4. Design your project using the generated system. You already know how to handle text. For spacing, consider using auto-layout whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. It's also straightforward to implement later using grid and flexbox. I have 2 margins on my landing page: one for centering the page and one for spacing the very last thing in the footer. More on working with spacing coming. In. The. Next. Paragraph
-
-/structure this section 'spacing'
-/ two things to talk about: 1. design with Utopia spacing (either remember the values or set variables or drag in the components) and 2. how to generate own palette.
-
-Ahh, spacing. The breathing room, the nuts and bolts. The little nooks and cranies that gather dust in our hearts and minds and our kitchens. Well, I went with the default palette as a starting point and felt a decent balance between constraint and freedom. Also, I had enough problems to deal with. As I was designing everything the Utopia way I added several skip-a-step-, uhm, steps. That's where you go from, say an M on `min` to an XL on `max` instead of another M or even an L. It can make sense when there's more space to work with. But apart from that I never felt I needed to re-invent the wheel here. (These growing steps I just mentioned You're gonna have to manage on your own by picking a different step for max. But You'll be doing this anyway. Or use modes or something.)
-
-If You want to try out different spacing palettes, You might go through a similiar loop as when You were figuring out the type scale: first, apply the spacing styles from your system to your design (by copy-pasting, or using variables, or if You see another way, please let me know!(xxx)), then run the plugin again. You might wanna work with variables even more. I wanna use variables after trying it out while writing this. I was really peeking a lot at that master-board.
-
-At this point I was thinking: "do I really need to remember the spacing values manually." My answer was "yes, yes I do". Needless to say, I was peeking at that generated master-board regularly. Now there's a pretty straightforward way to set this up with variables. Nominal example:
-
-[xxx](maybe screenshot of variables set up)
-
-I don't see how to make these sync when You re-generate your palette.
-
-But, there might be a way... Follow me into this dark alley, friend.
-
-See, You could just use the _spacing components_ in your actual designs, as shown in [this image](https://utopia.fyi/images/utopia-plugin-10.jpg) from the official [guide to the plugin](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/). You would literally just drag the generated squares into your design. (Again, if You don't see squares, turn on the grid in Figma: `shift-g`. That certainly threw me off, for a while.) And You can hide these spacers easily because, well - they're actually just pieces of the grid, man! Clever, clever, Utopia designers. Do it like this and You could manage your spacings just by selecting a spacing variant -- s, m, xl, all your favourite t-shirt sizes -- from a drop-down menu! These are actual Figma components!
-
-On the flip side, by doing it this way, You give your soul to the Darkness, or whatever. Don't worry about it. Can I interest You in a frozen yoghurt? I call it _"froyo"_!
+4. Design your project using the generated system. You already know how to handle text.
 
 #### Iterate
 
@@ -397,7 +408,7 @@ Thank You, my wonderful editors!
 
 NEXT STEPS:
 
-[] revise '# steps'
+-   [] revise '# steps'
 
 -   revise '# wtf'
 -   revise '# outro'
@@ -416,28 +427,39 @@ NEXT STEPS:
 -   [x] write some steps
 -   [x] look at review and depen in notion
 -   [x] mention official demo gif
+-   [x] make links open in new tab -- no because let the user decide how they open links
+-   [x] revise: shorten utopia-basics section; rewrite/break up 'big idea'
+-   [x] fix: make it so I can have spaces between list items in markdown without them going haywire in html
 
--   formatting
-    -   set apart steps and musings/my stories
-        -   different font styles
-        -   dividing lines
-        -   backgrounds / boxes
-        -   :::asides
-        -   foldable content
--   markdown
-    -   wrap each chapter in a `\<section\>`
-    -   make 'dictionary of utopia UI' a dd-dt list?
-    -   improve blockquote - cite, e.g. give blockquote the attribute
-    -   make directives like `tip` to break up the flow of the text
--   UX
-    -   try and be rigorous about not repeating links, except when linking to different sections of the same document
-    -   make sure link texts stay consistent and clear. for inspiration, see the section [Structure link text](https://developers.google.com/style/link-text#structure-link-text) in the Google Developers Style Guide
+**formatting**
+
+-   set apart steps and musings/my stories
+    -   different font styles
+    -   dividing lines
+    -   backgrounds / boxes
+    -   :::asides
+    -   foldable content
 -   give 'skip to the steps'-link extra special styling
--   don't repeat links, especially right next to each other
--   add: make own demo gif?
--   fix: make it so I can have spaces between list items in markdown without them going haywire in html
--   make links open in new tab
--   revise: shorten utopia-basics section; rewrite/break up 'big idea'
+
+_... formatting that maybe requires dealing with markdown plugins_
+
+-   wrap each chapter in a `\<section\>`
+-   make 'dictionary of utopia UI' a dd-dt list?
+-   improve blockquote - cite, e.g. give blockquote the attribute
+-   make directives like `tip` to break up the flow of the text
+
+**UX**
+
+-   try and be rigorous about not repeating links, except when linking to different sections of the same document
+-   make sure link texts stay consistent and clear. for inspiration, see the section [Structure link text](https://developers.google.com/style/link-text#structure-link-text) in the Google Developers Style Guide
+
+**structure**
+
+-   i got a thing going in the spacing section: 1. intro 2. official resources 3. talk about the thing -- maybe update the other section to point to official resources as well? then in the Utopia intro i could say 'you can look at this and this to get a general idea. Also, I'll be pointing out relevant resources at the start of each section' -- hmm, do I like this idea?
+
+**IDEAS**
+
+-   add content: make own demo gif?
 -   IDEA: make each step of the guide formatted like _succinct instructions (1 paragraph) --- detailed explanation and musings_. this could be visually reinforced by making the instructions stick out more than the musings (e.g. higher contrast), or even by hiding the explanation in a foldable element (use `<dt>`?)
 -   IDEA: broaden scope -- talk about design systems; about different approaches to responsive design (or link to resources)
 -   IDEA: separate steps from my specific case

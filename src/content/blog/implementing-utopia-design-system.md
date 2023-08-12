@@ -224,17 +224,19 @@ I settled these questions for myself. Then I decided to add a blog to my site. W
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 
+#### Figure out a spacing palette
+
 #### Re-make your design the Utopia way
 
 /uhhmm, check the tone of this section once I get a good night's sleep in
 
-1. Decide if you wanna use a baseline grid, like the one that the Utopia plugin generates. It can make You feel extra special. If yes, read [this article](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) where one of the creators talks through setting it up in Figma. Now maybe You'll see the grids in the Utopia main-frame with slightly different eyes. Feel free to re-run the plug-in and adjust the grid to your needs(tm).
+1. Decide if you wanna use a baseline grid, like the one that the Utopia plugin generates. It can make You feel extra special. If You're already special, move on to step 2. If yes -- You need that extra dose of special -- I recommend You read [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams and a step-by-step guide and You'll get to know some of the messy decisions that have to be made if You're going down this path. After that, maybe You'll see the grids in the Utopia main-frame with slightly different eyes. Feel free to re-run the plug-in and adjust the grid _to your needs_&trade;.
 
-2. Create a fresh set of frames for `min` and `max` to house your upcoming redesign. If You're not using a grid, do exactly what You did when You were creating your frames in the beginnin. You can move on to the next step, run along, summer child. If You _are_ using a grid, the issue is now how to fit the grid into the frame -- do you stretch **it**, or the frame, or leave it kind of overlapping or what? I went with a solution I read in the article I just mentioned -- make your `min` frame the size of your `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. Simple but devious, buaha.
+2. Create a fresh set of frames for `min` and `max` to house your upcoming redesign. If You're not using a grid, do exactly what You did when You were creating your frames in the beginning. You can move on to the next step, run along, summer child. If You _are_ using a grid, the issue is now how to fit the grid into the frame -- do you stretch **it**, or the frame, or leave it kind of overlapping or what? I went with a solution I read in the article I just mentioned -- make your `min` frame the size of your `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. Simple but devious. buaha.
 
 3. Generate a system to use for your re-design. By now You should have pretty much all you need for that: widths for `min` and `max`, some base font sizes, some type scales... uhm... No, no. No, You didn't get me. Shut up. No, I didn't forget the spacing. I just, uhhh, left it for the very end, for some reason. So if You're the kind of person that needs a _s**pecial** spacing palette_, read on, I deal with You after this. If You're cool, just hit the big button.
 
-4. Design your project using the generated system. You already know how to handle text. For spacing, consider using auto-layout whenever You can. For me, it helped keep things simple: everything is in the gaps and paddings. No margins whatsoever. It's also straightforward to implement later using grid and flexbox. I have 2 margins on my landing page: one for centering the page and one for spacing the very last thing in the footer. More on working with spacing coming. In. The. Next. Paragraph
+4. Design your project using the generated system. You already know how to handle text. For spacing, consider using auto-layout whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. It's also straightforward to implement later using grid and flexbox. I have 2 margins on my landing page: one for centering the page and one for spacing the very last thing in the footer. More on working with spacing coming. In. The. Next. Paragraph
 
 /structure this section 'spacing'
 / two things to talk about: 1. design with Utopia spacing (either remember the values or set variables or drag in the components) and 2. how to generate own palette.
@@ -427,6 +429,9 @@ NEXT STEPS:
     -   make 'dictionary of utopia UI' a dd-dt list?
     -   improve blockquote - cite, e.g. give blockquote the attribute
     -   make directives like `tip` to break up the flow of the text
+-   UX
+    -   try and be rigorous about not repeating links, except when linking to different sections of the same document
+    -   make sure link texts stay consistent and clear. for inspiration, see the section [Structure link text](https://developers.google.com/style/link-text#structure-link-text) in the Google Developers Style Guide
 -   give 'skip to the steps'-link extra special styling
 -   don't repeat links, especially right next to each other
 -   add: make own demo gif?

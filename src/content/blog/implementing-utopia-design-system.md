@@ -208,7 +208,7 @@ Now here might be a good case to use the new variables feature in Figma. put all
 
 5. Do the same thing for the other threshold, trying out different scales. For an explanation why You'd want two different scales, see the top of [this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
 
-This one's especially iterative (messy) because there are so many moving parts. Many moving parts can overwhelm a brain like mine, so I gave it a hand and simplified the process.
+This one's especially iterative (messy) because there are so many moving parts. It's a whole scale of things, after all. Many moving parts can overwhelm a brain like mine, so I gave it a hand and simplified the process.
 
 Here's where I found myself some weeks ago:
 
@@ -218,15 +218,16 @@ That's the simplification. It gave me something to go on: I knew I wanted a scal
 
 So I knew what to look for in a scale and wasn't just blindly dating one after the other. (It seems so much of design is about giving yourself limitations to make the wild chaos of life barely managable.)
 
-It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example). How bold do I want my headings to be?
+It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example). I want to live boldly, so how bold do I want my headings to be?
 
-I settled these questions for myself. Then I decided to add a blog to my site. Which means more headings, which means my scale no longer accomodates my content. Every day, I redesign. Or, as they say:
+I settled these questions for myself. I was content. Then I decided to add a blog to my site. Which means more headings, which means my scale no longer accomodates my content. Every day, I redesign. Or, as they say:
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 
 #### Figure out a spacing palette
 
 /mb first instructions, then resources? mb give steps after all? mb structure this more: there are 3 ways i see to work with spacing...
+/ I think a step or two should be good
 
 Ahh, spacing. Where we go to breathe, and nuts and bolts go to party. The little nooks and cranies that gather dust in our hearts and minds and our kitchens. The cracks where the light shines in. etc. etc.
 
@@ -237,12 +238,14 @@ Instead of instructions, here's 3 ways to work with a Utopia spacing palette in 
 With all of these, consider **using auto-layout** whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. It's also straightforward to implement later using grid and flexbox.
 
 1. Just do it by hand
-   When I asked myself _"do I really need to remember the spacing values and type them by hand at every single decision?"_, my answer was _"yes, yes I do"_. Needless to say, I was peeking at that generated master-board regularly.
+
+When I asked myself _"do I really need to remember the spacing values and type them by hand at every single decision?"_, my answer was _"yes, yes I do"_. Needless to say, I was peeking at that generated master-board regularly.
 
 It wasn't too bad. Some of You with more than two braincells might use those extra ones to start remembering your spacing palettes after a while.
 
 2. Use variables
-   For my fellow 2-cellers, Figma let's You set up a spacing palette with variables pretty easily now:
+
+For my fellow 2-cellers, Figma let's You set up a spacing palette with variables pretty easily now:
 
 [xxx](screenshot of variables set up)
 
@@ -265,19 +268,23 @@ If You want to try out different spacing palettes, You might go through a simili
 
 The Utopia folks have written two articles dealing with spacing. [designing with a fluid space palette](https://utopia.fyi/blog/designing-with-a-fluid-space-palette/) introduces the concept, makes a case for having a design system in the first place and also has a demo to play with. [Painting with a fluid space palette](https://utopia.fyi/blog/painting-with-a-fluid-space-palette/) is more hands-on giving you CSS snippets while explaining the concepts. Choose according to your inclination.
 
+#### Decide if You want to use a baseline grid
+
+It can make You feel extra special. The Utopia plugin generates one. There is an issue that needs to be solved, but nothing to nasty. If You're already special, move on to the next step. If yes -- You need that extra dose of special -- I recommend You read [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams and a step-by-step guide and You'll get to know some of the messy decisions that have to be made if You're going down this path. After that, maybe You'll see the grids in the Utopia main-frame with slightly different eyes. Feel free to re-run the plug-in and adjust the grid _to your needs_&trade;.
+
 #### Re-make your design the Utopia way
 
-/ alt title: bringing it all together
+aka bringing it all together
 
-/uhhmm, check the tone of this section once I get a good night's sleep in
+Since I left some room for experimentation during the previous steps, You might have already re-designed your wireframes using the Utopia system. If so, congratulations, You're done with the hard part and can start implementing!
 
-1. Decide if you wanna use a baseline grid, like the one that the Utopia plugin generates. It can make You feel extra special. If You're already special, move on to step 2. If yes -- You need that extra dose of special -- I recommend You read [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams and a step-by-step guide and You'll get to know some of the messy decisions that have to be made if You're going down this path. After that, maybe You'll see the grids in the Utopia main-frame with slightly different eyes. Feel free to re-run the plug-in and adjust the grid _to your needs_&trade;.
+For all the others, it's time now to port your initial design and make everything Utopian!
 
-2. Create a fresh set of frames for `min` and `max` to house your upcoming redesign. If You're not using a grid, do exactly what You did when You were creating your frames in the beginning. You can move on to the next step, run along, summer child. If You _are_ using a grid, the issue is now how to fit the grid into the frame -- do you stretch **it**, or the frame, or leave it kind of overlapping or what? I went with a solution I read in the article I just mentioned -- make your `min` frame the size of your `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. Simple but devious. buaha.
+-   Setup: Generate a system using the Utopia plugin. If using the website, it might help to make styles out of your type and spacing scales.
 
-3. Generate a system to use for your re-design. By now You should have pretty much all you need for that: widths for `min` and `max`, some base font sizes, some type scales... uhm... No, no. No, You didn't get me. Shut up. No, I didn't forget the spacing. I just, uhhh, left it for the very end, for some reason. So if You're the kind of person that needs a _s**pecial** spacing palette_, read on, I deal with You after this. If You're cool, just hit the big button.
+-   Create a fresh set of frames for `min` and `max` to house your upcoming redesign. If You're not using a grid, do exactly what You did when You were creating your frames in the beginning. You can move on to the next step. Run along, summer child! If You _are_ using a grid, the issue is now how to fit the grid into the frame -- do you stretch **it**, or the frame, or leave it kind of overlapping or what? The solution proposed in the grid guide mentioned earlier is simple: make your `min` frame the size of your `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. Simple but devious. buaha!
 
-4. Design your project using the generated system. You already know how to handle text.
+-   Design your project using the generated system. You know how to handle text, you have 3 ways of handling spacing. You have a grid or you don't. Go out there and make some mistakes!
 
 #### Iterate
 
@@ -285,11 +292,11 @@ You might want to get things right at this stage. This saves some work later on.
 
 #### Implement
 
-When you're happy with your design system, go to `utopia.fyi` and copy the CSS output into your project.
+-   Get the CSS custom properties out of your system and into your config. Go to the Utopia website, plug in the values You used with the Figma plugin (they're on the first generated frame) and copy the CSS output into your project.
 
-I put mine into a `base.css` file and then referenced the variables in `tailwind.config.cjs`. A good reason for doing it like that is that I can easily copy and paste utopia's output into `base.css` whenever I iterate (which, I know I will).
+You have some options here. Chris Penrod does it one way(xxx resources). I go an extra step and put my variables into a `base.css` file which I then reference in `tailwind.config.cjs`. My reason for doing it like this is that I can easily copy and paste Utopia's output wholesale into `base.css` whenever I iterate (aka change my mind), which, I know I will.
 
-This is what it looked like:
+This is what it looks like:
 
 ```css
 /* 👇 base.css --- some values ommitted for brevity */
@@ -337,40 +344,52 @@ module.exports = {
 }
 ```
 
-If you're redesigning an existing project, it makes sense to pay attention to the class names (e.g. `fl-sm`, `space-fl-3xs`) since you'll be pruning out static values and you might want to use regex to distinguigh these from your shiny new fluid ones. See this step for more info(xxx).
+/ improve code:
 
-#### Code your thing using these values
+-   change space-fl to simply fl?
+-   unify lg - l ?
 
-Use grid and flexbox whenever you can.
+The `fl` stands for `fluid`, I took it from Chris.
 
-The new classes should be available in your IDE's autocomplete: in VSCode I can type in `p-sp` and press `ctrl + space` and I get a list of all the fluid padding values. Same for any other spacing category like gap and 'spacing'. Same for font sizes.
+With this setup, new classes should show up in your IDE's autocomplete: try typing `p-spa` somewhere as a class and pressing your `autocomplete` shortcut (I have it on `ctrl + space` in VSCode). You should see a list of all the fluid padding values. Same for any other spacing category like `gap`, `spacing` and `margin`. Same for font sizes.
 
-You'll be working a lot with paddings and gaps.
+Now, if You're starting a fresh project, You are ready to code it with entirely fluid spacing and typography!
 
-More peeking coming. You'll look at your Figma designs see a padding value of `24` and wonder if thats `space-fl-m` or `space-fl-l`. That's natural. I wondered a lot.
+#### If you're redesigning an existing project
 
-#### (If redesigning an existing project) Find and replace static values with fluid ones
+-   replace static values with fluid ones
 
-Search through all your files and go through text sizes, paddings, margins, spacings, etc. Instead of typing in each padding-variation (pt, pb, p-, px-, py) and doing the same for margin, etc., I wrote this regex that covers a lot (but not all) cases:
+I wrote a regex for finding most (but not all) of the standard Tailwind spacing classes, mostly to keep my regex muscles from atrophying.
+
 `[\s"']([mp]|gap|space)-?\w?-\d`
 
-To do it like this, you might have to enable regex in your IDE's searchbar (there's a little button on the right in VSCode).
+To use this, paste it into the searchbar where you search through all your files at once (`cmd + shift + f` in VSCode). For it to work, You might have to turn on regex (there's a little button that says `.*` on the right of the searchbar itself in VSCode).
 
-Beware: this regex relies on the fact that my fluid class names begin with a letter while those of tailwind begin with a digit (that’s the “\d” in the above regex)).
+Without this, You would have to type in each padding-variation (pt, pb, p-, px-, py) and do the same for margin, etc.
 
 ## Outro
 
+### Why such a guide
+
 Hope you enjoyed, learned, or killed some time!
 
-I haven't found many guides like this while I was redesigning my site. Utopia doesn't seem like rocket science now that I know how it works, but it did take me several hours to get a grip on all the concepts and figure out a way how to actually work with them. Basic how-to instructions are buried in some of their blog articles.
+I haven't found many guides like this while I was redesigning my site. Utopia doesn't seem like rocket science now that I know how it works, but it did take me several hours to get a grip on all the concepts and figure out a way how to actually work with them.
 
-I could have used a step-by-step guide like this. I'd be elated if it saved anybody some time or frustration.
+I kind of fear that they intentionally didn't give basic how-to instructions. Because they're experiences designers and they know things lose they're purpose if they're simplified in this form. Designing is a messy business. Let's keep it that way.
+
+What I hope is to get my name out there, to maybe get some feedback on this workflow, and to maybe get a person or two into design systems, because they can be pretty cool.
+
+I could have used a few more step-by-step instructions like this. But I don't know. Anyway, if this saves even one person from eternal damnation, I'd be pretty satisfied. some time or frustration.
 
 ### Disclaimers and goodbye
 
 This is one workflow of many. It might be embarrassingly simplistic to some. It got the job done for me.
 
 I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feedback. Say hi, for goodness' sake, don't be shy! And especially, let me know if you got stuck, peeved or if you want more!
+
+---
+
+Thank You, my wonderful editors!
 
 ---
 
@@ -411,22 +430,18 @@ I found two plugins that were made to help with integrating Utopia into Tailwind
 
 -   In [Fluid Type](https://elisehe.in/2021/03/13/fluid-type) Elise Hein talks about some fundamental questions in a very approachable way. Why do we care about fluid type in the first place? And is clamp really so great?
 
----
-
-Thank You, my wonderful editors!
-
 ## META
 
 NEXT STEPS:
 
--   [] revise '# steps'
-
+-   [x] revise '# steps'
+-   [] read through revised steps in order
 -   revise '# wtf'
--   revise '# outro'
 -   decide on order
--   check intro
--   test this: \* is this a possible alternative? -- instead of using the utopia website to generate type scales and manually copy-pasting them into figma, use the utopia figma plugin?
+-   revise intro
+-   revise outro
 -   put on google docs
+
 -   share with thays
 -   share with yemi
 
@@ -441,6 +456,7 @@ NEXT STEPS:
 -   [x] make links open in new tab -- no because let the user decide how they open links
 -   [x] revise: shorten utopia-basics section; rewrite/break up 'big idea'
 -   [x] fix: make it so I can have spaces between list items in markdown without them going haywire in html
+-   [x] test this: \* is this a possible alternative? -- instead of using the utopia website to generate type scales and manually copy-pasting them into figma, use the utopia figma plugin?
 
 **formatting**
 

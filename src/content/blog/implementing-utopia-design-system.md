@@ -226,33 +226,44 @@ I settled these questions for myself. Then I decided to add a blog to my site. W
 
 #### Figure out a spacing palette
 
-Ahh, spacing. The breathing room, the space where our nuts and bolts go to party. The little nooks and cranies that gather dust in our hearts and minds and our kitchens. The cracks where the light shines in. etc. etc.
+/mb first instructions, then resources? mb give steps after all? mb structure this more: there are 3 ways i see to work with spacing...
 
-There are no steps here, since I didn't mess around too much with this. I took the default spacing palette and added some custom space pairs, that's it. All in all, I felt a decent balance between constraint and freedom. For this website, it worked for me.
+Ahh, spacing. Where we go to breathe, and nuts and bolts go to party. The little nooks and cranies that gather dust in our hearts and minds and our kitchens. The cracks where the light shines in. etc. etc.
 
-Instead of specific instructions, I'll point You to the official resources and then talk about some ways to work with spacing in Figma.
+There are no steps here, since I didn't mess around too much with this. I took the default spacing palette and added some custom space pairs, that's it. All in all, I felt a decent balance between constraint and freedom. For this website, it worked alright.
 
-The Utopia folks have written two articles dealing with spacing. [designing with a fluid space palette](https://utopia.fyi/blog/designing-with-a-fluid-space-palette/) introduces the concept, makes a case for having a design system in the first place and also has a demo to play with. [Painting with a fluid space palette](https://utopia.fyi/blog/painting-with-a-fluid-space-palette/) is more hands-on giving you CSS snippets while explaining the concepts. Choose according to your inclination.
+Instead of instructions, here's 3 ways to work with a Utopia spacing palette in Figma.
 
-**So how do You try this out in Figma?**
-First of all, consider **using auto-layout** whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. It's also straightforward to implement later using grid and flexbox. I have 2 margins on my landing page: one for centering the page and one for spacing the very last thing in the footer.
+With all of these, consider **using auto-layout** whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. It's also straightforward to implement later using grid and flexbox.
 
-So now that You know where to put the little numbers, You might be asking yourself (like I did): _"do I really need to remember the spacing values and **type them by hand** at every single decision?"_ My answer was "yes, yes I do". Needless to say, I was peeking at that generated master-board regularly.
+1. Just do it by hand
+   When I asked myself _"do I really need to remember the spacing values and type them by hand at every single decision?"_, my answer was _"yes, yes I do"_. Needless to say, I was peeking at that generated master-board regularly.
 
-It wasn't too bad. Some of You with more than two braincells might use those extra ones to start remembering your spacing palettes after a while. But for my fellow 2-cellers, now, there's a pretty straightforward way to **set this up with variables**. Nominal example:
+It wasn't too bad. Some of You with more than two braincells might use those extra ones to start remembering your spacing palettes after a while.
 
-[xxx](maybe screenshot of variables set up)
+2. Use variables
+   For my fellow 2-cellers, Figma let's You set up a spacing palette with variables pretty easily now:
+
+[xxx](screenshot of variables set up)
 
 I don't see how to make these sync when You re-generate your palette, tho.
 
-But, there might be a way... Follow me into this dark alley, friend.
+**But**... there might be a way... Follow me into this dark alley, friend.
 
-See, You could just use the _spacing components_ in your actual designs, as shown in [this image](https://utopia.fyi/images/utopia-plugin-10.jpg) from the official [guide to the Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/). You would literally just drag the generated squares into your design. (Again, if You don't see squares, turn on the grid in Figma: `shift-g`. That certainly threw me off, for a while.) And You can hide these spacers easily because, well - _they're actually just, like, pieces of the grid, man!_ Clever, clever, Utopia designers. Do it like this and You could manage your spacings just by selecting a spacing variant -- s, m, xl, all your favourite t-shirt sizes -- from a drop-down menu!
+3. Use the spacing-components from the Utopia plugin
 
-On the flip side, by doing it this way, You give your soul to the Darkness, or whatever. Don't worry about it. Can I interest You in a frozen yoghurt? I call it _"froyo"_!
+See these little squares on the master-frame? You can literally just [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg). And when You're sick of them, just close your eyes, press `shift + g` 3 times and they'll go away. How does that work, You ask? _They're actually just, like, pieces of the grid, man!_ Clever, clever, these Utopia designers. Now You select the variant You want from a drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favourite t-shirt sizes!
+
+You can use these squares for your gaps, your paddings, your margins, you can put them under your sofa and forget about them for 7 years. They'll stay there, patiently waiting until it's time to implement. Or move.
+
+They are cursed with a terrible curse tho.
+
+But they come with a frozen yoghurt! I call it _"froyo"_!
 
 EXTRA
 If You want to try out different spacing palettes, You might go through a similiar loop as when You were figuring out the type scale: first, apply the spacing styles from your system to your design (by copy-pasting, or using variables, or if You see another way, please let me know!(xxx)), then run the plugin again. You might wanna work with variables even more. I wanna use variables after trying it out while writing this. I was really peeking a lot at that master-board.
+
+The Utopia folks have written two articles dealing with spacing. [designing with a fluid space palette](https://utopia.fyi/blog/designing-with-a-fluid-space-palette/) introduces the concept, makes a case for having a design system in the first place and also has a demo to play with. [Painting with a fluid space palette](https://utopia.fyi/blog/painting-with-a-fluid-space-palette/) is more hands-on giving you CSS snippets while explaining the concepts. Choose according to your inclination.
 
 #### Re-make your design the Utopia way
 

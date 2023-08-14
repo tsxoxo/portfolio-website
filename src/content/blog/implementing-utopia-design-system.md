@@ -26,27 +26,25 @@ If you know what you want and you want to jump right in, **[skip to the steps](#
 
 ## What is Utopia?
 
-[Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the surface it's a website where You plug in some values and get out CSS that makes your text and spacings adjust to the user's viewport size.
+[Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the website, You plug into it certain parameters and it generates CSS that makes your text and spacings adjust to the user's viewport size.
 
-But it's also a tool in the broader sense of the term -- it's a certain approach to a problem we web designers face every day (every day I live in a society).
+Instead of media queries, it uses a 'fluid' approach to a problem we web designers face every day (every day I live in a society).
+
+To me, it scratched that consistency itch that only a design system can scratch. It took some time in the beginning, but it's pretty satisfying to see this website be all responsive and shit.
 
 ### Where to start
 
-These are some resources I found helpful explaining the general concept:
+I found these resources helpful in explaining the general concept:
 
--   🤏 Play with an [interactive demo](https://utopia.fyi/) to get a sense of the idea.
+-   🤏 Play with an [interactive demo](https://utopia.fyi/) to get a sense of the result.
 -   👁👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
 -   📜, 👁👁 Read an [intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
 -   📜 Read a [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.
--   🤏, 📜, 👁👁 Play with the official [Figma starter project](https://www.figma.com/community/file/1122903924123950023) and read the succinct intro on the 'readme' page that includes multiple illustrations.
+-   🤏, 📜, 👁👁 Play with the official [Figma starter project](https://www.figma.com/community/file/1122903924123950023), read the succinct intro on the 'readme' page, and look at multiple illustrations.
 
-### Main concepts
+### In a nutshell
 
-I won't be going into depth. I think the above resources do a decent job of explaining Utopia's concept (please let me if You got stuck somewhere). But I can give You a little refresher. I assume You've got a sense of the main idea.
-
-#### In a nutshell
-
-Quotes from official ressources that sum up the Utopia approach:
+Quotes from official resources showing the essence of the Utopia approach:
 
 > 1. Define a type scale for a small screen
 > 2. Define a type scale for a large screen
@@ -66,7 +64,9 @@ Quotes from official ressources that sum up the Utopia approach:
 
 <cite>[source](https://utopia.fyi/blog/css-modular-scales/)</cite>
 
-#### Dictionary of the Utopia UI
+### Dictionary of the Utopia UI
+
+These are the terms used in the UI of the Utopia website.
 
 **`min`**\
 The smallest state or the smallest viewport You feel like visualising in your design. The `font size` will never go smaller as the one for `min`.
@@ -78,10 +78,10 @@ The largest state or the largest viewport You feel like visualising in your desi
 The `min` and `max` viewports are defined in terms of their widths.
 
 **`font size`**\
-The size of the majority of text that will appear in your project. Often the starting point in the design process. Also, the base line for your `type scale`.
+The size of the majority of text that will appear in your project. Also, the base line for your `type scale`. Choosing the `font size` is often done early in the design process.
 
 **`type scale`**\
-The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base line. This can sound exotic, but it's really just a way to let math help You come up with a consistent palette of font sizes. (So You don't have to ask yourself: _"should my headings be 48px or 49px?"_)
+The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base line. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my headings be 48px or 49px?"_)
 
 ## WTF
 

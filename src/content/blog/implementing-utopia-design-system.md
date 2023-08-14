@@ -116,9 +116,9 @@ Disclaimer: this is one workflow among many.
 
 [2 other guides](#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They focus on parts of the whole while I'm trying to go from start to finish. But that also makes them shorter, which is what You might want.
 
-#### Create a wireframe
+#### Create a wireframe for `min` or `max`
 
-**The goal: Figure out the size of the the majority of text in your project.** To this end, it would probably help to get a sense of the rest of the project. Here's a rough sequence of steps You might take:
+**The goal: Figure out the size of the the majority of text in your project.** ('body text') /To this end, it would probably help to get a sense of the rest of the project. Here's a rough sequence of steps You might take:
 
 -   focus on either `min` or `max`.
 
@@ -142,43 +142,46 @@ Tip: To make a frame with proportions close to an actual screen, You can choose 
 
 -   Design stuff until You get a sense for a workable `font size`.
 
-Don't put too much pressure on yourself. Rather, start accepting that You'll be re-making and re-deciding this again. -- Later after generating your type- and spacing-scales You'll do a Utopia redesign of this wireframe -- consistently applying your scales and maybe even using a Utopia grid.
+This is just so You have something to work with. Don't put too much pressure on yourself to 'get it right' at this point. You'll be re-making (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
 
-#### Create the other wireframe
+#### Create a wireframe for the other state
 
-Go through the same steps, but focusing on the other state.
+Go through the same steps for the other state - `min` or `max`.
 
-At the end, You should have 2 widths and 2 font sizes figured out (for now).
+Now, You should have settled on 2 widths and 2 font sizes (for now).
 
-#### Run the Utopia plugin and apply some text styles to your design
+#### Apply a style to your body text
 
-This can help with figuring out your type scales, as it saves some copy-pasting.  
-It gives You Figma styles and components representing all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids. You'll see.
+You could create your system using just the Utopia website, but the Figma Utopia plugin makes things easier: it generates styles and components representing all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids. You'll see.
 
-1. Learn the basics by reading either the description page of [the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated [intro article](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/).
+I'll assume that You're using the plugin from now on. It'll keep the instructions a little simpler. You can still do everything using the Utopia website, it'll just be more copy and pasting.
 
-2. Go to Figma and run it.
+-   To get started, You might read the [community page for the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated article [Getting started with Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) (there are actually 2). If You know your Utopia basics, You might be able to just jump in and follow these instructions.
 
-/fix step order 2. Click on the big button. Possibly, wait for a bit until it finishes working -- it sometimes would take like 20 seconds for me. It's doing a lot of good work. Don't worry about your `type scales` yet, just run it once to see what it does. You'll focus on them in the next section.
+-   Run the plugin in Figma. It's called 'Utopia / Fluid type + space calculator'.
 
-3. Find the generated output somewhere on the canvas -- it's a big bunch of frames. Look at everything. If a bunch of stuff looks blank, try making the the grid visible in Figma by pressing `shit + g`. Feel free to frame the bunch or wrap it in a section. Put it somewhere where you can easily take a peek at it while you're designing. I was peeking pretty often. (Aside: Haven't seen the phenomenon of a 'strong' text variant that's got a bold font weight talked about anywhere else in the Utopia ecosystem. But it's there. I've certainly used it. I actually modified some of the font-weights for my purposes. A system is just the beginning.)
+-   In the UI that pops up, put in your `widths` and your `font sizes`. Don't worry about the `type scales` yet, You'll focus on them in the next section. Click the big button. It would sometimes take like 20 seconds for me before anything happened. Trust the process. A lot of good work is done in silence.
 
-4. Apply the appropiate generated style to your body text. At the time of writing this is called `U/Type/Min/Prose/Step 0`.
+-   Look at the generated frames. If some of it looks blank, try making the grid visible with `shit + g`. Feel free to wrap the bunch in a section and put it somewhere where you can easily peek at it while you're designing. I was peeking pretty often.
 
-5. Do the same thing with a heading or two. Add some to your design if You hadn't already and apply some styles to them. There is some guesswork here, as You may or may not know how many steps You need for your scale. I went minimal and chose 3 steps but now that I write a blog and need like 5 heading hierarchies, I'm reconsidering.
+-   Look at the generated styles in the right Figma panel (click on the background of the canvas to see them). Apply the appropiate style to the body text in your wireframe. At the time of writing, this is `U/Type/Min/Prose/Step 0`.
 
-6. Now you should have at least 2 Utopian text styles living in your design. Change the font family of all of these in one swoop by using [this other plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles) by the Utopia creators. (The text should change on the main-frame as well as in your designs.) You can undo with `cmd-z` if You want, but it's good that You know that this is easy to do.
+Now, whenever you re-run the plugin with a different `font size`, your body text will update automatically!
 
-7. Run the Utopia plugin again, just with a different type scale. Observe how your headings change, but your body text stays the same. You'll be running it again, a few times.
+/Aside 1: The plugin also generates a palette in a bolder font weight. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem. But it's there. I took it as an invitation and modified some of the font-weights for my purposes. A system is, like, just the beginning, man.
 
-These plugins can be your tools and trusty helpers. You can also get there by copy-pasting between the Utopia website and Figma. I liked the plugins. For such a messy, sprawling thing as a design system generator and a batch-updator I found them to be very friendly.
-
-/Aside:
+/Aside 2:
 Now here might be a good case to use the new variables feature in Figma. put all of these values there and you dont have to look them up. you could even map min and max to their own modes. could be interesting. i was ready to do that but unfortunately figma restricts free accounts to 1 mode only. I feel this might be a good moment to link to my 'buy me a coffee (or Figma subscription)' thingy. I pledge that if I get 15 bucks, I'll buy a month of Figma and write a guide on doing this with variables.
 
 #### Figure out a `type scale`
 
 1. Focus on either `min` or `max`.
+
+2. Add some other type of text to your designs -- maybe some headings, or an image caption. The goal is to have if You hadn't already and apply appropiate styles to them. There is some guesswork here, as You may or may not know how many steps You need for your scale. I went minimal and chose 3 steps but now that I write a blog and need like 5 heading hierarchies, I'm reconsidering.
+
+3. Now you should have at least 2 Utopian text styles living in your design. Change the font family of all of these in one swoop by using [this other plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles) by the Utopia creators. (The text should change on the main-frame as well as in your designs.) You can undo with `cmd-z` if You want, but it's good that You know that this is easy to do.
+
+-   Run the Utopia plugin again, just with a different type scale. Observe how your headings change, but your body text stays the same. You'll be running it again, a few times.
 
 2. Make sure You have a few different types of text in your wireframe. By now You should have at least some body text and a heading. This is a good time to flesh out your design and put in more -- other headings or smaller text -- so that You can see how a particular type scale will harmonize across your design.
 
@@ -477,6 +480,7 @@ NEXT STEPS:
     -   :::asides
     -   foldable content
 -   give 'skip to the steps'-link extra special styling
+-   fix step order
 
 _... formatting that maybe requires dealing with markdown plugins_
 

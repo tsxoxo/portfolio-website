@@ -453,8 +453,6 @@ I found two plugins that were made to help with integrating Utopia into Tailwind
 
 NEXT STEPS:
 
--   [x] revise '# steps'
--   [] read through revised steps in order
 -   revise '# wtf'
 -   decide on order
 -   revise intro
@@ -476,6 +474,8 @@ NEXT STEPS:
 -   [x] revise: shorten utopia-basics section; rewrite/break up 'big idea'
 -   [x] fix: make it so I can have spaces between list items in markdown without them going haywire in html
 -   [x] test this: \* is this a possible alternative? -- instead of using the utopia website to generate type scales and manually copy-pasting them into figma, use the utopia figma plugin?
+-   [x] revise '# steps'
+-   [x] read through revised steps in order
 
 **formatting**
 

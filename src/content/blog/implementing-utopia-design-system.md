@@ -201,7 +201,7 @@ So I knew what to look for in a scale and wasn't just blindly dating one after t
 
 It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example). I want to live boldly, so how bold do I want my headings to be?
 
-I settled these questions for myself. I was content. Then I added a blog to my site, which means more headings, which means my scale no longer accomodates my content. Every day, I redesign. Or, as they say:
+I settled these questions for myself. I went minimal, my scale had 3 steps, I was content. Then I added a blog to my site, which means more headings, which means my scale no longer accomodates my content. Every day, I redesign. Or, as they say:
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 
@@ -210,27 +210,29 @@ I settled these questions for myself. I was content. Then I added a blog to my s
 /mb first instructions, then resources? mb give steps after all? mb structure this more: there are 3 ways i see to work with spacing...
 / I think a step or two should be good
 
-Ahh, spacing. Where we go to breathe, and nuts and bolts go to party. The little nooks and cranies that gather dust in our hearts and minds and our kitchens. The cracks where the light shines in. etc. etc.
+Ahh, space. Where we go to breathe, or to scream when we don't want anybody to hear us. Where nuts and bolts go to party. The little nooks and crannies, the dusty corners of our hearts and minds and behind that one door. The cracks where the light shines in. etc. etc.
 
-There are no steps here, since I didn't mess around too much with this. I took the default spacing palette and added some custom space pairs, that's it. All in all, I felt a decent balance between constraint and freedom. For this website, it worked alright.
+There are no steps here, since I didn't mess around too much with this. I went with the default spacing palette and added some custom space pairs, that's it. For this website, it worked alright. A decent balance between constraint and freedom.
 
-Instead of instructions, here's 3 ways to work with a Utopia spacing palette in Figma.
+Instead of instructions, here's **3 ways to work with a Utopia spacing palette in Figma.**
 
-With all of these, consider **using auto-layout** whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. It's also straightforward to implement later using grid and flexbox.
+With all of these, consider using auto-layout whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. And it's straightforward to implement with grid and flexbox.
 
 1. Just do it by hand
 
-When I asked myself _"do I really need to remember the spacing values and type them by hand at every single decision?"_, my answer was _"yes, yes I do"_. Needless to say, I was peeking at that generated master-board regularly.
+You might be asking yourself _"do I really need to remember the spacing values and type them by hand at every single decision?"_. It might be easier than You think. /You can always peek at Your master-board.
 
-It wasn't too bad. Some of You with more than two braincells might use those extra ones to start remembering your spacing palettes after a while.
+This is how me and my two brain cells did it. It wasn't too bad. A lot of peeking at the master-board, but that's a small price to pay to be _fluid_.
 
 2. Use variables
 
-For my fellow 2-cellers, Figma let's You set up a spacing palette with variables pretty easily now:
+Figma let's You set up a spacing palette with variables pretty easily now:
 
-[xxx](screenshot of variables set up)
+(![A screenshot of how You might set up your variables](figma-variables-demo.png))
 
-I don't see how to make these sync when You re-generate your palette, tho.
+The upside is You can choose these from a menu and don't have to peek or stress your brain cells so much.
+
+The downside is I don't see how to make these sync when You re-generate your palette, tho.
 
 **But**... there might be a way... Follow me into this dark alley, friend.
 

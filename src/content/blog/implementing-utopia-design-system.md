@@ -410,6 +410,12 @@ I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feed
 
 Thank You, my wonderful editors!
 
+Thank You, Christian Penrod. You helped me realize that this is possible and without too much hassle.
+
+Thank You, Utopia creators for building and polishing this awesome tool and making it available for free!
+
+Thank You, all the folks before that figured out the math to the responsive design problem and cared enough to keep implementing this by hand!
+
 ---
 
 [x] refer to myself as 'this author'
@@ -418,7 +424,7 @@ Thank You, my wonderful editors!
 
 ### The other guides
 
--   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod also shows a way to implement the Utopia system in Tailwind. The way I do it in this guide builds on his approach. His guide is also much less verbose than what You're reading here. Much less verbose. Thank You, Christian. You helped me realize that this is possible and possible without too much hassle.
+-   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod also shows a way to implement the Utopia system in Tailwind. The way I do it in this guide builds on his approach. His guide is much less verbose than what You're reading here. Much less verbose.
 
 -   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team goes only through part of the process, but that was already immensely helpful to me. Even more important, it acknowledges that the design process is messy and full of questions that only You can answer.
 

@@ -228,19 +228,19 @@ This is how me and my two brain cells did it. It wasn't too bad. A lot of peekin
 
 Figma let's You set up a spacing palette with variables pretty easily now:
 
-(![A screenshot of how You might set up your variables](figma-variables-demo.png))
+![A screenshot of how You might set up your variables](/assets/blog/pictures/figma-variables-demo.png)
 
-The upside is You can choose these from a menu and don't have to peek or stress your brain cells so much.
+The upside is You can choose your spacing from a menu and don't have to peek so much.
 
-The downside is I don't see how to make these sync when You re-generate your palette, tho.
+The downside is I don't see how to make these variables sync when You re-generate your palette...
 
 **But**... there might be a way... Follow me into this dark alley, friend.
 
 3. Use the spacing-components from the Utopia plugin
 
-See these little squares on the master-frame? You can literally just [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg). And when You're sick of them, just close your eyes, press `shift + g` 3 times and they'll go away. How does that work, You ask? _They're actually just, like, pieces of the grid, man!_ Clever, clever, these Utopia designers. Now You select the variant You want from a drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favourite t-shirt sizes!
+See these little squares on the spacing-palette-frames that Utopia generated? You can literally just [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg). And when You're sick of them, just close your eyes, press `shift + g` 3 times and they'll go away. How does that work, You ask? _They're actually just, like, pieces of the grid, man!_ Clever, clever, these Utopia designers. Now You select the variant You want from a drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favourite t-shirt sizes!
 
-You can use these squares for your gaps, your paddings, your margins, you can put them under your sofa and forget about them for 7 years. They'll stay there, patiently waiting until it's time to implement. Or move.
+You can use these squares for your gaps, your paddings, your margins, you can put them under your sofa and forget about them for 7 years. They'll stay there, patiently waiting until it's time to implement. Or move house.
 
 They are cursed with a terrible curse tho.
 

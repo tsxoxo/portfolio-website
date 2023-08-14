@@ -175,35 +175,33 @@ Now here might be a good case to use the new variables feature in Figma. put all
 
 #### Figure out a `type scale`
 
-1. Focus on either `min` or `max`.
+As before, this guide will focus on either `min` or `max`.
 
-2. Add some other type of text to your designs -- maybe some headings, or an image caption. The goal is to have if You hadn't already and apply appropiate styles to them. There is some guesswork here, as You may or may not know how many steps You need for your scale. I went minimal and chose 3 steps but now that I write a blog and need like 5 heading hierarchies, I'm reconsidering.
+Especially rough instructions More of a set of hints. Then my story to illustrate.
 
-3. Now you should have at least 2 Utopian text styles living in your design. Change the font family of all of these in one swoop by using [this other plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles) by the Utopia creators. (The text should change on the main-frame as well as in your designs.) You can undo with `cmd-z` if You want, but it's good that You know that this is easy to do.
+-   Make sure You have a different type of text in your wireframe apart from the body text -- maybe some headings or some smaller text like an image caption. You should have a few texts of different sizes to see how a type scale will harmonize across your design.
 
--   Run the Utopia plugin again, just with a different type scale. Observe how your headings change, but your body text stays the same. You'll be running it again, a few times.
+-   Apply Utopia styles to every piece of text in your design. You may not know what style to assign to which text. That's ok. Take some educated guesses.
 
-2. Make sure You have a few different types of text in your wireframe. By now You should have at least some body text and a heading. This is a good time to flesh out your design and put in more -- other headings or smaller text -- so that You can see how a particular type scale will harmonize across your design.
+-   Now you should have at least 2 Utopian text styles living in your wireframe. Try changing the font family of all of these in one swoop by running [the 'Utopia / Batch update text styles' plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles). Even if You undo this, it's good that You know that this is easy to do.
 
-3. Apply appropiate text styles to whatever text in your wireframe, like You did in the previous section. Maybe with a clearer sense of how many steps You need in your scale.
+-   Run the Utopia plugin again, just with a different type scale. The text in your wireframe should update. Adjust: the scale ratio, the number of steps in the scale, the font weight, etc. Rinse and repeat until You find a scale that _fits your needs_.
 
-4. Go to either the Utopia website or the Figma plugin. Generate a scale with some ratio. See how it fits into your design. -- if you're using the plugin just look at your magically updated wireframesand; or, if you're using the website copy-paste some values into Figma to get a sense. Rinse and repeat until You find one that fits your needs.
+-   Do the same thing for the other state. Try using a sharper scale for `max` (higher ratio) and a softer one for `min` (lower ratio). A high ratio gives thiccc headings.
 
-5. Do the same thing for the other threshold, trying out different scales. For an explanation why You'd want two different scales, see the top of [this article](https://utopia.fyi/blog/designing-with-fluid-type-scales/).
+I felt this part of the process was especially iterative (messy) because there are so many moving parts. It's a whole scale of things, after all. Many moving parts can overwhelm my brain, so I gave it a hand and tried to simplify the process:
 
-This one's especially iterative (messy) because there are so many moving parts. It's a whole scale of things, after all. Many moving parts can overwhelm a brain like mine, so I gave it a hand and simplified the process.
+While designing my landing page, I got obsessed with my big chunky hero-heading because who doesn't. I wanted it to stay on a single line. So I made it as big as possible and paid attention to the font size.
 
-Here's where I found myself some weeks ago:
+And I decided to build my type scale around this piece of text.
 
-While designing my landing page, I got obsessed with my big chunky hero-heading because who doesn't. I wanted it to stay on a single line. So I made it as big as possible and paid attention to the font size. And I decided to build my type scale around this piece of text.
+That's the simplification. This decision gave me something to go on: I knew I wanted a scale with a font size pretty close to what I had given my hero-heading. And since this was to be the biggest heading on the page, I knew this size had to be several steps up the ladder, since I needed room for my smaller headings.
 
-That's the simplification. It gave me something to go on: I knew I wanted a scale with a font size pretty close to what I had given my hero-heading. And since this was to be the biggest heading on the page, I knew this size had to be several steps up the ladder, since I needed room for my smaller headings.
-
-So I knew what to look for in a scale and wasn't just blindly dating one after the other. (It seems so much of design is about giving yourself limitations to make the wild chaos of life barely managable.)
+So I knew what to look for in a scale and wasn't just blindly dating one after the other. /(It seems so much of design is about giving yourself limitations to make the wild chaos of life barely managable.)
 
 It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example). I want to live boldly, so how bold do I want my headings to be?
 
-I settled these questions for myself. I was content. Then I decided to add a blog to my site. Which means more headings, which means my scale no longer accomodates my content. Every day, I redesign. Or, as they say:
+I settled these questions for myself. I was content. Then I added a blog to my site, which means more headings, which means my scale no longer accomodates my content. Every day, I redesign. Or, as they say:
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 

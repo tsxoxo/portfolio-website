@@ -142,7 +142,7 @@ Tip: To make a frame with proportions close to an actual screen, You can choose 
 
 -   Design stuff until You get a sense for a workable `font size`.
 
-This is just so You have something to work with. Don't put too much pressure on yourself to 'get it right' at this point. You'll be re-making (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
+This is just so You have something to work with. Don't put too much pressure on yourself to 'get it right' at this point. You'll be remaking (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
 
 #### Create a wireframe for the other state
 
@@ -166,7 +166,7 @@ I'll assume that You're using the plugin from now on. It'll keep the instruction
 
 -   Look at the generated styles in the right Figma panel (click on the background of the canvas to see them). Apply the appropiate style to the body text in your wireframe. At the time of writing, this is `U/Type/Min/Prose/Step 0`.
 
-Now, whenever you re-run the plugin with a different `font size`, your body text will update automatically!
+Now, whenever you rerun the plugin with a different `font size`, your body text will update automatically!
 
 /Aside 1: The plugin also generates a palette in a bolder font weight. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem. But it's there. I took it as an invitation and modified some of the font-weights for my purposes. A system is, like, just the beginning, man.
 
@@ -210,21 +210,21 @@ I settled these questions for myself. I went minimal, my scale had 3 steps, I wa
 /mb first instructions, then resources? mb give steps after all? mb structure this more: there are 3 ways i see to work with spacing...
 / I think a step or two should be good
 
-Ahh, space. Where we go to breathe, or to scream when we don't want anybody to hear us. Where nuts and bolts go to party. The little nooks and crannies, the dusty corners of our hearts and minds and behind that one door. The cracks where the light shines in. etc. etc.
+Ahh, space. That empty thing. Where we go to scream and nobody can hear us. Where nuts and bolts go to party. All the little nooks and crannies. The dusty corners of our hearts and minds and behind that one door. The cracks where the light shines in. etc. etc.
 
 There are no steps here, since I didn't mess around too much with this. I went with the default spacing palette and added some custom space pairs, that's it. For this website, it worked alright. A decent balance between constraint and freedom.
 
-Instead of instructions, here's **3 ways to work with a Utopia spacing palette in Figma.**
+Instead of instructions, here's **3 ways to use a Utopia spacing palette in Figma:**
 
 With all of these, consider using auto-layout whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. And it's straightforward to implement with grid and flexbox.
 
-1. Just do it by hand
+A. Just do it by hand
 
 You might be asking yourself _"do I really need to remember the spacing values and type them by hand at every single decision?"_. It might be easier than You think. /You can always peek at Your master-board.
 
 This is how me and my two brain cells did it. It wasn't too bad. A lot of peeking at the master-board, but that's a small price to pay to be _fluid_.
 
-2. Use variables
+B. Use variables
 
 Figma let's You set up a spacing palette with variables pretty easily now:
 
@@ -232,57 +232,59 @@ Figma let's You set up a spacing palette with variables pretty easily now:
 
 The upside is You can choose your spacing from a menu and don't have to peek so much.
 
-The downside is I don't see how to make these variables sync when You re-generate your palette...
+The downside is I don't see how to make these variables sync when You regenerate your palette...
 
 **But**... there might be a way... Follow me into this dark alley, friend.
 
-3. Use the spacing-components from the Utopia plugin
+C. Use the spacing-components from the Utopia plugin
 
 See these little squares on the spacing-palette-frames that Utopia generated? You can literally just [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg). And when You're sick of them, just close your eyes, press `shift + g` 3 times and they'll go away. How does that work, You ask? _They're actually just, like, pieces of the grid, man!_ Clever, clever, these Utopia designers. Now You select the variant You want from a drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favourite t-shirt sizes!
 
-You can use these squares for your gaps, your paddings, your margins, you can put them under your sofa and forget about them for 7 years. They'll stay there, patiently waiting until it's time to implement. Or move house.
+Just set the numbers in your auto-layouts to 0 and put squares everywhere: in your gaps, your paddings, your margins, if You need them. Put one under your sofa and forgot about it for like 7 years until it was time to move? No problem, it'll stay there, patiently waiting until it's time. Its time...
 
-They are cursed with a terrible curse tho.
+If You want to work on a custom spacing palette, You might do it this way. The spacing in your design will update each time you rerun the plugin and change your palette.
+
+The squares are cursed with a terrible curse tho.
 
 But they come with a frozen yoghurt! I call it _"froyo"_!
 
-EXTRA
-If You want to try out different spacing palettes, You might go through a similiar loop as when You were figuring out the type scale: first, apply the spacing styles from your system to your design (by copy-pasting, or using variables, or if You see another way, please let me know!(xxx)), then run the plugin again. You might wanna work with variables even more. I wanna use variables after trying it out while writing this. I was really peeking a lot at that master-board.
-
-The Utopia folks have written two articles dealing with spacing. [designing with a fluid space palette](https://utopia.fyi/blog/designing-with-a-fluid-space-palette/) introduces the concept, makes a case for having a design system in the first place and also has a demo to play with. [Painting with a fluid space palette](https://utopia.fyi/blog/painting-with-a-fluid-space-palette/) is more hands-on giving you CSS snippets while explaining the concepts. Choose according to your inclination.
-
 #### Decide if You want to use a baseline grid
 
-It can make You feel extra special. The Utopia plugin generates one. There is an issue that needs to be solved, but nothing to nasty. If You're already special, move on to the next step. If yes -- You need that extra dose of special -- I recommend You read [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams and a step-by-step guide and You'll get to know some of the messy decisions that have to be made if You're going down this path. After that, maybe You'll see the grids in the Utopia main-frame with slightly different eyes. Feel free to re-run the plug-in and adjust the grid _to your needs_&trade;.
+It can make You feel extra special. The Utopia plugin generates one for You, so it's not too hard to get started. /It's up to You how far You want to take it - use it as a guideline for your design, put another simpler grid on top of that (my option)
 
-#### Re-make your design the Utopia way
+If You're out, move on to the next step. If yass -- I recommend You read the official intro [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams and a step-by-step guide and You'll get to know some of the messy decisions that have to be made if You're going down this path. After that, rerun the Figma plugin and adjust the grid _to your needs_&trade;.
+
+#### Remake your design the Utopia way
 
 aka bringing it all together
 
-Since I left some room for experimentation during the previous steps, You might have already re-designed your wireframes using the Utopia system. If so, congratulations, You're done with the hard part and can start implementing!
+Since I left some room for experimentation during the previous steps (aka the instructions were vague), You might have already redesigned your wireframes using the Utopia system. If so, congratulations, You're done with the hard part and can [go to the next step](xxx) to start implementing!
 
-For all the others, it's time now to port your initial design and make everything Utopian!
+Otherwise, if You want to start fresh:
 
--   Setup: Generate a system using the Utopia plugin. If using the website, it might help to make styles out of your type and spacing scales.
+-   Generate a system using the Utopia plugin. By now You should have some ideas for all the parameters.
 
--   Create a fresh set of frames for `min` and `max` to house your upcoming redesign. If You're not using a grid, do exactly what You did when You were creating your frames in the beginning. You can move on to the next step. Run along, summer child! If You _are_ using a grid, the issue is now how to fit the grid into the frame -- do you stretch **it**, or the frame, or leave it kind of overlapping or what? The solution proposed in the grid guide mentioned earlier is simple: make your `min` frame the size of your `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. Simple but devious. buaha!
+-   Create a fresh set of frames for `min` and `max` to house your upcoming redesign.
 
--   Design your project using the generated system. You know how to handle text, you have 3 ways of handling spacing. You have a grid or you don't. Go out there and make some mistakes!
+If You're not using a grid, do exactly what You did when You created your frames in the beginning. You can move on to the next step, run along, summer child!
 
-#### Iterate
+If You _are_ using a grid, the issue is now how to fit the grid into the frame -- do you stretch one or the other, or leave it kind of overlapping or what? There is a simple solution proposed in the grid guide mentioned earlier: make your `min` frame the size of your `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. Simple but devious. buaha!
 
-You might want to get things right at this stage. This saves some work later on.
+-   Design your project using the generated system. You know how to handle text, you have 3 ways of handling spacing. You have a grid or you don't. Go out there, make some mistakes and enjoy that sweet consistency!
 
 #### Implement
 
--   Get the CSS custom properties out of your system and into your config. Go to the Utopia website, plug in the values You used with the Figma plugin (they're on the first generated frame) and copy the CSS output into your project.
+-   Get those CSS custom properties out of your system! (and into your config.) Go to the Utopia website, plug in the values You used with the Figma plugin (they're on the first generated frame) and copy the CSS output into your project.
 
-You have some options here. Chris Penrod does it one way(xxx resources). I go an extra step and put my variables into a `base.css` file which I then reference in `tailwind.config.cjs`. My reason for doing it like this is that I can easily copy and paste Utopia's output wholesale into `base.css` whenever I iterate (aka change my mind), which, I know I will.
+**Where to put these variables?**
+
+You have options. Chris Penrod does it one way, see [his article](xxx resources). I go an extra step and put my variables into a `base.css` file. Then I reference them in `tailwind.config.cjs`. My reason for doing it extra like this is that I can easily copy and paste Utopia's output wholesale into `base.css` whenever I iterate (aka change my mind) -- which, I know I will.
 
 This is what it looks like:
 
 ```css
-/* 👇 base.css --- some values ommitted for brevity */
+/* base.css
+-- many values ommitted for brevity */
 
 @tailwind base;
 @tailwind components;
@@ -308,7 +310,8 @@ This is what it looks like:
 ```
 
 ```js
-// 👇tailwind.config.cjs --- some values ommitted for brevity*/
+/* tailwind.config.cjs 
+-- many values ommitted for brevity*/
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -332,23 +335,26 @@ module.exports = {
 -   change space-fl to simply fl?
 -   unify lg - l ?
 
-The `fl` stands for `fluid`, I took it from Chris.
+aside: The `fl` stands for `fluid`, I took this from Chris.
 
-With this setup, new classes should show up in your IDE's autocomplete: try typing `p-spa` somewhere as a class and pressing your `autocomplete` shortcut (I have it on `ctrl + space` in VSCode). You should see a list of all the fluid padding values. Same for any other spacing category like `gap`, `spacing` and `margin`. Same for font sizes.
+With this setup, new classes should show up in your IDE's autocomplete: try typing `p-spa` somewhere as a class and pressing your `autocomplete` shortcut (I have it on `ctrl + space` in VSCode). You should see a list of all your fluid padding steps. Same for any other spacing utility like `gap`, `spacing` and `margin`. Same for font sizes.
 
 Now, if You're starting a fresh project, You are ready to code it with entirely fluid spacing and typography!
 
+/Aside
+[There's two plugins that are supposed to do this work for you.](xxx resources)
+
 #### If you're redesigning an existing project
 
--   replace static values with fluid ones
+-   replace static classes with fluid ones
 
-I wrote a regex for finding most (but not all) of the standard Tailwind spacing classes, mostly to keep my regex muscles from atrophying.
+I wrote a regex for finding many (but surely not all) of the standard Tailwind spacing classes, mostly to keep my regex muscles from atrophying:
 
 `[\s"']([mp]|gap|space)-?\w?-\d`
 
-To use this, paste it into the searchbar where you search through all your files at once (`cmd + shift + f` in VSCode). For it to work, You might have to turn on regex (there's a little button that says `.*` on the right of the searchbar itself in VSCode).
+Without this little formula, I would have to look for each padding-variation (pt, pb, p-, px-, py) and then for each gap variation, etc.
 
-Without this, You would have to type in each padding-variation (pt, pb, p-, px-, py) and do the same for margin, etc.
+To use this regex, paste it into the 'global search' in your code editor (the one where you search through all your files at once -- it's `cmd + shift + f` in VSCode). For it to work, You might have to turn on regex in your search (in VSCode there's a little button that says `.*` on the right of the searchbar).
 
 ## WTF
 

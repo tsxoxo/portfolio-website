@@ -26,7 +26,7 @@ If you know what you want and you want to jump right in, **[skip to the steps](#
 
 ## What is Utopia?
 
-[Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the website, You plug into it certain parameters and it generates CSS that makes your text and spacings adjust to the user's viewport size.
+[Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the website, You plug in certain parameters and let it generate CSS that makes your text and spacings adjust to the user's viewport size.
 
 Instead of media queries, it uses a 'fluid' approach to a problem we web designers face every day (every day I live in a society).
 
@@ -69,19 +69,19 @@ Quotes from official resources showing the essence of the Utopia approach:
 These are the terms used in the UI of the Utopia website.
 
 **`min`**\
-The smallest state or the smallest viewport You feel like visualising in your design. The `font size` will never go smaller as the one for `min`.
+The smallest state You feel like visualising in your design. The `font size` will never go smaller as the one for `min`.
 
 **`max`**\
-The largest state or the largest viewport You feel like visualising in your design. The `font size` will never go bigger as the one for `max`.
+The largest state You feel like visualising in your design. The `font size` will never go bigger as the one for `max`.
 
 **`width`**\
-The `min` and `max` viewports are defined in terms of their widths.
+The `min` and `max` states are defined in terms of their widths (so you can almost think of them as viewports).
 
 **`font size`**\
-The size of the majority of text that will appear in your project. Also, the base line for your `type scale`. Choosing the `font size` is often done early in the design process.
+The size of the majority of text in your project (sometimes referred to as 'body text'). Serves as the base step for your `type scale`. Choosing the `font size` is often done early in the design process.
 
 **`type scale`**\
-The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base line. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my headings be 48px or 49px?"_)
+The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base step. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my h1 be 48px or 49px?"_)
 
 ## WTF
 

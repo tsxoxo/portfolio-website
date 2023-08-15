@@ -364,57 +364,6 @@ I wanna lower the barrier for getting into design systems. So if I and my two br
 
 If You're asking yourself what the big deal is about designing with a system, the folks at Tailwind have written about it in their book 'Refactoring UI' (better read than the title, I promise). Also see the resource section for more introductions / one or two Utopia posts / posts on the creators' blogs
 
-### The problem of onboarding
-
-/hmm..
-DISCLAIMER: I hope it shines through that I'm coming from a place of appreciation. What motivates me, is that I want to lower the barrier into Utopia, cuz I think it's a cool thing. Any criticism is meant constructively <3.
-
-As with all big/conceptual/hybrid things like frameworks or systems or note-taking software, giving newcomers an easy way in can pose a pretty big challenge.
-
-And even though Utopia uses such an orderly mathematical approach, it seems to me like this sprawling, messy thing. It's a frontend approach that consciously grew out of a design philosophy AND a whole tooling _ecosystem_ to help bring these ideas into reality. I mean, where do You start with beginners?-- You can't just jump into generating Utopian systems -- it won't make sense without understanding the underlying approach (I have that on good authority, akhem). _Just_ talking about theory would miss the point -- you want people to actually use this thing. But giving specific instruction can be dangerous -- it can make it seem like a method, which it isn't.
-
-This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give basic how-to instructions. Because they're experiences designers and they know things lose they're purpose if they're simplified in this form. Designing is a messy business. Let's keep it that way.
-
-/mmmm...
-But maybe this attempt can at least can spark some discussion about how we treat beginners in tech and design.
-
-The Utopia ecosystem, as I see it at the time of writing, is made up of a set of tools (the website, the plugins) and a set of introductory resources (blog posts, videos, a Figma file), and everything is interlinked. It's kind of like that rhizome thing I've heard smart people talk about.
-
-![An image of a rhizome]
-
-It's beautiful, but it can take time to find your way around that. You can start with one of the Intros(xxx intro to utopia), but then what do You do? Experienced designers / coders might not see this as a problem, but for me, this took significant time to figure out. (Is finding a workflow what they call 'design practice'?)
-
-So this text aims to fill this gap: let you see what one person did with Utopia after learning the basics.
-
-### My confusion
-
-/alt titles
-onboarding rant
-
-It took me a while to wrap my head around Utopia. Meaning that I sat confused in front of their UI for a while, then read like 6 of their blog articles, then watched their intro video. Then I did my civic duty and complained in their youtube comments that their system could be more accessible to newcomers.
-
-I don't necessarily find the concept super hard (especially once I got it, hehe), but it was a mystery for me how to actually use this system -- where do I start? What's `font size` stand for in the Utopia UI? Ok, it spit out some CSS, but can I design with this in Figma (without it being super cumbersome)?
-
-In the end I found a way (I think, fingers crossed 🤞🏼). But it was by grasping on to straws -- part of [a workflow laid in a blog post](https://utopia.fyi/blog/designing-a-utopian-layout-grid/), a plugin found on Figma, another blog showing how to implement it with Tailwind(xxx). I would have loved a little something a little more comprehensive, more hands-on, bringing it all together. That's my story.
-
-But who knows -- maybe You wouldn't be reading this guide if this author hadn't gone through an initial period of confusion and frustration. I bet that's the driving force behind at least half of the tutorial industry. I'm gonna show them how to be welcoming to beginners. Gonna show them all.
-
-### My story
-
-NOTE
-A section to frame and waffle
-
-/design is messy, let's acknowledge
-Some if not all of the steps are just me following this [kind-of-guide from the Utopia blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). It was an especially exciting read for me because it acknowledges that designing is a messy process. Second guessing your desicions is part of it, even for experienced designers. I love it when I hear competent people, in whatever field, talk from that place where it becomes clear that competency is a fragile concept. We're all winging it, making mistakes and then trying to do better mistakes.
-
-### Who is writing this?
-
-I build websites and write tutorials. [Hire me!](xxx)
-
-I've used Utopia to redesign this website and ran into enough roadblocks to make me want to save other people the same frustrations.
-
-While working on this very site I ran down the rabbit hole of how to make text responsive. I found utopia, I think through [Kevin Powell], and it looked fun enough to try. And by fun I mean it scratched that consistency itch that makes me want to look at my CSS and see only 8 values in total.
-
 ## Outro
 
 Hope you enjoyed, learned, or killed some time!
@@ -535,3 +484,4 @@ _... formatting that maybe requires dealing with markdown plugins_
 -   IDEA: make each step of the guide formatted like _succinct instructions (1 paragraph) --- detailed explanation and musings_. this could be visually reinforced by making the instructions stick out more than the musings (e.g. higher contrast), or even by hiding the explanation in a foldable element (use `<dt>`?)
 -   IDEA: broaden scope -- talk about design systems; about different approaches to responsive design (or link to resources)
 -   IDEA: separate steps from my specific case
+-   💡 Split this into two articles: a pure guide with resources and then musings about onboarding. get done this week.

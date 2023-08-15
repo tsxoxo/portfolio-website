@@ -87,25 +87,25 @@ I'll assume that You're using the plugin from now on. It'll keep the instruction
 
 Now, whenever you rerun the plugin with a different `font size`, your body text will update automatically!
 
-/Aside 1: The plugin also generates a palette in a bolder font weight. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem. But it's there. I took it as an invitation and modified some of the font-weights for my purposes. A system is, like, just the beginning, man.
+Aside: The plugin also generates a palette in a bolder font weight. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem. But it's there. I took it as an invitation and modified some of the font-weights for my purposes. A system is, like, just the beginning, man.
 
 ### Figure out a `type scale`
 
-As before, this guide will focus on either `min` or `max`.
+As before, start by focusing on either `min` or `max`.
 
-Especially rough instructions More of a set of hints. Then my story to illustrate.
+-   Add a different type of text in your wireframe -- something other than the body text. Maybe some headings or some smaller text like an image caption. The point is to have texts of different sizes to see how a type scale will fit into your design.
 
--   Make sure You have a different type of text in your wireframe apart from the body text -- maybe some headings or some smaller text like an image caption. You should have a few texts of different sizes to see how a type scale will harmonize across your design.
+-   Apply Utopia styles to every piece of text in your design. You may not know what style to assign to which text. That's ok. Take some educated guesses and read on.
 
--   Apply Utopia styles to every piece of text in your design. You may not know what style to assign to which text. That's ok. Take some educated guesses.
+-   You should have at least 2 Utopian text styles living in your wireframe. Try changing the font family of all of these in one swoop by running [the 'Utopia / Batch update text styles' plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles). You can also easily undo this. It's good that You know that this is an easy thing to do.
 
--   Now you should have at least 2 Utopian text styles living in your wireframe. Try changing the font family of all of these in one swoop by running [the 'Utopia / Batch update text styles' plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles). Even if You undo this, it's good that You know that this is easy to do.
+-   Run the Utopia system-generator-plugin again, just with a different type scale. The text in your wireframe should update. Keep adjusting the scale ratio, the number of steps in the scale, the font weight, etc, and rerunning the plugin until You find a scale that _fits your needs_.
 
--   Run the Utopia plugin again, just with a different type scale. The text in your wireframe should update. Adjust: the scale ratio, the number of steps in the scale, the font weight, etc. Rinse and repeat until You find a scale that _fits your needs_.
+-   Do the same thing for the other state. Try using a sharper scale for `max` (higher ratio) and a softer one for `min` (lower ratio).
 
--   Do the same thing for the other state. Try using a sharper scale for `max` (higher ratio) and a softer one for `min` (lower ratio). A high ratio gives thiccc headings.
+---
 
-I felt this part of the process was especially iterative (messy) because there are so many moving parts. It's a whole scale of things, after all. Many moving parts can overwhelm my brain, so I gave it a hand and tried to simplify the process:
+I felt this part of the process was especially iterative (messy) because there are so many moving parts. It's a whole scale of things, after all. Many moving parts can overwhelm my brain, so here's how I tried to simplify the process:
 
 While designing my landing page, I got obsessed with my big chunky hero-heading because who doesn't. I wanted it to stay on a single line. So I made it as big as possible and paid attention to the font size.
 
@@ -113,11 +113,14 @@ And I decided to build my type scale around this piece of text.
 
 That's the simplification. This decision gave me something to go on: I knew I wanted a scale with a font size pretty close to what I had given my hero-heading. And since this was to be the biggest heading on the page, I knew this size had to be several steps up the ladder, since I needed room for my smaller headings.
 
-So I knew what to look for in a scale and wasn't just blindly dating one after the other. /(It seems so much of design is about giving yourself limitations to make the wild chaos of life barely managable.)
+So I knew what to look for in a scale and wasn't just blindly dating one after the other. (It seems so much of design is about giving yourself limitations to make the wild chaos of life barely managable.)
 
-It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example). I want to live boldly, so how bold do I want my headings to be?
+/I still had a lot of questions
+It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example)? I want to live boldly, so how bold do I want my headings to be?
 
-I settled these questions for myself. I went minimal, my scale had 3 steps, I was content. Then I added a blog to my site, which means more headings, which means my scale no longer accomodates my content. Every day, I redesign. Or, as they say:
+I settled these questions for myself. I went minimal, my scale had 3 steps, I was content... Then I added a blog to my site, which means more headings, which means my scale no longer accomodates my content.
+
+Every day, I redesign. Or, as they say:
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 

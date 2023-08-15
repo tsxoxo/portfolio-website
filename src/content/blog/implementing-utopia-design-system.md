@@ -268,6 +268,9 @@ If You _are_ using a grid, the issue is now how to fit the grid into the frame -
 
 #### Implement
 
+/Aside
+There are plugins to help with this, but I won't be using them here. See [Utopia-Tailwind integrations](xxx resources) for more info.
+
 -   Get those CSS custom properties out of your system! (and into your config.) Go to the Utopia website, plug in the values You used with the Figma plugin (they're on the first generated frame) and copy the CSS output into your project.
 
 **Where to put these variables?**
@@ -335,9 +338,6 @@ With this setup, new classes should show up in your IDE's autocomplete: try typi
 
 Now, if You're starting a fresh project, You are ready to code it with entirely fluid spacing and typography!
 
-/Aside
-[There's two plugins that are supposed to do this work for you.](xxx resources)
-
 #### If you're redesigning an existing project
 
 -   replace static classes with fluid ones
@@ -354,7 +354,11 @@ To use this regex, paste it into the 'global search' in your code editor (the on
 
 ### Why such a guide
 
-It took me several hours to get a grip on all the concepts and figure out a way how to actually work with them. Once I went through the resources, understood the concepts, got to know the Figma plugins and experimented with a few implementations -- once I did all that, it wasn't too hard. "Now that I'm here and I've built a rocket, it doesn't seem like rocket science!"
+I've used Utopia to redesign this website and ran into enough roadblocks to make me want to save other people some of these frustrations.
+
+It took me several hours to get a grip on Utopia. I didn't time it, but learning the concept and then figuring out a way how to actually use them in my project -- that caused me .
+
+Once I went through the resources, understood the concepts, got to know the Figma plugins and experimented with a few implementations -- once I did all that, it wasn't too hard. "Now that I'm here and I've built a rocket, it doesn't seem like rocket science!"
 
 I yearned for a practical start-to-finish guide like this when I was getting into Utopia. If this saves someone a bit of time, even if just by bringing my favourite Utopia resources together on a single page, I would be pretty happy.
 

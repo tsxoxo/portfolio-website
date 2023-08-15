@@ -6,12 +6,6 @@ tags: [design, design system, tailwind, utopia]
 isDraft: true
 ---
 
-## alt titles
-
-how to use utopia with figma and tailwind
-
--   A workflow for using utopia with figma and tailwind
-
 ## Table of Contents
 
 -   Intro
@@ -358,6 +352,40 @@ To use this regex, paste it into the 'global search' in your code editor (the on
 
 ## WTF
 
+### Why such a guide
+
+It took me several hours to get a grip on all the concepts and figure out a way how to actually work with them. Once I went through the resources, understood the concepts, got to know the Figma plugins and experimented with a few implementations -- once I did all that, it wasn't too hard. "Now that I'm here and I've built a rocket, it doesn't seem like rocket science!"
+
+I yearned for a practical start-to-finish guide like this when I was getting into Utopia. If this saves someone a bit of time, even if just by bringing my favourite Utopia resources together on a single page, I would be pretty happy.
+
+I would love if this helps someone use a design system to their project. I know it's a lofty goal, but for me it can help a lot if I see that someone else has done it already. Something in me goes from _very skeptical_ to _aaaah, so this is possible! let's do it, then_. I'm all for hacking and experimentation, but being a pioneer can cost you some grey hairs, or more. Life at the bleeding edge can be stressful, I know.
+
+I wanna lower the barrier for getting into design systems. So if I and my two brain cells can do it, so can You.
+
+If You're asking yourself what the big deal is about designing with a system, the folks at Tailwind have written about it in their book 'Refactoring UI' (better read than the title, I promise). Also see the resource section for more introductions / one or two Utopia posts / posts on the creators' blogs
+
+### The problem of onboarding
+
+/hmm..
+DISCLAIMER: I hope it shines through that I'm coming from a place of appreciation. What motivates me, is that I want to lower the barrier into Utopia, cuz I think it's a cool thing. Any criticism is meant constructively <3.
+
+As with all big/conceptual/hybrid things like frameworks or systems or note-taking software, giving newcomers an easy way in can pose a pretty big challenge.
+
+And even though Utopia uses such an orderly mathematical approach, it seems to me like this sprawling, messy thing. It's a frontend approach that consciously grew out of a design philosophy AND a whole tooling _ecosystem_ to help bring these ideas into reality. I mean, where do You start with beginners?-- You can't just jump into generating Utopian systems -- it won't make sense without understanding the underlying approach (I have that on good authority, akhem). _Just_ talking about theory would miss the point -- you want people to actually use this thing. But giving specific instruction can be dangerous -- it can make it seem like a method, which it isn't.
+
+This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give basic how-to instructions. Because they're experiences designers and they know things lose they're purpose if they're simplified in this form. Designing is a messy business. Let's keep it that way.
+
+/mmmm...
+But maybe this attempt can at least can spark some discussion about how we treat beginners in tech and design.
+
+The Utopia ecosystem, as I see it at the time of writing, is made up of a set of tools (the website, the plugins) and a set of introductory resources (blog posts, videos, a Figma file), and everything is interlinked. It's kind of like that rhizome thing I've heard smart people talk about.
+
+![An image of a rhizome]
+
+It's beautiful, but it can take time to find your way around that. You can start with one of the Intros(xxx intro to utopia), but then what do You do? Experienced designers / coders might not see this as a problem, but for me, this took significant time to figure out. (Is finding a workflow what they call 'design practice'?)
+
+So this text aims to fill this gap: let you see what one person did with Utopia after learning the basics.
+
 ### My confusion
 
 /alt titles
@@ -376,6 +404,7 @@ But who knows -- maybe You wouldn't be reading this guide if this author hadn't 
 NOTE
 A section to frame and waffle
 
+/design is messy, let's acknowledge
 Some if not all of the steps are just me following this [kind-of-guide from the Utopia blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). It was an especially exciting read for me because it acknowledges that designing is a messy process. Second guessing your desicions is part of it, even for experienced designers. I love it when I hear competent people, in whatever field, talk from that place where it becomes clear that competency is a fragile concept. We're all winging it, making mistakes and then trying to do better mistakes.
 
 ### Who is writing this?
@@ -388,17 +417,7 @@ While working on this very site I ran down the rabbit hole of how to make text r
 
 ## Outro
 
-### Why such a guide
-
 Hope you enjoyed, learned, or killed some time!
-
-I haven't found many guides like this while I was redesigning my site. Utopia doesn't seem like rocket science now that I know how it works, but it did take me several hours to get a grip on all the concepts and figure out a way how to actually work with them.
-
-I kind of fear that they intentionally didn't give basic how-to instructions. Because they're experiences designers and they know things lose they're purpose if they're simplified in this form. Designing is a messy business. Let's keep it that way.
-
-What I hope is to get my name out there, to maybe get some feedback on this workflow, and to maybe get a person or two into design systems, because they can be pretty cool.
-
-I could have used a few more step-by-step instructions like this. But I don't know. Anyway, if this saves even one person from eternal damnation, I'd be pretty satisfied. some time or frustration.
 
 ### Disclaimers and goodbye
 
@@ -459,7 +478,7 @@ I found two plugins that were made to help with integrating Utopia into Tailwind
 
 NEXT STEPS:
 
--   revise '# wtf'
+-   [] revise '# wtf'
 -   decide on order
 -   revise intro
 -   revise outro

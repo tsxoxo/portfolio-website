@@ -14,70 +14,11 @@ I hope this can make working with Utopia easier for newcomers.
 
 ## Table of Contents
 
--   What is Utopia?
 -   Guide
 -   Steps
 -   Outro
+-   What is Utopia?
 -   Resources
-
-## What is Utopia?
-
-[Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the website, You plug in certain parameters and let it generate CSS that makes your text and spacings adjust to the user's viewport size.
-
-Instead of media queries, it uses a 'fluid' approach to a problem we web designers face every day (every day I live in a society).
-
-To me, it scratched that consistency itch that only a design system can scratch. It took some time in the beginning, but it's pretty satisfying to see this website be all responsive and shit.
-
-### Where to start
-
-I found these resources helpful in explaining the general concept:
-
--   🤏 Play with an [interactive demo](https://utopia.fyi/) to get a sense of the result.
--   👁👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
--   📜, 👁👁 Read an [intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
--   📜 Read a [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.
--   🤏, 📜, 👁👁 Play with the official [Figma starter project](https://www.figma.com/community/file/1122903924123950023), read the succinct intro on the 'readme' page, and look at multiple illustrations.
-
-### In a nutshell
-
-Quotes from official resources showing the essence of the Utopia approach:
-
-> 1. Define a type scale for a small screen
-> 2. Define a type scale for a large screen
-> 3. Tell the browser to interpolate between the two scales, based on the current viewport width
-
-<cite>[source](https://utopia.fyi/blog/designing-with-fluid-type-scales/)</cite>
-
-> I designed these [min and max], maths designed this [everything in between]
-
-<cite>source same as above</cite>
-
-> (...) we only need to visualise the smallest and largest states, which we call @min and @max. Everything in between will be displayed according to the rules we set.
-
-<cite>[source](https://utopia.fyi/blog/designing-a-utopian-layout-grid/)</cite>
-
-> (...) fluidly interpolating between two modular scales, one for smaller screens, and one for larger screens
-
-<cite>[source](https://utopia.fyi/blog/css-modular-scales/)</cite>
-
-### Dictionary of the Utopia UI
-
-These are the terms used in the UI of the Utopia website.
-
-**`min`**\
-The smallest state You feel like visualising in your design. The `font size` will never go smaller as the one for `min`.
-
-**`max`**\
-The largest state You feel like visualising in your design. The `font size` will never go bigger as the one for `max`.
-
-**`width`**\
-The `min` and `max` states are defined in terms of their widths (so you can almost think of them as viewports).
-
-**`font size`**\
-The size of the majority of text in your project (sometimes referred to as 'body text'). Serves as the base step for your `type scale`. Choosing the `font size` is often done early in the design process.
-
-**`type scale`**\
-The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base step. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my h1 be 48px or 49px?"_)
 
 ## Guide
 
@@ -393,6 +334,65 @@ Thank You, all the folks before that figured out the math to the responsive desi
 
 [x] refer to myself as 'this author'
 
+## What is Utopia?
+
+[Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the website, You plug in certain parameters and let it generate CSS that makes your text and spacings adjust to the user's viewport size.
+
+Instead of media queries, it uses a 'fluid' approach to a problem we web designers face every day (every day I live in a society).
+
+To me, it scratched that consistency itch that only a design system can scratch. It took some time in the beginning, but it's pretty satisfying to see this website be all responsive and shit.
+
+### Where to start
+
+I found these resources helpful in explaining the general concept:
+
+-   🤏 Play with an [interactive demo](https://utopia.fyi/) to get a sense of the result.
+-   👁👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
+-   📜, 👁👁 Read an [intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
+-   📜 Read a [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.
+-   🤏, 📜, 👁👁 Play with the official [Figma starter project](https://www.figma.com/community/file/1122903924123950023), read the succinct intro on the 'readme' page, and look at multiple illustrations.
+
+### In a nutshell
+
+Quotes from official resources showing the essence of the Utopia approach:
+
+> 1. Define a type scale for a small screen
+> 2. Define a type scale for a large screen
+> 3. Tell the browser to interpolate between the two scales, based on the current viewport width
+
+<cite>[source](https://utopia.fyi/blog/designing-with-fluid-type-scales/)</cite>
+
+> I designed these [min and max], maths designed this [everything in between]
+
+<cite>source same as above</cite>
+
+> (...) we only need to visualise the smallest and largest states, which we call @min and @max. Everything in between will be displayed according to the rules we set.
+
+<cite>[source](https://utopia.fyi/blog/designing-a-utopian-layout-grid/)</cite>
+
+> (...) fluidly interpolating between two modular scales, one for smaller screens, and one for larger screens
+
+<cite>[source](https://utopia.fyi/blog/css-modular-scales/)</cite>
+
+### Dictionary of the Utopia UI
+
+These are the terms used in the UI of the Utopia website.
+
+**`min`**\
+The smallest state You feel like visualising in your design. The `font size` will never go smaller as the one for `min`.
+
+**`max`**\
+The largest state You feel like visualising in your design. The `font size` will never go bigger as the one for `max`.
+
+**`width`**\
+The `min` and `max` states are defined in terms of their widths (so you can almost think of them as viewports).
+
+**`font size`**\
+The size of the majority of text in your project (sometimes referred to as 'body text'). Serves as the base step for your `type scale`. Choosing the `font size` is often done early in the design process.
+
+**`type scale`**\
+The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base step. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my h1 be 48px or 49px?"_)
+
 ## Resources
 
 ### The other guides
@@ -403,13 +403,9 @@ Thank You, all the folks before that figured out the math to the responsive desi
 
 ### Utopia stuff
 
--   [Meet Utopia: Designing And Building With Fluid Type And Space Scales](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) by the Utopia creators gives you a pretty nice all-around introduction: it lays out the problem, gives some historical context, talks about how the idea came together and lays out the resulting system, even hinting at a workflow here and there.
+For introductory resources about Utopia, see the above section [What is Utopia?](xxx)
 
--   [The official guide to the Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) does what it says.
-
--   [The official starter project on Figma](https://www.figma.com/community/file/1122903924123950023).
-
-### Utopia-Tailwind integrations
+#### Utopia-Tailwind integrations
 
 I found two plugins that were made to help with integrating Utopia into Tailwind. Neither worked out-of-the-box for me and I wasn't in the mood for hacking.
 

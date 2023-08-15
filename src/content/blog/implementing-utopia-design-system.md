@@ -14,56 +14,40 @@ I hope this can make working with Utopia easier for newcomers.
 
 ## Table of Contents
 
+-   Prerequisites
 -   Guide
--   Steps
 -   Outro
 -   What is Utopia?
 -   Resources
 
-## Guide
-
-### Prerequisites
-
--   For the developing part You should know how to use a code editor and possibly the command line to manage your project. Possible starting point: [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) on Tatiana Mac's blog.
-
--   For the designing part You should know the basics of Figma, especially auto-layout. Possible starting point: [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
-
--   You should know how Utopia works. Possible starting point: one of the resources I list in the [intro to Utopia section](xxx what is utopia).
-
--   You should have a project with Tailwind CSS set up. Can be a fresh one, can be an existing one you want to give the old redesign.
+## Prerequisites
 
 -   ❤️‍🔥❤️‍🔥❤️‍🔥
 
-NOTE
-mb put this at the top and remove the '## guide' parent section altogether
+-   You should know how Utopia works.
+    Possible starting point: one of the resources I list in the [intro to Utopia section](xxx what is utopia).
 
-### Steps
+-   You should know the basics of Figma, especially auto-layout.
+    Possible starting point: [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
 
-Disclaimer: this is one workflow among many.
+-   You should know how to use a code editor and the command line to manage your project.
+    Possible starting point: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) on Tatiana Mac's blog gives a beginner-friendly intro to these things.
 
-#### Other ways
+-   You should have a project with Tailwind CSS set up. It can be a fresh one or an existing one you want to redesign.
+    Possible starting point: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro)
 
+## Guide
+
+/Aside:
 [2 other guides](#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They focus on parts of the whole while I'm trying to go from start to finish. But that also makes them shorter, which is what You might want.
 
-#### Create a wireframe for `min` or `max`
+### Create a wireframe for `min` in Figma
 
-**The goal: Figure out the size of the the majority of text in your project.** ('body text') /To this end, it would probably help to get a sense of the rest of the project. Here's a rough sequence of steps You might take:
+Your first goal is to **figure out the size of the the majority of text in your project.** I'll be calling this 'body text'. To this end, it would probably help to get a sense of the rest of the project. Here's a rough sequence of steps You might take:
 
--   focus on either `min` or `max`.
-
--   Choose a width.
-
-What width should You choose?
--- Whatever is appropiate for your project.
-No hard answers here. You're gonna hear this a lot.
-
-I read on [their blog](https://utopia.fyi/blog/designing-a-utopian-layout-grid/): _"(...) it makes sense to design the @min screens as small as is practically possible"_. And that made sense to me.
-
-They go on to explain: basically, 320px is a small yet tested size. For a long time, phones used to be this wide. And y'all were doing _fine_. So the Utopia creators chose this width as a reasonale starting point for a modern design. I take it as a value meaning _somewhere at the smaller end of the viewport spectrum where I can still read longer texts comfortably without getting annoyed_.
+-   Choose a width for your `min` state. To help You decide, see the section "1. Choose @min viewport width" in [Designing a utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/).
 
 For designing this site, I left the defaults -- `min`: 320px, `max`: 1024px. Because I had enough things to worry about.
-
-But it's all about what You want to achieve and who You're designing for.
 
 -   In Figma, create a frame with that width.
 
@@ -71,15 +55,19 @@ Tip: To make a frame with proportions close to an actual screen, You can choose 
 
 -   Design stuff until You get a sense for a workable `font size`.
 
-This is just so You have something to work with. Don't put too much pressure on yourself to 'get it right' at this point. You'll be remaking (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
+Workable -- not perfect. Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in design. You'll be remaking (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
 
-#### Create a wireframe for the other state
+### Create a wireframe for the other state
 
 Go through the same steps for the other state - `min` or `max`.
 
 Now, You should have settled on 2 widths and 2 font sizes (for now).
 
-#### Apply a style to your body text
+/
+For simplicity, I will be only talking about 'min`from here on? 
+a lot of the steps only talk about designing your`min` state. You should re
+
+### Apply a style to your body text
 
 You could create your system using just the Utopia website, but the Figma Utopia plugin makes things easier: it generates styles and components representing all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids. You'll see.
 
@@ -102,7 +90,7 @@ Now, whenever you rerun the plugin with a different `font size`, your body text 
 /Aside 2:
 Now here might be a good case to use the new variables feature in Figma. put all of these values there and you dont have to look them up. you could even map min and max to their own modes. could be interesting. i was ready to do that but unfortunately figma restricts free accounts to 1 mode only. I feel this might be a good moment to link to my 'buy me a coffee (or Figma subscription)' thingy. I pledge that if I get 15 bucks, I'll buy a month of Figma and write a guide on doing this with variables.
 
-#### Figure out a `type scale`
+### Figure out a `type scale`
 
 As before, this guide will focus on either `min` or `max`.
 
@@ -134,7 +122,7 @@ I settled these questions for myself. I went minimal, my scale had 3 steps, I wa
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 
-#### Figure out a spacing palette
+### Figure out a spacing palette
 
 /mb first instructions, then resources? mb give steps after all? mb structure this more: there are 3 ways i see to work with spacing...
 / I think a step or two should be good
@@ -177,13 +165,13 @@ The squares are cursed with a terrible curse tho.
 
 But they come with a frozen yoghurt! I call it _"froyo"_!
 
-#### Decide if You want to use a baseline grid
+### Decide if You want to use a baseline grid
 
 It can make You feel extra special. The Utopia plugin generates one for You, so it's not too hard to get started. /It's up to You how far You want to take it - use it as a guideline for your design, put another simpler grid on top of that (my option)
 
 If You're out, move on to the next step. If yass -- I recommend You read the official intro [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams and a step-by-step guide and You'll get to know some of the messy decisions that have to be made if You're going down this path. After that, rerun the Figma plugin and adjust the grid _to your needs_&trade;.
 
-#### Remake your design the Utopia way
+### Remake your design the Utopia way
 
 aka bringing it all together
 
@@ -201,7 +189,7 @@ If You _are_ using a grid, the issue is now how to fit the grid into the frame -
 
 -   Design your project using the generated system. You know how to handle text, you have 3 ways of handling spacing. You have a grid or you don't. Go out there, make some mistakes and enjoy that sweet consistency!
 
-#### Implement
+### Implement
 
 /Aside
 There are plugins to help with this, but I won't be using them here. See [Utopia-Tailwind integrations](xxx resources) for more info.
@@ -273,7 +261,7 @@ With this setup, new classes should show up in your IDE's autocomplete: try typi
 
 Now, if You're starting a fresh project, You are ready to code it with entirely fluid spacing and typography!
 
-#### If you're redesigning an existing project
+### If you're redesigning an existing project
 
 -   replace static classes with fluid ones
 
@@ -397,7 +385,7 @@ The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modu
 
 ### The other guides
 
--   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod also shows a way to implement the Utopia system in Tailwind. The way I do it in this guide builds on his approach. His guide is much less verbose than what You're reading here. Much less verbose.
+-   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod shows another way to implement the Utopia system in Tailwind. The way I do it in this guide builds on his approach. His writing is much less verbose than what You're reading here. Much less verbose.
 
 -   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team goes only through part of the process, but that was already immensely helpful to me. Even more important, it acknowledges that the design process is messy and full of questions that only You can answer.
 
@@ -428,10 +416,11 @@ I found two plugins that were made to help with integrating Utopia into Tailwind
 
 NEXT STEPS:
 
--   [] revise '# wtf'
--   decide on order
--   revise intro
--   revise outro
+-   [x] revise '# wtf'
+-   [x] decide on order
+-   [] go through the whole in order
+-   [] revise intro
+-   [] revise outro
 -   put on google docs
 
 -   share with thays

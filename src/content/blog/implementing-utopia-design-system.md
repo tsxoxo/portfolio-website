@@ -71,24 +71,23 @@ a lot of the steps only talk about designing your`min` state. You should re
 
 You could create your system using just the Utopia website, but the Figma Utopia plugin makes things easier: it generates styles and components representing all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids. You'll see.
 
-I'll assume that You're using the plugin from now on. It'll keep the instructions a little simpler. You can still do everything using the Utopia website, it'll just be more copy and pasting.
+I'll assume that You're using the plugin from now on. It'll keep the instructions a little simpler. You can still do everything using just the Utopia website tho -- it'll just be more copy and pasting.
 
--   To get started, You might read the [community page for the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated article [Getting started with Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) (there are actually 2). If You know your Utopia basics, You might be able to just jump in and follow these instructions.
+-   You might read the [community page for the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated article [Getting started with Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) (there are actually 2). If You know your Utopia basics, You might be able to just jump in and follow these instructions.
 
 -   Run the plugin in Figma. It's called 'Utopia / Fluid type + space calculator'.
 
 -   In the UI that pops up, put in your `widths` and your `font sizes`. Don't worry about the `type scales` yet, You'll focus on them in the next section. Click the big button. It would sometimes take like 20 seconds for me before anything happened. Trust the process. A lot of good work is done in silence.
 
--   Look at the generated frames. If some of it looks blank, try making the grid visible with `shit + g`. Feel free to wrap the bunch in a section and put it somewhere where you can easily peek at it while you're designing. I was peeking pretty often.
+/cut the peeking
+
+-   Look at the generated frames. If some of it looks blank, try making the grid visible with `shift + g`. Feel free to wrap it all in a section and put it somewhere where you can easily peek at it while you're designing. I was peeking pretty often.
 
 -   Look at the generated styles in the right Figma panel (click on the background of the canvas to see them). Apply the appropiate style to the body text in your wireframe. At the time of writing, this is `U/Type/Min/Prose/Step 0`.
 
 Now, whenever you rerun the plugin with a different `font size`, your body text will update automatically!
 
 /Aside 1: The plugin also generates a palette in a bolder font weight. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem. But it's there. I took it as an invitation and modified some of the font-weights for my purposes. A system is, like, just the beginning, man.
-
-/Aside 2:
-Now here might be a good case to use the new variables feature in Figma. put all of these values there and you dont have to look them up. you could even map min and max to their own modes. could be interesting. i was ready to do that but unfortunately figma restricts free accounts to 1 mode only. I feel this might be a good moment to link to my 'buy me a coffee (or Figma subscription)' thingy. I pledge that if I get 15 bucks, I'll buy a month of Figma and write a guide on doing this with variables.
 
 ### Figure out a `type scale`
 

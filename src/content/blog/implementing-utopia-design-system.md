@@ -6,18 +6,19 @@ tags: [design, design system, tailwind, utopia, figma]
 isDraft: true
 ---
 
-/make these links?: [learning about utopia], to [etc.]
-This is a step-by-step guide on how to use Utopia in your project. It aims to help You with learning about Utopia, creating a design with it in Figma, and implementing it with Tailwind CSS.
+This is a guide to help You use Utopia in your project. It deals with learning its concepts, creating a design with it in Figma, and implementing it with Tailwind CSS.
 
-/even though it's opinionated and based on my limited experience,
-I hope this can make working with Utopia easier for newcomers.
+Aside:
+This is meant both for designers and coders as well as for that delicious creamy center of this Venn diagram. I tried to be explicit about what design and coding knowledge I assume. If this serves as encouragement for a coder to put on her designing hat or vice versa (a designing hat putting on a coder), let me know 💜!
+
+If You're like _Is a step-by-step guide even appropiate for such a messy, iterative and context-specific thing as the design process?_ then I relate. I talk about this tension a bit in the [wtf section](#wtf).
 
 ## Table of Contents
 
 -   Prerequisites
 -   Guide
--   Outro
 -   What is Utopia?
+-   Outro
 -   Resources
 
 ## Prerequisites
@@ -161,38 +162,46 @@ But they come with a frozen yoghurt! I call it _"froyo"_!
 
 ### Decide if You want to use a baseline grid
 
-It can make You feel extra special. The Utopia plugin generates one for You, so it's not too hard to get started. /It's up to You how far You want to take it - use it as a guideline for your design, put another simpler grid on top of that (my option)
+A baseline grid can make You feel extra special ✨. Or, you know, help You design or whatever.
 
-If You're out, move on to the next step. If yass -- I recommend You read the official intro [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams and a step-by-step guide and You'll get to know some of the messy decisions that have to be made if You're going down this path. After that, rerun the Figma plugin and adjust the grid _to your needs_&trade;.
+There are lots of ways to use a baseline grid. The Utopia plugin generates one for You, so it's not too hard to get started.
+
+If You're out, move on to the next step.
+
+If yass -- I recommend You read the official intro [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams and a step-by-step guide and You'll get to know some of the messy decisions that have to be made if You're going down this path. After that, rerun the Figma plugin and adjust the grid _to your needs_&trade;.
 
 ### Remake your design the Utopia way
 
-aka bringing it all together
+aka bringing it all together.
 
-Since I left some room for experimentation during the previous steps (aka the instructions were vague), You might have already redesigned your wireframes using the Utopia system. If so, congratulations, You're done with the hard part and can [go to the next step](xxx) to start implementing!
+Since I left some room for experimentation during the previous steps (aka the instructions were vague), You might have already redesigned your wireframes using the Utopia system. If so, congratulations, You're done with the hard part and can go to the next step to start implementing!
 
-Otherwise, if You want to start fresh:
+Otherwise:
 
 -   Generate a system using the Utopia plugin. By now You should have some ideas for all the parameters.
 
 -   Create a fresh set of frames for `min` and `max` to house your upcoming redesign.
 
-If You're not using a grid, do exactly what You did when You created your frames in the beginning. You can move on to the next step, run along, summer child!
+If You're not using a grid, do exactly what You did when You created your frames in the beginning. You can move on to the next step -- run along, summer child!
 
-If You _are_ using a grid, the issue is now how to fit the grid into the frame -- do you stretch one or the other, or leave it kind of overlapping or what? There is a simple solution proposed in the grid guide mentioned earlier: make your `min` frame the size of your `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. Simple but devious. buaha!
+If You _are_ using a grid, the issue is now how to fit the grid into the frame -- do you stretch one or the other, or leave it kind of overlapping or what? There is a simple solution proposed in the grid guide mentioned earlier: make your `min` frame the size of the generated `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. buaha!
 
--   Design your project using the generated system. You know how to handle text, you have 3 ways of handling spacing. You have a grid or you don't. Go out there, make some mistakes and enjoy that sweet consistency!
+-   Design your project using the generated system. You know how to handle text. You know 3 ways of handling spacing. You are at peace with the grid. Go out there, make some mistakes and enjoy that sweet consistency!
 
 ### Implement
 
-/Aside
-There are plugins to help with this, but I won't be using them here. See [Utopia-Tailwind integrations](xxx resources) for more info.
+Aside:
+There are plugins to help with this, but I won't be using them here. See [Utopia-Tailwind integrations](#utopia-tailwind-integrations) for more info.
 
 -   Get those CSS custom properties out of your system! (and into your config.) Go to the Utopia website, plug in the values You used with the Figma plugin (they're on the first generated frame) and copy the CSS output into your project.
 
-**Where to put these variables?**
+**Where to put these CSS variables?**
 
-You have options. Chris Penrod does it one way, see [his article](xxx resources). I go an extra step and put my variables into a `base.css` file. Then I reference them in `tailwind.config.cjs`. My reason for doing it extra like this is that I can easily copy and paste Utopia's output wholesale into `base.css` whenever I iterate (aka change my mind) -- which, I know I will.
+You have options.
+
+A. You can sort of ignore the variables and just copy their values (e.g. just the raw `clamp()` function) into your tailwind config. [Chris Penrod does it this way](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/).
+
+B. I go an extra step and first put all the variables into a `base.css` file. Then I reference them in `tailwind.config.cjs`. My reason for doing it _extra_ like this is that I can easily copy and paste Utopia's output wholesale into `base.css` whenever I iterate (aka change my mind) -- which, I know I will.
 
 This is what it looks like:
 
@@ -244,77 +253,27 @@ module.exports = {
 }
 ```
 
-/ improve code:
+Aside: The `fl` stands for `fluid`, I took this from Chris.
 
--   change space-fl to simply fl?
--   unify lg - l ?
-
-aside: The `fl` stands for `fluid`, I took this from Chris.
-
-With this setup, new classes should show up in your IDE's autocomplete: try typing `p-spa` somewhere as a class and pressing your `autocomplete` shortcut (I have it on `ctrl + space` in VSCode). You should see a list of all your fluid padding steps. Same for any other spacing utility like `gap`, `spacing` and `margin`. Same for font sizes.
+With this setup, some new classes should show up in your IDE's autocomplete: type `p-spa` somewhere as a CSS class and press your `autocomplete` shortcut (I have it on `ctrl + space` in VSCode). You should see a list of all your fluid padding steps. Same for any other Tailwind spacing utility like `gap`, `spacing` and `margin`. Same for text sizes.
 
 Now, if You're starting a fresh project, You are ready to code it with entirely fluid spacing and typography!
 
-### If you're redesigning an existing project
+### If You're redesigning an existing project
 
--   replace static classes with fluid ones
+-   Replace static classes with fluid ones.
 
 I wrote a regex for finding many (but surely not all) of the standard Tailwind spacing classes, mostly to keep my regex muscles from atrophying:
 
 `[\s"']([mp]|gap|space)-?\w?-\d`
 
-Without this little formula, I would have to look for each padding-variation (pt, pb, p-, px-, py) and then for each gap variation, etc.
+Without this little formula, I would have had to search for each padding-variation (pt, pb, p-, px-, py) and then for each gap variation, etc.
 
 To use this regex, paste it into the 'global search' in your code editor (the one where you search through all your files at once -- it's `cmd + shift + f` in VSCode). For it to work, You might have to turn on regex in your search (in VSCode there's a little button that says `.*` on the right of the searchbar).
 
-## WTF
+Now just open Figma on one side and your favourite code editor on the other and go to town!
 
-### Why such a guide
-
-I've used Utopia to redesign this website and ran into enough roadblocks to make me want to save other people some of these frustrations.
-
-It took me several hours to get a grip on it: learning the concepts and then figuring out a way how to actually use them in my project. (Let's not mention the initial wild-flailing-phase where I kept generating type scales without actually knowing what `font size` meant. tfw when I try to brute force my way into understanding because I'm in such a rush, I _don't have time to understand_.)
-
-Once I went through the resources, understood the concepts, got to know the Figma plugins and experimented with a few implementations -- once I did all that, it wasn't too hard.-- "Now that I'm here and I've built this rocket, it doesn't seem like rocket science!"
-
-I kind of yearned for a practical start-to-finish guide like this when I was getting into Utopia. If this saves someone a bit of time, even if it's just by bringing some helpful Utopia resources together on a single page, I would be pretty happy.
-
-/cut first sentence?
-I would love if this makes or helps someone use a design system in their project. I know it's a lofty goal, but for me it can help a lot if I see that someone else has done it already. Something in me can go from _very skeptical_ to _aaaah, so this is possible! let's do it, then_ just by seeing proof that it can be done. I'm all for hacking and experimentation, but being a pioneer can cost you some grey hairs, or more. Life on the bleeding edge can be stressful, I know from trying to use one alpha version too many.
-
-/do I?
-I wanna lower the barrier for getting into design systems. So if I and my two brain cells can do it, so can You.
-
-/just point to resource section?
-If You're asking yourself what the big deal is about designing with a system, the folks at Tailwind have written about it in their book 'Refactoring UI' (better read than the title, I promise). Also see the resource section for more introductions / one or two Utopia posts / posts on the creators' blogs
-
-This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give basic how-to instructions. Because they're experienced designers and they know things kind of lose their purpose if they're simplified in this form. Utopia isn't a step-by-step method. It's a set of tools that can be used in a lot of different ways, maybe even in UIs outside of browsers. Designing is a messy business. Let's keep it that way 🫀
-
-So this text aims to fill this gap: let you see what one person did with Utopia after learning the basics.
-
-## Outro
-
-Hope you enjoyed, learned, or killed some time!
-
-### Disclaimers and goodbye
-
-This is one workflow of many. It might be embarrassingly simplistic to some. It got the job done for me.
-
-I'm on Twitter (xxx twitter). Let me know your utopian workflows. Give some feedback. Say hi, for goodness' sake, don't be shy! And especially, let me know if you got stuck, peeved or if you want more!
-
----
-
-Thank You, my wonderful editors!
-
-Thank You, Christian Penrod. You helped me realize that this is possible and without too much hassle.
-
-Thank You, Utopia creators for building and polishing this awesome tool and making it available for free!
-
-Thank You, all the folks before that figured out the math to the responsive design problem and cared enough to keep implementing this by hand!
-
----
-
-[x] refer to myself as 'this author'
+..._Fluid town_
 
 ## What is Utopia?
 
@@ -374,6 +333,50 @@ The size of the majority of text in your project (sometimes referred to as 'body
 
 **`type scale`**\
 The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base step. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my h1 be 48px or 49px?"_)
+
+## WTF
+
+### Why such a guide
+
+I've used Utopia to redesign this website and ran into enough roadblocks to make me want to save other people some of these frustrations.
+
+It took me several hours to get a grip on it: learning the concepts and then figuring out a way how to actually use them in my project. (Let's not mention the initial wild-flailing-phase where I kept generating type scales without actually knowing what `font size` meant. tfw when I try to brute force my way into understanding because I'm in such a rush, I _don't have time to understand_.)
+
+Once I went through the resources, understood the concepts, got to know the Figma plugins and experimented with a few implementations -- once I did all that, it wasn't too hard.-- "Now that I'm here and I've built this rocket, it doesn't seem like rocket science!"
+
+I kind of yearned for a practical start-to-finish guide like this when I was getting into Utopia. If this saves someone a bit of time, even if it's just by bringing some helpful Utopia resources together on a single page, I would be pretty happy.
+
+/cut first sentence?
+I would love if this makes or helps someone use a design system in their project. I know it's a lofty goal, but for me it can help a lot if I see that someone else has done it already. Something in me can go from _very skeptical_ to _aaaah, so this is possible! let's do it, then_ just by seeing proof that it can be done. I'm all for hacking and experimentation, but being a pioneer can cost you some grey hairs, or more. Life on the bleeding edge can be stressful, I know from trying to use one alpha version too many.
+
+/do I?
+I wanna lower the barrier for getting into design systems. So if I and my two brain cells can do it, so can You.
+
+/just point to resource section?
+If You're asking yourself what the big deal is about designing with a system, the folks at Tailwind have written about it in their book 'Refactoring UI' (better read than the title, I promise). Also see the resource section for more introductions / one or two Utopia posts / posts on the creators' blogs
+
+This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give basic how-to instructions. Because they're experienced designers and they know things kind of lose their purpose if they're simplified in this form. Utopia isn't a step-by-step method. It's a set of tools that can be used in a lot of different ways, maybe even in UIs outside of browsers. Designing is a messy business. Let's keep it that way 🫀
+
+So this text aims to fill this gap: let you see what one person did with Utopia after learning the basics.
+
+## Outro and thanks
+
+Hope you enjoyed, learned something, or killed some time!
+
+I appreciate any feedback! Let me know your utopian workflows. Say hi if You vibe, don't be shy! And especially -- let me know if you got stuck, peeved, inspired or if you want more!
+
+/mb twitter link, or buy me a coffee
+
+---
+
+/might expand this :)
+Thank You, my wonderful editors!
+
+Thank You, Christian Penrod! You helped me realize that actually using Utopia in my Tailwind project would go down without too much of a hassle.
+
+Thank You, Utopia creators -- [Trys Mudford](https://twitter.com/trysmudford) and [James Gilyead](https://twitter.com/j98) -- for creating this tooling ecosystem that I think makes systematic design a little more accessible! Thank You for writing and producing so much documentation -- I know how time consuming that can be. And thank You for making it all available for free.
+
+Thank You, all the folks that came before who figured out the math to the responsive design problem and cared enough to keep implementing this by hand (until a few of them finally got sick of doing it by hand)!
 
 ## Resources
 
@@ -452,6 +455,11 @@ _... formatting that maybe requires dealing with markdown plugins_
 -   make 'dictionary of utopia UI' a dd-dt list?
 -   improve blockquote - cite, e.g. give blockquote the attribute
 -   make directives like `tip` to break up the flow of the text
+
+**code samples**
+
+-   change space-fl to simply fl?
+-   unify lg - l ?
 
 **UX**
 

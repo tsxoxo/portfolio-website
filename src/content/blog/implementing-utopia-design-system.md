@@ -356,17 +356,24 @@ To use this regex, paste it into the 'global search' in your code editor (the on
 
 I've used Utopia to redesign this website and ran into enough roadblocks to make me want to save other people some of these frustrations.
 
-It took me several hours to get a grip on Utopia. I didn't time it, but learning the concept and then figuring out a way how to actually use them in my project -- that caused me .
+It took me several hours to get a grip on it: learning the concepts and then figuring out a way how to actually use them in my project. (Let's not mention the initial wild-flailing-phase where I kept generating type scales without actually knowing what `font size` meant. tfw when I try to brute force my way into understanding because I'm in such a rush, I _don't have time to understand_.)
 
-Once I went through the resources, understood the concepts, got to know the Figma plugins and experimented with a few implementations -- once I did all that, it wasn't too hard. "Now that I'm here and I've built a rocket, it doesn't seem like rocket science!"
+Once I went through the resources, understood the concepts, got to know the Figma plugins and experimented with a few implementations -- once I did all that, it wasn't too hard.-- "Now that I'm here and I've built this rocket, it doesn't seem like rocket science!"
 
-I yearned for a practical start-to-finish guide like this when I was getting into Utopia. If this saves someone a bit of time, even if just by bringing my favourite Utopia resources together on a single page, I would be pretty happy.
+I kind of yearned for a practical start-to-finish guide like this when I was getting into Utopia. If this saves someone a bit of time, even if it's just by bringing some helpful Utopia resources together on a single page, I would be pretty happy.
 
-I would love if this helps someone use a design system to their project. I know it's a lofty goal, but for me it can help a lot if I see that someone else has done it already. Something in me goes from _very skeptical_ to _aaaah, so this is possible! let's do it, then_. I'm all for hacking and experimentation, but being a pioneer can cost you some grey hairs, or more. Life at the bleeding edge can be stressful, I know.
+/cut first sentence?
+I would love if this makes or helps someone use a design system in their project. I know it's a lofty goal, but for me it can help a lot if I see that someone else has done it already. Something in me can go from _very skeptical_ to _aaaah, so this is possible! let's do it, then_ just by seeing proof that it can be done. I'm all for hacking and experimentation, but being a pioneer can cost you some grey hairs, or more. Life on the bleeding edge can be stressful, I know from trying to use one alpha version too many.
 
+/do I?
 I wanna lower the barrier for getting into design systems. So if I and my two brain cells can do it, so can You.
 
+/just point to resource section?
 If You're asking yourself what the big deal is about designing with a system, the folks at Tailwind have written about it in their book 'Refactoring UI' (better read than the title, I promise). Also see the resource section for more introductions / one or two Utopia posts / posts on the creators' blogs
+
+This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give basic how-to instructions. Because they're experienced designers and they know things kind of lose their purpose if they're simplified in this form. Utopia isn't a step-by-step method. It's a set of tools that can be used in a lot of different ways, maybe even in UIs outside of browsers. Designing is a messy business. Let's keep it that way 🫀
+
+So this text aims to fill this gap: let you see what one person did with Utopia after learning the basics.
 
 ## Outro
 

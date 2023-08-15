@@ -416,8 +416,11 @@ NEXT STEPS:
 -   [x] revise '# wtf'
 -   [x] decide on order
 -   [] go through the whole in order
+-   [x] polish steps
+-   [] revise wtf START HERE
 -   [] revise intro
--   [] revise outro
+-   add content: perspective of _I am redesigning my existing project._ they would maybe wanna recreate their design and not start from scratch? like, maybe an additional 'if you're redesigning your project you might already have a good idea about your body text size` or two might be enough.
+-   [x] polish outro
 -   put on google docs
 
 -   share with thays
@@ -441,16 +444,17 @@ NEXT STEPS:
 **formatting**
 
 -   set apart steps and musings/my stories
+    -   :::asides
     -   different font styles
     -   dividing lines
     -   backgrounds / boxes
-    -   :::asides
     -   foldable content
 -   give 'skip to the steps'-link extra special styling
 -   fix step order
 
 _... formatting that maybe requires dealing with markdown plugins_
 
+-   at least asides
 -   wrap each chapter in a `\<section\>`
 -   make 'dictionary of utopia UI' a dd-dt list?
 -   improve blockquote - cite, e.g. give blockquote the attribute

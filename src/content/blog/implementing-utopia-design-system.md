@@ -1,30 +1,24 @@
 ---
-title: Implementing a utopian design system
-subheading: A step-by-step guide using utopia.fyi, Figma and Tailwind CSS.
+title: Using the Utopia design system
+subheading: One workflow among many.
 pubDate: 20.7.2023
-tags: [design, design system, tailwind, utopia]
+tags: [design, design system, tailwind, utopia, figma]
 isDraft: true
 ---
 
+/make these links?: [learning about utopia], to [etc.]
+This is a step-by-step guide on how to use Utopia in your project. It aims to help You with learning about Utopia, creating a design with it in Figma, and implementing it with Tailwind CSS.
+
+/even though it's opinionated and based on my limited experience,
+I hope this can make working with Utopia easier for newcomers.
+
 ## Table of Contents
 
--   Intro
--   WTF
+-   What is Utopia?
+-   Guide
 -   Steps
 -   Outro
 -   Resources
-
-## Intro
-
-If you know what you want and you want to jump right in, **[skip to the steps](#steps)**.
-
-/observation -- i've 3 parts:
-
--   a guide
--   an intro to utopia
--   maybe, my story/musings
-
-so it could be the other way around: if u wanna learn about Utopia, skip to there?
 
 ## What is Utopia?
 

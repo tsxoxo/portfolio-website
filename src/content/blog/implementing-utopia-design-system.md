@@ -1,23 +1,28 @@
 ---
-title: Using the Utopia design system
-subheading: One workflow among many.
+title: Using Utopia
+subheading: Ideas for a workflow.
 pubDate: 20.7.2023
 tags: [design, design system, tailwind, utopia, figma]
 isDraft: true
 ---
 
-This is a guide to help You use Utopia in your project. It deals with learning its concepts, creating a design with it in Figma, and implementing it with Tailwind CSS.
+This is a guide to help You use the Utopia design system/approach in your project. You're going to learn a way or two of how to work with it in Figma and a simple but flexible method for implementing it in Tailwind CSS.
 
-Aside:
-This is meant both for designers and coders as well as for that delicious creamy center of this Venn diagram. I tried to be explicit about what design and coding knowledge I assume. If this serves as encouragement for a coder to put on her designing hat or vice versa (a designing hat putting on a coder), let me know 💜!
+Welcome designers!, welcome coders!, welcome the folks from the creamy center of that Venn diagram!
 
-If You're like _Is a step-by-step guide even appropiate for such a messy, iterative and context-specific thing as the design process?_ then I relate. I talk about this tension a bit in the [wtf section](#wtf).
+## Choose your adventure
+
+If You're new to Utopia or want a refresher start at [Ways into Utopia](#ways-into-utopia).
+
+If You're like _Is a step-by-step guide even appropiate for a messy, iterative and context-specific process such as designing?_ then You got me. I mention this tension in [Why such a guide](#wtf).
+
+If You're ready to go, just keep scrolling!
 
 ## Table of Contents
 
 -   Prerequisites
 -   Guide
--   What is Utopia?
+-   Ways into Utopia
 -   Outro
 -   Resources
 
@@ -26,7 +31,7 @@ If You're like _Is a step-by-step guide even appropiate for such a messy, iterat
 -   ❤️‍🔥❤️‍🔥❤️‍🔥
 
 -   You should know how Utopia works.
-    Possible starting point: one of the resources I list in the [intro to Utopia section](xxx what is utopia).
+    Possible starting point: one of the resources I list in the [intro to Utopia section](xxx Ways into Utopia).
 
 -   You should know the basics of Figma, especially auto-layout.
     Possible starting point: [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
@@ -282,7 +287,7 @@ Now just open Figma on one side and your favourite code editor on the other and 
 
 ..._Fluid town_
 
-## What is Utopia?
+## Ways into Utopia
 
 [Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the website, You plug in certain parameters and let it generate CSS that makes your text and spacings adjust to the user's viewport size.
 
@@ -341,9 +346,7 @@ The size of the majority of text in your project (called 'body text' in this gui
 **`type scale`**\
 The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base step. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my h1 be 48px or 49px?"_)
 
-## WTF
-
-### Why such a guide
+## Why such a guide
 
 I yearned for a practical guide like this when I was getting into Utopia.
 
@@ -384,7 +387,7 @@ Thank You, all the folks that came before who figured out the math to the respon
 
 ### Utopia stuff
 
-For introductory resources about Utopia, see the above section [What is Utopia?](xxx)
+For introductory resources about Utopia, see the above section [Ways into Utopia](xxx)
 
 #### Utopia-Tailwind integrations
 
@@ -404,79 +407,3 @@ I found two plugins that were made to help with integrating Utopia into Tailwind
 -   In [Responsive Type and Zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html) Adrian Roselli warns against using `clamp` because of issues with zooming.
 
 -   In [Fluid Type](https://elisehe.in/2021/03/13/fluid-type) Elise Hein talks about some fundamental questions in a very approachable way. Why do we care about fluid type in the first place? And is clamp really so great?
-
-## META
-
-NEXT STEPS:
-
--   [x] revise '# wtf'
--   [x] decide on order
--   [x] go through the whole in order
--   [x] polish steps
--   [x] revise wtf
--   [x] revise intro
--   [x] polish outro
--   [x] add content: perspective of _I am redesigning my existing project._ they would maybe wanna recreate their design and not start from scratch? like, maybe an additional 'if you're redesigning your project you might already have a good idea about your body text size` or two might be enough.
--   [] go in order -- polish
--   [] go in order -- remove comments
--   [] go in order -- consistently format asides and other sub-sections
--   put on google docs
--   share with thays
--   share with yemi
-
-### todo
-
--   [x] add content: where i mention all the intro resources in what is utopia, mb add explicit 'one should be enough' for you to get started
--   [x] skim utopia blog -- steal phrasing to explain, collect links to specific topics, take general notes
--   [x] work on intro: more personable, move what will i learn before wtf?
--   [x] fix: extra space before links wtf
--   [x] write some steps
--   [x] look at review and depen in notion
--   [x] mention official demo gif
--   [x] make links open in new tab -- no because let the user decide how they open links
--   [x] revise: shorten utopia-basics section; rewrite/break up 'big idea'
--   [x] fix: make it so I can have spaces between list items in markdown without them going haywire in html
--   [x] test this: \* is this a possible alternative? -- instead of using the utopia website to generate type scales and manually copy-pasting them into figma, use the utopia figma plugin?
--   [x] revise '# steps'
--   [x] read through revised steps in order
-
-**formatting**
-
--   set apart steps and musings/my stories
-    -   :::asides
-    -   different font styles
-    -   dividing lines
-    -   backgrounds / boxes
-    -   foldable content
--   give 'skip to the steps'-link extra special styling
--   fix step order
-
-_... formatting that maybe requires dealing with markdown plugins_
-
--   at least asides
--   wrap each chapter in a `\<section\>`
--   make 'dictionary of utopia UI' a dd-dt list?
--   improve blockquote - cite, e.g. give blockquote the attribute
--   make directives like `tip` to break up the flow of the text
-
-**code samples**
-
--   change space-fl to simply fl?
--   unify lg - l ?
-
-**UX**
-
--   try and be rigorous about not repeating links, except when linking to different sections of the same document
--   make sure link texts stay consistent and clear. for inspiration, see the section [Structure link text](https://developers.google.com/style/link-text#structure-link-text) in the Google Developers Style Guide
-
-**structure**
-
--   i got a thing going in the spacing section: 1. intro 2. official resources 3. talk about the thing -- maybe update the other section to point to official resources as well? then in the Utopia intro i could say 'you can look at this and this to get a general idea. Also, I'll be pointing out relevant resources at the start of each section' -- hmm, do I like this idea?
-
-**IDEAS**
-
--   add content: make own demo gif?
--   IDEA: make each step of the guide formatted like _succinct instructions (1 paragraph) --- detailed explanation and musings_. this could be visually reinforced by making the instructions stick out more than the musings (e.g. higher contrast), or even by hiding the explanation in a foldable element (use `<dt>`?)
--   IDEA: broaden scope -- talk about design systems; about different approaches to responsive design (or link to resources)
--   IDEA: separate steps from my specific case
--   💡 Split this into two articles: a pure guide with resources and then musings about onboarding. get done this week.

@@ -10,37 +10,39 @@ This is a guide to help You use the Utopia design system/approach in your projec
 
 Welcome designers!, welcome coders!, welcome the folks from the creamy center of that Venn diagram!
 
-## Choose your adventure
+**Choose your adventure**
 
-If You're new to Utopia or want a refresher start at [Ways into Utopia](#ways-into-utopia).
+If You're new to Utopia or want a refresher, start at [Ways into Utopia](#ways-into-utopia).
 
-If You're like _Is a step-by-step guide even appropiate for a messy, iterative and context-specific process such as designing?_ then congrats, You got me. I mention this tension in [Why such a guide](#why-such-a-guide).
+If You're like _Is a step-by-step guide even appropiate for a messy, iterative and context-specific process such as designing?_, then congrats -- You got me. I mention this tension in [Why such a guide](#why-such-a-guide).
 
-If You're ready to go, just keep scrolling!
+If You're ready to go, just keep scrolling 😎.
 
 ## Table of Contents
 
 -   Prerequisites
 -   Guide
 -   Ways into Utopia
+-       Why this guide
 -   Outro
 -   Resources
 
 ## Prerequisites
 
+Here's what this guide assumes about You:
+
+-   You know how Utopia works.
+
+-   You know the basics of Figma, including auto-layout.
+    Learning resource: [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
+
+-   You know how to use a code editor and the command line to manage your project.
+    Learning resource: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) on Tatiana Mac's blog gives a beginner-friendly intro to these things.
+
+-   You have a project with Tailwind CSS set up -- a fresh one to start with or an existing one you want to redesign with Utopia.
+    Learning resource: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro)
+
 -   ❤️‍🔥❤️‍🔥❤️‍🔥
-
--   You should know how Utopia works.
-    Possible starting point: one of the resources I list in the [intro to Utopia section](xxx Ways into Utopia).
-
--   You should know the basics of Figma, especially auto-layout.
-    Possible starting point: [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
-
--   You should know how to use a code editor and the command line to manage your project.
-    Possible starting point: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) on Tatiana Mac's blog gives a beginner-friendly intro to these things.
-
--   You should have a project with Tailwind CSS set up -- a fresh one to start with or an existing one you want to redesign with Utopia.
-    Possible starting point: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro)
 
 ## Guide
 
@@ -346,7 +348,7 @@ The size of the majority of text in your project (called 'body text' in this gui
 **`type scale`**\
 The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base step. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my h1 be 48px or 49px?"_)
 
-## Why such a guide
+## Why this guide
 
 I yearned for a practical guide like this when I was getting into Utopia.
 

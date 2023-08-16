@@ -338,26 +338,11 @@ The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modu
 
 ### Why such a guide
 
-I've used Utopia to redesign this website and ran into enough roadblocks to make me want to save other people some of these frustrations.
+I kind of yearned for a practical guide like this when I was getting into Utopia.
 
-It took me several hours to get a grip on it: learning the concepts and then figuring out a way how to actually use them in my project. (Let's not mention the initial wild-flailing-phase where I kept generating type scales without actually knowing what `font size` meant. tfw when I try to brute force my way into understanding because I'm in such a rush, I _don't have time to understand_.)
+I was delving through the resources in search of any scrap of practical advice. They're out there and this workflow is built around them. Now that I've hobbled through my first round, I want to pass on something of that experience. Even though this is a very rough roadmap at best, maybe it can at least show that it's possible without too much of a hassle.
 
-Once I went through the resources, understood the concepts, got to know the Figma plugins and experimented with a few implementations -- once I did all that, it wasn't too hard.-- "Now that I'm here and I've built this rocket, it doesn't seem like rocket science!"
-
-I kind of yearned for a practical start-to-finish guide like this when I was getting into Utopia. If this saves someone a bit of time, even if it's just by bringing some helpful Utopia resources together on a single page, I would be pretty happy.
-
-/cut first sentence?
-I would love if this makes or helps someone use a design system in their project. I know it's a lofty goal, but for me it can help a lot if I see that someone else has done it already. Something in me can go from _very skeptical_ to _aaaah, so this is possible! let's do it, then_ just by seeing proof that it can be done. I'm all for hacking and experimentation, but being a pioneer can cost you some grey hairs, or more. Life on the bleeding edge can be stressful, I know from trying to use one alpha version too many.
-
-/do I?
-I wanna lower the barrier for getting into design systems. So if I and my two brain cells can do it, so can You.
-
-/just point to resource section?
-If You're asking yourself what the big deal is about designing with a system, the folks at Tailwind have written about it in their book 'Refactoring UI' (better read than the title, I promise). Also see the resource section for more introductions / one or two Utopia posts / posts on the creators' blogs
-
-This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give basic how-to instructions. Because they're experienced designers and they know things kind of lose their purpose if they're simplified in this form. Utopia isn't a step-by-step method. It's a set of tools that can be used in a lot of different ways, maybe even in UIs outside of browsers. Designing is a messy business. Let's keep it that way 🫀
-
-So this text aims to fill this gap: let you see what one person did with Utopia after learning the basics.
+This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give thist sort of basic how-to instructions. I looked them up, they're experienced designers. I can imagine once you're at that level (of messiness), you know things kind of lose their purpose if they're simplified in this form. Utopia doesn't seem to be a step-by-step method. It's a set of tools that can be used in a lot of different ways, maybe even in UIs outside of browsers. Designing is a messy business. Let's keep it that way 🫀
 
 ## Outro and thanks
 
@@ -428,6 +413,7 @@ NEXT STEPS:
 
 ### todo
 
+-   add content: where i mention all the intro resources in what is utopia, mb add explicit 'one should be enough' for you to get started
 -   [x] skim utopia blog -- steal phrasing to explain, collect links to specific topics, take general notes
 -   [x] work on intro: more personable, move what will i learn before wtf?
 -   [x] fix: extra space before links wtf

@@ -292,17 +292,17 @@ To me, it scratched that consistency itch that only a design system can scratch.
 
 ### Where to start
 
-I found these resources helpful in explaining the general concept:
+I recommend one of these resources to get a hang of the general concept:
 
 -   🤏 Play with an [interactive demo](https://utopia.fyi/) to get a sense of the result.
--   👁👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
--   📜, 👁👁 Read an [intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
+-   👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
+-   📜, 👁 Read an [intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
 -   📜 Read a [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.
--   🤏, 📜, 👁👁 Play with the official [Figma starter project](https://www.figma.com/community/file/1122903924123950023), read the succinct intro on the 'readme' page, and look at multiple illustrations.
+-   🤏, 📜, 👁 Play with the official [Figma starter project](https://www.figma.com/community/file/1122903924123950023), read the succinct intro on the 'readme' page, and look at multiple illustrations.
 
 ### In a nutshell
 
-Quotes from official resources showing the essence of the Utopia approach:
+Because it can help me remember when I boil it down to the essence:
 
 > 1. Define a type scale for a small screen
 > 2. Define a type scale for a large screen
@@ -324,19 +324,19 @@ Quotes from official resources showing the essence of the Utopia approach:
 
 ### Dictionary of the Utopia UI
 
-These are the terms used in the UI of the Utopia website.
+These are the terms used in the UI of the Utopia website at the time of writing:
 
 **`min`**\
-The smallest state You feel like visualising in your design. The `font size` will never go smaller as the one for `min`.
+The smallest state/viewport You feel like visualising in your design. The `font size` will never go smaller as the one for `min`.
 
 **`max`**\
-The largest state You feel like visualising in your design. The `font size` will never go bigger as the one for `max`.
+The largest state/viewport You feel like visualising in your design. The `font size` will never go bigger as the one for `max`.
 
 **`width`**\
-The `min` and `max` states are defined in terms of their widths (so you can almost think of them as viewports).
+The `min` and `max` states are defined in terms of their widths.
 
 **`font size`**\
-The size of the majority of text in your project (sometimes referred to as 'body text'). Serves as the base step for your `type scale`. Choosing the `font size` is often done early in the design process.
+The size of the majority of text in your project (called 'body text' in this guide). Serves as the base step for your `type scale`. Choosing the `font size` is often done early in the design process.
 
 **`type scale`**\
 The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base step. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my h1 be 48px or 49px?"_)
@@ -416,7 +416,7 @@ NEXT STEPS:
 -   [x] revise wtf
 -   [x] revise intro
 -   [x] polish outro
--   [] add content: perspective of _I am redesigning my existing project._ they would maybe wanna recreate their design and not start from scratch? like, maybe an additional 'if you're redesigning your project you might already have a good idea about your body text size` or two might be enough.
+-   [x] add content: perspective of _I am redesigning my existing project._ they would maybe wanna recreate their design and not start from scratch? like, maybe an additional 'if you're redesigning your project you might already have a good idea about your body text size` or two might be enough.
 -   [] go in order -- polish
 -   [] go in order -- remove comments
 -   [] go in order -- consistently format asides and other sub-sections
@@ -426,7 +426,7 @@ NEXT STEPS:
 
 ### todo
 
--   add content: where i mention all the intro resources in what is utopia, mb add explicit 'one should be enough' for you to get started
+-   [x] add content: where i mention all the intro resources in what is utopia, mb add explicit 'one should be enough' for you to get started
 -   [x] skim utopia blog -- steal phrasing to explain, collect links to specific topics, take general notes
 -   [x] work on intro: more personable, move what will i learn before wtf?
 -   [x] fix: extra space before links wtf

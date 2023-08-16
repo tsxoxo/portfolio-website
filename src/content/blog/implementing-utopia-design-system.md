@@ -72,7 +72,7 @@ For simplicity, this guide assumes that You're using at least the generator plug
 
 When You rerun the plugin, these styles get updated -- as well as the things these styles are applied to. You'll see.
 
-Now You should have an overview of what the generator plugin generates.
+Now You should have an overview of what the generator plugin generates. (The second plugin of the plugins will come into play later.)
 
 ### Decide if You want to use a baseline grid
 
@@ -84,7 +84,7 @@ If You're like _thank you, nopedy-nope!_ -- move on to the next step.
 
 If, however, _yass, puhleaseee!_ -- I recommend You read [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams there and a step-by-step guide and You'll get a glimpse of the messiness that awaits You down this path.
 
-### Create a wireframe for `min`
+### Create a frame for `min`
 
 Your first goal is to **figure out the size of the the majority of text in your project.** This is called 'body text' in this guide.
 
@@ -96,32 +96,34 @@ Your first goal is to **figure out the size of the the majority of text in your 
 
 -   Design stuff until You get a sense for a workable `font size`.
 
-Now You should have a piece of body text in your wireframe sized in a way where You're like _"I can work with this"_.
+Now You should have a piece of body text in your design sized in a way where You're like _"I can work with this"_.
 
-Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in this kind of design. You'll be remaking or at least modifying this wireframe using the Utopia system as You go along. You can change your `font size` at any point.
+Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in this kind of design. You'll be remaking or at least modifying stuff using the Utopia system as You go along. You can change your `font size` at any point.
 
 ### Give your body text a Utopia style
 
 -   Run the 'Utopia / Fluid type + space calculator' plugin again, this time plugging in your chosen `width` and `font size`. Or, if You've worked out `max` in parallel, both your `widths` and `font sizes`.
 
--   Apply the appropiate generated style to the body text in your wireframe: `U/Type/Min/Prose/Step 0`.
+-   Apply the appropiate generated style to the body text in your design: `U/Type/Min/Prose/Step 0`.
 
 Now, whenever you rerun the plugin with a different `font size`, your body text will update automatically!
 
 ### Create a `type scale`
 
-This can be a messy one. Here's a rough series of steps that might help You figure this out:
+This was messy for me. Here's a rough series of steps that might help You figure this one out:
 
--   Add a different type of text in your wireframe -- something other than the body text. Maybe some headings or some smaller text like an image caption. The point is to have texts of different sizes to see how a type scale will fit into your design.
+-   If You haven't already, add a different type of text in your design -- something other than the body text. Maybe a heading or some smaller text like an image caption. The point is to have texts of different sizes to see how a type scale will fit into your design. Add what's appropiate.
 
 -   Apply Utopia styles to all pieces of text. You may not know what styles to pick at this point. That's ok. Take some educated guesses and read on.
 
--   You should have at least 2 Utopian text styles living in your wireframe. Run the other, generator plugin again, just with a different type scale. The text in your wireframe should update. Keep adjusting the scale ratio, the number of steps in the scale, the font weight, etc, and rerunning the plugin until You find a scale that _fits your needs_.
+-   Now you should have at least 2 Utopian text styles living in your frame. Run the generator plugin again, just with a different type scale. Your text should change.
 
--   **If You want to change multiple styles at once** (for example, use a different font family for all your headings), use [the 'Utopia / Batch update text styles' plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles).
+-   Try try try. Things I did: mess with the scale ratio, change the number of steps in the scale, play around with font weights, etc. etc. Keep making changes and rerunning the plugin until You find a scale that _fits your needs_.
+
+-   **If You want to change multiple styles at once** (for example, use a different font family for all your headings), use [the 'Utopia / Batch update text styles' plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles). That's the second
 
 Aside:
-The plugin also generates a palette in a bolder font weight. I took this as an invitation and modified some of the font-weights for my purposes.-- A system is, like, just the beginning, man. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem.
+The plugin also generates a type scale in a bolder font weight. I took this as an invitation to start messing around. _A system is, like, just the beginning, man._ I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem.
 
 ---
 

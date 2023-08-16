@@ -34,17 +34,24 @@ If You're like _Is a step-by-step guide even appropiate for such a messy, iterat
 -   You should know how to use a code editor and the command line to manage your project.
     Possible starting point: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) on Tatiana Mac's blog gives a beginner-friendly intro to these things.
 
--   You should have a project with Tailwind CSS set up. It can be a fresh one or an existing one you want to redesign.
+-   You should have a project with Tailwind CSS set up -- a fresh one to start with or an existing one you want to redesign with Utopia.
     Possible starting point: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro)
 
 ## Guide
 
-/Aside:
-[2 other guides](#the-other-guides) helped me come up with this workflow (meaning I stole a lot from them). They focus on parts of the whole while I'm trying to go from start to finish. But that also makes them shorter, which is what You might want.
+Most of the following steps are rough guideposts. Iteration is implied everywhere. Adjust to your needs.
+
+For simplicity, the guide takes several shortcuts:
+
+-   It talks about only one of the two states -- `min`. You might design `max` after that, in parallel, or before that.
+-   It gives instructions assuming You want to start on a fresh frame in Figma. If You have an existing design, You might be able to get away with Utopia-fying it by applying new styles, etc.-- I trust that if You're at that level of consideration, You can figure out the rest, too.
+
+Aside:
+If You're just interested in the topics of _baseline grid_ or _implementation_ check out these [2 shorter guides](#the-other-guides).
 
 ### Create a wireframe for `min` in Figma
 
-Your first goal is to **figure out the size of the the majority of text in your project.** I'll be calling this 'body text'. To this end, it would probably help to get a sense of the rest of the project. Here's a rough sequence of steps You might take:
+Your first goal is to **figure out the size of the the majority of text in your project.** This is called 'body text' in this guide.
 
 -   Choose a width for your `min` state. To help You decide, see the section "1. Choose @min viewport width" in [Designing a utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/).
 

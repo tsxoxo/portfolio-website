@@ -23,7 +23,7 @@ If You're ready to go, just keep scrolling 😎.
 -   Prerequisites
 -   Guide
 -   Ways into Utopia
--       Why this guide
+-   Why this guide
 -   Outro
 -   Resources
 
@@ -46,15 +46,15 @@ Here's what this guide assumes about You:
 
 ## Guide
 
-Most of the following steps are rough guideposts. Iteration is implied everywhere. Adjust to your needs.
-
 For simplicity, the guide takes several shortcuts:
 
--   It talks about only one of the two states -- `min`. You might design `max` after that, in parallel, or before that.
--   It gives instructions assuming You want to start on a fresh frame in Figma. If You have an existing design, You might be able to get away with Utopia-fying it by applying new styles, etc.-- I trust that if You're at that level of consideration, You can figure out the rest, too.
+-   It only talks about `min`. You might design `max` after that, in parallel, or before that.
+-   It starts on a fresh frame in Figma. If You have an existing design, You might be able to get away with Utopia-fying it by applying new styles, etc.-- I trust that if You're at that level of consideration, You're able to adjust the instructions to your needs.
+
+Also, iteration is implied everywhere.
 
 Aside:
-If You're just interested in the topics of _baseline grid_ or _implementation_ check out these [2 shorter guides](#the-other-guides).
+If You're just interested in the topics of **baseline grid** or **implementation** check out these [2 shorter guides](#the-other-guides).
 
 ### Create a wireframe for `min` in Figma
 

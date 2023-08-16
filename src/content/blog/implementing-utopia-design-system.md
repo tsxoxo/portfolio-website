@@ -338,11 +338,15 @@ The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modu
 
 ### Why such a guide
 
-I kind of yearned for a practical guide like this when I was getting into Utopia.
+I yearned for a practical guide like this when I was getting into Utopia.
 
-I was delving through the resources in search of any scrap of practical advice. They're out there and this workflow is built around them. Now that I've hobbled through my first round, I want to pass on something of that experience. Even though this is a very rough roadmap at best, maybe it can at least show that it's possible without too much of a hassle.
+It took some flailing and delving through quite a few resources to figure out my way around it. Now that I've hobbled through my first round, I want to pass on something of that experience.
 
-This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give thist sort of basic how-to instructions. I looked them up, they're experienced designers. I can imagine once you're at that level (of messiness), you know things kind of lose their purpose if they're simplified in this form. Utopia doesn't seem to be a step-by-step method. It's a set of tools that can be used in a lot of different ways, maybe even in UIs outside of browsers. Designing is a messy business. Let's keep it that way 🫀
+This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give thist sort of basic how-to instructions. I looked them up, they're experienced designers. I can imagine once you've seen the kinds of 'design process' they've seen, you accept that some things can't just be simplified into an A-Z guideline. Multiple stakeholders, rounds of iteration, the style of the project -- they're way too many moving parts for anybody to encapsulate into a step-by-step method like that. Utopia seems more like a set of tools that you can use whenever you run into the particular problem of responsiveness, maybe even in UIs outside of browsers.
+
+Let's keep design messy 🫀
+
+And yet... here's also a rough roadmap. Maybe not to show You the way, but just to show that it's there!
 
 ## Outro and thanks
 

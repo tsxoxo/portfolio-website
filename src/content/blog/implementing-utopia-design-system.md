@@ -76,48 +76,50 @@ I'll assume that You're using the plugin from now on. It'll keep the instruction
 
 -   You might read the [community page for the generator plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated article [Getting started with Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) which covers both. If You know your Utopia basics, You might be able to just jump in and follow these instructions.
 
--   Run the plugin in Figma. It's called 'Utopia / Fluid type + space calculator'.
+-   Run the 'Utopia / Fluid type + space calculator' plugin in Figma.
 
--   In the UI that pops up, put in your `widths` and your `font sizes`. Don't worry about the `type scales` yet, You'll focus on them in the next section. Click the big button. It would sometimes take like 20 seconds for me before anything happened. Trust the process. A lot of good work is done in silence.
+-   In the UI that pops up, put in your `widths` and your `font sizes`. Don't worry about the `type scales` yet, You'll focus on them in the next section. Click the big button. (It would sometimes take like 20 seconds for me before anything happened. Trust the process. A lot of good work is done in silence.)
 
 -   Look at the generated frames. If some of it looks blank, try making the grid visible with `shift + g`.
 
--   Look at the generated styles in the right Figma panel (click on the background of the canvas to see them). Apply the appropiate style to the body text in your wireframe. At the time of writing, this is `U/Type/Min/Prose/Step 0`.
+-   Look at the generated styles in the right Figma panel (click on the background of the canvas to see them). Apply the appropiate style to the body text in your wireframe: `U/Type/Min/Prose/Step 0`.
 
 Now, whenever you rerun the plugin with a different `font size`, your body text will update automatically!
 
-Aside: The plugin also generates a palette in a bolder font weight. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem. But it's there. I took it as an invitation and modified some of the font-weights for my purposes. A system is, like, just the beginning, man.
+Aside:
+The plugin also generates a palette in a bolder font weight. I took this as an invitation and modified some of the font-weights for my purposes.-- A system is, like, just the beginning, man. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem.
 
-### Figure out a `type scale`
+### Choose a `type scale`
 
-As before, start by focusing on either `min` or `max`.
+This can be a messy one. Here's a rough series of steps that might help You figure this out:
 
 -   Add a different type of text in your wireframe -- something other than the body text. Maybe some headings or some smaller text like an image caption. The point is to have texts of different sizes to see how a type scale will fit into your design.
 
--   Apply Utopia styles to every piece of text in your design. You may not know what style to assign to which text. That's ok. Take some educated guesses and read on.
+-   Apply Utopia styles to all pieces of text. You may not know what styles to pick at this point. That's ok. Take some educated guesses and read on.
 
--   You should have at least 2 Utopian text styles living in your wireframe. Try changing the font family of all of these in one swoop by running [the 'Utopia / Batch update text styles' plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles). You can also easily undo this. It's good that You know that this is an easy thing to do.
+-   You should have at least 2 Utopian text styles living in your wireframe. Run the other, generator plugin again, just with a different type scale. The text in your wireframe should update. Keep adjusting the scale ratio, the number of steps in the scale, the font weight, etc, and rerunning the plugin until You find a scale that _fits your needs_.
 
--   Run the Utopia system-generator-plugin again, just with a different type scale. The text in your wireframe should update. Keep adjusting the scale ratio, the number of steps in the scale, the font weight, etc, and rerunning the plugin until You find a scale that _fits your needs_.
-
--   Do the same thing for the other state. Try using a sharper scale for `max` (higher ratio) and a softer one for `min` (lower ratio).
+-   **If You want to change multiple styles at once** (for example, use a different font family for all your headings), use [the 'Utopia / Batch update text styles' plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles).
 
 ---
 
-I felt this part of the process was especially iterative (messy) because there are so many moving parts. It's a whole scale of things, after all. Many moving parts can overwhelm my brain, so here's how I tried to simplify the process:
+#### What I did
 
-While designing my landing page, I got obsessed with my big chunky hero-heading because who doesn't. I wanted it to stay on a single line. So I made it as big as possible and paid attention to the font size.
+I felt this part of the process was especially iterative (messy) because there are so many moving parts. It's a whole scale of things living next to other things.-- Too much for my brain!
 
-And I decided to build my type scale around this piece of text.
+So I tried to simplify the process:
 
-That's the simplification. This decision gave me something to go on: I knew I wanted a scale with a font size pretty close to what I had given my hero-heading. And since this was to be the biggest heading on the page, I knew this size had to be several steps up the ladder, since I needed room for my smaller headings.
+While designing my landing page, I got obsessed with my big chunky hero-heading -- because who doesn't. I wanted it to stay on a single line. So I made it as big as possible and paid attention to the font size.
 
-So I knew what to look for in a scale and wasn't just blindly dating one after the other. (It seems so much of design is about giving yourself limitations to make the wild chaos of life barely managable.)
+And I started to build my type scale around this piece of text.
 
-/I still had a lot of questions
-It was still a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings (so that my `h1` sticks out even more from my `h2s`, for example)? I want to live boldly, so how bold do I want my headings to be?
+That gave me something to go on: I knew I wanted a scale with a font size pretty close to what I had given my hero-heading. And since this was to be the biggest heading on the page, I knew this size had to be several steps up the ladder, since I needed room for my smaller headings.
 
-I settled these questions for myself. I went minimal, my scale had 3 steps, I was content... Then I added a blog to my site, which means more headings, which means my scale no longer accomodates my content.
+It was almost like an algorithm in my brain to filter out scales that were worth trying out. I knew what I wanted in a scale and wasn't just blindly dating one after the other.
+
+Now, even still this was a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings so that my `h1` sticks out even more from my `h2s`? I want to live boldly, so how bold do I want my headings to be?
+
+I settled these questions for myself. I committed to a scale with 3 steps, we had some adventures, we were living life... Then I added a blog to my site -- which means more headings... so my scale can't really handle my content anymore...
 
 Every day, I redesign. Or, as they say:
 

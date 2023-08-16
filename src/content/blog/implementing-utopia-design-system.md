@@ -66,7 +66,7 @@ For simplicity, this guide assumes that You're using at least the generator plug
 
 -   Run the 'Utopia / Fluid type + space calculator' plugin in Figma. Don't worry about any of the parameters yet, You'll deal with those as You go along. Click the big button. (It would sometimes take like 20 seconds for me before anything happened. Trust the process. A lot of good work is done in silence.)
 
--   Look at the generated frames and get an overview. If some of them look a bit blank, try making the grid visible with `shift + g`.
+-   Look at the generated frames and get an overview. (All these frames together are called 'component board' in this guide.) If some of them look a bit blank, try making the grid visible with `shift + g`.
 
 -   Look at the generated styles in the right Figma panel and get an overview (click on the background of the canvas to see them). At the time of writing, they're tucked away in a folder called 'U', which can be hard to spot.
 
@@ -139,9 +139,11 @@ And I started to build my type scale around this piece of text.
 
 That gave me something to go on: I knew I wanted a scale with a font size pretty close to what I had given my hero-heading. And since this was to be the biggest heading on the page, I knew this size had to be several steps up the ladder, since I needed room for my smaller headings.
 
-It was almost like an algorithm in my brain to filter out scales that were worth trying out. I knew what I wanted in a scale and wasn't just blindly dating one after the other.
+It was almost like an algorithm in my brain to filter out scales that were potentially compatible with me. I knew what I wanted in a scale and wasn't just blindly dating one after the other.
 
-Now, even still this was a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings so that my `h1` sticks out even more from my `h2s`? I want to live boldly, so how bold do I want my headings to be?
+Now, this still took a lot of messing around. How many heading-hierarchies do I need for this site? Do I maybe wanna skip a scale-step between adjacent headings so that my `h1` sticks out even more from my `h2s`? I want to live boldly, so how bold do I want my headings to be?
+
+Nobody can answer these questions for You.
 
 I settled these questions for myself. I committed to a scale with 3 steps, we had some adventures, we were living life... Then I added a blog to my site -- which means more headings... so my scale can't really handle my content anymore...
 
@@ -149,40 +151,49 @@ Every day, I redesign. Or, as they say:
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 
+🌞
+
 ### Introduce Utopian spacing
 
--   Pick a method below -- A, B or C -- and make all the spaces, nooks and crannies in your design Utopian. Whichever You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox.
+-   Pick a method below -- A, B or C -- and make all the spaces, nooks and crannies in your design Utopian (for real: I'm talking about your paddings, gaps, margins, etc.). Whichever You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox (and maybe You can even skip margins altogether).
 
 A. Just do it by hand
 
-You might be asking yourself _"do I really need to remember all spacing steps I just generated and type them by hand at every single decision?"_.
+You might be asking yourself _"do I really need to remember all the spacing steps I just generated and type in a value by hand at every single decision?"_.
 
 Well, this is how me and my two brain cells did it. It wasn't too bad. A lot of peeking at the component board, but that's a small price to pay to be _fluid_, man 🐬.
 
 B. Use variables
 
-Figma let's You set up a spacing palette with variables pretty easily now:
+You can set up a spacing palette with variables like this:
 
 ![A screenshot of how You might set up your variables](/assets/blog/pictures/figma-variables-demo.png)
 
-The upside is You can pick your spacing from a menu and don't have to peek so much.
+Aside:
+Are modes potentially useful here? There must be a good lifehack in here, somewhere.
+
+The upside to this method is You can pick your spacing from a menu and don't have to peek so much.
 
 The downside is I don't see how to make these variables update when You regenerate your palette...
 
-**But**... there might be a way...
+...**But**...
 
-...Follow me into this dark alley, friend...
+...**Psst**...
+
+...there might be a way...
+
+...follow me into this dark alley, friend...
 
 C. Use the spacing components from the component board
 
 Aside:
 **If You want to work on a custom spacing palette**, You might do it this way. The spacing in your design will update each time you rerun the plugin with different parameters.
 
-See these little squares on the "spacing palette"-frame that Utopia generated? Just literally [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg)! And when You're sick of them, just close your eyes, press `shift + g` 3 times and they'll go away.
+See these little squares that came out of the generator plugin?-- The ones on the frame called "Space palette @min"? You can literally [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg)! Once they're where You want them to be, just select the variant You want from the little drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favourite t-shirt sizes! And when You're sick of looking at them, just close your eyes, press `shift + g` 3 times and they'll go away.
 
-How does that work, You ask?-- _They're just, like, pieces of the grid, man!_ Clever, clever, these Utopia designers. Once they're where You want them to be, just select the variant You want from the little drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favourite t-shirt sizes!
+How does that work, You ask?-- _They're just, like, pieces of the grid, man! 🤯_ Clever, clever, these Utopia designers.
 
-Just set the numbers in your auto-layouts to 0 and put squares everywhere: in your gaps, your paddings -- your margins, if You need them! Stuffed one under your sofa and forgot about it for like 7 years until it was time to move? No problem, it'll stay there, patiently waiting until it's time. _Its_ time...
+Just set the numbers in your auto-layouts to 0 and put squares everywhere: in your gaps, your paddings... -- your margins, if You need them! Stuffed one under your sofa and forgot about it for like 7 years until it was time to move? No problem, it'll stay there, patiently waiting until it's time. _Its_ time...
 
 Did I mention the squares are cursed with a terrible curse? No?
 
@@ -193,19 +204,9 @@ But they come with a frozen yoghurt! I call it _"froyo"_!
 Aside:
 For this website, the default spacing palette with some added custom pairs worked alright. I felt it was a decent balance between constraint and freedom.
 
-### Remake your design the Utopia way
+---
 
-aka Bring it all together.
-
-Since I left some "room for experimentation" during the previous steps (aka I gave vague instructions), You might have already redesigned your wireframes using the Utopia system. If so, congratulations, You're done with the hard part and can go to the next step to start implementing!
-
-Otherwise:
-
--   Generate a system using the Utopia plugin. By now You should have some ideas for all the parameters.
-
--   Create a fresh set of frames for `min` and `max` to house your upcoming redesign.
-
--   Design your project using the generated system. You know how to handle text. You know 3 ways of handling spacing. You are at peace with the grid. Go out there, make some mistakes and enjoy that sweet consistency!
+Now You should have a design that's pretty Utopian. And if You ever need to do it all again, You are well prepared: You know how to wrestle with text. You know 3 ways of handling spacing. You are at peace with the grid. Go out there, make some mistakes and enjoy that sweet consistency!
 
 ### Implement
 
@@ -214,13 +215,13 @@ There are plugins to help with this, but I won't be using them here. See [Utopia
 
 -   Get those CSS custom properties out of your system! (and into your config.) Go to the Utopia website, plug in the values You used with the Figma plugin (they're on the first generated frame) and copy the CSS output into your project.
 
-**Where to put these CSS variables?**
+**Uhmmm, where?**
 
 You have options.
 
 A. You can sort of ignore the variables and just copy their values (e.g. just the raw `clamp()` function) into your tailwind config. [Chris Penrod does it this way](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/).
 
-B. I go an extra step and first put all the variables into a `base.css` file. Then I reference them in `tailwind.config.cjs`. My reason for doing it _extra_ like this is that I can easily copy and paste Utopia's output wholesale into `base.css` whenever I iterate (aka change my mind) -- which, I know I will.
+B. I go an extra step and first put all the variables into a `base.css` file. Then I reference them in `tailwind.config.cjs`. My reason for doing it _extra_ 🧑‍🍳 like this is that I can easily copy and paste Utopia's output wholesale into `base.css` whenever I "iterate" (change my mind) -- which, I know I will.
 
 This is what it looks like:
 
@@ -272,27 +273,29 @@ module.exports = {
 }
 ```
 
-Aside: The `fl` stands for `fluid`, I took this from Chris.
+You can change these class names -- `fl-sm`, `space-fl-3xs` -- to your liking. I took this naming system from Chris. The "fl" stands for "fluid". Mmmmmm... fluid 🧃.
 
-With this setup, some new classes should show up in your IDE's autocomplete: type `p-spa` somewhere as a CSS class and press your `autocomplete` shortcut (I have it on `ctrl + space` in VSCode). You should see a list of all your fluid padding steps. Same for any other Tailwind spacing utility like `gap`, `spacing` and `margin`. Same for text sizes.
+With this setup, some new classes should show up in your code editor's autocomplete:
 
-Now, if You're starting a fresh project, You are ready to code it with entirely fluid spacing and typography!
+-   Type in `p-spa` somewhere where You'd put a CSS class and press your `execute autocomplete!`-shortcut (I have it on `ctrl + space` in VSCode). You should see a list of all your fluid padding steps. It should also work for any other Tailwind spacing utility like `gap`, `spacing` and `margin`. And for text sizes.
+
+Now, if You're starting a fresh project, You are ready to code it with entirely fluid spacing and typography! 🙌
 
 ### If You're redesigning an existing project
 
 -   Replace static classes with fluid ones.
 
-I wrote a regex for finding many (but surely not all) of the standard Tailwind spacing classes, mostly to keep my regex muscles from atrophying:
+Something to help with that:
 
 `[\s"']([mp]|gap|space)-?\w?-\d`
 
-Without this little formula, I would have had to search for each padding-variation (pt, pb, p-, px-, py) and then for each gap variation, etc.
+This little formula finds many (but surely not all) of the standard Tailwind spacing classes. I mostly wrote it to feel like a wizard for 10 minutes. But also, without it, I would have had to search for each padding variation (pt, pb, p-, px-, py) individually (and then for each gap variation, etc.)
 
-To use this regex, paste it into the 'global search' in your code editor (the one where you search through all your files at once -- it's `cmd + shift + f` in VSCode). For it to work, You might have to turn on regex in your search (in VSCode there's a little button that says `.*` on the right of the searchbar).
+**To use this** regex, paste it into the 'global search' in your code editor (the one where you search through all your files at once -- it's `cmd + shift + f` in VSCode). For it to work, You might have to turn on regex somewhere in your search (in VSCode there's a little button that says `.*` on the right of the searchbar).
 
-Now just open Figma on one side and your favourite code editor on the other and go to town!
+Now just open Figma on one side and your favourite code editor on the other and go to town! 🤘
 
-..._Fluid town_
+..._Fluid town_ 🌚
 
 ## Ways into Utopia
 
@@ -400,7 +403,7 @@ For introductory resources about Utopia, see the above section [Ways into Utopia
 
 #### Utopia-Tailwind integrations
 
-I found two plugins that were made to help with integrating Utopia into Tailwind. Neither worked out-of-the-box for me and I wasn't in the mood for hacking.
+I found two plugins that were made to help with integrating Utopia into Tailwind. Neither worked out of the box for me and I wasn't in the mood for hacking.
 
 -   [cwsdigital/tailwind-utopia](https://github.com/cwsdigital/tailwind-utopia)
 -   [domchristie/tailwind-utopia](https://github.com/domchristie/tailwind-utopia). This one's a fork of the `cwsdigital` one but has a different API.

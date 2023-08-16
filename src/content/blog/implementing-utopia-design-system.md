@@ -14,7 +14,7 @@ Welcome designers!, welcome coders!, welcome the folks from the creamy center of
 
 If You're new to Utopia or want a refresher start at [Ways into Utopia](#ways-into-utopia).
 
-If You're like _Is a step-by-step guide even appropiate for a messy, iterative and context-specific process such as designing?_ then You got me. I mention this tension in [Why such a guide](#wtf).
+If You're like _Is a step-by-step guide even appropiate for a messy, iterative and context-specific process such as designing?_ then congrats, You got me. I mention this tension in [Why such a guide](#why-such-a-guide).
 
 If You're ready to go, just keep scrolling!
 
@@ -352,11 +352,13 @@ I yearned for a practical guide like this when I was getting into Utopia.
 
 It took some flailing and delving through quite a few resources to figure out my way around it. Now that I've hobbled through my first round, I want to pass on something of that experience.
 
-This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give thist sort of basic how-to instructions. I looked them up, they're experienced designers. I can imagine once you've seen the kinds of 'design process' they've seen, you accept that some things can't just be simplified into an A-Z guideline. Multiple stakeholders, rounds of iteration, the style of the project -- they're way too many moving parts for anybody to encapsulate into a step-by-step method like that. Utopia seems more like a set of tools that you can use whenever you run into the particular problem of responsiveness, maybe even in UIs outside of browsers.
+This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give this sort of basic how-to instructions. I looked them up, they're experienced designers. I can imagine once you've seen the kinds of 'design processes' they've seen, you accept that some things can't just be simplified into an A-Z guideline. Multiple stakeholders, rounds of iteration, the style of the project -- there are way too many moving parts for anybody to encapsulate into a step-by-step method like that. Utopia seems more like a set of tools that you can use whenever you run into the particular problem of responsiveness, maybe even in UIs outside of browsers.
 
 Let's keep design messy 🫀
 
-And yet... here's also a rough roadmap. Maybe not to show You the way, but just to show that it's there!
+And yet... here's also a rough roadmap. Maybe not to show You _the way_, but just to show that there is one here!
+
+On that note -- this section got so big, I'm making it into its own article about **the problem of onboarding**. I would love to talk to people and get some input. So if You ever got frustrated about documentation, or designed an onboarding process, or written documentation where You were worrying about making it welcoming to beginners, [give me a shout](#socials)!
 
 ## Outro and thanks
 

@@ -56,31 +56,17 @@ Also, iteration is implied everywhere.
 Aside:
 If You're just interested in the topics of **baseline grid** or **implementation** check out these [2 shorter guides](#the-other-guides).
 
-### Create a wireframe for `min` in Figma
+### Create a wireframe for `min`
 
 Your first goal is to **figure out the size of the the majority of text in your project.** This is called 'body text' in this guide.
 
 -   Choose a width for your `min` state. To help You decide, see the section "1. Choose @min viewport width" in [Designing a utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/).
 
-For designing this site, I left the defaults -- `min`: 320px, `max`: 1024px. Because I had enough things to worry about.
-
--   In Figma, create a frame with that width.
-
-Tip: To make a frame with proportions close to an actual screen, You can choose a device from the list that has a width close to your `min` (press `f` in Figma), then scale it proportionally to the right width (hold `shift` while scaling).
+-   In Figma, create a frame with that width. You might choose a device from Figma's list with a width that's close, then scale it proportionally to the exact number (e.g. by holding `shift` while scaling).
 
 -   Design stuff until You get a sense for a workable `font size`.
 
-Workable -- not perfect. Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in design. You'll be remaking (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
-
-### Create a wireframe for the other state
-
-Go through the same steps for the other state - `min` or `max`.
-
-Now, You should have settled on 2 widths and 2 font sizes (for now).
-
-/
-For simplicity, I will be only talking about 'min`from here on? 
-a lot of the steps only talk about designing your`min` state. You should re
+_Workable_ -- not perfect. Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in design. You'll be remaking (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
 
 ### Apply a style to your body text
 

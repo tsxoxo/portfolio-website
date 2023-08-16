@@ -103,7 +103,7 @@ This can be a messy one. Here's a rough series of steps that might help You figu
 
 ---
 
-#### What I did
+#### What helped me
 
 I felt this part of the process was especially iterative (messy) because there are so many moving parts. It's a whole scale of things living next to other things.-- Too much for my brain!
 
@@ -127,16 +127,15 @@ Every day, I redesign. Or, as they say:
 
 ### 3 ways to use a Utopia spacing palette in Figma
 
-Aside:
 There are no instructions here, since I didn't mess around too much with this. I went with the default spacing palette and added some custom space pairs, that's it. For this website, it worked alright. A decent balance between constraint and freedom.
 
-With all of these, consider using auto-layout whenever You can. For me, this helped keep things simple: everything is in the gaps and paddings. No pesky margins whatsoever. And it's straightforward to implement with grid and flexbox.
+With all of these methods, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox.
 
 A. Just do it by hand
 
-You might be asking yourself _"do I really need to remember the spacing values and type them by hand at every single decision?"_.
+You might be asking yourself _"do I really need to remember all spacing steps I just generated and type them by hand at every single decision?"_.
 
-This is how me and my two brain cells did it. It wasn't too bad. A lot of peeking at the master-board, but that's a small price to pay to be _fluid_, man.
+Well, this is how me and my two brain cells did it. It wasn't too bad. A lot of peeking at the component board, but that's a small price to pay to be _fluid_, man 🐬.
 
 B. Use variables
 
@@ -144,33 +143,38 @@ Figma let's You set up a spacing palette with variables pretty easily now:
 
 ![A screenshot of how You might set up your variables](/assets/blog/pictures/figma-variables-demo.png)
 
-The upside is You can choose your spacing from a menu and don't have to peek so much.
+The upside is You can pick your spacing from a menu and don't have to peek so much.
 
 The downside is I don't see how to make these variables update when You regenerate your palette...
 
-**But**... there might be a way... Follow me into this dark alley, friend.
+**But**... there might be a way...
 
-C. Use the spacing components from the Utopia plugin
+...Follow me into this dark alley, friend...
 
-See these little squares on the spacing-palette-frames that Utopia generated? Why not just literally [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg)? And when You're sick of them, just close your eyes, press `shift + g` 3 times and they'll go away. How does that work, You ask? _They're just, like, pieces of the grid, man!_ Clever, clever, these Utopia designers. Now You select the variant You want from a drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favourite t-shirt sizes!
+C. Use the spacing components from the component board
 
-Just set the numbers in your auto-layouts to 0 and put squares everywhere: in your gaps, your paddings, your margins, if You need them. Put one under your sofa and forgot about it for like 7 years until it was time to move? No problem, it'll stay there, patiently waiting until it's time. _Its_ time...
+Aside:
+**If You want to work on a custom spacing palette**, You might do it this way. The spacing in your design will update each time you rerun the plugin with different parameters.
 
-If You want to work on a custom spacing palette, You might do it this way. The spacing in your design will update each time you rerun the plugin with different parameters.
+See these little squares on the "spacing palette"-frame that Utopia generated? Just literally [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg)! And when You're sick of them, just close your eyes, press `shift + g` 3 times and they'll go away.
 
-The squares are cursed with a terrible curse tho.
+How does that work, You ask?-- _They're just, like, pieces of the grid, man!_ Clever, clever, these Utopia designers. Once they're where You want them to be, just select the variant You want from the little drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favourite t-shirt sizes!
+
+Just set the numbers in your auto-layouts to 0 and put squares everywhere: in your gaps, your paddings -- your margins, if You need them! Stuffed one under your sofa and forgot about it for like 7 years until it was time to move? No problem, it'll stay there, patiently waiting until it's time. _Its_ time...
+
+Did I mention the squares are cursed with a terrible curse? No?
 
 But they come with a frozen yoghurt! I call it _"froyo"_!
 
 ### Decide if You want to use a baseline grid
 
-A baseline grid can make You feel extra special ✨. Or, you know, help You design or whatever.
+A baseline grid can make You feel extra special ✨. Or help You with your design or whatever.
 
 There are lots of ways to use a baseline grid. The Utopia plugin generates one for You, so it's not too hard to get started.
 
-If You're out, move on to the next step.
+If You're like nopedy-nope, move on to the next step.
 
-If yass -- I recommend You read the official intro [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams and a step-by-step guide and You'll get to know some of the messy decisions that have to be made if You're going down this path. After that, rerun the Figma plugin and adjust the grid _to your needs_&trade;.
+If, however, _yass, puhleaseee!_ -- I recommend You read [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams there and a step-by-step guide and You'll get a glimpse of the messiness that awaits down this path. After that, rerun the Figma plugin and adjust the grid _to your needs_&trade;.
 
 ### Remake your design the Utopia way
 

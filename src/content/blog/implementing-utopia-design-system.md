@@ -58,9 +58,9 @@ If You're just interested in the topics of **baseline grid** or **implementation
 
 ### Get to know the Figma plugins
 
-Instead of creating all the styles of your system by hand, I highly recommend You let the 2 Utopia Figma plugins do this for You. They help You generate all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids in Figma. You'll see. They also help with updating these as You iterate iterate itirate.
+Instead of creating your system by hand, I highly recommend You let the 2 Utopia Figma plugins do this for You. They help You generate all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids -- in Figma. You'll see. They also help with updating these as You iterate iterate itirate.
 
-For simplicity, this guide assumes that You're using at least the generator plugin. You can still do everything using just the Utopia website -- it'll just be more copy and pasting 🦾.
+For simplicity, this guide assumes that You're using at least the generator plugin. You can still do everything using just the Utopia website -- it'll just be a little more work 🦾.
 
 -   You might read the [community page for the generator plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated article [Getting started with Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) which covers both. If You know your Utopia basics, You might be able to just jump in and keep following these instructions.
 
@@ -70,7 +70,7 @@ For simplicity, this guide assumes that You're using at least the generator plug
 
 -   Look at the generated styles in the right Figma panel and get an overview (click on the background of the canvas to see them). At the time of writing, they're tucked away in a folder called 'U', which can be hard to spot.
 
-When You rerun the plugin, these styles get updated.
+When You rerun the plugin, these styles get updated -- as well as the things these styles are applied to. You'll see.
 
 Now You should have an overview of what the generator plugin generates.
 
@@ -84,40 +84,29 @@ If You're like _thank you, nopedy-nope!_ -- move on to the next step.
 
 If, however, _yass, puhleaseee!_ -- I recommend You read [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams there and a step-by-step guide and You'll get a glimpse of the messiness that awaits You down this path.
 
-Speaking of messiness, You'll also get acquainted with the Utopia Figma plugin earlier than the other folks. Some instructions down the line might be old news for You, sorry.
-
--   Run the 'Utopia / Fluid type + space calculator'-plugin in Figma. In the UI that pops up, adjust the grid _to your needs_. Don't worry about the other stuff, You'll deal with it later. Press the big button. Wait for a bit.
-
-Now You're set up to
-
 ### Create a wireframe for `min`
 
 Your first goal is to **figure out the size of the the majority of text in your project.** This is called 'body text' in this guide.
 
--   **If You're not using a grid**, choose a width for your `min` state. To help You with this, see the section "1. Choose @min viewport width" in [Designing a utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/).
+-   **If You're not using a grid**, decide a width for your `min` state. To help You with this, see the section "1. Choose @min viewport width" in [Designing a utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/).
 
--   **If You _are_ using a grid**, the issue is now how to fit the grid into the frame -- do you stretch one or the other, or leave it kind of overlapping or what? There is a simple solution proposed in the grid guide mentioned earlier: make your `min` frame the width of the generated `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. buaha!
+-   **If You _are_ using a grid**, the issue is now how to fit the grid into the frame -- do you stretch one or the other, or leave it kind of overlapping or what? There is a simple solution proposed in the grid guide mentioned earlier: make your `min` frame the width of the generated `min` grid. Do it. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. buahahahaa! Then try to calm down and apply the grid style to the frame.
 
-*   In Figma, create a frame with that width. You might choose a device from Figma's list with a width that's close, then scale it proportionally to the exact number (e.g. by holding `shift` while scaling).
+-   In Figma, create a frame with your chosen width. To make a frame the approximate size of a screen, You might choose a device from Figma's list (press `f`) with a width that's close, then scale it proportionally to the exact number (e.g. by holding `shift` while scaling).
 
-*   Design stuff until You get a sense for a workable `font size`.
+-   Design stuff until You get a sense for a workable `font size`.
 
-_Workable_ -- not perfect. Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in design. You'll be remaking (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
+Now You should have a piece of body text in your wireframe sized in a way where You're like _"I can work with this"_.
+
+Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in this kind of design. You'll be remaking or at least modifying this wireframe using the Utopia system as You go along. You can change your `font size` at any point.
 
 ### Give your body text a Utopia style
 
--   Run the 'Utopia / Fluid type + space calculator' plugin in Figma.
+-   Run the 'Utopia / Fluid type + space calculator' plugin again, this time plugging in your chosen `width` and `font size`. Or, if You've worked out `max` in parallel, both your `widths` and `font sizes`.
 
--   In the UI that pops up, put in your `widths` and your `font sizes`.
-
--   Look at the generated frames. If some of it looks blank, try making the grid visible with `shift + g`.
-
-Apply the appropiate style to the body text in your wireframe: `U/Type/Min/Prose/Step 0`.
+-   Apply the appropiate generated style to the body text in your wireframe: `U/Type/Min/Prose/Step 0`.
 
 Now, whenever you rerun the plugin with a different `font size`, your body text will update automatically!
-
-Aside:
-The plugin also generates a palette in a bolder font weight. I took this as an invitation and modified some of the font-weights for my purposes.-- A system is, like, just the beginning, man. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem.
 
 ### Create a `type scale`
 
@@ -130,6 +119,9 @@ This can be a messy one. Here's a rough series of steps that might help You figu
 -   You should have at least 2 Utopian text styles living in your wireframe. Run the other, generator plugin again, just with a different type scale. The text in your wireframe should update. Keep adjusting the scale ratio, the number of steps in the scale, the font weight, etc, and rerunning the plugin until You find a scale that _fits your needs_.
 
 -   **If You want to change multiple styles at once** (for example, use a different font family for all your headings), use [the 'Utopia / Batch update text styles' plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles).
+
+Aside:
+The plugin also generates a palette in a bolder font weight. I took this as an invitation and modified some of the font-weights for my purposes.-- A system is, like, just the beginning, man. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem.
 
 ---
 

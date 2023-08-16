@@ -56,15 +56,41 @@ Also, iteration is implied everywhere.
 Aside:
 If You're just interested in the topics of **baseline grid** or **implementation** check out these [2 shorter guides](#the-other-guides).
 
+### Get to know the Figma plugin
+
+This will be your trusty tool during this process.
+
+You'll run it once not worrying too much
+
+### Decide if You want to use a baseline grid
+
+A baseline grid can make You feel extra special ✨. Or help You with your design or whatever.
+
+There are lots of ways to use a baseline grid. The Utopia Figma plugin generates one for You, so it's not too hard to get started.
+
+If You're like _thank you, nopedy-nope!_ -- move on to the next step.
+
+If, however, _yass, puhleaseee!_ -- I recommend You read [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams there and a step-by-step guide and You'll get a glimpse of the messiness that awaits You down this path.
+
+Speaking of messiness, You'll also get acquainted with the Utopia Figma plugin earlier than the other folks. Some instructions down the line might be old news for You, sorry.
+
+-   Run the 'Utopia / Fluid type + space calculator'-plugin in Figma. In the UI that pops up, adjust the grid _to your needs_. Don't worry about the other stuff, You'll deal with it later. Press the big button. Wait for a bit.
+
+-   Look at the generated frames. If some of it looks blank, try making the grid visible with `shift + g`.
+
+Now You're set up to
+
 ### Create a wireframe for `min`
 
 Your first goal is to **figure out the size of the the majority of text in your project.** This is called 'body text' in this guide.
 
--   Choose a width for your `min` state. To help You decide, see the section "1. Choose @min viewport width" in [Designing a utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/).
+-   **If You're not using a grid**, choose a width for your `min` state. To help You with this, see the section "1. Choose @min viewport width" in [Designing a utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/).
 
--   In Figma, create a frame with that width. You might choose a device from Figma's list with a width that's close, then scale it proportionally to the exact number (e.g. by holding `shift` while scaling).
+-   **If You _are_ using a grid**, the issue is now how to fit the grid into the frame -- do you stretch one or the other, or leave it kind of overlapping or what? There is a simple solution proposed in the grid guide mentioned earlier: make your `min` frame the width of the generated `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. buaha!
 
--   Design stuff until You get a sense for a workable `font size`.
+*   In Figma, create a frame with that width. You might choose a device from Figma's list with a width that's close, then scale it proportionally to the exact number (e.g. by holding `shift` while scaling).
+
+*   Design stuff until You get a sense for a workable `font size`.
 
 _Workable_ -- not perfect. Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in design. You'll be remaking (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
 
@@ -89,7 +115,7 @@ Now, whenever you rerun the plugin with a different `font size`, your body text 
 Aside:
 The plugin also generates a palette in a bolder font weight. I took this as an invitation and modified some of the font-weights for my purposes.-- A system is, like, just the beginning, man. I haven't seen this phenomenon talked about anywhere else in the Utopia ecosystem.
 
-### Choose a `type scale`
+### Create a `type scale`
 
 This can be a messy one. Here's a rough series of steps that might help You figure this out:
 
@@ -125,11 +151,9 @@ Every day, I redesign. Or, as they say:
 
 > ["A digital product is never finished"](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/)
 
-### 3 ways to use a Utopia spacing palette in Figma
+### Introduce Utopian spacing
 
-There are no instructions here, since I didn't mess around too much with this. I went with the default spacing palette and added some custom space pairs, that's it. For this website, it worked alright. A decent balance between constraint and freedom.
-
-With all of these methods, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox.
+-   Pick a method below -- A, B or C -- and make all the spaces, nooks and crannies in your design Utopian. Whichever You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox.
 
 A. Just do it by hand
 
@@ -166,31 +190,22 @@ Did I mention the squares are cursed with a terrible curse? No?
 
 But they come with a frozen yoghurt! I call it _"froyo"_!
 
-### Decide if You want to use a baseline grid
+---
 
-A baseline grid can make You feel extra special ✨. Or help You with your design or whatever.
-
-There are lots of ways to use a baseline grid. The Utopia plugin generates one for You, so it's not too hard to get started.
-
-If You're like nopedy-nope, move on to the next step.
-
-If, however, _yass, puhleaseee!_ -- I recommend You read [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/). There's diagrams there and a step-by-step guide and You'll get a glimpse of the messiness that awaits down this path. After that, rerun the Figma plugin and adjust the grid _to your needs_&trade;.
+Aside:
+For this website, the default spacing palette with some added custom pairs worked alright. I felt it was a decent balance between constraint and freedom.
 
 ### Remake your design the Utopia way
 
-aka bringing it all together.
+aka Bring it all together.
 
-Since I left some room for experimentation during the previous steps (aka the instructions were vague), You might have already redesigned your wireframes using the Utopia system. If so, congratulations, You're done with the hard part and can go to the next step to start implementing!
+Since I left some "room for experimentation" during the previous steps (aka I gave vague instructions), You might have already redesigned your wireframes using the Utopia system. If so, congratulations, You're done with the hard part and can go to the next step to start implementing!
 
 Otherwise:
 
 -   Generate a system using the Utopia plugin. By now You should have some ideas for all the parameters.
 
 -   Create a fresh set of frames for `min` and `max` to house your upcoming redesign.
-
-If You're not using a grid, do exactly what You did when You created your frames in the beginning. You can move on to the next step -- run along, summer child!
-
-If You _are_ using a grid, the issue is now how to fit the grid into the frame -- do you stretch one or the other, or leave it kind of overlapping or what? There is a simple solution proposed in the grid guide mentioned earlier: make your `min` frame the size of the generated `min` grid. It won't be exactly your official `min` width, but it should be close to it. Nobody will ever know. buaha!
 
 -   Design your project using the generated system. You know how to handle text. You know 3 ways of handling spacing. You are at peace with the grid. Go out there, make some mistakes and enjoy that sweet consistency!
 

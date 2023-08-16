@@ -68,13 +68,13 @@ Your first goal is to **figure out the size of the the majority of text in your 
 
 _Workable_ -- not perfect. Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in design. You'll be remaking (or modifying) this wireframe using the Utopia system as You follow this guide. You can change your `font size` at any point.
 
-### Apply a style to your body text
+### Give your body text a Utopia style
 
-You could create your system using just the Utopia website, but the Figma Utopia plugin makes things easier: it generates styles and components representing all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids. You'll see.
+Instead of creating all the styles of your system by hand, I highly recommend You let the 2 Utopia Figma plugins do this for You. They generate all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids. You'll see. And they help with updating these as You iterate, as well.
 
-I'll assume that You're using the plugin from now on. It'll keep the instructions a little simpler. You can still do everything using just the Utopia website tho -- it'll just be more copy and pasting.
+I'll assume that You're using the plugin from now on. It'll keep the instructions a little simpler. You can still do everything using just the Utopia website -- it'll just be more copy and pasting.
 
--   You might read the [community page for the plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated article [Getting started with Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) (there are actually 2). If You know your Utopia basics, You might be able to just jump in and follow these instructions.
+-   You might read the [community page for the generator plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated article [Getting started with Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) which covers both. If You know your Utopia basics, You might be able to just jump in and follow these instructions.
 
 -   Run the plugin in Figma. It's called 'Utopia / Fluid type + space calculator'.
 

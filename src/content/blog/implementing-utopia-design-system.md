@@ -404,14 +404,16 @@ NEXT STEPS:
 
 -   [x] revise '# wtf'
 -   [x] decide on order
--   [] go through the whole in order
+-   [x] go through the whole in order
 -   [x] polish steps
--   [] revise wtf START HERE
--   [] revise intro
--   add content: perspective of _I am redesigning my existing project._ they would maybe wanna recreate their design and not start from scratch? like, maybe an additional 'if you're redesigning your project you might already have a good idea about your body text size` or two might be enough.
+-   [x] revise wtf
+-   [x] revise intro
 -   [x] polish outro
+-   [] add content: perspective of _I am redesigning my existing project._ they would maybe wanna recreate their design and not start from scratch? like, maybe an additional 'if you're redesigning your project you might already have a good idea about your body text size` or two might be enough.
+-   [] go in order -- polish
+-   [] go in order -- remove comments
+-   [] go in order -- consistently format asides and other sub-sections
 -   put on google docs
-
 -   share with thays
 -   share with yemi
 

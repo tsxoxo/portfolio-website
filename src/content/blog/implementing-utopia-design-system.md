@@ -51,16 +51,28 @@ For simplicity, the guide takes several shortcuts:
 -   It only talks about `min`. You might design `max` after that, in parallel, or before that.
 -   It starts on a fresh frame in Figma. If You have an existing design, You might be able to get away with Utopia-fying it by applying new styles, etc.-- I trust that if You're at that level of consideration, You're able to adjust the instructions to your needs.
 
-Also, iteration is implied everywhere.
+Also, iteration is implied everywhere (doing it again and again).
 
 Aside:
 If You're just interested in the topics of **baseline grid** or **implementation** check out these [2 shorter guides](#the-other-guides).
 
-### Get to know the Figma plugin
+### Get to know the Figma plugins
 
-This will be your trusty tool during this process.
+Instead of creating all the styles of your system by hand, I highly recommend You let the 2 Utopia Figma plugins do this for You. They help You generate all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids in Figma. You'll see. They also help with updating these as You iterate iterate itirate.
 
-You'll run it once not worrying too much
+For simplicity, this guide assumes that You're using at least the generator plugin. You can still do everything using just the Utopia website -- it'll just be more copy and pasting 🦾.
+
+-   You might read the [community page for the generator plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated article [Getting started with Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) which covers both. If You know your Utopia basics, You might be able to just jump in and keep following these instructions.
+
+-   Run the 'Utopia / Fluid type + space calculator' plugin in Figma. Don't worry about any of the parameters yet, You'll deal with those as You go along. Click the big button. (It would sometimes take like 20 seconds for me before anything happened. Trust the process. A lot of good work is done in silence.)
+
+-   Look at the generated frames and get an overview. If some of them look a bit blank, try making the grid visible with `shift + g`.
+
+-   Look at the generated styles in the right Figma panel and get an overview (click on the background of the canvas to see them). At the time of writing, they're tucked away in a folder called 'U', which can be hard to spot.
+
+When You rerun the plugin, these styles get updated.
+
+Now You should have an overview of what the generator plugin generates.
 
 ### Decide if You want to use a baseline grid
 
@@ -75,8 +87,6 @@ If, however, _yass, puhleaseee!_ -- I recommend You read [Designing a Utopian la
 Speaking of messiness, You'll also get acquainted with the Utopia Figma plugin earlier than the other folks. Some instructions down the line might be old news for You, sorry.
 
 -   Run the 'Utopia / Fluid type + space calculator'-plugin in Figma. In the UI that pops up, adjust the grid _to your needs_. Don't worry about the other stuff, You'll deal with it later. Press the big button. Wait for a bit.
-
--   Look at the generated frames. If some of it looks blank, try making the grid visible with `shift + g`.
 
 Now You're set up to
 
@@ -96,19 +106,13 @@ _Workable_ -- not perfect. Don't put too much pressure on yourself to 'get it ri
 
 ### Give your body text a Utopia style
 
-Instead of creating all the styles of your system by hand, I highly recommend You let the 2 Utopia Figma plugins do this for You. They generate all the building blocks of the Utopia design system -- the type scales, the spacing palettes and the grids. You'll see. And they help with updating these as You iterate, as well.
-
-I'll assume that You're using the plugin from now on. It'll keep the instructions a little simpler. You can still do everything using just the Utopia website -- it'll just be more copy and pasting.
-
--   You might read the [community page for the generator plugin](https://www.figma.com/community/plugin/951884648789524000/Utopia-%2F-Fluid-type-%2B-space-calculator) or the dedicated article [Getting started with Utopia Figma plugins](https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/) which covers both. If You know your Utopia basics, You might be able to just jump in and follow these instructions.
-
 -   Run the 'Utopia / Fluid type + space calculator' plugin in Figma.
 
--   In the UI that pops up, put in your `widths` and your `font sizes`. Don't worry about the `type scales` yet, You'll focus on them in the next section. Click the big button. (It would sometimes take like 20 seconds for me before anything happened. Trust the process. A lot of good work is done in silence.)
+-   In the UI that pops up, put in your `widths` and your `font sizes`.
 
 -   Look at the generated frames. If some of it looks blank, try making the grid visible with `shift + g`.
 
--   Look at the generated styles in the right Figma panel (click on the background of the canvas to see them). Apply the appropiate style to the body text in your wireframe: `U/Type/Min/Prose/Step 0`.
+Apply the appropiate style to the body text in your wireframe: `U/Type/Min/Prose/Step 0`.
 
 Now, whenever you rerun the plugin with a different `font size`, your body text will update automatically!
 

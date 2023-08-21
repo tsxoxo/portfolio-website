@@ -1,6 +1,6 @@
 ---
 title: Thinking through animations -- part 1
-subheading: Using Xstate and Vue.
+subheading: Modelling interactions with Xstate and Vue for fun and profit.
 pubDate: 21.8.2023
 tags: [devlog, design, frontend]
 isDraft: false

@@ -140,6 +140,10 @@
 		@apply mt-space-fl-l;
 	}
 
+	.blog-post hr {
+		@apply mt-space-fl-l;
+	}
+
 	.blog-post a:not(cite *) {
 		@apply inline;
 	}

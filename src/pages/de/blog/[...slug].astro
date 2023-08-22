@@ -3,7 +3,7 @@ import { changeLanguage } from "i18next";
 import Layout from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
-changeLanguage("en");
+changeLanguage("de");
 
 export async function getStaticPaths() {
     const blogEntries = await getCollection("blog");

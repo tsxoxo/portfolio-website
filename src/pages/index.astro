@@ -1,19 +1,18 @@
 ---
-import { changeLanguage } from 'i18next'
-import Hero from '@components/Hero.astro'
-import Projects from '@components/Projects.astro'
-import Layout from '@layouts/Layout.astro'
-import Blog from '@components/Blog.astro'
+import { changeLanguage } from "i18next";
+import Hero from "@components/Hero.astro";
+import Projects from "@components/Projects.astro";
+import Layout from "@layouts/Layout.astro";
+import Blog from "@components/Blog.astro";
 
-changeLanguage('en')
+changeLanguage("en");
 
-const title = 'tsxoxo web design'
-const description =
-	'Hi, I’m Tom! I make the web a little friendlier -- building sites, designing UIs and writing guides. xoxo'
+const title = "tsxoxo web design";
+const description = "Hi, I\u2019m Tom! I make the web a little friendlier -- building sites, designing UIs and writing guides. xoxo";
 const socialImage = {
-	url: new URL('/assets/me-bw.jpeg', Astro.url),
-	alt: 'Tom, smiling.'
-}
+    url: new URL("/assets/me-bw.jpeg", Astro.url),
+    alt: "Tom, smiling."
+};
 ---
 
 <Layout {title} {description} {socialImage}>

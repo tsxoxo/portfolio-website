@@ -17,7 +17,7 @@ Just so You know, I'll be throwing around jargon relating to the stack. Not beca
 
 If You want any of this to go into more detail, let me know. I can write a mean guide! (meaning, a very friendly one)
 
-## So what _are you doing_?
+## So what _are_ you doing?
 
 I'm building a todo app. I wanna focus on interactions. I wanna design and build some animations.
 

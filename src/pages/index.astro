@@ -10,9 +10,13 @@ changeLanguage('en')
 const title = 'tsxoxo web design'
 const description =
 	'Hi, I’m Tom! I make the web a little friendlier -- building sites, designing UIs and writing guides. xoxo'
+const socialImage = {
+	url: new URL(`/assets/me-bw.jpeg`, Astro.url),
+	alt: 'Tom, smiling.'
+}
 ---
 
-<Layout {title} {description}>
+<Layout {title} {description} {socialImage}>
 	<main class="site-padding-x grid gap-space-fl-3xl">
 		<Hero />
 		<Blog />

@@ -33,7 +33,7 @@ const blog = defineCollection({
 			url: z.string(),
 			alt: z.string()
 		}).optional(),
-		description: z.string().optional(),
+		description: z.string().trim().min(1).or(z.number()).transform(val => String(val)).optional(),
 		author: z.string().default('Tom'),
 		tags: z.array(z.coerce.string()),
 		footnote: z.string().optional(),

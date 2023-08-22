@@ -12,7 +12,7 @@ export interface LayoutProps {
 	description: string
 	ogType: 'website' | 'article'
 	socialImage: {
-		url: string
+		url: URL
 		alt: string
 	}
 	twitterCardImgPath: string
@@ -25,6 +25,7 @@ const {
 	socialImage,
 	twitterCardImgPath
 } = Astro.props as LayoutProps
+console.log(socialImage.url)
 ---
 
 <!DOCTYPE html>
@@ -37,7 +38,7 @@ const {
 				basic: {
 					title: title,
 					type: ogType,
-					image: socialImage.url
+					image: socialImage.url.href
 				},
 				image: {
 					alt: socialImage.alt

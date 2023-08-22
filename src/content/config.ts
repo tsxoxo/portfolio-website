@@ -29,8 +29,8 @@ const blog = defineCollection({
 		isDraft: z.boolean().default(false),
 		title: z.string().trim().min(1).or(z.number()).transform(val => String(val)),
 		subheading: z.string().trim().min(1).or(z.number()).transform(val => String(val)),
-		image: z.object({
-			url: z.string(),
+		socialImage: z.object({
+			filename: z.string(),
 			alt: z.string()
 		}).optional(),
 		description: z.string().trim().min(1).or(z.number()).transform(val => String(val)).optional(),

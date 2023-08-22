@@ -10,12 +10,19 @@ import { Trans, HeadHrefLangs } from 'astro-i18next/components'
 export interface LayoutProps {
 	title: string
 	description: string
+	ogType: 'website' | 'article'
+	socialImage: {
+		url: string
+		alt: string
+	}
 	twitterCardImgPath: string
 }
 
 const {
 	title = t('site.defaultTitle'),
 	description,
+	ogType = 'website',
+	socialImage,
 	twitterCardImgPath
 } = Astro.props as LayoutProps
 ---
@@ -23,7 +30,24 @@ const {
 <!DOCTYPE html>
 <html lang={i18next.language} class="scroll-smooth" data-testid="html">
 	<head>
-		<SEO {title} {description} />
+		<SEO
+			{title}
+			{description}
+			openGraph={{
+				basic: {
+					title: title,
+					type: ogType,
+					image: socialImage.url
+				},
+				image: {
+					alt: socialImage.alt
+				}
+			}}
+			twitter={{
+				card: 'summary_large_image',
+				site: '@yes_tsxoxo'
+			}}
+		/>
 		<HeadHrefLangs />
 
 		<meta charset="UTF-8" />

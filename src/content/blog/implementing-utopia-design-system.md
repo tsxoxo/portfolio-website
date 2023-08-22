@@ -14,7 +14,7 @@ Welcome designers!, welcome coders!, welcome the folks from the creamy center of
 
 If You're new to Utopia or want a refresher, start at [Ways into Utopia](#ways-into-utopia).
 
-If You're like _Is a step-by-step guide even appropiate for a messy, iterative and context-specific process such as designing?_, then congrats -- You got me. I mention this tension in [Why such a guide](#why-such-a-guide).
+If You're like _Is a step-by-step guide even appropriate for a messy, iterative and context-specific process such as designing?_, then congrats -- You got me. I mention this tension in [Why such a guide](#why-such-a-guide).
 
 If You're ready to go, just keep scrolling 😎.
 
@@ -31,16 +31,17 @@ If You're ready to go, just keep scrolling 😎.
 
 Here's what this guide assumes about You:
 
--   You know how Utopia works.
+-   You know how Utopia works.\
+    _Learning resource_: [Ways into Utopia](#ways-into-utopia).
 
--   You know the basics of Figma, including auto-layout.
-    Learning resource: [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
+-   You know the basics of Figma, including auto-layout.\
+    _Learning resource_: The [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
 
--   You know how to use a code editor and the command line to manage your project.
-    Learning resource: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) on Tatiana Mac's blog gives a beginner-friendly intro to these things.
+-   You know how to use a code editor and the command line to manage your project.\
+    _Learning resource_: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) by Tatiana Mac.
 
--   You have a project with Tailwind CSS set up -- a fresh one to start with or an existing one you want to redesign with Utopia.
-    Learning resource: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro)
+-   You have a project with Tailwind CSS set up -- a fresh one to start with or an existing one you want to redesign with Utopia.\
+    _Learning resource_: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro).
 
 -   ❤️‍🔥❤️‍🔥❤️‍🔥
 
@@ -104,7 +105,7 @@ Don't put too much pressure on yourself to 'get it right' at this point, whateve
 
 -   Run the 'Utopia / Fluid type + space calculator' plugin again, this time plugging in your chosen `width` and `font size`. Or, if You've worked out `max` in parallel, both your `widths` and `font sizes`.
 
--   Apply the appropiate generated style to the body text in your design: `U/Type/Min/Prose/Step 0`.
+-   Apply the appropriate generated style to the body text in your design: `U/Type/Min/Prose/Step 0`.
 
 Now, whenever you rerun the plugin with a different `font size`, your body text will update automatically!
 
@@ -112,7 +113,7 @@ Now, whenever you rerun the plugin with a different `font size`, your body text 
 
 This was messy for me. Here's a rough series of steps that might help You figure this one out:
 
--   If You haven't already, add a different type of text in your design -- something other than the body text. Maybe a heading or some smaller text like an image caption. The point is to have texts of different sizes to see how a type scale will fit into your design. Add what's appropiate.
+-   If You haven't already, add a different type of text in your design -- something other than the body text. Maybe a heading or some smaller text like an image caption. The point is to have texts of different sizes to see how a type scale will fit into your design. Add what's appropriate.
 
 -   Apply Utopia styles to all pieces of text. You may not know what styles to pick at this point. That's ok. Take some educated guesses and read on.
 

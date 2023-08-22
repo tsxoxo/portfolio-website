@@ -14,7 +14,7 @@ const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
 
-<Layout>
+<Layout title={entry.data.title}>
 	<main class="blog-post site-padding-x pt-space-fl-xl-m">
 		<article>
 			<hgroup>

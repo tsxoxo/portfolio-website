@@ -6,9 +6,13 @@ import Layout from '@layouts/Layout.astro'
 import Blog from '@components/Blog.astro'
 
 changeLanguage('en')
+
+const title = 'tsxoxo web design'
+const description =
+	"Hi, I'm Tom! I make the web a little friendlier -- building sites, designing UIs and writing guides. xoxo"
 ---
 
-<Layout>
+<Layout {title} {description}>
 	<main class="site-padding-x grid gap-space-fl-3xl">
 		<Hero />
 		<Blog />

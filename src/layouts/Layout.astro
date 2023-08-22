@@ -9,18 +9,21 @@ import { Trans, HeadHrefLangs } from 'astro-i18next/components'
 
 export interface LayoutProps {
 	title: string
+	description: string
+	twitterCardImgPath: string
 }
 
-const { title = t('site.defaultTitle') } = Astro.props as LayoutProps
+const {
+	title = t('site.defaultTitle'),
+	description,
+	twitterCardImgPath
+} = Astro.props as LayoutProps
 ---
 
 <!DOCTYPE html>
 <html lang={i18next.language} class="scroll-smooth" data-testid="html">
 	<head>
-		<SEO
-			{title}
-			description="A heavily optimized description full of well-researched keywords."
-		/>
+		<SEO {title} {description} />
 		<HeadHrefLangs />
 
 		<meta charset="UTF-8" />

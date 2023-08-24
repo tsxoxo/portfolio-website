@@ -8,9 +8,11 @@ tags: [design, design system, tailwind, utopia, figma]
 isDraft: true
 ---
 
-This is a guide to help You use the Utopia design system/approach in your project. You're going to learn a way or two of how to work with it in Figma and a simple but flexible method for implementing it in Tailwind CSS.
+Welcome designers,\
+welcome coders,\
+welcome the folks from the creamy center of that Venn diagram!
 
-Welcome designers!, welcome coders!, welcome the folks from the creamy center of that Venn diagram!
+This is a guide to help You use the Utopia design system in your project. You're going to learn a way or two of how to work with it in Figma and a simple but flexible method for implementing it in Tailwind CSS.
 
 **Choose your adventure**
 
@@ -18,7 +20,7 @@ If You're new to Utopia or want a refresher, start at [Ways into Utopia](#ways-i
 
 If You're like _Is a step-by-step guide even appropriate for a messy, iterative and context-specific process such as designing?_, then congrats -- You got me. I mention this tension in [Why such a guide](#why-such-a-guide).
 
-If You're ready to go, just keep scrolling 😎.
+If You're ready to go, just keep scrolling. 😎
 
 ## Table of Contents
 
@@ -160,17 +162,24 @@ Every day, I redesign. Or, as they say:
 
 -   Pick a method below -- A, B or C -- and make all the spaces, nooks and crannies in your design Utopian (for real: I'm talking about your paddings, gaps, margins, etc.). Whichever You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox (and maybe You can even skip margins altogether).
 
-A. Just do it by hand
+#### A. Just do it by hand
 
-You might be asking yourself _"do I really need to remember all the spacing steps I just generated and type in a value by hand at every single decision?"_.
+aka pick your brain for one of the spacing steps You just generated and type in the value by hand at every single decision.
+
+You might be asking yourself _"really?"_.
 
 Well, this is how me and my two brain cells did it. It wasn't too bad. A lot of peeking at the component board, but that's a small price to pay to be _fluid_, man 🐬.
 
-B. Use variables
+<video controls preload='metadata'>
+    <source src="/assets/blog/pictures/using-utopia/spacing-by-hand.webm" type="video/webm" ></source>
+    	There's a video here demonstrating the procedure. Your browser doesn't support embedded videos, but You can <a href="/assets/blog/pictures/using-utopia/spacing-by-hand.webm">download it as a WEBM file</a>.
+</video>
+
+#### B. Use variables
 
 You can set up a spacing palette with variables like this:
 
-![A screenshot of how You might set up your variables](/assets/blog/pictures/figma-variables-demo.png)
+![A screenshot of how You might set up your variables](/assets/blog/pictures/using-utopia/figma-variables-demo.png)
 
 Aside:
 Are modes potentially useful here? There must be a good lifehack in here, somewhere.
@@ -187,7 +196,7 @@ The downside is I don't see how to make these variables update when You regenera
 
 ...follow me into this dark alley, friend...
 
-C. Use the spacing components from the component board
+#### C. Use the spacing components from the component board
 
 Aside:
 **If You want to work on a custom spacing palette**, You might do it this way. The spacing in your design will update each time you rerun the plugin with different parameters.

@@ -99,11 +99,11 @@ Your first goal is to **figure out the size of the the majority of text in your 
 
 -   In Figma, create a frame with your chosen width. To make a frame the approximate size of a screen, You might choose a device from Figma's list (press `f`) with a width that's close, then scale it proportionally to the exact number (e.g. by holding `shift` while scaling).
 
--   Design stuff until You get a sense for a workable `font size`.
+-   Design stuff until You get a sense for a workable `font size`. Don't worry, You can change your `font size` at any point.
 
 Now You should have a piece of body text in your design sized in a way where You're like _"I can work with this"_.
 
-Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in this kind of design. You'll be remaking or at least modifying stuff using the Utopia system as You go along. You can change your `font size` at any point.
+Don't put too much pressure on yourself to 'get it right' at this point, whatever that means in this kind of design. You'll be remaking or at least modifying stuff using the Utopia system as You go along.
 
 ### Give your body text a Utopia style
 
@@ -164,7 +164,7 @@ Every day, I redesign. Or, as they say:
 
 #### A. Just do it by hand ✍️
 
-aka pick your brain for one of the spacing steps You just generated and type in the value by hand at every single decision.
+This is the _no shortcuts approach_. Just make sure every spacing in your design corresponds to a step in your system: type in the right numbers, drag your stuff to the right position and pay attention at every step.
 
 You might be asking yourself _"really?"_.
 
@@ -321,7 +321,7 @@ To me, it scratched that consistency itch that only a design system can scratch.
 
 I recommend one of these resources to get a hang of the general concept:
 
--   🤏 Play with an [interactive demo](https://utopia.fyi/) to get a sense of the result.
+-   🤏 Play with an [interactive demo](https://utopia.fyi/) or resize this website to get a sense of the result.
 -   👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
 -   📜, 👁 Read an [intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
 -   📜 Read a [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.

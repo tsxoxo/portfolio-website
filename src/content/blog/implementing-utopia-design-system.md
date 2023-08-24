@@ -162,7 +162,7 @@ Every day, I redesign. Or, as they say:
 
 -   Pick a method below -- A, B or C -- and make all the spaces, nooks and crannies in your design Utopian (for real: I'm talking about your paddings, gaps, margins, etc.). Whichever You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox (and maybe You can even skip margins altogether).
 
-#### A. Just do it by hand
+#### A. Just do it by hand ✍️
 
 aka pick your brain for one of the spacing steps You just generated and type in the value by hand at every single decision.
 
@@ -175,7 +175,7 @@ Well, this is how me and my two brain cells did it. It wasn't too bad. A lot of 
     	There's a video here demonstrating the procedure. Your browser doesn't support embedded videos, but You can <a href="/assets/blog/pictures/using-utopia/spacing-by-hand.webm">download it as a WEBM file</a>.
 </video>
 
-#### B. Use variables
+#### B. Use variables 🌈
 
 You can set up a spacing palette with variables like this:
 
@@ -196,7 +196,7 @@ The downside is I don't see how to make these variables update when You regenera
 
 ...follow me into this dark alley, friend...
 
-#### C. Use the spacing components from the component board
+#### C. Use the spacing components from the component board 🌚
 
 Aside:
 **If You want to work on a custom spacing palette**, You might do it this way. The spacing in your design will update each time you rerun the plugin with different parameters.

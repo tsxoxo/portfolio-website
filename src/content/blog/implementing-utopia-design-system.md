@@ -35,6 +35,8 @@ If You're ready to go, just keep scrolling. 😎
 
 Here's what this guide assumes about You:
 
+-   Some design knowledge. It’s hard to pin down, exactly, what that means. I can tell You that at one point I’m literally going to tell You to ‘go design stuff’. So be prepared for that.
+
 -   You know how Utopia works.\
     _Learning resource_: [Ways into Utopia](#ways-into-utopia).
 

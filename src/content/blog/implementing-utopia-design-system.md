@@ -164,7 +164,7 @@ Every day, I redesign. Or, as they say:
 
 ### Introduce Utopian spacing
 
--   Pick a method below -- A, B or C -- and make all the spaces in your design Utopian. I'm talking nooks, crannies, orifices, everything. And also paddings, gaps, margins, etc. Whichever method You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox (and maybe You can even skip margins altogether).
+-   Pick a method below -- A, B or C -- and make all the spaces in your design Utopian. I'm talkinga nooks, crannies, orifices, everything. And also paddings, gaps, margins, etc. Whichever method You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox (and maybe You can even skip margins altogether).
 
 #### A. Just do it by hand ✍️
 
@@ -175,15 +175,18 @@ You might be asking yourself _"really?"_.
 Well, this is how me and my two brain cells did it. It wasn't too bad. A lot of peeking at the component board, but that's a small price to pay to be _fluid_, man 🐬.
 
 <video controls preload='metadata'>
-    <source src="/assets/blog/pictures/using-utopia/spacing-by-hand.webm" type="video/webm" ></source>
-    	There's a video here demonstrating the procedure. Your browser doesn't support embedded videos, but You can <a href="/assets/blog/pictures/using-utopia/spacing-by-hand.webm">download it as a WEBM file</a>.
+    <source src="/assets/blog/pictures/using-utopia/spacing-method-a.webm" type="video/webm" ></source>
+    	There's a video here demonstrating the procedure. Your browser doesn't support embedded videos, but You can <a href="/assets/blog/pictures/using-utopia/spacing-method-a.webm">download it as a WEBM file</a>.
 </video>
 
 #### B. Use variables 🌈
 
 You can set up a spacing palette with variables like this:
 
-![A screenshot of how You might set up your variables](/assets/blog/pictures/using-utopia/figma-variables-demo.png)
+<video controls preload='metadata'>
+    <source src="/assets/blog/pictures/using-utopia/spacing-method-b.webm" type="video/webm" ></source>
+    	There's a video here demonstrating the procedure. Your browser doesn't support embedded videos, but You can <a href="/assets/blog/pictures/using-utopia/spacing-method-b.webm">download it as a WEBM file</a>.
+</video>
 
 Aside:
 Are modes potentially useful here? There must be a good lifehack in here, somewhere.
@@ -215,7 +218,10 @@ Did I mention the squares are cursed with a terrible curse? No?
 
 But they come with a frozen yoghurt! I call it _"froyo"_!
 
----
+<video controls preload='metadata'>
+    <source src="/assets/blog/pictures/using-utopia/spacing-method-c.webm" type="video/webm" ></source>
+    	There's a video here demonstrating the procedure. Your browser doesn't support embedded videos, but You can <a href="/assets/blog/pictures/using-utopia/spacing-method-c.webm">download it as a WEBM file</a>.
+</video>
 
 Aside:
 For this website, the default spacing palette with some added custom pairs worked alright. I felt it was a decent balance between constraint and freedom.

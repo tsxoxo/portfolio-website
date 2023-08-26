@@ -8,11 +8,13 @@ tags: [design, design system, tailwind, utopia, figma]
 isDraft: true
 ---
 
-Welcome designers,\
-welcome coders,\
-welcome folks from the creamy center of that Venn diagram!
+This is a guide to help You use the [Utopia design system](https://utopia.fyi/) in your project.
 
-This is a guide to help You use the Utopia design system in your project. You're going to learn a way or two of how to work with it in Figma and a simple but flexible method for implementing it in Tailwind CSS.
+You're going to learn a few ways to work with it in Figma and a simple but flexible method for implementing it in Tailwind CSS.
+
+Welcome designers!\
+Welcome coders!\
+Welcome folks from the creamy center of that Venn diagram!
 
 **Choose your adventure**
 

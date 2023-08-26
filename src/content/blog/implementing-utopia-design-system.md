@@ -37,19 +37,19 @@ If You're ready to go, just keep scrolling. 😎
 
 Here's what this guide assumes about You:
 
--   Some UI design knowledge. It’s hard to pin down, exactly, what that means. I can tell You that at one point I’m literally going to tell You to ‘go design stuff’. So be prepared for that.
+-   Some UI design knowledge. It’s hard to pin down what that means, exactly. At one point in this guide I’m literally going to tell You to ‘go design stuff’. So just be prepared for that.
 
 -   You know how Utopia works.\
-    _Learning resource_: [Ways into Utopia](#ways-into-utopia).
+    **Learning resource**: [Ways into Utopia](#ways-into-utopia).
 
 -   You know the basics of Figma, including auto-layout, components and styles.\
-    _Learning resource_: The [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
+    **Learning resource**: [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
 
 -   You know how to use a code editor and the command line to manage your project.\
-    _Learning resource_: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) by Tatiana Mac.
+    **Learning resource**: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) by Tatiana Mac.
 
 -   You have a project with Tailwind CSS set up -- a fresh one to start with or an existing one you want to redesign with Utopia.\
-    _Learning resource_: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro).
+    **Learning resource**: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro).
 
 -   ❤️‍🔥❤️‍🔥❤️‍🔥
 
@@ -164,7 +164,7 @@ Every day, I redesign. Or, as they say:
 
 ### Introduce Utopian spacing
 
--   Pick a method below -- A, B or C -- and make all the spaces, nooks and crannies in your design Utopian (for real: I'm talking about your paddings, gaps, margins, etc.). Whichever You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox (and maybe You can even skip margins altogether).
+-   Pick a method below -- A, B or C -- and make all the spaces in your design Utopian. I'm talking nooks, crannies, orifices, everything. And also paddings, gaps, margins, etc. Whichever method You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox (and maybe You can even skip margins altogether).
 
 #### A. Just do it by hand ✍️
 

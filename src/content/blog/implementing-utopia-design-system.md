@@ -384,11 +384,11 @@ I yearned for a practical guide like this when I was getting into Utopia.
 
 It took some flailing and delving through quite a few resources to figure out my way around it. Now that I've hobbled through my first round, I want to pass on something of that experience.
 
-This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give this sort of basic how-to instructions. I looked them up, they're experienced designers. I can imagine once you've seen the kinds of 'design processes' they've seen, you accept that some things can't just be simplified into an A-Z guideline. Multiple stakeholders, rounds of iteration, the style of the project -- there are way too many moving parts for anybody to encapsulate into a step-by-step method like that. Utopia seems more like a set of tools that you can use whenever you run into the particular problem of responsiveness, maybe even in UIs outside of browsers.
+This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give this sort of basic how-to instructions. I looked them up, they're experienced designers. I can imagine once you've seen the kinds of design processes they've seen, you accept that some things can't just be simplified into an A-Z guideline. Multiple stakeholders, rounds of iteration, the style of the project -- there are way too many moving parts for anybody to encapsulate into a step-by-step method like that. Utopia seems more like a set of tools that you can use whenever you run into the particular problem of responsiveness, maybe even in UIs outside of browsers.
 
 Let's keep design messy 🫀
 
-And yet... here's also a rough roadmap. Maybe not to show You _the way_, but just to show that there is one here!
+And yet... here's also a rough roadmap. Maybe not to show You _the way_, but just to show that there is a pretty easy one here!
 
 On that note -- this section got so big, I'm making it into its own article about **the problem of onboarding**. I would love to talk to people and get some input. So if You ever got frustrated about documentation, or designed an onboarding process, or written documentation where You were worrying about making it welcoming to beginners, [give me a shout](#socials)!
 

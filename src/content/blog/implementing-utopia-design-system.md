@@ -10,7 +10,7 @@ isDraft: true
 
 This is a guide to help You use the [Utopia design system](https://utopia.fyi/) in your project.
 
-You're going to learn a few ways to work with it in Figma and a simple but flexible method for implementing it in Tailwind CSS.
+You're going to learn how to work with it in Figma and implement it with Tailwind CSS.
 
 Welcome designers!\
 Welcome coders!\
@@ -20,7 +20,7 @@ Welcome folks from the creamy center of that Venn diagram!
 
 If You're new to Utopia or want a refresher, start at [Ways into Utopia](#ways-into-utopia).
 
-If You're like _Is a step-by-step guide even appropriate for a messy, iterative and context-specific process such as designing?_, then congrats -- You got me. I mention this tension in [Why such a guide](#why-such-a-guide).
+If You're like _How does a step-by-step guide make sense for a messy, iterative and context-specific process such as designing?_, then congrats -- You got me. I mention this tension in [Why such a guide](#why-this-guide).
 
 If You're ready to go, just keep scrolling. 😎
 
@@ -380,11 +380,11 @@ The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modu
 
 ## Why this guide
 
-I yearned for a practical guide like this when I was getting into Utopia.
+I yearned for a practical guide like this when I was using Utopia for the first time.
 
-It took some flailing and delving through quite a few resources to figure out my way around it. Now that I've hobbled through my first round, I want to pass on something of that experience.
+It took time I got until I got a workflow together. There was poring over quite a few resources. There was experimentation. There was some wild flailing. I want to pass on something of that experience.
 
-This was my moment of doubt writing this article: I kind of fear that the creators intentionally didn't give this sort of basic how-to instructions. I looked them up, they're experienced designers. I can imagine once you've seen the kinds of design processes they've seen, you accept that some things can't just be simplified into an A-Z guideline. Multiple stakeholders, rounds of iteration, the style of the project -- there are way too many moving parts for anybody to encapsulate into a step-by-step method like that. Utopia seems more like a set of tools that you can use whenever you run into the particular problem of responsiveness, maybe even in UIs outside of browsers.
+But I had a moment of doubt writing this guide: I worry that the creators intentionally didn't give specific instructions on how to work with their system. I looked them up, they're experienced designers. I can imagine that once you've seen the kinds of design processes they've seen, you accept that some things can't just be simplified into an A-Z guideline. Multiple stakeholders, rounds of iteration, the style of the project -- there are way too many moving parts to just encapsulate into a step-by-step method like that. Instead, Utopia seems more like a set of tools that you can use whenever you run into the particular problem of responsiveness, maybe even in UIs outside of browsers.
 
 Let's keep design messy 🫀
 

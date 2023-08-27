@@ -46,16 +46,16 @@ Here's what this guide assumes about You:
     **Learning resource**: [Figma's get started area](https://help.figma.com/hc/en-us/categories/360002051613-Get-started).
 
 -   You know how to use a code editor and the command line to manage your project.\
-    **Learning resource**: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) by Tatiana Mac.
+    **Learning resource**: The [Beginner's Guide to Eleventy \[Part II\]](https://www.tatianamac.com/posts/beginner-eleventy-tutorial-partii) by [Tatiana Mac](https://twitter.com/TatianaTMac).
 
 -   You have a project with Tailwind CSS set up -- a fresh one to start with or an existing one you want to redesign with Utopia.\
-    **Learning resource**: [Install Tailwind CSS with Astro](https://tailwindcss.com/docs/guides/astro).
+    **Learning resource**: [Get started with Tailwind CSS](https://tailwindcss.com/docs/installation).
 
 -   ❤️‍🔥❤️‍🔥❤️‍🔥
 
 ## Guide
 
-For simplicity, the guide takes several shortcuts:
+For simplicity, this guide takes some shortcuts:
 
 -   It only talks about `min`. You might design `max` after that, in parallel, or before that.
 -   It starts on a fresh frame in Figma. If You have an existing design, You might be able to get away with Utopia-fying it by applying new styles, etc.-- I trust that if You're at that level of consideration, You're able to adjust the instructions to your needs.
@@ -138,9 +138,9 @@ The plugin also generates a type scale in a bolder font weight. I took this as a
 
 #### What helped me
 
-I felt this part of the process was especially iterative (messy) because there are so many moving parts. It's a whole scale of things living next to other things.-- Too much for my brain!
+I felt this part of the process was especially iterative (messy) because there are so many moving parts: a whole scale of things living next to other things.-- Too much for my brain!
 
-So I tried to simplify the process:
+So I made it easy for myself.
 
 While designing my landing page, I got obsessed with my big chunky hero-heading -- because who doesn't. I wanted it to stay on a single line. So I made it as big as possible and paid attention to the font size.
 
@@ -164,7 +164,7 @@ Every day, I redesign. Or, as they say:
 
 ### Introduce Utopian spacing
 
--   Pick a method below -- A, B or C -- and make all the spaces in your design Utopian. I'm talkinga nooks, crannies, orifices, everything. And also paddings, gaps, margins, etc. Whichever method You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox (and maybe You can even skip margins altogether).
+-   Pick a method below -- A, B or C -- and make all the spaces in your design Utopian. I'm talkinga nooks, crannies, orifices, everything. And also paddings, gaps, margins, etc. Whichever method You choose, consider using auto-layout whenever You can: it can help keep things simple and is straightforward to implement with grid and flexbox.
 
 #### A. Just do it by hand ✍️
 
@@ -384,11 +384,13 @@ I yearned for a practical guide like this when I was using Utopia for the first 
 
 It took time I got until I got a workflow together. There was poring over quite a few resources. There was experimentation. There was some wild flailing. I want to pass on something of that experience.
 
-But I had a moment of doubt writing this guide: I worry that the creators intentionally didn't give specific instructions on how to work with their system. I looked them up, they're experienced designers. I can imagine that once you've seen the kinds of design processes they've seen, you accept that some things can't just be simplified into an A-Z guideline. Multiple stakeholders, rounds of iteration, the style of the project -- there are way too many moving parts to just encapsulate into a step-by-step method like that. Instead, Utopia seems more like a set of tools that you can use whenever you run into the particular problem of responsiveness, maybe even in UIs outside of browsers.
+But I had a moment of doubt writing this guide: I worry that the creators intentionally didn't give specific instructions on how to work with their system. I looked them up, they're experienced designers. I can imagine that once you've seen the kinds of design processes they've seen, you realize that some things can't be boiled down. Multiple stakeholders, rounds of iteration, the style of the project -- it may be too messy to encapsulate into a method like that. Instead, Utopia seems more like a set of tools that you can use whenever you run into the particular problem of responsiveness, maybe even in UIs outside of browsers.
 
-Let's keep design messy 🫀
+Let's keep design messy 🫀.
 
-And yet... here's also a rough roadmap. Maybe not to show You _the way_, but just to show that there is a pretty easy one here!
+And yet... here's also a rough roadmap. Maybe not to show You _the way_, but just to show that there is a pretty easy one here. Come along, the views are great!
+
+---
 
 On that note -- this section got so big, I'm making it into its own article about **the problem of onboarding**. I would love to talk to people and get some input. So if You ever got frustrated about documentation, or designed an onboarding process, or written documentation where You were worrying about making it welcoming to beginners, [give me a shout](#socials)!
 

@@ -95,7 +95,7 @@ If, however, _yass, puhleaseee!_ -- I recommend You read [Designing a Utopian la
 
 ### Create a frame for `min`
 
-Your first goal is to **figure out the size of the the majority of text in your project.** This is called 'body text' in this guide.
+Your first goal is to **figure out the [`font size`](#dictionary-of-the-utopia-ui).**
 
 -   **If You're not using a grid**, decide a width for your `min` state. To help You with this, see the section "1. Choose @min viewport width" in [Designing a utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/).
 
@@ -103,7 +103,7 @@ Your first goal is to **figure out the size of the the majority of text in your 
 
 -   In Figma, create a frame with your chosen width. To make a frame the approximate size of a screen, You might choose a device from Figma's list (press `f`) with a width that's close, then scale it proportionally to the exact number (e.g. by holding `shift` while scaling).
 
--   Design stuff until You get a sense for a workable `font size`. Don't worry, You can change your `font size` at any point.
+-   Design stuff until You get a sense for a workable `font size`. Don't worry, You can change this at any point.
 
 Now You should have a piece of body text in your design sized in a way where You're like _"I can work with this"_.
 
@@ -373,7 +373,7 @@ The largest state/viewport You feel like visualising in your design. The `font s
 The `min` and `max` states are defined in terms of their widths.
 
 **`font size`**\
-The size of the majority of text in your project (called 'body text' in this guide). Serves as the base step for your `type scale`. Choosing the `font size` is often done early in the design process.
+The size of the majority of text in your project -- the body text size. Serves as the base step for your `type scale`. Choosing the `font size` is often done early in the design process.
 
 **`type scale`**\
 The ratio used to create a [modular type scale](https://utopia.fyi/blog/css-modular-scales), with `font size` being the base step. This can sound exotic, but it's really just a way to let math help You come up with a palette of font sizes. (So You don't have to ask yourself: _"should my h1 be 48px or 49px?"_)

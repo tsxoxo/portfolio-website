@@ -20,7 +20,7 @@ Welcome folks from the creamy center of that Venn diagram!
 
 If You're new to Utopia or want a refresher, start at [Ways into Utopia](#ways-into-utopia).
 
-If You're like _How does a step-by-step guide make sense for a messy, iterative and context-specific process such as designing?_, then congrats -- You got me. I mention this tension in [Why such a guide](#why-this-guide).
+If You're like _How does a step-by-step guide even make sense for a messy, iterative and context-specific process such as designing?_, then congrats -- You got me. I mention this tension in [Why such a guide](#why-this-guide).
 
 If You're ready to go, just keep scrolling. 😎
 
@@ -408,7 +408,7 @@ PS. I'm not affiliated with Utopia, I just used it.
 
 ---
 
-Thank You, my wonderful editors -- Thays Biodere(xxx) and Yemima Fink(xxx). Your feedback was invaluable and made this text clearer, shorter and more to the point. A more pleasant experience for everybody :).
+Thank You, my wonderful editors: Thays Biodere(xxx) and Yemima Fink(xxx). Your feedback was invaluable and made this text clearer, shorter and more to the point -- a more pleasant experience for everybody :).
 
 Thank You, Utopia creators -- [Trys Mudford](https://twitter.com/trysmudford) and [James Gilyead](https://twitter.com/j98) -- for creating this tooling ecosystem that I think makes systematic design a little more accessible! Thank You for writing and producing so much documentation -- I know how time consuming that can be. And thank You for making it all available for free.
 

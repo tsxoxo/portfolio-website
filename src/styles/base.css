@@ -86,6 +86,9 @@
 	.techstack {
 		@apply font-monospace;
 	}
+	.blog-post a {
+		@apply font-bold;
+	}
 	.blog-post blockquote {
 		@apply rounded-lg bg-zinc-200 p-space-fl-l;
 	}

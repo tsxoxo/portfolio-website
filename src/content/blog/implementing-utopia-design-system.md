@@ -327,25 +327,23 @@ Nothing left to do but to take a sip of your favorite beverage and go to town!
 
 ## Ways into Utopia
 
-[Utopia](https://utopia.fyi/) is a tool to help with [responsive design](xxx). On the website, You plug in certain parameters and let it generate CSS that makes your text and spacings adjust to the user's viewport size.
+[Utopia](https://utopia.fyi/) is a tool to help with [responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design). On their website, You plug in certain parameters and it generates CSS that makes your text and spacings adjust to the user's viewport size.
 
 Instead of media queries, it uses a 'fluid' approach to a problem we web designers face every day (every day I live in a society).
 
-To me, it scratched that consistency itch that only a design system can scratch. It took some time in the beginning, but it's pretty satisfying to see this website be all responsive and shit.
-
 ### Where to start
 
-I recommend one of these resources to get a hang of the general concept:
+I recommend these resources to get a hang of the general concept. (You don't have to consume all of them -- these are different approaches to the same information.)
 
--   🤏 Play with an [interactive demo](https://utopia.fyi/) or resize this website to get a sense of the result.
--   👁 Watch an [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
--   📜, 👁 Read an [intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) and look at a diagram illustrating the idea.
--   📜 Read a [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.
--   🤏, 📜, 👁 Play with the official [Figma starter project](https://www.figma.com/community/file/1122903924123950023), read the succinct intro on the 'readme' page, and look at multiple illustrations.
+-   🤏 An [interactive demo](https://utopia.fyi/), which Yndou can play with to get a sense of what Utopia does. (You can also simply resize this website.)
+-   👁, 🦻 An [intro video](https://www.youtube.com/watch?v=DDuGtN-GakA) by the creators (18 minutes).
+-   📜, 👁 An [intro article](https://utopia.fyi/blog/designing-with-fluid-type-scales/) where You can also look at a diagram illustrating the idea.
+-   📜 A [longer intro article](https://www.smashingmagazine.com/2021/04/designing-developing-fluid-type-space-scales/) that also explains the context of the larger problem.
+-   🤏, 📜, 👁 The official [Figma starter project](https://www.figma.com/community/file/1122903924123950023) where You can jump in and play. You'll also find a succinct intro on the 'readme' page and multiple illustrations.
 
 ### In a nutshell
 
-Because it can help me remember when I boil it down to the essence:
+Because tidbits can help me remember stuff, here are some quotes from the Utopia blog bringing out the essence of the approach:
 
 > 1. Define a type scale for a small screen
 > 2. Define a type scale for a large screen
@@ -370,10 +368,10 @@ Because it can help me remember when I boil it down to the essence:
 These are the terms used in the UI of the Utopia website at the time of writing:
 
 **`min`**\
-The smallest state/viewport You feel like visualising in your design. The `font size` will never go smaller as the one for `min`.
+The smallest state/viewport You feel like visualising in your design. The `font size` will never go smaller as @`min`.
 
 **`max`**\
-The largest state/viewport You feel like visualising in your design. The `font size` will never go bigger as the one for `max`.
+The largest state/viewport You feel like visualising in your design. The `font size` will never go bigger as @`max`.
 
 **`width`**\
 The `min` and `max` states are defined in terms of their widths.
@@ -404,22 +402,19 @@ On that note -- this section got so big, I'm making it into its own article abou
 
 Hope you enjoyed, learned something, or killed some time!
 
-I appreciate any feedback! Let me know your utopian workflows. Say hi if You vibe, don't be shy! And especially -- let me know if you got stuck, peeved, inspired or if you want more!
+I appreciate any feedback! Let me know your Utopian workflows. Say hi if You vibe, don't be shy! And especially -- let me know if you got stuck, peeved, inspired or if you want more!
 
-I'm not affiliated with Utopia, I just used it.
-
-/mb twitter link, or buy me a coffee
+PS. I'm not affiliated with Utopia, I just used it.
 
 ---
 
-/might expand this :)
-Thank You, my wonderful editors!
-
-Thank You, Christian Penrod! You helped me realize that actually using Utopia in my Tailwind project would go down without too much of a hassle.
+Thank You, my wonderful editors -- Thays Biodere(xxx) and Yemima Fink(xxx). Your feedback was invaluable and made this text clearer, shorter and more to the point. A more pleasant experience for everybody :).
 
 Thank You, Utopia creators -- [Trys Mudford](https://twitter.com/trysmudford) and [James Gilyead](https://twitter.com/j98) -- for creating this tooling ecosystem that I think makes systematic design a little more accessible! Thank You for writing and producing so much documentation -- I know how time consuming that can be. And thank You for making it all available for free.
 
-Thank You, all the folks that came before who figured out the math to the responsive design problem and cared enough to keep implementing this by hand (until a few of them finally got sick of doing it by hand)!
+Thank You, Christian Penrod(xxx)! You helped me realize that actually using Utopia in my Tailwind project would go down without too much of a hassle.
+
+Thank You, all the people that came before who figured out the math to the responsive design problem and cared enough to keep implementing this by hand (until a few of them finally got sick of it)!
 
 ## Resources
 
@@ -427,11 +422,11 @@ Thank You, all the folks that came before who figured out the math to the respon
 
 -   [Tailwind CSS Responsive Design Without Breakpoints](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/) by Christian Penrod shows another way to implement the Utopia system in Tailwind. The way I do it in this guide builds on his approach. His writing is much less verbose than what You're reading here. Much less verbose.
 
--   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team goes only through part of the process, but that was already immensely helpful to me. Even more important, it acknowledges that the design process is messy and full of questions that only You can answer.
+-   [Designing a Utopian layout grid](https://utopia.fyi/blog/designing-a-utopian-layout-grid/) by James Gilyead from the Utopia team gives a step-by-step method. It only goes through part of the process, but that was already immensely helpful to me. Even more important, it acknowledges that the design process is messy and full of questions that only You can answer. Which is fun.
 
 ### Utopia stuff
 
-For introductory resources about Utopia, see the above section [Ways into Utopia](xxx)
+For a list of introductory resources about Utopia, see the above section [Ways into Utopia](#ways-into-utopia).
 
 #### Utopia-Tailwind integrations
 
@@ -442,12 +437,12 @@ I found two plugins that were made to help with integrating Utopia into Tailwind
 
 ### Fluid design more generally
 
--   See [TailwindCSS: Fluid typography with CSS Clamp](https://davidhellmann.com/blog/development/tailwindcss-fluid-typography-with-css-clamp#home) if You want to skip Utopia and do more of the heavy lifting yourself
+-   See [TailwindCSS: Fluid typography with CSS Clamp](https://davidhellmann.com/blog/development/tailwindcss-fluid-typography-with-css-clamp#home) if You want to skip Utopia and do more of the heavy lifting yourself.
 
--   In [Linearly Scale font-size with CSS clamp() Based on the Viewport](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/) Pedro Rodriguez goes deep into `clamp` and interpolation and brings you along for the ride.
+-   [Linearly Scale font-size with CSS clamp() Based on the Viewport](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/) by Pedro Rodriguez goes deep into `clamp` and interpolation, if You're into that.
 
 ### Limitations
 
--   In [Responsive Type and Zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html) Adrian Roselli warns against using `clamp` because of issues with zooming.
+-   In [Responsive Type and Zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html) Adrian Roselli warns against using `clamp` because of issues with zooming. (Testing it on my site, zooming seems to work in Chrome and Firefox now.)
 
--   In [Fluid Type](https://elisehe.in/2021/03/13/fluid-type) Elise Hein talks about some fundamental questions in a very approachable way. Why do we care about fluid type in the first place? And is clamp really so great?
+-   In [Fluid Type](https://elisehe.in/2021/03/13/fluid-type) Elise Hein talks about some fundamental questions in a very approachable way. Why do we care about fluid type in the first place?

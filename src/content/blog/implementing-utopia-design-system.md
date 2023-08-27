@@ -172,7 +172,7 @@ This is the _no shortcuts approach_. Just make sure every spacing in your design
 
 You might be asking yourself _"really?"_.
 
-Well, this is how me and my two brain cells did it. It wasn't too bad. A lot of peeking at the component board, but that's a small price to pay to be _fluid_, man 🐬.
+Well, this is how me and my two brain cells did it. It wasn't too bad. A lot of peeking at the Utopia board, but that's a small price to pay to be _fluid_, man 🐬.
 
 <video controls preload='metadata'>
     <source src="/assets/blog/pictures/using-utopia/spacing-method-a.webm" type="video/webm" ></source>
@@ -203,7 +203,7 @@ The downside is I don't see how to make these variables update when You regenera
 
 ...follow me into this dark alley, friend...
 
-#### C. Use the spacing components from the component board 🌚
+#### C. Use Utopia's spacing components 🌚
 
 Aside:
 **If You want to work on a custom spacing palette**, You might do it this way. The spacing in your design will update each time you rerun the plugin with different parameters.

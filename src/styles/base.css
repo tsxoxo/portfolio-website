@@ -63,18 +63,34 @@
 	hgroup p {
 		@apply font-extralight;
 	}
+	.blog-post hgroup p {
+		@apply font-normal italic;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-bold;
+	}
 	h1 {
-		@apply text-fl-2xl;
+		@apply text-fl-5xl font-extrabold;
 	}
 	h2 {
-		@apply text-fl-xl;
+		@apply text-fl-4xl;
 	}
 	h3 {
-		@apply text-fl-lg;
+		@apply text-fl-3xl;
 	}
-	h4,
+	h4 {
+		@apply text-fl-2xl;
+	}
 	h5 {
-		@apply text-fl-base font-bold;
+		@apply text-fl-xl;
+	}
+	h6 {
+		@apply text-fl-lg;
 	}
 	a {
 		@apply inline-block;

@@ -2,31 +2,36 @@
 import { changeLanguage } from 'i18next'
 import Layout from '@layouts/Layout.astro'
 import { getCollection } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
+import { formatDateObjToCustom } from 'utils'
+interface Props {
+	post: CollectionEntry<'blog'>
+}
 
 changeLanguage('en')
 
 export async function getStaticPaths() {
-	const blogEntries = await getCollection('blog')
-	return blogEntries.map((entry) => ({
-		params: { slug: entry.slug },
-		props: { entry }
+	const blogPosts = await getCollection('blog')
+	return blogPosts.map((post) => ({
+		params: { slug: post.slug },
+		props: { post }
 	}))
 }
-// 2. When it's time to render, you can get the entry directly from the prop
-const { entry } = Astro.props
-const { Content } = await entry.render()
+// 2. When it's time to render, you can get the post directly from the prop
+const { post } = Astro.props
+const { Content } = await post.render()
 const socialImage = {
 	url: new URL(
-		`/assets/blog/pictures/${entry.data.socialImage.filename}`,
+		`/assets/blog/pictures/${post.data.socialImage.filename}`,
 		Astro.site
 	),
-	alt: entry.data.socialImage.alt
+	alt: post.data.socialImage.alt
 }
 ---
 
 <Layout
-	title={entry.data.title}
-	description={entry.data.description}
+	title={post.data.title}
+	description={post.data.description}
 	{socialImage}
 	ogType="article"
 >
@@ -34,9 +39,14 @@ const socialImage = {
 		<article>
 			<hgroup>
 				<h1>
-					{entry.data.title}
+					{post.data.title}
 				</h1>
-				<p class="text-fl-lg">{entry.data.subheading}</p>
+				<p class="text-fl-lg">{post.data.subheading}</p>
+				<hr />
+				<p class="text-fl-sm font-extralight">
+					{formatDateObjToCustom(post.data.pubDate)}
+				</p>
+				<hr />
 			</hgroup>
 			<Content />
 		</article>

@@ -63,7 +63,7 @@
 	hgroup p {
 		@apply font-extralight;
 	}
-	.blog-post hgroup p {
+	.blog-post hgroup p:first-of-type {
 		@apply font-normal italic;
 	}
 	h1,
@@ -166,8 +166,10 @@
 		@apply mb-space-fl-2xs mt-space-fl-l;
 	}
 
-	.blog-post * + p:not(:is(h1, h2, h3, h4, h5, h6) + p, blockquote + p),
-	.blog-post :is(p, ul, ol) + *:not(p) {
+	.blog-post
+		*
+		+ p:not(:is(h1, h2, h3, h4, h5, h6) + p, blockquote + p, hgroup > p),
+	.blog-post :is(p, ul, ol) + *:not(p, hr) {
 		@apply mt-space-fl-l;
 	}
 

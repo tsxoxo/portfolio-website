@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 :root {
+	--papery-complementary-grey: #dfd8e0ff;
+	--papery-dark-23: #212322ff;
+	--papery-less-dark: #6e7b77ff;
+	--papery-orangey: #f5eaccff;
+	--papery-papery: #f8f7efff;
+	--papery-warm-grey: #f4ede7ff;
+	--papery-whitish: #fcfbf8ff;
+
 	--step--1: clamp(0.75rem, calc(0.65rem + 0.52vw), 1.06rem);
 	--step-0: clamp(1rem, calc(0.83rem + 0.83vw), 1.5rem);
 	--step-1: clamp(1.33rem, calc(1.07rem + 1.31vw), 2.12rem);

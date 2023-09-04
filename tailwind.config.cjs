@@ -49,7 +49,13 @@ module.exports = {
 			light: 'hsla(176, 36%, 99%, 1)',
 			accent: '#02c980',
 			'accent-dark': '#ba0b48',
-			zinc: colors.zinc
+			zinc: colors.zinc,
+			papery: {
+				'max-background': 'var(--papery-warm-grey)',
+				'body-text': 'var(--papery-dark-23)',
+				'lighter-text': 'var(--papery-less-dark)',
+				surface: 'var(--papery-papery)'
+			}
 		},
 		boxShadow: {
 			sm: '0px 1px 1px 0px hsla(0, 0%, 15%, 1)',

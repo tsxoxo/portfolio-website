@@ -11,11 +11,15 @@
 	--papery-warm-grey: #f4ede7ff;
 	--papery-whitish: #fcfbf8ff;
 
-	--step--1: clamp(0.75rem, calc(0.65rem + 0.52vw), 1.06rem);
+	--step--2: clamp(0.79rem, calc(0.73rem + 0.28vw), 0.96rem);
+	--step--1: clamp(0.89rem, calc(0.79rem + 0.52vw), 1.2rem);
 	--step-0: clamp(1rem, calc(0.83rem + 0.83vw), 1.5rem);
-	--step-1: clamp(1.33rem, calc(1.07rem + 1.31vw), 2.12rem);
-	--step-2: clamp(1.78rem, calc(1.37rem + 2.04vw), 3rem);
-	--step-3: clamp(2.37rem, calc(1.74rem + 3.12vw), 4.24rem);
+	--step-1: clamp(1.13rem, calc(0.88rem + 1.25vw), 1.88rem);
+	--step-2: clamp(1.27rem, calc(0.91rem + 1.8vw), 2.34rem);
+	--step-3: clamp(1.42rem, calc(0.92rem + 2.51vw), 2.93rem);
+	--step-4: clamp(1.6rem, calc(0.92rem + 3.43vw), 3.66rem);
+	--step-5: clamp(1.8rem, calc(0.88rem + 4.63vw), 4.58rem);
+	--step-6: clamp(2.03rem, calc(0.8rem + 6.16vw), 5.72rem);
 
 	--space-3xs: clamp(0.25rem, calc(0.21rem + 0.21vw), 0.38rem);
 	--space-2xs: clamp(0.5rem, calc(0.42rem + 0.42vw), 0.75rem);

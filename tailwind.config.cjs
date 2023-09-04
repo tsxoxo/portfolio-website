@@ -9,11 +9,15 @@ module.exports = {
 	theme: {
 		extend: {
 			fontSize: {
+				'fl-xs': 'var(--step--2)',
 				'fl-sm': 'var(--step--1)',
 				'fl-base': 'var(--step-0)',
 				'fl-lg': 'var(--step-1)',
 				'fl-xl': 'var(--step-2)',
-				'fl-2xl': 'var(--step-3)'
+				'fl-2xl': 'var(--step-3)',
+				'fl-3xl': 'var(--step-4)',
+				'fl-4xl': 'var(--step-5)',
+				'fl-5xl': 'var(--step-6)'
 			},
 			fontFamily: {
 				sans: ['Karla', ...defaultTheme.fontFamily.sans]

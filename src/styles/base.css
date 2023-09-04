@@ -51,7 +51,7 @@
 		@apply px-space-fl-s-l;
 	}
 	main {
-		@apply bg-zinc-50 pb-space-fl-3xl pt-space-fl-s;
+		@apply pb-space-fl-3xl pt-space-fl-s;
 	}
 	hgroup {
 		@apply grid gap-space-fl-2xs;
@@ -98,7 +98,7 @@
 		@apply font-bold;
 	}
 	.blog-post blockquote {
-		@apply rounded-lg bg-zinc-200 p-space-fl-l;
+		@apply rounded-lg bg-zinc-100 p-space-fl-l;
 	}
 	.blog-post blockquote + p {
 		@apply text-right;

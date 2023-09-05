@@ -2,7 +2,10 @@
 title: Using Utopia
 subheading: Ideas for a workflow.
 socialImage:
-    { filename: xstate-anim-figma-designs.png, alt: 3 designs for a todo app. }
+    {
+        filename: using-utopia-cover.png,
+        alt: A screenshot showing this post's title and subheading spaced using method C in Figma.
+    }
 pubDate: 20.7.2023
 tags: [design, design system, tailwind, utopia, figma]
 isDraft: false

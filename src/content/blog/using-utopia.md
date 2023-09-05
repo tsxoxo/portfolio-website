@@ -6,7 +6,7 @@ socialImage:
         filename: using-utopia-cover.png,
         alt: A screenshot showing this post's title and subheading spaced using method C in Figma.
     }
-pubDate: 20.7.2023
+pubDate: 5.9.2023
 tags: [design, design system, tailwind, utopia, figma]
 isDraft: false
 ---

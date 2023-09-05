@@ -5,7 +5,7 @@ socialImage:
     { filename: xstate-anim-figma-designs.png, alt: 3 designs for a todo app. }
 pubDate: 20.7.2023
 tags: [design, design system, tailwind, utopia, figma]
-isDraft: true
+isDraft: false
 ---
 
 This is a guide to help You use the [Utopia design system](https://utopia.fyi/) in your project.

@@ -24,7 +24,7 @@ If You're like _How does a step-by-step guide even make sense for a messy, itera
 
 If You're ready to go, just keep scrolling. 😎
 
-## Table of Contents
+## Table of contents
 
 -   Prerequisites
 -   Guide

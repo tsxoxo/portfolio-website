@@ -1,5 +1,5 @@
 ---
-title: Thinking through animations -- part 2
+title: Thinking through animations -- part 3
 subheading: Modelling interactions with Xstate and Vue for fun and profit. A devlog.
 description: Modelling interactions with Xstate and Vue for fun and profit. A devlog.
 socialImage:

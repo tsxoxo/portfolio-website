@@ -62,7 +62,7 @@ To make things simpler, this guide takes some shortcuts:
 
 Also, iteration is implied everywhere (doing it again and again).
 
-Aside:
+_Aside:_\
 If You're just interested in the topics of **baseline grid** or **implementation** check out these [2 shorter guides](#the-other-guides).
 
 ### Get to know the Utopia Figma plugin
@@ -129,7 +129,7 @@ This was messy for me. Here's a rough series of steps that might help You figure
 
 -   **If You want to change multiple styles at once** (for example, use a different font family for all your headings), use [the 'Utopia / Batch update text styles' plugin](https://www.figma.com/community/plugin/979005485047252094/Utopia-%2F-Batch-update-text-styles).
 
-Aside:
+_Aside:_\
 The generator plugin also generates a type scale in a bolder font weight. I haven't seen this phenomenon talked about in the Utopia ecosystem. I took it as an invitation to adjust some font weights _to my needs_&reg;.
 
 ---
@@ -186,7 +186,7 @@ You can set up a spacing palette with variables like this:
     	There's a video here demonstrating the procedure. Your browser doesn't support embedded videos, but You can <a href="/assets/blog/pictures/using-utopia/spacing-method-b.webm">download it as a WEBM file</a>.
 </video>
 
-Aside:
+_Aside:_\
 Are modes potentially useful in this scenario? There must be a good lifehack somewhere in here.
 
 The upside to this method is You can pick your spacing from a menu and don't have to peek so much.
@@ -203,7 +203,7 @@ The downside is I don't see how to make these variables update when You regenera
 
 #### C. Use Utopia's spacing components 🌚
 
-Aside:
+_Aside:_\
 **If You want to work on a custom spacing palette**, You might do it this way. The spacing in your design will update each time you rerun the plugin with different parameters.
 
 See these little squares that came out of the generator plugin?-- The ones on the frame called "Space palette @min"? You can literally [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg)! Once they're where You want them to be, just select the variant You want from the little drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favorite t-shirt sizes! And when You're sick of looking at them, just close your eyes, press `shift + g` 3 times and they'll go away.
@@ -221,7 +221,7 @@ But they come with a frozen yoghurt! I call it _"froyo"_!
     	There's a video here demonstrating the procedure. Your browser doesn't support embedded videos, but You can <a href="/assets/blog/pictures/using-utopia/spacing-method-c.webm">download it as a WEBM file</a>.
 </video>
 
-Aside:
+_Aside:_\
 For this website, the default spacing palette with some added custom pairs worked alright. I felt it was a decent balance between constraint and freedom.
 
 ---
@@ -232,7 +232,7 @@ Go out there, make some mistakes and enjoy that sweet consistency!
 
 ### Implement
 
-Aside:
+_Aside:_\
 There are plugins to help with this, but I won't be using them here. See [Utopia-Tailwind integrations](#utopia-tailwind-integrations) for more info.
 
 -   Get those CSS custom properties out of your system and into your config. Go to the Utopia website, plug in the values You used with the Figma plugin (they live on the left-most generated frame) and copy the CSS output into your project.
@@ -408,11 +408,11 @@ PS. I'm not affiliated with Utopia, I just used it.
 
 ---
 
-Thank You, my wonderful editors: Thays Biodere(xxx) and Yemima Fink(xxx). Your feedback was invaluable and made this text clearer, shorter and more to the point -- a more pleasant experience for everybody :).
+Thank You, my wonderful editors: [Thays Biodere](https://www.thaysbiodere.com/) and Yemima Fink. Your feedback was invaluable and made this text clearer, shorter and more to the point -- a more pleasant experience for everybody :).
 
 Thank You, Utopia creators -- [Trys Mudford](https://twitter.com/trysmudford) and [James Gilyead](https://twitter.com/j98) -- for creating this tooling ecosystem that I think makes systematic design a little more accessible! Thank You for writing and producing so much documentation -- I know how time consuming that can be. And thank You for making it all available for free.
 
-Thank You, Christian Penrod(xxx)! You helped me realize that actually using Utopia in my Tailwind project would go down without too much of a hassle.
+Thank You, [Christian Penrod](https://christianpenrod.com)! You helped me realize that actually using Utopia in my Tailwind project would go down without too much of a hassle.
 
 Thank You, all the people that came before who figured out the math to the responsive design problem and cared enough to keep implementing this by hand (until a few of them finally got sick of it)!
 

@@ -3,7 +3,7 @@ title: Using Utopia
 subheading: Ideas for a workflow.
 socialImage:
     {
-        filename: /using-utopia/using-utopia-cover.png,
+        filename: using-utopia/using-utopia-cover.png,
         alt: A screenshot showing this post's title and subheading spaced using method C in Figma.
     }
 pubDate: 5.9.2023

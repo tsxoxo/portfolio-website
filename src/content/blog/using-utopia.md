@@ -1,6 +1,6 @@
 ---
 title: Using Utopia
-subheading: Ideas for a workflow.
+description: Ideas for a workflow with Figma and Tailwind.
 socialImage:
     {
         filename: using-utopia/using-utopia-cover.png,

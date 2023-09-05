@@ -1,7 +1,8 @@
 ---
-title: Thinking through animations -- part 1
-subheading: Modelling interactions with Xstate and Vue for fun and profit. A devlog.
-description: Modelling interactions with Xstate and Vue for fun and profit. A devlog.
+series: Building interactions using Xstate and Vue -- a devlog.
+part: 1
+title: Context and complexities
+description: Where I lay out the grand plan and try to model some animations.
 socialImage:
     { filename: xstate-anim-figma-designs.png, alt: 3 designs for a todo app. }
 pubDate: 21.8.2023

@@ -27,8 +27,10 @@ const blog = defineCollection({
 	type: 'content',
 	schema: z.object({
 		isDraft: z.boolean().default(false),
+		series: z.string().trim().optional(),
+		part: z.number().optional(),
 		title: z.string().trim().min(1).or(z.number()).transform(val => String(val)),
-		subheading: z.string().trim().min(1).or(z.number()).transform(val => String(val)),
+		subheading: z.string().trim().optional(),
 		socialImage: z.object({
 			filename: z.string(),
 			alt: z.string()
@@ -37,7 +39,7 @@ const blog = defineCollection({
 		author: z.string().default('Tom'),
 		tags: z.array(z.coerce.string()),
 		footnote: z.string().optional(),
-		pubDate: z.coerce.string().transform(convertGermanToISODate).pipe(z.date()).optional()
+		pubDate: z.coerce.string().transform(convertGermanToISODate).pipe(z.date())
 	}).superRefine(({ isDraft, pubDate }, ctx) => {
 		if (!isDraft && pubDate === undefined) {
 			ctx.addIssue({

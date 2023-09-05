@@ -132,15 +132,13 @@ This was messy for me. Here's a rough series of steps that might help You figure
 _Aside:_\
 The generator plugin also generates a type scale in a bolder font weight. I haven't seen this phenomenon talked about in the Utopia ecosystem. I took it as an invitation to adjust some font weights _to my needs_&reg;.
 
----
-
 #### What helped me
 
 I felt this part of the process was especially iterative (messy) because there are so many moving parts: a whole scale of things living next to other things.-- Too much for my brain!
 
 So I made it easy for myself. Here's that story:
 
-While designing my landing page, I got obsessed with my big chunky hero-heading -- I'm brave enough to admit it. I wanted it to stay on a single line. So I made it as big as possible and paid attention to the font size.
+While designing my landing page, I got obsessed with my big chunky hero-heading -- I'm brave enough to admit that. I wanted it to stay on a single line. So I made it as big as possible and paid attention to the font size.
 
 And I started to build my type scale around this piece of text.
 
@@ -189,9 +187,9 @@ You can set up a spacing palette with variables like this:
 _Aside:_\
 Are modes potentially useful in this scenario? There must be a good lifehack somewhere in here.
 
-The upside to this method is You can pick your spacing from a menu and don't have to peek so much.
+---
 
-The downside is I don't see how to make these variables update when You regenerate your palette...
+The upside to this method is You can pick your spacing from a menu and don't have to peek so much. The downside is I don't see how to make these variables update when You regenerate your palette...
 
 ...**But**...
 
@@ -206,7 +204,9 @@ The downside is I don't see how to make these variables update when You regenera
 _Aside:_\
 **If You want to work on a custom spacing palette**, You might do it this way. The spacing in your design will update each time you rerun the plugin with different parameters.
 
-See these little squares that came out of the generator plugin?-- The ones on the frame called "Space palette @min"? You can literally [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg)! Once they're where You want them to be, just select the variant You want from the little drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favorite t-shirt sizes! And when You're sick of looking at them, just close your eyes, press `shift + g` 3 times and they'll go away.
+---
+
+See these little squares that came out of the generator plugin? -- the ones on the frame called "Space palette @min"? You can literally [drag them into your design](https://utopia.fyi/images/utopia-plugin-10.jpg)! Once they're where You want them to be, just select the variant You want from the little drop-down menu and there's your spacing: 2xs, m, 3xl -- all your favorite t-shirt sizes! And when You're sick of looking at them, just close your eyes, press `shift + g` 3 times and they'll go away.
 
 How does that work, You ask?-- _They're just, like, pieces of the grid, man!_ 🤯 Clever, clever, these Utopia designers.
 
@@ -235,19 +235,21 @@ Go out there, make some mistakes and enjoy that sweet consistency!
 _Aside:_\
 There are plugins to help with this, but I won't be using them here. See [Utopia-Tailwind integrations](#utopia-tailwind-integrations) for more info.
 
+---
+
 -   Get those CSS custom properties out of your system and into your config. Go to the Utopia website, plug in the values You used with the Figma plugin (they live on the left-most generated frame) and copy the CSS output into your project.
 
 **Uhmmm, copy where?**
 
 You have options.
 
-A. You can sort of ignore the variables and just copy their values (e.g. just the raw `clamp()` function) into your Tailwind config. [Chris Penrod does it this way](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/).
+**A**. You can sort of ignore the variables and just copy their values (e.g. just the raw `clamp()` function) into your Tailwind config. [Chris Penrod does it this way](https://christianpenrod.com/blog/tailwindcss-responsive-design-without-breakpoints/).
 
-B. You can go an extra step and first put all the variables into a `base.css` file. Then reference them in your Tailwind config.
+**B**. You can go an extra step and first put all the variables into a `base.css` file. Then reference them in your Tailwind config.
 
 I did it _extra_ 🧑‍🍳 like this so I can easily copy and paste Utopia's output wholesale into `base.css` whenever I iterate (change my mind) -- which, I know I will.
 
-This is what option B looks like:
+This is what option **B** looks like:
 
 ```css
 /* base.css

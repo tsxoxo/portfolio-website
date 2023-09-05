@@ -181,7 +181,7 @@
 	.blog-post
 		*
 		+ p:not(:is(h1, h2, h3, h4, h5, h6) + p, blockquote + p, hgroup > p),
-	.blog-post :is(p, ul, ol) + *:not(p, hr),
+	.blog-post :is(p, ul, ol, hr) + *:not(p, hr),
 	hr:not(hgroup *) {
 		@apply mt-space-fl-l;
 	}

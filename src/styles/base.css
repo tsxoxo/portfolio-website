@@ -114,11 +114,23 @@
 	.techstack {
 		@apply font-monospace;
 	}
+	.blog-post a:has(> .icon) {
+		@apply inline-block no-underline decoration-0;
+	}
+	.blog-post .icon.icon-link::after {
+		content: '#';
+	}
+	.blog-post .icon.icon-link {
+		@apply text-fl-3xl decoration-0;
+	}
+	.blog-post :is(h1, h2, h3, h4, h5, h6) > a {
+		font-size: inherit;
+	}
 	.blog-post a {
 		@apply font-bold;
 	}
 	.blog-post blockquote {
-		@apply rounded-lg bg-zinc-100 p-space-fl-l;
+		@apply rounded-lg bg-papery-max-background p-space-fl-l;
 	}
 	.blog-post blockquote + p {
 		@apply text-right;

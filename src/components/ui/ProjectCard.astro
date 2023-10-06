@@ -1,5 +1,5 @@
 ---
-import { Image, Picture } from '@astrojs/image/components'
+import { Image } from 'astro:assets'
 import Button from '@components/ui/Button.astro'
 import { CollectionEntry } from 'astro:content'
 import { t } from 'i18next'
@@ -40,7 +40,8 @@ const primaryLink = {
 			repoURL={links.repo}
 			projectTitle={id}
 		/>
-		<Picture
+		<Image  src={import(`../../assets/images/project-previews/${image.filename}.png`)} alt={image.alt} class="aspect-square w-full object-cover object-top"/>
+<!-- <Picture
 			src={import(
 				`../../assets/images/project-previews/${image.filename}.png`
 			)}
@@ -48,7 +49,7 @@ const primaryLink = {
 			widths={[400, 640]}
 			sizes="(min-width: 640px) 46vw, (min-width: 1024px) 30vw,  96vw"
 			class="aspect-square w-full object-cover object-top"
-		/>
+		/> -->
 		<div class="flex justify-between">
 			<a
 				class="grid grow items-center justify-start"

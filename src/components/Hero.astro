@@ -1,5 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components'
+import { Image } from 'astro:assets'
 import { Trans, HeadHrefLangs } from 'astro-i18next/components'
 import { t } from 'i18next'
 import ContactButton from './ui/ContactButton.astro'
@@ -24,7 +24,12 @@ import heroImage from '@assets/images/me-bw.jpeg'
 		</div>
 	</div>
 
-	<Picture
+	<Image
+		src={heroImage}
+		alt="The author of this website, smiling in black and white"
+		class="hidden h-full w-full object-cover object-top md:block"
+	/>
+	<!-- <Picture
 		src={heroImage}
 		alt="Tom Szwaja"
 		widths={[400, 640]}
@@ -32,5 +37,5 @@ import heroImage from '@assets/images/me-bw.jpeg'
 		aspectRatio="1395 :1887"
 		loading="eager"
 		class="hidden h-full w-full object-cover object-top md:block"
-	/>
+	/> -->
 </section>

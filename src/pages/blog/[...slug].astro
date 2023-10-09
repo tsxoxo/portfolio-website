@@ -22,7 +22,7 @@ const { post } = Astro.props
 const { Content } = await post.render()
 const socialImage = {
 	url: new URL(
-		`/assets/blog/pictures/${post.data.socialImage.filename}`,
+		`/assets/blog/${post.data.socialImage.filename}`,
 		Astro.site
 	),
 	alt: post.data.socialImage.alt

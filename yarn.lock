@@ -1467,7 +1467,6 @@ __metadata:
     rehype-autolink-headings: ^7.0.0
     rehype-slug: ^6.0.0
     remark-toc: ^9.0.0
-    sharp: ^0.32.1
     tailwindcss: ^3.0.24
   languageName: unknown
   linkType: soft
@@ -6339,7 +6338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.32.1, sharp@npm:^0.32.5":
+"sharp@npm:^0.32.5":
   version: 0.32.6
   resolution: "sharp@npm:0.32.6"
   dependencies:

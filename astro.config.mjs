@@ -3,8 +3,6 @@ import mdx from '@astrojs/mdx'
 import remarkToc from 'remark-toc'
 import a11yEmoji from '@fec/remark-a11y-emoji'
 import rehypeSlug from 'rehype-slug'
-import { astroImageTools } from "astro-imagetools";
-
 
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import tailwind from '@astrojs/tailwind'
@@ -16,7 +14,6 @@ export default defineConfig({
 		tailwind(),
 		mdx(),
 		astroI18next(),
-		astroImageTools
 	],
 	markdown: {
 		// Applied to .md and .mdx files

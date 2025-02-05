@@ -1,7 +1,4 @@
 @import 'tailwindcss';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
 	--papery-complementary-grey: #dfd8e0ff;

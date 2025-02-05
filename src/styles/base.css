@@ -1,3 +1,4 @@
+@import 'tailwindcss';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -199,25 +200,29 @@
 	@font-face {
 		font-family: 'Karla';
 		font-weight: 400;
-		src: url('/fonts/Karla-Regular.woff2') format('woff2'),
+		src:
+			url('/fonts/Karla-Regular.woff2') format('woff2'),
 			url('/fonts/Karla-Regular.woff') format('woff');
 	}
 	@font-face {
 		font-family: 'Karla';
 		font-weight: 200;
-		src: url('/fonts/Karla-ExtraLight.woff2') format('woff2'),
+		src:
+			url('/fonts/Karla-ExtraLight.woff2') format('woff2'),
 			url('/fonts/Karla-ExtraLight.woff') format('woff');
 	}
 	@font-face {
 		font-family: 'Karla';
 		font-weight: 700;
-		src: url('/fonts/Karla-Bold.woff2') format('woff2'),
+		src:
+			url('/fonts/Karla-Bold.woff2') format('woff2'),
 			url('/fonts/Karla-Bold.woff') format('woff');
 	}
 	@font-face {
 		font-family: 'Karla';
 		font-weight: 800;
-		src: url('/fonts/Karla-ExtraBold.woff2') format('woff2'),
+		src:
+			url('/fonts/Karla-ExtraBold.woff2') format('woff2'),
 			url('/fonts/Karla-ExtraBold.woff') format('woff');
 	}
 }

@@ -8,19 +8,27 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import tailwind from '@astrojs/tailwind'
 import astroI18next from 'astro-i18next'
 
+import tailwindcss from '@tailwindcss/vite';
+
 export default defineConfig({
-	site: 'https://tsxoxo.com',
-	integrations: [
-		tailwind(),
-		mdx(),
-		astroI18next(),
+  site: 'https://tsxoxo.com',
+
+  integrations: [
+      tailwind(),
+      mdx(),
+      astroI18next(),
 	],
-	markdown: {
-		// Applied to .md and .mdx files
-		remarkPlugins: [[remarkToc, { maxDepth: 2 }], a11yEmoji],
-		rehypePlugins: [
-			rehypeSlug,
-			[rehypeAutolinkHeadings, { behavior: 'wrap' }]
-		]
-	}
+
+  markdown: {
+      // Applied to .md and .mdx files
+      remarkPlugins: [[remarkToc, { maxDepth: 2 }], a11yEmoji],
+      rehypePlugins: [
+          rehypeSlug,
+          [rehypeAutolinkHeadings, { behavior: 'wrap' }]
+      ]
+	},
+
+  vite: {
+    plugins: [tailwindcss()]
+  }
 })

@@ -5,14 +5,13 @@ import a11yEmoji from '@fec/remark-a11y-emoji'
 import rehypeSlug from 'rehype-slug'
 
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import astroI18next from 'astro-i18next'
 
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
 	site: 'https://tsxoxo.com',
 
-	integrations: [mdx(), astroI18next()],
+	integrations: [mdx()],
 
 	markdown: {
 		// Applied to .md and .mdx files
@@ -25,5 +24,9 @@ export default defineConfig({
 
 	vite: {
 		plugins: [tailwindcss()]
+	},
+	i18n: {
+		locales: ['de', 'en'],
+		defaultLocale: 'en'
 	}
 })

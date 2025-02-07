@@ -5,7 +5,6 @@ import a11yEmoji from '@fec/remark-a11y-emoji'
 import rehypeSlug from 'rehype-slug'
 
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import tailwind from '@astrojs/tailwind'
 import astroI18next from 'astro-i18next'
 
 import tailwindcss from '@tailwindcss/vite'

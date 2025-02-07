@@ -27,7 +27,7 @@ const {
 } = Astro.props as LayoutProps
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang={i18next.language} class="scroll-smooth" data-testid="html">
 	<head>
 		<SEO
@@ -77,6 +77,7 @@ const {
 			img {
 				content-visibility: auto;
 			}
+			@reference "../styles/base.css";
 		</style>
 	</body>
 </html>

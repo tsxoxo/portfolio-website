@@ -6,19 +6,35 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 
 ## TODO
 
-### Make it deploy after upgrading to Astro 5
+### [] Make it deploy after upgrading to Astro 5
+
+[x] Look at last failed build and start from there
+
+#### [] Migrate properly from Tailwind 3 to 4
+
+[] Migrate from Javascript config
+[] make theme work
+[] something something @apply
+
+#### [] migrate to new i18n system
+
+[] put translations in new file
+
+[] update all relevant sites
+
+[] follow Astro guide
+
+[] adjust site based on user's preferred locale
+
+### Meta
+
+[] Look at ESLint. Research style guides. Start [here](<[url](https://www.youtube.com/watch?v=Cd-gBxzcsdA)>)
 
 [] Speed up build time
 
 -- [x] Use precompiled Python: mise WARN no precompiled python found for 3.13.2, force mise to use a precompiled version with `mise settings set python.compile false`
 
 -- [] Try to understand what Python does in the building process
-[] Look at last failed build and start from there
--- [] Migrate properly from Tailwind 3 to 4
-
-### Meta
-
-[] Look at ESLint. Research style guides. Start [here](<[url](https://www.youtube.com/watch?v=Cd-gBxzcsdA)>)
 
 ### Update
 

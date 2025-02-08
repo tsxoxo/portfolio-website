@@ -20,9 +20,6 @@ importers:
       astro:
         specifier: ^5.2.5
         version: 5.2.5(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.3)(typescript@5.7.3)(yaml@2.7.0)
-      astro-navbar:
-        specifier: ^2.3.9
-        version: 2.3.9
       astro-seo:
         specifier: ^0.8.4
         version: 0.8.4(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3)
@@ -819,9 +816,6 @@ packages:
   astring@1.9.0:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
-
-  astro-navbar@2.3.9:
-    resolution: {integrity: sha512-1FpVpVbOHlXT0vi/GvHb49y5LmH3yYcSO39pcyUDZ6eISjv/d3PlUg9C84h9o5TFxb4VzkSKfI+kvvMkCfHvEg==}
 
   astro-seo@0.8.4:
     resolution: {integrity: sha512-Ou1vzQSXAxa0K8rtNtXNvSpYqOGEgMhh0immMxJeXmbVZac3UKCNWAoXWyOQDFYsZvBugCRSg0N1phBqPMVgCw==}
@@ -3276,8 +3270,6 @@ snapshots:
   array-iterate@2.0.1: {}
 
   astring@1.9.0: {}
-
-  astro-navbar@2.3.9: {}
 
   astro-seo@0.8.4(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3):
     dependencies:

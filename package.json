@@ -17,7 +17,6 @@
 		"@astrojs/ts-plugin": "^1.10.4",
 		"@tailwindcss/vite": "^4.0.4",
 		"astro": "^5.2.5",
-		"astro-navbar": "^2.3.9",
 		"astro-seo": "^0.8.4",
 		"eslint": "^9.19.0",
 		"remark-toc": "^9.0.0",

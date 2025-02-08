@@ -4,8 +4,10 @@ import Navbar from '@components/Navbar.astro'
 import { SEO } from 'astro-seo'
 import '../styles/base.css'
 
-import i18next, { t } from 'i18next'
-import { Trans, HeadHrefLangs } from 'astro-i18next/components'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
 export interface LayoutProps {
 	title: string
@@ -19,7 +21,7 @@ export interface LayoutProps {
 }
 
 const {
-	title = t('site.defaultTitle'),
+	title = t('meta.title'),
 	description,
 	ogType = 'website',
 	socialImage,
@@ -28,7 +30,7 @@ const {
 ---
 
 <!doctype html>
-<html lang={i18next.language} class="scroll-smooth" data-testid="html">
+<html {lang} class="scroll-smooth" data-testid="html">
 	<head>
 		<SEO
 			{title}
@@ -51,7 +53,6 @@ const {
 				site: '@yes_tsxoxo'
 			}}
 		/>
-		<HeadHrefLangs />
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />

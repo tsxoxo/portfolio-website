@@ -44,11 +44,19 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 
 ### Write post about 7GUIs cell project
 
-[] Themes: Testing-what test make sense; how do you model an app like this with xstate; why do these challenges have so few states?
+Themes: Testing-what test make sense; how do you model an app like this with xstate; why do these challenges have so few states?
+
+[x] Jot down thoughts round 1
+
+[] Actually look at Cells and write down more ideas
+
+[] Write first draft
+
+### Improve site
 
 [] Style: <Card> for Blogpost. Include name of series. Possibly add 'type' field ['devlog', 'tutorial']
 
-### Design
+[] Add play section
 
 [] Redesign first glimpse: probably graphic instead of photo
 

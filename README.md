@@ -10,23 +10,23 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 
 [x] Look at last failed build and start from there
 
+[x] Fix i18n
+
+[] Fix sharp
+
+[] Fix Tailwind
+
 #### [] Migrate properly from Tailwind 3 to 4
 
 [] Migrate from Javascript config
 [] make theme work
 [] something something @apply
 
-#### [] migrate to new i18n system
+#### [x] migrate to new i18n system
 
-[] put translations in new file
+[x] put translations in new file
 
-[] update all relevant sites
-
-[] follow Astro guide
-
-[] adjust site based on user's preferred locale
-
-[] I removed <HeadHrefLangs /> -- should I readd it or something like it?
+[x] update all relevant sites
 
 ### Meta
 
@@ -64,6 +64,16 @@ Themes: Testing-what test make sense; how do you model an app like this with xst
 
 [] Redesign projects: make them into case studies and describe the process more
 
+#### i18n
+
+[] is this correct? cuz it's not 'en' in dev mode: const [,lang] = URL.PATHNAME.SPLIT('/')
+
 [] Add German translations and language selector
 
 [] Make things consistent: e.g. title is hard-coded in index.astro instead of being fetched from translations
+
+[] follow Astro guide till the end
+
+[] adjust site based on user's preferred locale
+
+[] I removed <HeadHrefLangs /> -- should I readd it or something like it?

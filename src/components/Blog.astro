@@ -1,6 +1,9 @@
 ---
 import { getCollection } from 'astro:content'
-import { t } from 'i18next'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
 const isDev = import.meta.env.DEV
 
@@ -8,15 +11,15 @@ const blogEntries = isDev
 	? await getCollection('blog')
 	: await getCollection('blog', ({ data }) => {
 			return data.isDraft !== true
-	  })
+		})
 ---
 
 {
 	blogEntries.length > 0 && (
 		<section class="grid gap-space-fl-xl">
 			<hgroup id="blog">
-				<h2>{t('home.blog.heading')}</h2>
-				<p class="text-fl-base">{t('home.blog.subheading')}</p>
+				<h2>{t('blog.heading')}</h2>
+				<p class="text-fl-base">{t('blog.subheading')}</p>
 			</hgroup>
 			{blogEntries.map((entry) => (
 				<p>

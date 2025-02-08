@@ -16,8 +16,10 @@ export const translations = {
         "hero.subheading": "Making the web friendlier, one website at a time.",
         "hero.what-paragraphs": "<0><p>I design user experiences,</p><p>build websites,</p><p>and help people maintain them.</p></0>",
         "hero.what-raw": "I design user experiences,  build websites and help people maintain them.",
-        "hero.cta": "What can I do for you?"
+        "hero.cta": "What can I do for you?",
 
+        "blog.heading": "Blog",
+        "blog.subheading": "Sharing some knowledge."
     },
     de: {
     },

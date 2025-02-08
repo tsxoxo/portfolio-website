@@ -65,3 +65,5 @@ Themes: Testing-what test make sense; how do you model an app like this with xst
 [] Redesign projects: make them into case studies and describe the process more
 
 [] Add German translations and language selector
+
+[] Make things consistent: e.g. title is hard-coded in index.astro instead of being fetched from translations

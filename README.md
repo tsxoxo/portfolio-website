@@ -28,6 +28,8 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 
 ### Meta
 
+[] Simplify front matter -- automate slug generation
+
 [] Look at ESLint. Research style guides. Start [here](<[url](https://www.youtube.com/watch?v=Cd-gBxzcsdA)>)
 
 [] Speed up build time

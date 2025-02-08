@@ -63,3 +63,5 @@ Themes: Testing-what test make sense; how do you model an app like this with xst
 [] Redesign first glimpse: probably graphic instead of photo
 
 [] Redesign projects: make them into case studies and describe the process more
+
+[] Add German translations and language selector

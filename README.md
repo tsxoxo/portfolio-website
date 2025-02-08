@@ -6,7 +6,7 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 
 ## TODO
 
-### [] Make it deploy after upgrading to Astro 5
+### [x] Make it deploy after upgrading to Astro 5
 
 [x] Look at last failed build and start from there
 

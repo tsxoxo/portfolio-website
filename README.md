@@ -36,15 +36,15 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 
 -- [] Try to understand what Python does in the building process
 
-### Update
+### Fix what's there
 
-[] Utopia + Tailwind post for Tailwind 4 after migrating site
+[] Correct Utopia + Tailwind post so that it works with Tailwind 4
 
 ### Write post about 7GUIs cell project
 
 [] Themes: Testing-what test make sense; how do you model an app like this with xstate; why do these challenges have so few states?
 
-[] Style: <Card> for Blogpost. Include name of series
+[] Style: <Card> for Blogpost. Include name of series. Possibly add 'type' field ['devlog', 'tutorial']
 
 ### Design
 

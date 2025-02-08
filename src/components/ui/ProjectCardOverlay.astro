@@ -1,5 +1,8 @@
 ---
-import { t } from 'i18next'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
 interface Props {
 	description: string
@@ -39,6 +42,6 @@ const { description, skill_tags, tech_tags, repoURL, projectTitle } =
 		aria-label="Link to repo"
 		target="_blank"
 	>
-		{t('home.projects.card.link-in-overlay')}
+		{t('projects.card.link-in-overlay')}
 	</a>
 </div>

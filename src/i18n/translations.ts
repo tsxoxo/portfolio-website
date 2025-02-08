@@ -10,7 +10,7 @@ export const translations = {
         "meta.title": "Tom Szwaja | Web Person",
         "meta.description": "Here is the description of my awesome website!",
 
-        "nav.contactButton": "Contact me",
+        "contactButton": "Contact me",
 
         "hero.heading": "Hi, I'm Tom!",
         "hero.subheading": "Making the web friendlier, one website at a time.",
@@ -18,12 +18,20 @@ export const translations = {
         "hero.what-raw": "I design user experiences,  build websites and help people maintain them.",
         "hero.cta": "What can I do for you?",
 
+        "projects.heading": "Projects",
+        "projects.subheading": "Things that left a mark.",
+        "projects.card.link-more": "Details",
+        "projects.card.link-primary": "Details",
+        "projects.card.link-in-overlay": "Project repo",
+
         "blog.heading": "Blog",
         "blog.subheading": "Sharing some knowledge.",
 
 
         "footer.made": "Made with 🤘 by Tom Szwaja",
-        "footer.repo": "Site repo"
+        "footer.repo": "Site repo",
+
+        "socials.heading": "Socials"
     },
     de: {
     },

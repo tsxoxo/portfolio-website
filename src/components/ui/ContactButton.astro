@@ -1,6 +1,9 @@
 ---
 import ButtonFluid from '@components/ui/ButtonFluid.astro'
-import { t } from 'i18next'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <ButtonFluid
@@ -10,5 +13,5 @@ import { t } from 'i18next'
 	rel="noopener"
 	aria-label="email"
 >
-	{t('site.contactButton')}
+	{t('contactButton')}
 </ButtonFluid>

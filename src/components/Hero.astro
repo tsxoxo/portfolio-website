@@ -1,10 +1,13 @@
 ---
 import { Image } from 'astro:assets'
-import { Trans, HeadHrefLangs } from 'astro-i18next/components'
-import { t } from 'i18next'
 import ContactButton from './ui/ContactButton.astro'
 
 import heroImage from '@assets/images/me-bw.jpeg'
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section
@@ -14,11 +17,11 @@ import heroImage from '@assets/images/me-bw.jpeg'
 >
 	<div class="grid gap-space-fl-xl [text-wrap:balance]">
 		<hgroup>
-			<h1>{t('home.hero.heading')}</h1>
-			<p class="text-fl-lg text-grey">{t('home.hero.subheading')}</p>
+			<h1>{t('hero.heading')}</h1>
+			<p class="text-fl-lg text-grey">{t('hero.subheading')}</p>
 		</hgroup>
-		<p class="leading-loose">{t('home.hero.what-raw')}</p>
-		<p>{t('home.hero.cta')}</p>
+		<p class="leading-loose">{t('hero.what-raw')}</p>
+		<p>{t('hero.cta')}</p>
 		<div>
 			<ContactButton />
 		</div>

@@ -1,5 +1,4 @@
 ---
-import { changeLanguage } from 'i18next'
 import Layout from '@layouts/Layout.astro'
 import { getCollection } from 'astro:content'
 import type { CollectionEntry } from 'astro:content'
@@ -7,8 +6,6 @@ import { formatDateObjToCustom } from 'utils'
 interface Props {
 	post: CollectionEntry<'blog'>
 }
-
-changeLanguage('en')
 
 export async function getStaticPaths() {
 	const blogPosts = await getCollection('blog')
@@ -21,10 +18,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props
 const { Content } = await post.render()
 const socialImage = {
-	url: new URL(
-		`/assets/blog/${post.data.socialImage.filename}`,
-		Astro.site
-	),
+	url: new URL(`/assets/blog/${post.data.socialImage.filename}`, Astro.site),
 	alt: post.data.socialImage.alt
 }
 ---

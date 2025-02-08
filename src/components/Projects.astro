@@ -1,7 +1,10 @@
 ---
 import ProjectCard from '@components/ui/ProjectCard.astro'
 import { getCollection } from 'astro:content'
-import { t } from 'i18next'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
 const projects = await getCollection('projects')
 ---
@@ -9,9 +12,9 @@ const projects = await getCollection('projects')
 <section data-testid="projects" id="projects" class="grid gap-space-fl-xl">
 	<hgroup>
 		<h2>
-			{t('home.projects.heading')}
+			{t('projects.heading')}
 		</h2>
-		<p class="text-fl-base">{t('home.projects.subheading')}</p>
+		<p class="text-fl-base">{t('projects.subheading')}</p>
 	</hgroup>
 	<div class="grid grid-cols-1 gap-space-fl-2xl sm:grid-cols-2">
 		{projects.map((project, i) => <ProjectCard {project} id={i} />)}

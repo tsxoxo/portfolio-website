@@ -1,24 +1,24 @@
 ---
-import { changeLanguage } from "i18next";
-import Layout from "@layouts/Layout.astro";
-import { getCollection } from "astro:content";
-
-changeLanguage("de");
+import Layout from '@layouts/Layout.astro'
+import { getCollection } from 'astro:content'
 
 export async function getStaticPaths() {
-    const blogEntries = await getCollection("blog");
-    return blogEntries.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry }
-    }));
+	const blogEntries = await getCollection('blog')
+	return blogEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry }
+	}))
 }
 // 2. When it's time to render, you can get the entry directly from the prop
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { entry } = Astro.props
+const { Content } = await entry.render()
 const socialImage = {
-    url: new URL(`/assets/blog/pictures/${entry.data.socialImage.filename}`, Astro.url),
-    alt: entry.data.socialImage.alt
-};
+	url: new URL(
+		`/assets/blog/pictures/${entry.data.socialImage.filename}`,
+		Astro.url
+	),
+	alt: entry.data.socialImage.alt
+}
 ---
 
 <Layout

@@ -5,7 +5,7 @@ part: 1
 title: Where are the states?
 description: Where I look back on these 7 tasks and wonder
 socialImage: { filename: '', alt: '' }
-pubDate: ''
+pubDate: 12.02.2025
 tags: [devlog, frontend, fsm, xstate, vue]
 isDraft: true
 ---

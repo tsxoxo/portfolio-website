@@ -1,6 +1,5 @@
 ---
 import ToggleTheme from '@components/ui/ToggleTheme.astro'
-import ContactButton from './ui/ContactButton.astro'
 
 const menuItems = [
 	{
@@ -46,7 +45,6 @@ const menuItems = [
 						<li>
 							<a
 								aria-label="navigation link"
-								{...(item.attributes || {})}
 								href={item.path}
 								class={`p-space-fl-s  hover:text-accent dark:hover:text-accent ${
 									ind === 0 && 'pl-0'

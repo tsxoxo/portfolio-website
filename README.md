@@ -12,15 +12,9 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 
 [x] Fix i18n
 
-[] Fix sharp
+[x] Fix sharp
 
-[] Fix Tailwind
-
-#### [] Migrate properly from Tailwind 3 to 4
-
-[] Migrate from Javascript config
-[] make theme work
-[] something something @apply
+[x] Fix Tailwind
 
 #### [x] migrate to new i18n system
 
@@ -30,7 +24,7 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 
 ### Meta
 
-[] Simplify front matter -- automate slug generation
+[] Simplify front matter -- automate slug generation -- add field: updated_on
 
 [] Look at ESLint. Research style guides. Start [here](<[url](https://www.youtube.com/watch?v=Cd-gBxzcsdA)>)
 
@@ -39,6 +33,12 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 -- [x] Use precompiled Python: mise WARN no precompiled python found for 3.13.2, force mise to use a precompiled version with `mise settings set python.compile false`
 
 -- [] Try to understand what Python does in the building process
+
+#### [] Migrate properly from Tailwind 3 to 4
+
+[] Migrate from Javascript config
+[] make theme work
+[] something something @apply
 
 ### Fix what's there
 

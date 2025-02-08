@@ -26,6 +26,8 @@ Based on [this starter](https://github.com/veranikabarel/astro-portfolio). Thank
 
 [] adjust site based on user's preferred locale
 
+[] I removed <HeadHrefLangs /> -- should I readd it or something like it?
+
 ### Meta
 
 [] Simplify front matter -- automate slug generation

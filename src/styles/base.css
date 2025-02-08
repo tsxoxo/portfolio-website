@@ -1,5 +1,5 @@
-@config "../../tailwind.config.cjs";
 @import 'tailwindcss';
+@config "../../tailwind.config.cjs";
 
 :root {
 	--papery-complementary-grey: #dfd8e0ff;

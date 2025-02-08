@@ -19,7 +19,11 @@ export const translations = {
         "hero.cta": "What can I do for you?",
 
         "blog.heading": "Blog",
-        "blog.subheading": "Sharing some knowledge."
+        "blog.subheading": "Sharing some knowledge.",
+
+
+        "footer.made": "Made with 🤘 by Tom Szwaja",
+        "footer.repo": "Site repo"
     },
     de: {
     },
